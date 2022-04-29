@@ -20,8 +20,8 @@ renderer_settings = {
         'scene_file': {
             'scene_file_name': 'scene.luisa',
             'output_file': {
-                'regex': 'depth { [0-9]* }',
-                'replace': 'depth {{ {} }}',
+                'regex': 'file { "output\.exr" }',
+                'replace': 'file {{ "{}.exr" }}',
             },
             'resolution': [
                 {
@@ -88,6 +88,10 @@ renderer_settings = {
         },
         'scene_file': {
             'scene_file_name': 'scene.xml',
+            'output_file': {
+                'regex': '<string name="filename" value="output\.exr" />',
+                'replace': '<string name="filename" value="{}.exr" />',
+            },
             'resolution': [
                 {
                     'regex': '<integer name="width" value="[0-9]*" />',
@@ -124,7 +128,7 @@ renderer_settings = {
             },
         },
         'results_regex': {
-            'time': 'Rendering finished. \(took ([0-9a-zA-Z]*)\)',
+            'time': 'Rendering finished\. \(took ([0-9a-zA-Z]*)\)',
         },
     },
     'PBRT-v4': {
@@ -150,6 +154,10 @@ renderer_settings = {
         },
         'scene_file': {
             'scene_file_name': 'scene-v4.pbrt',
+            'output_file': {
+                'regex': '"string filename" \[ "output\.exr" \]',
+                'replace': '"string filename" [ "{}.exr" ]',
+            },
             'resolution': [
                 {
                     'regex': '"integer xresolution" \[ [0-9]* \]',
@@ -186,7 +194,7 @@ renderer_settings = {
             },
         },
         'results_regex': {
-            'time': 'Rendering finished. \(took ([0-9a-zA-Z]*)\)',
+            'time': 'Rendering finished\. \(took ([0-9a-zA-Z]*)\)',
         },
     },
 }
@@ -198,21 +206,21 @@ target_settings = {
         'PBRT-v4',
     ],
     'scene': {
-        'classroom': {
-            'resolution': [
-                (1920, 1080),
-            ],
-        },
+        # 'classroom': {
+        #     'resolution': [
+        #         (1920, 1080),
+        #     ],
+        # },
         'coffee': {
             'resolution': [
                 (800, 1000),
             ],
         },
-        'dining-room': {
-            'resolution': [
-                (1920, 1080),
-            ],
-        },
+        # 'dining-room': {
+        #     'resolution': [
+        #         (1920, 1080),
+        #     ],
+        # },
         'glass-of-water': {
             'resolution': [
                 (1920, 1080),
@@ -270,7 +278,6 @@ def test_targets():
             scene_file_path = os.path.join(scene_directory, scene_file_settings['scene_file_name'])
             with open(scene_file_path, 'r') as scene_file:
                 scene = scene_file.read()
-            order_scene = order_exe + ' ' + scene_file_path
 
             for integrator in target_settings['integrator']:
                 integrator_name = scene_file_settings['integrator']['name'][integrator]
@@ -279,7 +286,7 @@ def test_targets():
                 scene = re.sub(scene_file_settings['integrator']['regex'],
                                scene_file_settings['integrator']['replace'].
                                format(integrator_name), scene)
-                order_integrator = order_scene + ' ' + settings['exe']['integrator']['order'].format(
+                order_integrator = order_exe + ' ' + settings['exe']['integrator']['order'].format(
                     settings['exe']['integrator']['name'][integrator])
 
                 for sampler in target_settings['sampler']:
@@ -324,22 +331,39 @@ def test_targets():
                                         order_spectrum += ' ' + settings['exe']['spectrum']['order'].format(
                                             spectrum_name)
 
+                                    # output file
+                                    output_file_name = 'output-{}-{}-{}_{}-{}spp-{}max_depth-{}'.format(
+                                        integrator, sampler, resolution[0], resolution[1], spp, max_depth, spectrum
+                                    )
+                                    output_file_name = os.path.dirname(__file__) + '/outputs/' + output_file_name
+                                    scene = re.sub(scene_file_settings['output_file']['regex'],
+                                                   scene_file_settings['output_file']['replace'].format(
+                                                       output_file_name), scene)
+
+                                    # device
                                     order_device = order_spectrum
                                     if settings['exe']['device'] != 'undefined':
                                         order_device += ' ' + settings['exe']['device'].format(0)
 
-                                    order_final = order_device
-
-                                    scene_file_path_new = 'scene_{}_{}_{}*{}_{}spp_{}max_depth_{}'.format(
+                                    # new scene file
+                                    scene_file_path_new = 'scene-{}-{}-{}_{}-{}spp-{}max_depth-{}'.format(
                                         integrator, sampler, resolution[0], resolution[1], spp, max_depth, spectrum
                                     )
                                     scene_file_path_new = os.path.join(os.path.dirname(scene_file_path),
-                                                                       scene_file_path_new)
+                                                                       scene_file_path_new) + \
+                                                          os.path.splitext(scene_file_settings['scene_file_name'])[-1]
                                     with open(scene_file_path_new, 'w') as f:
-                                        f.write(order_final)
+                                        f.write(scene)
 
+                                    # real scene
+                                    order_scene = order_device + ' ' + scene_file_path_new
+
+                                    order_final = order_scene
+                                    print(order_final)
+
+                                    # render
                                     with os.popen(order_final) as f:
-                                        output_info = f.readlines()
+                                        output_info = f.read()
                                     time = re.search(settings['results_regex']['time'], output_info)
 
                                     result = \
@@ -349,8 +373,9 @@ def test_targets():
                                             spp, max_depth, spectrum, time)
 
                                     results.append(result)
+                                    print(result)
 
-    with open(os.path.join(os.path.dirname(__file__), 'results.txt'), 'w') as f:
+    with open(os.path.join(os.path.dirname(__file__), 'outputs', 'results.txt'), 'w') as f:
         f.writelines(results)
 
 
