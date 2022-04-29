@@ -6,29 +6,42 @@ renderer_settings = {
         'exe': {
             'path': 'C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe',
             'spectrum': 'undefined',
-            'appendix': '-b dx -d 0',
+            'integrator': {
+                'name': {
+                    'WavePath': '',
+                    'MegaPath': '',
+                },
+                'order': '{}',
+            },
+            'device': '-d {}',
+            'output': 'undefined',
+            'appendix': '-b dx',
         },
         'scene_file': {
             'scene_file_name': 'scene.luisa',
+            'output_file': {
+                'regex': 'depth { [0-9]* }',
+                'replace': 'depth {{ {} }}',
+            },
             'resolution': [
                 {
-                    'regular': 'resolution { [, 0-9]* }',
+                    'regex': 'resolution { [, 0-9]* }',
                     'replace': 'resolution {{ {} }}'
                 },
             ],
             'max_depth': {
-                'regular': 'depth { [0-9]* }',
+                'regex': 'depth { [0-9]* }',
                 'replace': 'depth {{ {} }}',
             },
             'spp': {
-                'regular': 'spp { [0-9]* }',
+                'regex': 'spp { [0-9]* }',
                 'replace': 'spp {{ {} }}',
             },
             'sampler': {
                 'name': {
                     'Independent': 'Independent',
                 },
-                'regular': 'sampler : [a-zA-Z]* \{\}',
+                'regex': 'sampler : [a-zA-Z]* \{\}',
                 'replace': 'sampler : {} {{}}',
             },
             'spectrum': {
@@ -36,7 +49,7 @@ renderer_settings = {
                     'RGB': 'sRGB',
                     'Spectral': 'Hero',
                 },
-                'regular': 'spectrum : [a-zA-Z]* \{\}',
+                'regex': 'spectrum : [a-zA-Z]* \{\}',
                 'replace': 'spectrum : {} {{}}',
             },
             'integrator': {
@@ -44,9 +57,12 @@ renderer_settings = {
                     'WavePath': 'WavePath',
                     'MegaPath': 'MegaPath',
                 },
-                'regular': 'integrator : [a-zA-Z]* {',
+                'regex': 'integrator : [a-zA-Z]* {',
                 'replace': 'integrator : {} {{',
             },
+        },
+        'results_regex': {
+            'time': '\(([0-9a-zA-Z]*) | 100.0%\)',
         },
     },
     'Mitsuba2': {
@@ -54,36 +70,47 @@ renderer_settings = {
             'path': 'C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe',
             'spectrum': {
                 'name': {
-                    'RGB': 'sRGB',
-                    'Spectral': 'Hero',
+                    'RGB': 'gpu_rgb',
+                    'Spectral': 'gpu_spectral',
                 },
+                'order': '-m {}',
             },
+            'integrator': {
+                'name': {
+                    'WavePath': '',
+                    'MegaPath': '',
+                },
+                'order': '{}',
+            },
+            'device': 'undefined',
+            'output': '--output {}',
+            'appendix': '',
         },
         'scene_file': {
             'scene_file_name': 'scene.xml',
             'resolution': [
                 {
-                    'regular': '<integer name="width" value="[0-9]*" />',
+                    'regex': '<integer name="width" value="[0-9]*" />',
                     'replace': '<integer name="width" value="{}" />',
                 },
                 {
-                    'regular': '<integer name="height" value="[0-9]*" />',
+                    'regex': '<integer name="height" value="[0-9]*" />',
                     'replace': '<integer name="height" value="{}" />',
                 },
             ],
             'max_depth': {
-                'regular': '<integer name="maxDepth" value="[0-9]*" />',
+                'regex': '<integer name="maxDepth" value="[0-9]*" />',
                 'replace': '<integer name="maxDepth" value="{}" />',
             },
             'spp': {
-                'regular': '<integer name="sampleCount" value="[0-9]*" />',
+                'regex': '<integer name="sampleCount" value="[0-9]*" />',
                 'replace': '<integer name="sampleCount" value="{}" />',
             },
             'sampler': {
                 'name': {
                     'Independent': 'independent',
                 },
-                'regular': '<sampler type="[a-zA-Z]*" >',
+                'regex': '<sampler type="[a-zA-Z]*" >',
                 'replace': '<sampler type="{}" >',
             },
             'spectrum': 'undefined',
@@ -92,40 +119,60 @@ renderer_settings = {
                     'WavePath': 'path',
                     'MegaPath': 'undefined',
                 },
-                'regular': '<integrator type="[a-zA-Z]*" >',
+                'regex': '<integrator type="[a-zA-Z]*" >',
                 'replace': '<integrator type="{}" >',
             },
+        },
+        'results_regex': {
+            'time': 'Rendering finished. \(took ([0-9a-zA-Z]*)\)',
         },
     },
     'PBRT-v4': {
         'exe': {
             'path': 'C:/OldNew/Graphics-Lab/LuisaCompute/pbrt-v4/build-vs/Release/pbrt.exe',
+            'spectrum': {
+                'name': {
+                    'RGB': 'undefined',
+                    'Spectral': '',
+                },
+                'order': '{}',
+            },
+            'integrator': {
+                'name': {
+                    'WavePath': '--wavefront',
+                    'MegaPath': '',
+                },
+                'order': '{}',
+            },
+            'device': '--gpu-device {}',
+            'output': '{}',
+            'appendix': '',
         },
         'scene_file': {
             'scene_file_name': 'scene-v4.pbrt',
             'resolution': [
                 {
-                    'regular': '"integer xresolution" \[ [0-9]* \]',
+                    'regex': '"integer xresolution" \[ [0-9]* \]',
                     'replace': '"integer xresolution" [ {} ]',
                 },
                 {
-                    'regular': '"integer yresolution" \[ [0-9]* \]',
+                    'regex': '"integer yresolution" \[ [0-9]* \]',
                     'replace': '"integer yresolution" [ {} ]',
                 },
             ],
             'max_depth': {
-                'regular': '"integer maxdepth" \[ [0-9]* \]',
+                'regex': '"integer maxdepth" \[ [0-9]* \]',
                 'replace': '"integer maxdepth" [ {} ]',
             },
             'spp': {
-                'regular': '"integer pixelsamples" \[ [0-9]* \]',
+                'regex': '"integer pixelsamples" \[ [0-9]* \]',
                 'replace': '"integer pixelsamples" [ {} ]',
             },
             'sampler': {
                 'name': {
                     'Independent': 'independent',
                 },
-                'regular': 'Sampler "[a-zA-Z]*"',
+                'regex': 'Sampler "[a-zA-Z]*"',
                 'replace': 'Sampler "{}"',
             },
             'spectrum': 'undefined',
@@ -134,43 +181,72 @@ renderer_settings = {
                     'WavePath': 'path',
                     'MegaPath': 'undefined',
                 },
-                'regular': 'Integrator "[a-zA-Z]*"',
+                'regex': 'Integrator "[a-zA-Z]*"',
                 'replace': 'Integrator "{}"',
             },
+        },
+        'results_regex': {
+            'time': 'Rendering finished. \(took ([0-9a-zA-Z]*)\)',
         },
     },
 }
 
 target_settings = {
     'renderer': [
-        # 'LuisaRender',
+        'LuisaRender',
         'Mitsuba2',
         'PBRT-v4',
     ],
-    'scene': [
-        'classroom',
-        'coffee',
-        'dining-room',
-        'glass-of-water',
-        'living-room',
-        'spaceship',
-    ],
+    'scene': {
+        'classroom': {
+            'resolution': [
+                (1920, 1080),
+            ],
+        },
+        'coffee': {
+            'resolution': [
+                (800, 1000),
+            ],
+        },
+        'dining-room': {
+            'resolution': [
+                (1920, 1080),
+            ],
+        },
+        'glass-of-water': {
+            'resolution': [
+                (1920, 1080),
+            ],
+        },
+        'living-room': {
+            'resolution': [
+                (1920, 1080),
+            ],
+        },
+        'spaceship': {
+            'resolution': [
+                (1920, 1080),
+            ],
+        },
+        'staircase': {
+            'resolution': [
+                (720, 1280),
+            ],
+        },
+    },
     'integrator': [
         'WavePath',
         'MegaPath',
     ],
-    'spp': [
-        4096,
+    'spectrum': [
+        'RGB',
+        'Spectral',
     ],
     'sampler': [
         'Independent',
     ],
-    'resolution': [
-        (1920, 1080),
-    ],
-    'spectrum': [
-        'RGB',
-        'Spectral',
+    'spp': [
+        4096,
     ],
     'max_depth': [
         12,
@@ -178,54 +254,105 @@ target_settings = {
     ],
 }
 
-if __name__ == '__main__':
+
+def test_targets():
+    results = []
+
     for renderer in target_settings['renderer']:
-        render_directory = os.path.join(os.path.realpath(os.path.dirname(os.path.dirname(__file__))), renderer)
+        render_directory = os.path.join(os.path.realpath(os.path.dirname(__file__)), renderer)
         settings = renderer_settings[renderer]
         exe_path = settings['exe']['path']
-        working_directory = os.path.dirname(exe_path)
-        for scene_name in target_settings['scene']:
+        order_exe = exe_path + ' ' + settings['exe']['appendix']
+
+        for scene_name, scene_targets in target_settings['scene'].items():
             scene_directory = os.path.join(render_directory, scene_name)
             scene_file_settings = settings['scene_file']
             scene_file_path = os.path.join(scene_directory, scene_file_settings['scene_file_name'])
             with open(scene_file_path, 'r') as scene_file:
                 scene = scene_file.read()
+            order_scene = order_exe + ' ' + scene_file_path
+
             for integrator in target_settings['integrator']:
                 integrator_name = scene_file_settings['integrator']['name'][integrator]
                 if integrator_name == 'undefined':
                     continue
-                scene = re.sub(scene_file_settings['integrator']['regular'],
+                scene = re.sub(scene_file_settings['integrator']['regex'],
                                scene_file_settings['integrator']['replace'].
                                format(integrator_name), scene)
-                for spp in target_settings['spp']:
-                    scene = re.sub(scene_file_settings['spp']['regular'], scene_file_settings['spp']['replace'].
-                                   format(spp), scene)
-                    for sampler in target_settings['sampler']:
-                        scene = re.sub(scene_file_settings['sampler']['regular'],
-                                       scene_file_settings['sampler']['replace'].
-                                       format(scene_file_settings['sampler']['name'][sampler]), scene)
-                        for resolution in target_settings['resolution']:
-                            # deal with different resolution format
-                            if len(scene_file_settings['resolution']) == 2:
-                                for i in range(2):
-                                    scene = re.sub(scene_file_settings['resolution'][i]['regular'],
-                                                   scene_file_settings['resolution'][i]['replace'].
-                                                   format(resolution[i]), scene)
-                            elif len(scene_file_settings['resolution']) == 1:
-                                scene = re.sub(scene_file_settings['resolution'][0]['regular'],
-                                               scene_file_settings['resolution'][0]['replace'].
-                                               format('{}, {}'.format(resolution[0], resolution[1])), scene)
-                            else:
-                                raise Exception('wrong resolution channels')
+                order_integrator = order_scene + ' ' + settings['exe']['integrator']['order'].format(
+                    settings['exe']['integrator']['name'][integrator])
+
+                for sampler in target_settings['sampler']:
+                    scene = re.sub(scene_file_settings['sampler']['regex'],
+                                   scene_file_settings['sampler']['replace'].
+                                   format(scene_file_settings['sampler']['name'][sampler]), scene)
+
+                    for resolution in scene_targets['resolution']:
+                        # deal with different resolution format
+                        if len(scene_file_settings['resolution']) == 2:
+                            for i in range(2):
+                                scene = re.sub(scene_file_settings['resolution'][i]['regex'],
+                                               scene_file_settings['resolution'][i]['replace'].
+                                               format(resolution[i]), scene)
+                        elif len(scene_file_settings['resolution']) == 1:
+                            scene = re.sub(scene_file_settings['resolution'][0]['regex'],
+                                           scene_file_settings['resolution'][0]['replace'].
+                                           format('{}, {}'.format(resolution[0], resolution[1])), scene)
+                        else:
+                            raise Exception('wrong resolution channels')
+
+                        for spp in target_settings['spp']:
+                            scene = re.sub(scene_file_settings['spp']['regex'], scene_file_settings['spp']['replace'].
+                                           format(spp), scene)
+
                             for max_depth in target_settings['max_depth']:
-                                scene = re.sub(scene_file_settings['max_depth']['regular'],
+                                scene = re.sub(scene_file_settings['max_depth']['regex'],
                                                scene_file_settings['max_depth']['replace'].
                                                format(max_depth), scene)
-                                # TODO: deal with different spectrum format: scene/cmd
+
                                 for spectrum in target_settings['spectrum']:
+                                    # deal with different spectrum format: scene/cmd
+                                    order_spectrum = order_integrator
                                     if scene_file_settings['spectrum'] != 'undefined':
-                                        scene = re.sub(scene_file_settings['spectrum']['regular'],
+                                        scene = re.sub(scene_file_settings['spectrum']['regex'],
                                                        scene_file_settings['spectrum']['replace'].
                                                        format(scene_file_settings['spectrum']['name'][spectrum]), scene)
-                                    print(scene)
-                                    exit(0)
+                                    else:
+                                        spectrum_name = settings['exe']['spectrum']['name'][spectrum]
+                                        if spectrum_name == 'undefined':
+                                            continue
+                                        order_spectrum += ' ' + settings['exe']['spectrum']['order'].format(
+                                            spectrum_name)
+
+                                    order_device = order_spectrum
+                                    if settings['exe']['device'] != 'undefined':
+                                        order_device += ' ' + settings['exe']['device'].format(0)
+
+                                    order_final = order_device
+
+                                    scene_file_path_new = 'scene_{}_{}_{}*{}_{}spp_{}max_depth_{}'.format(
+                                        integrator, sampler, resolution[0], resolution[1], spp, max_depth, spectrum
+                                    )
+                                    scene_file_path_new = os.path.join(os.path.dirname(scene_file_path),
+                                                                       scene_file_path_new)
+                                    with open(scene_file_path_new, 'w') as f:
+                                        f.write(order_final)
+
+                                    with os.popen(order_final) as f:
+                                        output_info = f.readlines()
+                                    time = re.search(settings['results_regex']['time'], output_info)
+
+                                    result = \
+                                        '{} {} {} sampler={} resolution=({}, {}) spp={} max_depth={} {} time={}'.format(
+                                            renderer, scene_name, integrator,
+                                            sampler, resolution[0], resolution[1],
+                                            spp, max_depth, spectrum, time)
+
+                                    results.append(result)
+
+    with open(os.path.join(os.path.dirname(__file__), 'results.txt'), 'w') as f:
+        f.writelines(results)
+
+
+if __name__ == '__main__':
+    test_targets()
