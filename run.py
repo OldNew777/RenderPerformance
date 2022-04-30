@@ -202,7 +202,7 @@ renderer_settings = {
 
 target_settings = {
     'renderer': [
-        # 'LuisaRender',
+        'LuisaRender',
         'Mitsuba2',
         'PBRT-v4',
     ],
@@ -275,6 +275,9 @@ target_settings = {
 def test_targets():
     results = []
     results_save_file_path = os.path.join(os.path.dirname(__file__), 'outputs', 'results.csv')
+    scene = ['' for i in range(100)]
+    order = ['' for i in range(100)]
+
     with open(results_save_file_path, 'w', newline='') as f:
         # init results-saving file
         f_csv = csv.writer(f)
@@ -282,21 +285,17 @@ def test_targets():
                   'time consumption']
         f_csv.writerow(header)
 
-    scene = ['' for i in range(100)]
-    order = ['' for i in range(100)]
-
     for renderer in target_settings['renderer']:
         k = 0
 
-        render_directory = os.path.join(os.path.realpath(os.path.dirname(__file__)), renderer)
         settings = renderer_settings[renderer]
 
-        exe_path = settings['exe']['path']
-        order[k] = exe_path + ' ' + settings['exe']['appendix']
+        order[k] = settings['exe']['path'] + ' ' + settings['exe']['appendix']
 
         for scene_name, scene_targets in target_settings['scene'].items():
             k = 1
 
+            render_directory = os.path.join(os.path.realpath(os.path.dirname(__file__)), renderer)
             scene_directory = os.path.join(render_directory, scene_name)
             scene_file_settings = settings['scene_file']
             scene_file_path = os.path.join(scene_directory, scene_file_settings['scene_file_name'])
