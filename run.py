@@ -202,7 +202,7 @@ renderer_settings = {
 
 target_settings = {
     'renderer': [
-        'LuisaRender',
+        # 'LuisaRender',
         'Mitsuba2',
         'PBRT-v4',
     ],
@@ -255,19 +255,15 @@ target_settings = {
         'Independent',
     ],
     'spp': [
-        4,
         16,
         64,
         256,
         1024,
         4096,
-        9192,
     ],
     'max_depth': [
-        8,
         12,
         16,
-        20,
     ],
 }
 
@@ -275,6 +271,8 @@ target_settings = {
 def test_targets():
     results = []
     results_save_file_path = os.path.join(os.path.dirname(__file__), 'outputs', 'results.csv')
+    errors_save_file_path = os.path.join(os.path.dirname(__file__), 'outputs', 'errors.txt')
+    error_index = 0
     scene = ['' for i in range(100)]
     order = ['' for i in range(100)]
 
@@ -284,6 +282,9 @@ def test_targets():
         header = ['render', 'scene', 'integrator', 'sampler', 'resolution', 'spp', 'max depth', 'spectrum',
                   'time consumption']
         f_csv.writerow(header)
+    with open(errors_save_file_path, 'w') as f:
+        # init errors-saving file
+        pass
 
     for renderer in target_settings['renderer']:
         k = 0
@@ -337,7 +338,7 @@ def test_targets():
                         elif len(scene_file_settings['resolution']) == 1:
                             scene[k] = re.sub(scene_file_settings['resolution'][0]['regex'],
                                               scene_file_settings['resolution'][0]['replace'].
-                                              format('{}, {}'.format(resolution[0], resolution[1])), scene[k])
+                                              format(f'{resolution[0]}, {resolution[1]}'), scene[k])
                         else:
                             raise Exception('wrong resolution channels')
                         order[k] = order[k - 1]
@@ -377,10 +378,10 @@ def test_targets():
                                             spectrum_name)
 
                                     # output file
-                                    output_file_name = '{}-{}-{}-{}-{}_{}-{}spp-{}max_depth-{}'.format(
-                                        renderer, scene_name, integrator, sampler, resolution[0], resolution[1], spp,
-                                        max_depth, spectrum
-                                    )
+                                    output_file_name = f'{renderer}-{scene_name}-{integrator}-{sampler}-' \
+                                                       f'{resolution[0]}_{resolution[1]}-{spp}spp-' \
+                                                       f'{max_depth}max_depth-{spectrum}'
+
                                     output_file_name = os.path.dirname(__file__) + '/outputs/' + output_file_name
                                     scene[k] = re.sub(scene_file_settings['output_file']['regex'],
                                                       scene_file_settings['output_file']['replace'].format(
@@ -391,9 +392,9 @@ def test_targets():
                                         order[k] += ' ' + settings['exe']['device'].format(0)
 
                                     # new scene file
-                                    scene_file_path_new = 'scene-{}-{}-{}_{}-{}spp-{}max_depth-{}'.format(
-                                        integrator, sampler, resolution[0], resolution[1], spp, max_depth, spectrum
-                                    )
+                                    scene_file_path_new = f'scene-{integrator}-{sampler}-' \
+                                                          f'{resolution[0]}_{resolution[1]}-{spp}spp-' \
+                                                          f'{max_depth}max_depth-{spectrum}'
                                     scene_file_path_new = os.path.join(os.path.dirname(scene_file_path),
                                                                        scene_file_path_new) + \
                                                           os.path.splitext(scene_file_settings['scene_file_name'])[-1]
@@ -407,11 +408,19 @@ def test_targets():
                                     # render
                                     with os.popen(order[k]) as f:
                                         output_info = f.read()
-                                    time = re.search(settings['results_regex']['time'], output_info).group(1)
+                                    try:
+                                        time = re.search(settings['results_regex']['time'], output_info).group(1)
+                                    except:
+                                        time = 'Error'
+                                        error_text = f'Error {error_index}: \n{output_info}\n\n'
+                                        print(error_text)
+                                        with open(errors_save_file_path, 'a') as f:
+                                            f.write(error_text)
+                                            error_index += 1
 
                                     result = [
                                         renderer, scene_name, integrator,
-                                        sampler, '({}, {})'.format(resolution[0], resolution[1]),
+                                        sampler, f'({resolution[0]}, {resolution[1]})',
                                         spp, max_depth, spectrum, time]
 
                                     results.append(result)
