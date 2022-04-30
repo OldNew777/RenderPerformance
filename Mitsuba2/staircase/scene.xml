@@ -2,7 +2,7 @@
 <scene version="2.2.1">
     <integrator type="path">
         <integer name="max_depth" value="12" />
-        <integer name="samples_per_pass" value="16" />
+        <integer name="samples_per_pass" value="4" />
     </integrator>
     <sensor type="perspective">
         <float name="fov" value="35" />
@@ -13,7 +13,7 @@
             <integer name="sample_count" value="64" />
         </sampler>
         <film type="hdrfilm">
-            <string name="filename" value="scene.exr" />
+            <string name="filename" value="output.exr" />
             <integer name="width" value="1280" />
             <integer name="height" value="720" />
             <string name="file_format" value="openexr" />

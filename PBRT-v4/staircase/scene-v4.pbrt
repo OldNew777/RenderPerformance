@@ -3,11 +3,11 @@ Integrator "path"
 Transform [ 0.999971 0.000344842 -0.00764602 -0 -2.91038e-11 0.998985 0.045055 -0 -0.00765379 0.0450537 -0.998955 -0 0.00494559 -1.74514 4.80833 1  ]
 Sampler "sobol"
     "integer pixelsamples" [ 64 ]
-PixelFilter "triangle"
+PixelFilter "gaussian"
     "float xradius" [ 1 ]
     "float yradius" [ 1 ]
 Film "rgb"
-    "string filename" [ "staircase.png" ]
+    "string filename" [ "output.exr" ]
     "integer yresolution" [ 1280 ]
     "integer xresolution" [ 720 ]
 Camera "perspective"

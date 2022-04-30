@@ -2,3 +2,13 @@
 *.exr
 */*/models/*
 */*/textures/*
+
+set_accel_kernel
+
+*.luisa
+*.pbrt
+*.xml
+
+!*/*/scene.luisa
+!*/*/scene.xml
+!*/*/scene-v4.pbrt

@@ -1,5 +1,6 @@
 import os
 import re
+import csv
 
 renderer_settings = {
     'LuisaRender': {
@@ -62,7 +63,7 @@ renderer_settings = {
             },
         },
         'results_regex': {
-            'time': '\(([0-9a-zA-Z]*) | 100.0%\)',
+            'time': '\(([0-9a-zA-Z\.]*) \| 100\.0%\)',
         },
     },
     'Mitsuba2': {
@@ -128,7 +129,7 @@ renderer_settings = {
             },
         },
         'results_regex': {
-            'time': 'Rendering finished\. \(took ([0-9a-zA-Z]*)\)',
+            'time': 'Rendering finished\. \(took ([0-9a-zA-Z\.]*)\)',
         },
     },
     'PBRT-v4': {
@@ -194,14 +195,14 @@ renderer_settings = {
             },
         },
         'results_regex': {
-            'time': 'Rendering finished\. \(took ([0-9a-zA-Z]*)\)',
+            'time': 'Rendering: \[[\+]*\]  \(([0-9a-zA-Z\.]*)\)',
         },
     },
 }
 
 target_settings = {
     'renderer': [
-        'LuisaRender',
+        # 'LuisaRender',
         'Mitsuba2',
         'PBRT-v4',
     ],
@@ -254,96 +255,141 @@ target_settings = {
         'Independent',
     ],
     'spp': [
+        4,
+        16,
+        64,
+        256,
+        1024,
         4096,
+        9192,
     ],
     'max_depth': [
+        8,
         12,
         16,
+        20,
     ],
 }
 
 
 def test_targets():
     results = []
+    results_save_file_path = os.path.join(os.path.dirname(__file__), 'outputs', 'results.csv')
+    with open(results_save_file_path, 'w', newline='') as f:
+        # init results-saving file
+        f_csv = csv.writer(f)
+        header = ['render', 'scene', 'integrator', 'sampler', 'resolution', 'spp', 'max depth', 'spectrum',
+                  'time consumption']
+        f_csv.writerow(header)
+
+    scene = ['' for i in range(100)]
+    order = ['' for i in range(100)]
 
     for renderer in target_settings['renderer']:
+        k = 0
+
         render_directory = os.path.join(os.path.realpath(os.path.dirname(__file__)), renderer)
         settings = renderer_settings[renderer]
+
         exe_path = settings['exe']['path']
-        order_exe = exe_path + ' ' + settings['exe']['appendix']
+        order[k] = exe_path + ' ' + settings['exe']['appendix']
 
         for scene_name, scene_targets in target_settings['scene'].items():
+            k = 1
+
             scene_directory = os.path.join(render_directory, scene_name)
             scene_file_settings = settings['scene_file']
             scene_file_path = os.path.join(scene_directory, scene_file_settings['scene_file_name'])
+
             with open(scene_file_path, 'r') as scene_file:
-                scene = scene_file.read()
+                scene[k] = scene_file.read()
+            order[k] = order[k - 1]
 
             for integrator in target_settings['integrator']:
+                k = 2
+
                 integrator_name = scene_file_settings['integrator']['name'][integrator]
                 if integrator_name == 'undefined':
                     continue
-                scene = re.sub(scene_file_settings['integrator']['regex'],
-                               scene_file_settings['integrator']['replace'].
-                               format(integrator_name), scene)
-                order_integrator = order_exe + ' ' + settings['exe']['integrator']['order'].format(
+                scene[k] = re.sub(scene_file_settings['integrator']['regex'],
+                                  scene_file_settings['integrator']['replace'].
+                                  format(integrator_name), scene[k - 1])
+                order[k] = order[k - 1] + ' ' + settings['exe']['integrator']['order'].format(
                     settings['exe']['integrator']['name'][integrator])
 
                 for sampler in target_settings['sampler']:
-                    scene = re.sub(scene_file_settings['sampler']['regex'],
-                                   scene_file_settings['sampler']['replace'].
-                                   format(scene_file_settings['sampler']['name'][sampler]), scene)
+                    k = 3
+
+                    scene[k] = re.sub(scene_file_settings['sampler']['regex'],
+                                      scene_file_settings['sampler']['replace'].
+                                      format(scene_file_settings['sampler']['name'][sampler]), scene[k - 1])
+                    order[k] = order[k - 1]
 
                     for resolution in scene_targets['resolution']:
+                        k = 4
+
                         # deal with different resolution format
+                        scene[k] = scene[k - 1]
                         if len(scene_file_settings['resolution']) == 2:
                             for i in range(2):
-                                scene = re.sub(scene_file_settings['resolution'][i]['regex'],
-                                               scene_file_settings['resolution'][i]['replace'].
-                                               format(resolution[i]), scene)
+                                scene[k] = re.sub(scene_file_settings['resolution'][i]['regex'],
+                                                  scene_file_settings['resolution'][i]['replace'].
+                                                  format(resolution[i]), scene[k])
                         elif len(scene_file_settings['resolution']) == 1:
-                            scene = re.sub(scene_file_settings['resolution'][0]['regex'],
-                                           scene_file_settings['resolution'][0]['replace'].
-                                           format('{}, {}'.format(resolution[0], resolution[1])), scene)
+                            scene[k] = re.sub(scene_file_settings['resolution'][0]['regex'],
+                                              scene_file_settings['resolution'][0]['replace'].
+                                              format('{}, {}'.format(resolution[0], resolution[1])), scene[k])
                         else:
                             raise Exception('wrong resolution channels')
+                        order[k] = order[k - 1]
 
                         for spp in target_settings['spp']:
-                            scene = re.sub(scene_file_settings['spp']['regex'], scene_file_settings['spp']['replace'].
-                                           format(spp), scene)
+                            k = 5
+
+                            scene[k] = re.sub(scene_file_settings['spp']['regex'],
+                                              scene_file_settings['spp']['replace'].
+                                              format(spp), scene[k - 1])
+                            order[k] = order[k - 1]
 
                             for max_depth in target_settings['max_depth']:
-                                scene = re.sub(scene_file_settings['max_depth']['regex'],
-                                               scene_file_settings['max_depth']['replace'].
-                                               format(max_depth), scene)
+                                k = 6
+
+                                scene[k] = re.sub(scene_file_settings['max_depth']['regex'],
+                                                  scene_file_settings['max_depth']['replace'].
+                                                  format(max_depth), scene[k - 1])
+                                order[k] = order[k - 1]
 
                                 for spectrum in target_settings['spectrum']:
+                                    k = 7
+
                                     # deal with different spectrum format: scene/cmd
-                                    order_spectrum = order_integrator
+                                    scene[k] = scene[k - 1]
+                                    order[k] = order[k - 1]
                                     if scene_file_settings['spectrum'] != 'undefined':
-                                        scene = re.sub(scene_file_settings['spectrum']['regex'],
-                                                       scene_file_settings['spectrum']['replace'].
-                                                       format(scene_file_settings['spectrum']['name'][spectrum]), scene)
+                                        scene[k] = re.sub(scene_file_settings['spectrum']['regex'],
+                                                          scene_file_settings['spectrum']['replace'].
+                                                          format(scene_file_settings['spectrum']['name'][spectrum]),
+                                                          scene[k])
                                     else:
                                         spectrum_name = settings['exe']['spectrum']['name'][spectrum]
                                         if spectrum_name == 'undefined':
                                             continue
-                                        order_spectrum += ' ' + settings['exe']['spectrum']['order'].format(
+                                        order[k] += ' ' + settings['exe']['spectrum']['order'].format(
                                             spectrum_name)
 
                                     # output file
-                                    output_file_name = 'output-{}-{}-{}_{}-{}spp-{}max_depth-{}'.format(
-                                        integrator, sampler, resolution[0], resolution[1], spp, max_depth, spectrum
+                                    output_file_name = '{}-{}-{}-{}-{}_{}-{}spp-{}max_depth-{}'.format(
+                                        renderer, scene_name, integrator, sampler, resolution[0], resolution[1], spp,
+                                        max_depth, spectrum
                                     )
                                     output_file_name = os.path.dirname(__file__) + '/outputs/' + output_file_name
-                                    scene = re.sub(scene_file_settings['output_file']['regex'],
-                                                   scene_file_settings['output_file']['replace'].format(
-                                                       output_file_name), scene)
+                                    scene[k] = re.sub(scene_file_settings['output_file']['regex'],
+                                                      scene_file_settings['output_file']['replace'].format(
+                                                          output_file_name), scene[k])
 
                                     # device
-                                    order_device = order_spectrum
                                     if settings['exe']['device'] != 'undefined':
-                                        order_device += ' ' + settings['exe']['device'].format(0)
+                                        order[k] += ' ' + settings['exe']['device'].format(0)
 
                                     # new scene file
                                     scene_file_path_new = 'scene-{}-{}-{}_{}-{}spp-{}max_depth-{}'.format(
@@ -353,30 +399,34 @@ def test_targets():
                                                                        scene_file_path_new) + \
                                                           os.path.splitext(scene_file_settings['scene_file_name'])[-1]
                                     with open(scene_file_path_new, 'w') as f:
-                                        f.write(scene)
+                                        f.write(scene[k])
 
                                     # real scene
-                                    order_scene = order_device + ' ' + scene_file_path_new
-
-                                    order_final = order_scene
-                                    print(order_final)
+                                    order[k] += ' ' + scene_file_path_new
+                                    print(order[k])
 
                                     # render
-                                    with os.popen(order_final) as f:
+                                    with os.popen(order[k]) as f:
                                         output_info = f.read()
-                                    time = re.search(settings['results_regex']['time'], output_info)
+                                    time = re.search(settings['results_regex']['time'], output_info).group(1)
 
-                                    result = \
-                                        '{} {} {} sampler={} resolution=({}, {}) spp={} max_depth={} {} time={}'.format(
-                                            renderer, scene_name, integrator,
-                                            sampler, resolution[0], resolution[1],
-                                            spp, max_depth, spectrum, time)
+                                    result = [
+                                        renderer, scene_name, integrator,
+                                        sampler, '({}, {})'.format(resolution[0], resolution[1]),
+                                        spp, max_depth, spectrum, time]
 
                                     results.append(result)
                                     print(result)
+                                    with open(results_save_file_path, 'a', newline='') as f:
+                                        f_csv = csv.writer(f)
+                                        f_csv.writerow(result)
 
-    with open(os.path.join(os.path.dirname(__file__), 'outputs', 'results.txt'), 'w') as f:
-        f.writelines(results)
+    print('==================== results ====================')
+    print(results)
+    with open(results_save_file_path, 'w', newline='') as f:
+        f_csv = csv.writer(f)
+        f_csv.writerow(results)
+    print('==================== results ====================')
 
 
 if __name__ == '__main__':

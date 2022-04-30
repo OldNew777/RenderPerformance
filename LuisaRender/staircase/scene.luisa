@@ -10305,7 +10305,7 @@ Camera camera0 : Pinhole {
   film : Color {
     resolution { 720, 1280 }
   }
-  file { "staircase0.exr" }
+  file { "output.exr" }
 }
 
 Camera camera1 : Pinhole {

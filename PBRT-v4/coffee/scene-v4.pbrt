@@ -3,11 +3,11 @@ Integrator "path"
 Transform [ 0.999974 0.000285892 0.00726552 -0 -0 0.999227 -0.0393187 -0 0.00727114 -0.0393177 -0.9992 -0 -0.00306164 -0.165588 0.835307 1  ]
 Sampler "sobol"
     "integer pixelsamples" [ 64 ]
-PixelFilter "triangle"
+PixelFilter "gaussian"
     "float xradius" [ 1 ]
     "float yradius" [ 1 ]
 Film "rgb"
-    "string filename" [ "coffee.png" ]
+    "string filename" [ "output.exr" ]
     "integer yresolution" [ 1000 ]
     "integer xresolution" [ 800 ]
 Camera "perspective"

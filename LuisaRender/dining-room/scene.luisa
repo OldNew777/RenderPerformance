@@ -862,7 +862,7 @@ Camera camera : Pinhole {
   film : Color {
     resolution { 3840, 2160 }
   }
-  file { "render.exr" }
+  file { "output.exr" }
 }
 
 render {

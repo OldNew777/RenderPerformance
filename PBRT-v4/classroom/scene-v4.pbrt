@@ -3,11 +3,11 @@ Integrator "path"
 Transform [ 0.988479 -0.00428443 0.151294 -0 -0 0.999599 0.0283071 -0 0.151355 0.027981 -0.988083 -0 0.780055 -1.44302 6.03615 1  ]
 Sampler "sobol"
     "integer pixelsamples" [ 64 ]
-PixelFilter "triangle"
+PixelFilter "gaussian"
     "float xradius" [ 1 ]
     "float yradius" [ 1 ]
 Film "rgb"
-    "string filename" [ "classroom.png" ]
+    "string filename" [ "output.exr" ]
     "integer yresolution" [ 1080 ]
     "integer xresolution" [ 1920 ]
 Camera "perspective"

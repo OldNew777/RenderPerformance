@@ -3,11 +3,11 @@ Integrator "path"
 Transform [ 0.999914 0.000835626 0.013058 -0 -0 0.997959 -0.063863 -0 0.0130847 -0.0638576 -0.997873 -0 0.460159 -2.13584 9.87771 1  ]
 Sampler "sobol"
     "integer pixelsamples" [ 64 ]
-PixelFilter "triangle"
+PixelFilter "gaussian"
     "float xradius" [ 1 ]
     "float yradius" [ 1 ]
 Film "rgb"
-    "string filename" [ "dining-room.png" ]
+    "string filename" [ "output.exr" ]
     "integer yresolution" [ 720 ]
     "integer xresolution" [ 1280 ]
 Camera "perspective"
