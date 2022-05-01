@@ -1,7 +1,8 @@
 import os
 import re
-import csv
+
 from mylogger import *
+from result_recorder import Recorder
 
 renderer_settings = {
     'LuisaRender': {
@@ -318,12 +319,10 @@ def test_targets():
     if not os.path.exists(output_picture_dir):
         os.makedirs(output_picture_dir)
 
-    with open(results_save_file_path, 'w', newline='') as f:
-        # init results-saving file
-        f_csv = csv.writer(f)
-        header = ['render', 'scene', 'backend', 'integrator', 'sampler', 'resolution', 'spp', 'max depth', 'spectrum',
-                  'time consumption']
-        f_csv.writerow(header)
+    recorder = Recorder(results_save_file_path)
+    headers = ['render', 'scene', 'backend', 'integrator', 'sampler', 'resolution',
+               'spp', 'max depth', 'spectrum', 'time consumption']
+    recorder.init(headers)
 
     # clear_log_file()
     logger.info('')
@@ -480,9 +479,7 @@ def test_targets():
 
                                         results.append(result)
                                         logger.info(result)
-                                        with open(results_save_file_path, 'a', newline='') as f:
-                                            f_csv = csv.writer(f)
-                                            f_csv.writerow(result)
+                                        recorder.write_row(result)
 
     logger.info('#################### results ####################')
     logger.info(results)

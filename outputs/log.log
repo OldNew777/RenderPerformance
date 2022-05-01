@@ -1,0 +1,17 @@
+[2022-05-01 17:41:41]      INFO      
+[2022-05-01 17:41:41]      INFO      ===================== start =====================
+[2022-05-01 17:41:41]      INFO      C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe    -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-RGB.luisa
+[2022-05-01 17:42:37]      INFO      ['LuisaRender', 'classroom', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '54.4s']
+[2022-05-01 17:42:37]      INFO      C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe    -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-RGB.luisa
+[2022-05-01 17:43:23]      INFO      ['LuisaRender', 'classroom', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '42.6s']
+[2022-05-01 17:43:23]      INFO      C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe    -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.luisa
+[2022-05-01 17:45:04]      INFO      ['LuisaRender', 'classroom', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '84.7s']
+[2022-05-01 17:45:04]      INFO      C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe    -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.luisa
+[2022-05-01 17:46:10]      INFO      ['LuisaRender', 'classroom', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '60.6s']
+[2022-05-01 17:46:10]      INFO      C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe    -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-RGB.luisa
+[2022-05-01 17:47:38]      INFO      ['LuisaRender', 'classroom', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '75.8s']
+[2022-05-01 17:47:38]      INFO      C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe    -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-RGB.luisa
+[2022-05-01 17:48:38]      INFO      ['LuisaRender', 'classroom', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '55.9s']
+[2022-05-01 17:48:38]      INFO      C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe    -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-Spectral.luisa
+[2022-05-01 17:50:45]      INFO      ['LuisaRender', 'classroom', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '111.1s']
+[2022-05-01 17:50:45]      INFO      C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe    -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-Spectral.luisa

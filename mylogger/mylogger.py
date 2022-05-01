@@ -9,7 +9,7 @@ def clear_log_file():
         pass
 
 
-log_format = '%(asctime)-27s%(levelname)-10s%(message)s'
+log_format = '%[(asctime)s%] [(levelname)s] %(message)s'
 date_format = '[%Y-%m-%d %H:%M:%S]'
 formatter = logging.Formatter(fmt=log_format, datefmt=date_format)
 
