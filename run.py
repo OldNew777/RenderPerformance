@@ -203,41 +203,44 @@ renderer_settings = {
 
 target_settings = {
     'renderer': [
-        'LuisaRender',
+        # 'LuisaRender',
         'Mitsuba2',
-        'PBRT-v4',
+        # 'PBRT-v4',
     ],
     'scene': {
+        # wrong cases with mitsuba2
         # 'classroom': {
         #     'resolution': [
         #         (1920, 1080),
         #     ],
         # },
-        'coffee': {
-            'resolution': [
-                (800, 1000),
-            ],
-        },
         # 'dining-room': {
         #     'resolution': [
         #         (1920, 1080),
         #     ],
         # },
-        'glass-of-water': {
-            'resolution': [
-                (1920, 1080),
-            ],
-        },
-        'living-room': {
-            'resolution': [
-                (1920, 1080),
-            ],
-        },
-        'spaceship': {
-            'resolution': [
-                (1920, 1080),
-            ],
-        },
+
+        # right cases
+        # 'coffee': {
+        #     'resolution': [
+        #         (800, 1000),
+        #     ],
+        # },
+        # 'glass-of-water': {
+        #     'resolution': [
+        #         (1920, 1080),
+        #     ],
+        # },
+        # 'living-room': {
+        #     'resolution': [
+        #         (1920, 1080),
+        #     ],
+        # },
+        # 'spaceship': {
+        #     'resolution': [
+        #         (1920, 1080),
+        #     ],
+        # },
         'staircase': {
             'resolution': [
                 (720, 1280),

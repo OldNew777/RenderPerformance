@@ -1,4 +1,1 @@
-[2022-05-01 15:17:11]      INFO      i = 8
-[2022-05-01 15:19:43]      ERROR     asojdfip
-[2022-05-01 15:20:25]      ERROR     asdohfoa
-[2022-05-01 15:20:25]      INFO      asdohfoa
+[2022-05-01 15:42:25]      INFO      C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   -m gpu_rgb --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/Mitsuba2-staircase-WavePath-Independent-720_1280-1024spp-12max_depth-RGB.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\staircase\scene-WavePath-Independent-720_1280-1024spp-12max_depth-RGB.xml

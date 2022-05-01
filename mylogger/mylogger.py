@@ -9,11 +9,11 @@ def clear_log_file():
         pass
 
 
-LOG_FORMAT = '%(asctime)-27s%(levelname)-10s%(message)s'
-DATE_FORMAT = '[%Y-%m-%d %H:%M:%S]'
-formatter = logging.Formatter(fmt=LOG_FORMAT, datefmt=DATE_FORMAT)
+log_format = '%(asctime)-27s%(levelname)-10s%(message)s'
+date_format = '[%Y-%m-%d %H:%M:%S]'
+formatter = logging.Formatter(fmt=log_format, datefmt=date_format)
 
-logging.basicConfig(level=logging.DEBUG, format=LOG_FORMAT, datefmt=DATE_FORMAT)
+logging.basicConfig(level=logging.DEBUG, format=log_format, datefmt=date_format)
 
 logger = logging.getLogger(__file__)
 
