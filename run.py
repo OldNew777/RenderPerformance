@@ -104,12 +104,12 @@ renderer_settings = {
                 },
             ],
             'max_depth': {
-                'regex': '<integer name="maxDepth" value="[0-9]*" />',
-                'replace': '<integer name="maxDepth" value="{}" />',
+                'regex': '<integer name="max_depth" value="[0-9]*" />',
+                'replace': '<integer name="max_depth" value="{}" />',
             },
             'spp': {
-                'regex': '<integer name="sampleCount" value="[0-9]*" />',
-                'replace': '<integer name="sampleCount" value="{}" />',
+                'regex': '<integer name="sample_count" value="[0-9]*" />',
+                'replace': '<integer name="sample_count" value="{}" />',
             },
             'sampler': {
                 'name': {
