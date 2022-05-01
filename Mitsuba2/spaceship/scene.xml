@@ -2,6 +2,7 @@
 <scene version="2.2.1">
     <integrator type="path">
         <integer name="max_depth" value="12" />
+        <integer name="rr_depth" value="5" />
         <integer name="samples_per_pass" value="4" />
     </integrator>
     <sensor type="perspective">
