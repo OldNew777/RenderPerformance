@@ -15,7 +15,7 @@ renderer_settings = {
                 'order': '{}',
             },
             'device': '-d {}',
-            'output': 'undefined',
+            'output': '',
             'appendix': '-b dx',
         },
         'scene_file': {
@@ -150,7 +150,7 @@ renderer_settings = {
                 'order': '{}',
             },
             'device': '--gpu-device {}',
-            'output': '{}',
+            'output': '',
             'appendix': '',
         },
         'scene_file': {
@@ -203,7 +203,7 @@ renderer_settings = {
 target_settings = {
     'renderer': [
         # 'LuisaRender',
-        'Mitsuba2',
+        # 'Mitsuba2',
         'PBRT-v4',
     ],
     'scene': {
@@ -386,6 +386,7 @@ def test_targets():
                                     scene[k] = re.sub(scene_file_settings['output_file']['regex'],
                                                       scene_file_settings['output_file']['replace'].format(
                                                           output_file_name), scene[k])
+                                    order[k] += ' ' + settings['exe']['output'].format(output_file_name + '.exr')
 
                                     # device
                                     if settings['exe']['device'] != 'undefined':
