@@ -15,9 +15,18 @@ renderer_settings = {
                 },
                 'order': '{}',
             },
+            'backend': {
+                'name': {
+                    'cuda': 'cuda',
+                    'directX': 'dx',
+                    'metal': 'metal',
+                    'ispc': 'ispc',
+                },
+                'order': '-b {}',
+            },
             'device': '-d {}',
             'output': '',
-            'appendix': '-b dx',
+            'appendix': '',
         },
         'scene_file': {
             'scene_file_name': 'scene.luisa',
@@ -83,6 +92,15 @@ renderer_settings = {
                     'MegaPath': '',
                 },
                 'order': '{}',
+            },
+            'backend': {
+                'name': {
+                    'cuda': '',
+                    'directX': 'undefined',
+                    'metal': 'undefined',
+                    'ispc': 'undefined',
+                },
+                'order': '',
             },
             'device': 'undefined',
             'output': '--output {}',
@@ -150,7 +168,16 @@ renderer_settings = {
                 },
                 'order': '{}',
             },
-            'device': '--gpu --gpu-device {}',
+            'backend': {
+                'name': {
+                    'cuda': 'gpu',
+                    'directX': 'undefined',
+                    'metal': 'undefined',
+                    'ispc': 'undefined',
+                },
+                'order': '--{}',
+            },
+            'device': '--gpu-device {}',
             'output': '',
             'appendix': '',
         },
@@ -203,39 +230,46 @@ renderer_settings = {
 
 target_settings = {
     'renderer': [
-        # 'LuisaRender',
-        'Mitsuba2',
+        'LuisaRender',
+        # 'Mitsuba2',
         # 'PBRT-v4',
     ],
+    'backend': {
+        'cuda',
+        'directX',
+        # 'ispc',
+        # 'metal',
+        # 'vulkan',
+    },
     'scene': {
         # wrong cases with mitsuba2
-        # 'classroom': {
-        #     'resolution': [
-        #         (1920, 1080),
-        #     ],
-        # },
-        # 'dining-room': {
-        #     'resolution': [
-        #         (1920, 1080),
-        #     ],
-        # },
+        'classroom': {
+            'resolution': [
+                (1920, 1080),
+            ],
+        },
+        'dining-room': {
+            'resolution': [
+                (1920, 1080),
+            ],
+        },
 
         # right cases
-        # 'coffee': {
-        #     'resolution': [
-        #         (800, 1000),
-        #     ],
-        # },
-        # 'glass-of-water': {
-        #     'resolution': [
-        #         (1920, 1080),
-        #     ],
-        # },
-        # 'living-room': {
-        #     'resolution': [
-        #         (1920, 1080),
-        #     ],
-        # },
+        'coffee': {
+            'resolution': [
+                (800, 1000),
+            ],
+        },
+        'glass-of-water': {
+            'resolution': [
+                (1920, 1080),
+            ],
+        },
+        'living-room': {
+            'resolution': [
+                (1920, 1080),
+            ],
+        },
         'spaceship': {
             'resolution': [
                 (1920, 1080),
@@ -279,10 +313,15 @@ def test_targets():
     order = ['' for i in range(100)]
     error_index = 0
 
+    output_dir = os.path.dirname(__file__).replace('\\', '/') + '/outputs'
+    output_picture_dir = output_dir + '/pictures'
+    if not os.path.exists(output_picture_dir):
+        os.makedirs(output_picture_dir)
+
     with open(results_save_file_path, 'w', newline='') as f:
         # init results-saving file
         f_csv = csv.writer(f)
-        header = ['render', 'scene', 'integrator', 'sampler', 'resolution', 'spp', 'max depth', 'spectrum',
+        header = ['render', 'scene', 'backend', 'integrator', 'sampler', 'resolution', 'spp', 'max depth', 'spectrum',
                   'time consumption']
         f_csv.writerow(header)
 
@@ -378,60 +417,72 @@ def test_targets():
                                         spectrum_name = settings['exe']['spectrum']['name'][spectrum]
                                         if spectrum_name == 'undefined':
                                             continue
-                                        order[k] += ' ' + settings['exe']['spectrum']['order'].format(
-                                            spectrum_name)
+                                        order[k] += ' ' + settings['exe']['spectrum']['order'].format(spectrum_name)
 
-                                    # output file
-                                    output_file_name = f'{renderer}-{scene_name}-{integrator}-{sampler}-' \
-                                                       f'{resolution[0]}_{resolution[1]}-{spp}spp-' \
-                                                       f'{max_depth}max_depth-{spectrum}'
+                                    for backend in target_settings['backend']:
+                                        k = 8
 
-                                    output_file_name = os.path.dirname(__file__) + '/outputs/' + output_file_name
-                                    scene[k] = re.sub(scene_file_settings['output_file']['regex'],
-                                                      scene_file_settings['output_file']['replace'].format(
-                                                          output_file_name), scene[k])
-                                    order[k] += ' ' + settings['exe']['output'].format(output_file_name + '.exr')
+                                        scene[k] = scene[k - 1]
+                                        order[k] = order[k - 1]
 
-                                    # device
-                                    if settings['exe']['device'] != 'undefined':
-                                        order[k] += ' ' + settings['exe']['device'].format(0)
+                                        # output file
+                                        output_file_name = f'{renderer}-{scene_name}-{backend}-{integrator}-' \
+                                                           f'{sampler}-{resolution[0]}_{resolution[1]}-{spp}spp-' \
+                                                           f'{max_depth}max_depth-{spectrum}'
 
-                                    # new scene file
-                                    scene_file_path_new = f'scene-{integrator}-{sampler}-' \
-                                                          f'{resolution[0]}_{resolution[1]}-{spp}spp-' \
-                                                          f'{max_depth}max_depth-{spectrum}'
-                                    scene_file_path_new = os.path.join(os.path.dirname(scene_file_path),
-                                                                       scene_file_path_new) + \
-                                                          os.path.splitext(scene_file_settings['scene_file_name'])[-1]
-                                    with open(scene_file_path_new, 'w') as f:
-                                        f.write(scene[k])
+                                        output_file_name = output_picture_dir + '/' + output_file_name
+                                        scene[k] = re.sub(scene_file_settings['output_file']['regex'],
+                                                          scene_file_settings['output_file']['replace'].format(
+                                                              output_file_name), scene[k])
+                                        order[k] += ' ' + settings['exe']['output'].format(output_file_name + '.exr')
 
-                                    # real scene
-                                    order[k] += ' ' + scene_file_path_new
-                                    logger.info(order[k])
+                                        # new scene file confirmed
+                                        scene_file_path_new = f'scene-{integrator}-{sampler}-' \
+                                                              f'{resolution[0]}_{resolution[1]}-{spp}spp-' \
+                                                              f'{max_depth}max_depth-{spectrum}'
+                                        scene_file_path_new = os.path.join(os.path.dirname(scene_file_path),
+                                                                           scene_file_path_new) + \
+                                                              os.path.splitext(scene_file_settings['scene_file_name'])[
+                                                                  -1]
+                                        with open(scene_file_path_new, 'w') as f:
+                                            f.write(scene[k])
 
+                                        backend_name = settings['exe']['backend']['name'][backend]
+                                        if backend_name == 'undefined':
+                                            continue
+                                        order[k] += ' ' + settings['exe']['backend']['order'].format(backend_name)
 
-                                    # render
-                                    with os.popen(order[k]) as f:
-                                        output_info = f.read()
-                                    try:
-                                        time = re.search(settings['results_regex']['time'], output_info).group(1)
-                                    except:
-                                        time = 'Error'
-                                        error_text = f'Error {error_index}: \n{output_info}\n\n'
-                                        error_text += 1
-                                        logger.warning(error_text)
+                                        # device
+                                        if settings['exe']['device'] != 'undefined':
+                                            order[k] += ' ' + settings['exe']['device'].format(0)
 
-                                    result = [
-                                        renderer, scene_name, integrator,
-                                        sampler, f'({resolution[0]}, {resolution[1]})',
-                                        spp, max_depth, spectrum, time]
+                                        # target scene file
+                                        order[k] += ' ' + scene_file_path_new
 
-                                    results.append(result)
-                                    logger.info(result)
-                                    with open(results_save_file_path, 'a', newline='') as f:
-                                        f_csv = csv.writer(f)
-                                        f_csv.writerow(result)
+                                        # order confirmed
+                                        logger.info(order[k])
+
+                                        # render
+                                        with os.popen(order[k]) as f:
+                                            output_info = f.read()
+                                        try:
+                                            time = re.search(settings['results_regex']['time'], output_info).group(1)
+                                        except:
+                                            time = 'Error'
+                                            error_text = f'Error {error_index}: \n{output_info}\n\n'
+                                            error_index += 1
+                                            logger.warning(error_text)
+
+                                        result = [
+                                            renderer, scene_name, backend, integrator,
+                                            sampler, f'({resolution[0]}, {resolution[1]})',
+                                            spp, max_depth, spectrum, time]
+
+                                        results.append(result)
+                                        logger.info(result)
+                                        with open(results_save_file_path, 'a', newline='') as f:
+                                            f_csv = csv.writer(f)
+                                            f_csv.writerow(result)
 
     logger.info('#################### results ####################')
     logger.info(results)
