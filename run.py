@@ -481,6 +481,9 @@ def test_targets():
                                         logger.info(result)
                                         recorder.write_row(result)
 
+    while not recorder.flush():
+        pass
+
     logger.info('#################### results ####################')
     logger.info(results)
     logger.info('#################### results ####################')
