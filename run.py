@@ -231,8 +231,8 @@ renderer_settings = {
 
 target_settings = {
     'renderer': [
-        'LuisaRender',
-        # 'Mitsuba2',
+        # 'LuisaRender',
+        'Mitsuba2',
         # 'PBRT-v4',
     ],
     'backend': {
@@ -240,20 +240,19 @@ target_settings = {
         'directX',
         # 'ispc',
         # 'metal',
-        # 'vulkan',
     },
     'scene': {
-        # wrong cases with mitsuba2
-        'classroom': {
-            'resolution': [
-                (1920, 1080),
-            ],
-        },
-        'dining-room': {
-            'resolution': [
-                (1920, 1080),
-            ],
-        },
+        # # wrong cases with mitsuba2
+        # 'classroom': {
+        #     'resolution': [
+        #         (1920, 1080),
+        #     ],
+        # },
+        # 'dining-room': {
+        #     'resolution': [
+        #         (1920, 1080),
+        #     ],
+        # },
 
         # right cases
         'coffee': {
@@ -468,7 +467,7 @@ def test_targets():
                                             time = re.search(settings['results_regex']['time'], output_info).group(1)
                                         except:
                                             time = 'Error'
-                                            error_text = f'Error {error_index}: \n{output_info}\n\n'
+                                            error_text = f'Error {error_index}: \n{output_info}\n'
                                             error_index += 1
                                             logger.warning(error_text)
 
