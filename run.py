@@ -236,11 +236,11 @@ target_settings = {
         #         (1920, 1080),
         #     ],
         # },
-        # 'spaceship': {
-        #     'resolution': [
-        #         (1920, 1080),
-        #     ],
-        # },
+        'spaceship': {
+            'resolution': [
+                (1920, 1080),
+            ],
+        },
         'staircase': {
             'resolution': [
                 (720, 1280),
@@ -277,6 +277,7 @@ def test_targets():
     results_save_file_path = os.path.join(os.path.dirname(__file__), 'outputs', 'results.csv')
     scene = ['' for i in range(100)]
     order = ['' for i in range(100)]
+    error_index = 0
 
     with open(results_save_file_path, 'w', newline='') as f:
         # init results-saving file
@@ -284,7 +285,10 @@ def test_targets():
         header = ['render', 'scene', 'integrator', 'sampler', 'resolution', 'spp', 'max depth', 'spectrum',
                   'time consumption']
         f_csv.writerow(header)
-    clear_log_file()
+
+    # clear_log_file()
+    logger.info('')
+    logger.info('===================== start =====================')
 
     for renderer in target_settings['renderer']:
         k = 0
@@ -415,6 +419,7 @@ def test_targets():
                                     except:
                                         time = 'Error'
                                         error_text = f'Error {error_index}: \n{output_info}\n\n'
+                                        error_text += 1
                                         logger.warning(error_text)
 
                                     result = [
@@ -428,12 +433,12 @@ def test_targets():
                                         f_csv = csv.writer(f)
                                         f_csv.writerow(result)
 
-    print('==================== results ====================')
-    print(results)
-    with open(results_save_file_path, 'w', newline='') as f:
-        f_csv = csv.writer(f)
-        f_csv.writerow(results)
-    print('==================== results ====================')
+    logger.info('#################### results ####################')
+    logger.info(results)
+    logger.info('#################### results ####################')
+
+    logger.info('====================== end ======================')
+    logger.info('')
 
 
 if __name__ == '__main__':
