@@ -1,6 +1,7 @@
 import os
 import re
 import csv
+from mylogger import *
 
 renderer_settings = {
     'LuisaRender': {
@@ -271,8 +272,6 @@ target_settings = {
 def test_targets():
     results = []
     results_save_file_path = os.path.join(os.path.dirname(__file__), 'outputs', 'results.csv')
-    errors_save_file_path = os.path.join(os.path.dirname(__file__), 'outputs', 'errors.txt')
-    error_index = 0
     scene = ['' for i in range(100)]
     order = ['' for i in range(100)]
 
@@ -282,9 +281,7 @@ def test_targets():
         header = ['render', 'scene', 'integrator', 'sampler', 'resolution', 'spp', 'max depth', 'spectrum',
                   'time consumption']
         f_csv.writerow(header)
-    with open(errors_save_file_path, 'w') as f:
-        # init errors-saving file
-        pass
+    clear_log_file()
 
     for renderer in target_settings['renderer']:
         k = 0
@@ -404,7 +401,8 @@ def test_targets():
 
                                     # real scene
                                     order[k] += ' ' + scene_file_path_new
-                                    print(order[k])
+                                    logger.info(order[k])
+
 
                                     # render
                                     with os.popen(order[k]) as f:
@@ -414,10 +412,7 @@ def test_targets():
                                     except:
                                         time = 'Error'
                                         error_text = f'Error {error_index}: \n{output_info}\n\n'
-                                        print(error_text)
-                                        with open(errors_save_file_path, 'a') as f:
-                                            f.write(error_text)
-                                            error_index += 1
+                                        logger.warning(error_text)
 
                                     result = [
                                         renderer, scene_name, integrator,
@@ -425,7 +420,7 @@ def test_targets():
                                         spp, max_depth, spectrum, time]
 
                                     results.append(result)
-                                    print(result)
+                                    logger.info(result)
                                     with open(results_save_file_path, 'a', newline='') as f:
                                         f_csv = csv.writer(f)
                                         f_csv.writerow(result)
