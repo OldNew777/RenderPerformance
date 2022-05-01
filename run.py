@@ -202,8 +202,8 @@ renderer_settings = {
 
 target_settings = {
     'renderer': [
-        # 'LuisaRender',
-        # 'Mitsuba2',
+        'LuisaRender',
+        'Mitsuba2',
         'PBRT-v4',
     ],
     'scene': {
