@@ -321,7 +321,8 @@ def test_targets():
     recorder = Recorder(results_save_file_path)
     headers = ['render', 'scene', 'backend', 'integrator', 'sampler', 'resolution',
                'spp', 'max depth', 'spectrum', 'time consumption']
-    recorder.init(headers)
+    while not recorder.init(headers):
+        pass
 
     # clear_log_file()
     logger.info('')

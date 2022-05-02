@@ -6,19 +6,22 @@ class Recorder:
         self.file_path = file_path
         self.rows = []
 
-    def init(self, headers: list):
-        with open(self.file_path, 'w', newline='') as f:
-            # init file with headers
-            f_csv = csv.writer(f)
-            f_csv.writerow(headers)
+    def init(self, headers: list) -> bool:
+        try:
+            with open(self.file_path, 'w', newline='') as f:
+                # init file with headers
+                f_csv = csv.writer(f)
+                f_csv.writerow(headers)
+        except:
+            return False
 
-    def write_row(self, row):
+    def write_row(self, row) -> bool:
         self.rows.append(row)
-        self.flush()
+        return self.flush()
 
-    def write_rows(self, rows):
+    def write_rows(self, rows) -> bool:
         self.rows += rows
-        self.flush()
+        return self.flush()
 
     def flush(self) -> bool:
         try:
