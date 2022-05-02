@@ -235,12 +235,12 @@ target_settings = {
         # 'Mitsuba2',
         # 'PBRT-v4',
     ],
-    'backend': {
+    'backend': [
         'cuda',
         'directX',
         # 'cpu',
         # 'metal',
-    },
+    ],
     'scene': {
         # wrong cases with mitsuba2
         'classroom': {
