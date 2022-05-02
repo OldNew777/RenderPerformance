@@ -1,0 +1,15 @@
+render,scene,backend,integrator,sampler,resolution,spp,max depth,spectrum,time consumption
+PBRT-v4,classroom,cuda,WavePath,Independent,"(1920, 1080)",1024,12,Spectral,133.2s
+PBRT-v4,classroom,cuda,WavePath,Independent,"(1920, 1080)",1024,16,Spectral,141.4s
+PBRT-v4,dining-room,cuda,WavePath,Independent,"(1920, 1080)",1024,12,Spectral,115.1s
+PBRT-v4,dining-room,cuda,WavePath,Independent,"(1920, 1080)",1024,16,Spectral,122.0s
+PBRT-v4,coffee,cuda,WavePath,Independent,"(800, 1000)",1024,12,Spectral,31.4s
+PBRT-v4,coffee,cuda,WavePath,Independent,"(800, 1000)",1024,16,Spectral,34.1s
+PBRT-v4,glass-of-water,cuda,WavePath,Independent,"(1920, 1080)",1024,12,Spectral,71.6s
+PBRT-v4,glass-of-water,cuda,WavePath,Independent,"(1920, 1080)",1024,16,Spectral,80.3s
+PBRT-v4,living-room,cuda,WavePath,Independent,"(1920, 1080)",1024,12,Spectral,124.0s
+PBRT-v4,living-room,cuda,WavePath,Independent,"(1920, 1080)",1024,16,Spectral,130.0s
+PBRT-v4,spaceship,cuda,WavePath,Independent,"(1920, 1080)",1024,12,Spectral,90.0s
+PBRT-v4,spaceship,cuda,WavePath,Independent,"(1920, 1080)",1024,16,Spectral,95.9s
+PBRT-v4,staircase,cuda,WavePath,Independent,"(720, 1280)",1024,12,Spectral,61.3s
+PBRT-v4,staircase,cuda,WavePath,Independent,"(720, 1280)",1024,16,Spectral,64.1s

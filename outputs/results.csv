@@ -1,4 +1,8 @@
 render,scene,backend,integrator,sampler,resolution,spp,max depth,spectrum,time consumption
-Mitsuba2,coffee,cuda,WavePath,Independent,"(800, 1000)",1024,12,RGB,2.4711m
-Mitsuba2,coffee,cuda,WavePath,Independent,"(800, 1000)",1024,12,Spectral,2.8138m
-Mitsuba2,coffee,cuda,WavePath,Independent,"(800, 1000)",1024,16,RGB,3.1791m
+LuisaRender,classroom,directX,WavePath,Independent,"(1920, 1080)",1024,12,RGB,43.6s
+LuisaRender,classroom,directX,WavePath,Independent,"(1920, 1080)",1024,12,Spectral,61.1s
+LuisaRender,classroom,cuda,WavePath,Independent,"(1920, 1080)",1024,12,RGB,54.7s
+LuisaRender,classroom,cuda,WavePath,Independent,"(1920, 1080)",1024,12,Spectral,88.7s
+LuisaRender,classroom,directX,WavePath,Independent,"(1920, 1080)",1024,16,RGB,55.4s
+LuisaRender,classroom,directX,WavePath,Independent,"(1920, 1080)",1024,16,Spectral,77.6s
+LuisaRender,classroom,cuda,WavePath,Independent,"(1920, 1080)",1024,16,RGB,75.1s

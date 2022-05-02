@@ -14,18 +14,18 @@ renderer_settings = {
                     'WavePath': '',
                     'MegaPath': '',
                 },
-                'order': '{}',
+                'order': ' {}',
             },
             'backend': {
                 'name': {
                     'cuda': 'cuda',
                     'directX': 'dx',
                     'metal': 'metal',
-                    'ispc': 'ispc',
+                    'cpu': 'ispc',
                 },
-                'order': '-b {}',
+                'order': ' -b {}',
             },
-            'device': '-d {}',
+            'device': ' -d {}',
             'output': '',
             'appendix': '',
         },
@@ -82,29 +82,29 @@ renderer_settings = {
             'path': 'C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe',
             'spectrum': {
                 'name': {
-                    'RGB': 'gpu_rgb',
-                    'Spectral': 'gpu_spectral',
+                    'RGB': 'rgb',
+                    'Spectral': 'spectral',
                 },
-                'order': '-m {}',
+                'order': '{}',
             },
             'integrator': {
                 'name': {
                     'WavePath': '',
                     'MegaPath': '',
                 },
-                'order': '{}',
+                'order': ' {}',
             },
             'backend': {
                 'name': {
-                    'cuda': '',
+                    'cuda': 'gpu',
                     'directX': 'undefined',
                     'metal': 'undefined',
-                    'ispc': 'undefined',
+                    'cpu': 'scalar',
                 },
-                'order': '',
+                'order': ' -m {}_',
             },
             'device': 'undefined',
-            'output': '--output {}',
+            'output': ' --output {}',
             'appendix': '',
         },
         'scene_file': {
@@ -160,25 +160,25 @@ renderer_settings = {
                     'RGB': 'undefined',
                     'Spectral': '',
                 },
-                'order': '{}',
+                'order': ' {}',
             },
             'integrator': {
                 'name': {
                     'WavePath': '--wavefront',
                     'MegaPath': '',
                 },
-                'order': '{}',
+                'order': ' {}',
             },
             'backend': {
                 'name': {
-                    'cuda': 'gpu',
+                    'cuda': '--gpu',
                     'directX': 'undefined',
                     'metal': 'undefined',
-                    'ispc': 'undefined',
+                    'cpu': '',
                 },
-                'order': '--{}',
+                'order': ' {}',
             },
-            'device': '--gpu-device {}',
+            'device': ' --gpu-device {}',
             'output': '',
             'appendix': '',
         },
@@ -231,28 +231,28 @@ renderer_settings = {
 
 target_settings = {
     'renderer': [
-        # 'LuisaRender',
-        'Mitsuba2',
+        'LuisaRender',
+        # 'Mitsuba2',
         # 'PBRT-v4',
     ],
     'backend': {
         'cuda',
         'directX',
-        # 'ispc',
+        # 'cpu',
         # 'metal',
     },
     'scene': {
-        # # wrong cases with mitsuba2
-        # 'classroom': {
-        #     'resolution': [
-        #         (1920, 1080),
-        #     ],
-        # },
-        # 'dining-room': {
-        #     'resolution': [
-        #         (1920, 1080),
-        #     ],
-        # },
+        # wrong cases with mitsuba2
+        'classroom': {
+            'resolution': [
+                (1920, 1080),
+            ],
+        },
+        'dining-room': {
+            'resolution': [
+                (1920, 1080),
+            ],
+        },
 
         # right cases
         'coffee': {
@@ -355,7 +355,7 @@ def test_targets():
                 scene[k] = re.sub(scene_file_settings['integrator']['regex'],
                                   scene_file_settings['integrator']['replace'].
                                   format(integrator_name), scene[k - 1])
-                order[k] = order[k - 1] + ' ' + settings['exe']['integrator']['order'].format(
+                order[k] = order[k - 1] + settings['exe']['integrator']['order'].format(
                     settings['exe']['integrator']['name'][integrator])
 
                 for sampler in target_settings['sampler']:
@@ -400,28 +400,33 @@ def test_targets():
                                                   format(max_depth), scene[k - 1])
                                 order[k] = order[k - 1]
 
-                                for spectrum in target_settings['spectrum']:
+                                for backend in target_settings['backend']:
                                     k = 7
 
-                                    # deal with different spectrum format: scene/cmd
                                     scene[k] = scene[k - 1]
                                     order[k] = order[k - 1]
-                                    if scene_file_settings['spectrum'] != 'undefined':
-                                        scene[k] = re.sub(scene_file_settings['spectrum']['regex'],
-                                                          scene_file_settings['spectrum']['replace'].
-                                                          format(scene_file_settings['spectrum']['name'][spectrum]),
-                                                          scene[k])
-                                    else:
-                                        spectrum_name = settings['exe']['spectrum']['name'][spectrum]
-                                        if spectrum_name == 'undefined':
-                                            continue
-                                        order[k] += ' ' + settings['exe']['spectrum']['order'].format(spectrum_name)
 
-                                    for backend in target_settings['backend']:
+                                    backend_name = settings['exe']['backend']['name'][backend]
+                                    if backend_name == 'undefined':
+                                        continue
+                                    order[k] += settings['exe']['backend']['order'].format(backend_name)
+
+                                    for spectrum in target_settings['spectrum']:
                                         k = 8
 
+                                        # deal with different spectrum format: scene/cmd
                                         scene[k] = scene[k - 1]
                                         order[k] = order[k - 1]
+                                        if scene_file_settings['spectrum'] != 'undefined':
+                                            scene[k] = re.sub(scene_file_settings['spectrum']['regex'],
+                                                              scene_file_settings['spectrum']['replace'].
+                                                              format(scene_file_settings['spectrum']['name'][spectrum]),
+                                                              scene[k])
+                                        else:
+                                            spectrum_name = settings['exe']['spectrum']['name'][spectrum]
+                                            if spectrum_name == 'undefined':
+                                                continue
+                                            order[k] += settings['exe']['spectrum']['order'].format(spectrum_name)
 
                                         # output file
                                         output_file_name = f'{renderer}-{scene_name}-{backend}-{integrator}-' \
@@ -432,7 +437,7 @@ def test_targets():
                                         scene[k] = re.sub(scene_file_settings['output_file']['regex'],
                                                           scene_file_settings['output_file']['replace'].format(
                                                               output_file_name), scene[k])
-                                        order[k] += ' ' + settings['exe']['output'].format(output_file_name + '.exr')
+                                        order[k] += settings['exe']['output'].format(output_file_name + '.exr')
 
                                         # new scene file confirmed
                                         scene_file_path_new = f'scene-{integrator}-{sampler}-' \
@@ -445,14 +450,9 @@ def test_targets():
                                         with open(scene_file_path_new, 'w') as f:
                                             f.write(scene[k])
 
-                                        backend_name = settings['exe']['backend']['name'][backend]
-                                        if backend_name == 'undefined':
-                                            continue
-                                        order[k] += ' ' + settings['exe']['backend']['order'].format(backend_name)
-
                                         # device
                                         if settings['exe']['device'] != 'undefined':
-                                            order[k] += ' ' + settings['exe']['device'].format(0)
+                                            order[k] += settings['exe']['device'].format(0)
 
                                         # target scene file
                                         order[k] += ' ' + scene_file_path_new

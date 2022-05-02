@@ -234,3 +234,472 @@
 [2022-05-01 20:51:11] [INFO] #################### results ####################
 [2022-05-01 20:51:11] [INFO] ====================== end ======================
 [2022-05-01 20:51:11] [INFO] 
+[2022-05-01 20:53:37] [INFO] 
+[2022-05-01 20:53:37] [INFO] ===================== start =====================
+[2022-05-01 20:53:37] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   -m gpu_rgb --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-coffee-cuda-WavePath-Independent-800_1000-1024spp-12max_depth-RGB.exr  D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\coffee\scene-WavePath-Independent-800_1000-1024spp-12max_depth-RGB.xml
+[2022-05-01 20:56:06] [INFO] ['Mitsuba2', 'coffee', 'cuda', 'WavePath', 'Independent', '(800, 1000)', 1024, 12, 'RGB', '2.4711m']
+[2022-05-01 20:56:06] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   -m gpu_spectral --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-coffee-cuda-WavePath-Independent-800_1000-1024spp-12max_depth-Spectral.exr  D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\coffee\scene-WavePath-Independent-800_1000-1024spp-12max_depth-Spectral.xml
+[2022-05-01 20:58:56] [INFO] ['Mitsuba2', 'coffee', 'cuda', 'WavePath', 'Independent', '(800, 1000)', 1024, 12, 'Spectral', '2.8138m']
+[2022-05-01 20:58:56] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   -m gpu_rgb --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-coffee-cuda-WavePath-Independent-800_1000-1024spp-16max_depth-RGB.exr  D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\coffee\scene-WavePath-Independent-800_1000-1024spp-16max_depth-RGB.xml
+[2022-05-01 21:02:07] [INFO] ['Mitsuba2', 'coffee', 'cuda', 'WavePath', 'Independent', '(800, 1000)', 1024, 16, 'RGB', '3.1791m']
+[2022-05-01 21:02:07] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   -m gpu_spectral --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-coffee-cuda-WavePath-Independent-800_1000-1024spp-16max_depth-Spectral.exr  D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\coffee\scene-WavePath-Independent-800_1000-1024spp-16max_depth-Spectral.xml
+[2022-05-01 21:05:48] [INFO] ['Mitsuba2', 'coffee', 'cuda', 'WavePath', 'Independent', '(800, 1000)', 1024, 16, 'Spectral', '3.6755m']
+[2022-05-01 21:05:48] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   -m gpu_rgb --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-glass-of-water-cuda-WavePath-Independent-1920_1080-1024spp-12max_depth-RGB.exr  D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\glass-of-water\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-RGB.xml
+[2022-05-01 21:10:12] [INFO] ['Mitsuba2', 'glass-of-water', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '4.3816m']
+[2022-05-01 21:10:12] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   -m gpu_spectral --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-glass-of-water-cuda-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.exr  D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\glass-of-water\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.xml
+[2022-05-01 21:14:49] [INFO] ['Mitsuba2', 'glass-of-water', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '4.6022m']
+[2022-05-01 21:14:49] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   -m gpu_rgb --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-glass-of-water-cuda-WavePath-Independent-1920_1080-1024spp-16max_depth-RGB.exr  D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\glass-of-water\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-RGB.xml
+[2022-05-01 21:20:09] [INFO] ['Mitsuba2', 'glass-of-water', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '5.3205m']
+[2022-05-01 21:20:09] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   -m gpu_spectral --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-glass-of-water-cuda-WavePath-Independent-1920_1080-1024spp-16max_depth-Spectral.exr  D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\glass-of-water\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-Spectral.xml
+[2022-05-01 21:25:49] [INFO] ['Mitsuba2', 'glass-of-water', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '5.6518m']
+[2022-05-01 21:25:49] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   -m gpu_rgb --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-living-room-cuda-WavePath-Independent-1920_1080-1024spp-12max_depth-RGB.exr  D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\living-room\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-RGB.xml
+[2022-05-01 22:08:49] [INFO] ['Mitsuba2', 'living-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '42.983m']
+[2022-05-01 22:08:49] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   -m gpu_spectral --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-living-room-cuda-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.exr  D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\living-room\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.xml
+[2022-05-01 22:08:51] [WARNING] Error 0: 
+2022-05-01 22:08:49 INFO  main  [optix_api.cpp:56] Dynamic loading of the Optix library ..
+2022-05-01 22:08:49 INFO  main  [mitsuba.cpp:218] Mitsuba version 2.2.1 (master[4e7628c6], Windows, 64bit, 16 threads, 8-wide SIMD)
+2022-05-01 22:08:49 INFO  main  [mitsuba.cpp:219] Copyright 2020, Realistic Graphics Lab, EPFL
+2022-05-01 22:08:49 INFO  main  [mitsuba.cpp:220] Enabled processor features: cuda avx2 avx fma f16c sse4.2 x86_64
+2022-05-01 22:08:49 INFO  main  [xml.cpp:1221] Loading XML file "D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\living-room\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.xml" ..
+2022-05-01 22:08:49 INFO  main  [xml.cpp:1222] Using variant "gpu_spectral"
+2022-05-01 22:08:49 INFO  main  [PluginManager] Loading plugin "plugins\srgb.dll" ..
+2022-05-01 22:08:49 INFO  main  [srgb.cpp:22] Loading spectral upsampling model "data/srgb.coeff" .. 
+2022-05-01 22:08:49 INFO  main  [PluginManager] Loading plugin "plugins\path.dll" ..
+2022-05-01 22:08:49 INFO  main  [PluginManager] Loading plugin "plugins\independent.dll" ..
+2022-05-01 22:08:49 INFO  main  [PluginManager] Loading plugin "plugins\gaussian.dll" ..
+2022-05-01 22:08:49 INFO  main  [PluginManager] Loading plugin "plugins\hdrfilm.dll" ..
+2022-05-01 22:08:49 INFO  main  [PluginManager] Loading plugin "plugins\perspective.dll" ..
+2022-05-01 22:08:49 INFO  main  [PluginManager] Loading plugin "plugins\diffuse.dll" ..
+2022-05-01 22:08:49 INFO  main  [PluginManager] Loading plugin "plugins\twosided.dll" ..
+2022-05-01 22:08:49 INFO  main  [PluginManager] Loading plugin "plugins\bitmap.dll" ..
+2022-05-01 22:08:49 INFO  main  [PluginManager] Loading plugin "plugins\roughplastic.dll" ..
+2022-05-01 22:08:50 INFO  main  [PluginManager] Loading plugin "plugins\conductor.dll" ..
+2022-05-01 22:08:50 INFO  main  [PluginManager] Loading plugin "plugins\uniform.dll" ..
+2022-05-01 22:08:50 INFO  main  [PluginManager] Loading plugin "plugins\roughconductor.dll" ..
+2022-05-01 22:08:50 INFO  main  [PluginManager] Loading plugin "plugins\dielectric.dll" ..
+2022-05-01 22:08:50 INFO  main  [PluginManager] Loading plugin "plugins\mask.dll" ..
+2022-05-01 22:08:50 INFO  main  [PluginManager] Loading plugin "plugins\obj.dll" ..
+2022-05-01 22:08:50 INFO  main  [PluginManager] Loading plugin "plugins\envmap.dll" ..
+2022-05-01 22:08:50 INFO  main  [PluginManager] Loading plugin "plugins\d65.dll" ..
+2022-05-01 22:08:50 INFO  main  [PluginManager] Loading plugin "plugins\regular.dll" ..
+2022-05-01 22:08:50 INFO  main  [Scene] Building scene in OptiX ..
+2022-05-01 22:08:50 INFO  main  [SamplingIntegrator] Start rendering...
+
+
+[2022-05-01 22:08:51] [INFO] ['Mitsuba2', 'living-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', 'Error']
+[2022-05-01 22:08:51] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   -m gpu_rgb --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-living-room-cuda-WavePath-Independent-1920_1080-1024spp-16max_depth-RGB.exr  D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\living-room\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-RGB.xml
+[2022-05-01 23:00:21] [INFO] ['Mitsuba2', 'living-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '51.485m']
+[2022-05-01 23:00:21] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   -m gpu_spectral --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-living-room-cuda-WavePath-Independent-1920_1080-1024spp-16max_depth-Spectral.exr  D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\living-room\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-Spectral.xml
+[2022-05-01 23:00:24] [WARNING] Error 1: 
+2022-05-01 23:00:22 INFO  main  [optix_api.cpp:56] Dynamic loading of the Optix library ..
+2022-05-01 23:00:22 INFO  main  [mitsuba.cpp:218] Mitsuba version 2.2.1 (master[4e7628c6], Windows, 64bit, 16 threads, 8-wide SIMD)
+2022-05-01 23:00:22 INFO  main  [mitsuba.cpp:219] Copyright 2020, Realistic Graphics Lab, EPFL
+2022-05-01 23:00:22 INFO  main  [mitsuba.cpp:220] Enabled processor features: cuda avx2 avx fma f16c sse4.2 x86_64
+2022-05-01 23:00:22 INFO  main  [xml.cpp:1221] Loading XML file "D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\living-room\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-Spectral.xml" ..
+2022-05-01 23:00:22 INFO  main  [xml.cpp:1222] Using variant "gpu_spectral"
+2022-05-01 23:00:22 INFO  main  [PluginManager] Loading plugin "plugins\srgb.dll" ..
+2022-05-01 23:00:22 INFO  main  [srgb.cpp:22] Loading spectral upsampling model "data/srgb.coeff" .. 
+2022-05-01 23:00:22 INFO  main  [PluginManager] Loading plugin "plugins\path.dll" ..
+2022-05-01 23:00:22 INFO  main  [PluginManager] Loading plugin "plugins\independent.dll" ..
+2022-05-01 23:00:22 INFO  main  [PluginManager] Loading plugin "plugins\gaussian.dll" ..
+2022-05-01 23:00:22 INFO  main  [PluginManager] Loading plugin "plugins\hdrfilm.dll" ..
+2022-05-01 23:00:22 INFO  main  [PluginManager] Loading plugin "plugins\perspective.dll" ..
+2022-05-01 23:00:22 INFO  main  [PluginManager] Loading plugin "plugins\diffuse.dll" ..
+2022-05-01 23:00:22 INFO  main  [PluginManager] Loading plugin "plugins\twosided.dll" ..
+2022-05-01 23:00:22 INFO  main  [PluginManager] Loading plugin "plugins\bitmap.dll" ..
+2022-05-01 23:00:22 INFO  main  [PluginManager] Loading plugin "plugins\roughplastic.dll" ..
+2022-05-01 23:00:22 INFO  main  [PluginManager] Loading plugin "plugins\conductor.dll" ..
+2022-05-01 23:00:22 INFO  main  [PluginManager] Loading plugin "plugins\uniform.dll" ..
+2022-05-01 23:00:22 INFO  main  [PluginManager] Loading plugin "plugins\roughconductor.dll" ..
+2022-05-01 23:00:22 INFO  main  [PluginManager] Loading plugin "plugins\dielectric.dll" ..
+2022-05-01 23:00:22 INFO  main  [PluginManager] Loading plugin "plugins\mask.dll" ..
+2022-05-01 23:00:22 INFO  main  [PluginManager] Loading plugin "plugins\obj.dll" ..
+2022-05-01 23:00:22 INFO  main  [PluginManager] Loading plugin "plugins\envmap.dll" ..
+2022-05-01 23:00:23 INFO  main  [PluginManager] Loading plugin "plugins\d65.dll" ..
+2022-05-01 23:00:23 INFO  main  [PluginManager] Loading plugin "plugins\regular.dll" ..
+2022-05-01 23:00:23 INFO  main  [Scene] Building scene in OptiX ..
+2022-05-01 23:00:23 INFO  main  [SamplingIntegrator] Start rendering...
+
+
+[2022-05-01 23:00:24] [INFO] ['Mitsuba2', 'living-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', 'Error']
+[2022-05-01 23:00:24] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   -m gpu_rgb --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-spaceship-cuda-WavePath-Independent-1920_1080-1024spp-12max_depth-RGB.exr  D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\spaceship\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-RGB.xml
+[2022-05-01 23:07:11] [INFO] ['Mitsuba2', 'spaceship', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '6.7635m']
+[2022-05-01 23:07:11] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   -m gpu_spectral --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-spaceship-cuda-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.exr  D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\spaceship\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.xml
+[2022-05-01 23:14:37] [INFO] ['Mitsuba2', 'spaceship', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '7.4162m']
+[2022-05-01 23:14:37] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   -m gpu_rgb --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-spaceship-cuda-WavePath-Independent-1920_1080-1024spp-16max_depth-RGB.exr  D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\spaceship\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-RGB.xml
+[2022-05-01 23:23:43] [INFO] ['Mitsuba2', 'spaceship', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '9.0789m']
+[2022-05-01 23:23:43] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   -m gpu_spectral --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-spaceship-cuda-WavePath-Independent-1920_1080-1024spp-16max_depth-Spectral.exr  D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\spaceship\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-Spectral.xml
+[2022-05-01 23:33:17] [INFO] ['Mitsuba2', 'spaceship', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '9.5395m']
+[2022-05-01 23:33:17] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   -m gpu_rgb --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-staircase-cuda-WavePath-Independent-720_1280-1024spp-12max_depth-RGB.exr  D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\staircase\scene-WavePath-Independent-720_1280-1024spp-12max_depth-RGB.xml
+[2022-05-01 23:40:38] [INFO] ['Mitsuba2', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 1024, 12, 'RGB', '7.2331m']
+[2022-05-01 23:40:38] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   -m gpu_spectral --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-staircase-cuda-WavePath-Independent-720_1280-1024spp-12max_depth-Spectral.exr  D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\staircase\scene-WavePath-Independent-720_1280-1024spp-12max_depth-Spectral.xml
+[2022-05-01 23:50:03] [INFO] ['Mitsuba2', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 1024, 12, 'Spectral', '9.2907m']
+[2022-05-01 23:50:03] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   -m gpu_rgb --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-staircase-cuda-WavePath-Independent-720_1280-1024spp-16max_depth-RGB.exr  D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\staircase\scene-WavePath-Independent-720_1280-1024spp-16max_depth-RGB.xml
+[2022-05-02 00:00:38] [INFO] ['Mitsuba2', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 1024, 16, 'RGB', '10.487m']
+[2022-05-02 00:00:38] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   -m gpu_spectral --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-staircase-cuda-WavePath-Independent-720_1280-1024spp-16max_depth-Spectral.exr  D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\staircase\scene-WavePath-Independent-720_1280-1024spp-16max_depth-Spectral.xml
+[2022-05-02 00:16:04] [INFO] ['Mitsuba2', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 1024, 16, 'Spectral', '15.227m']
+[2022-05-02 00:16:04] [INFO] #################### results ####################
+[2022-05-02 00:16:04] [INFO] [['Mitsuba2', 'coffee', 'cuda', 'WavePath', 'Independent', '(800, 1000)', 1024, 12, 'RGB', '2.4711m'], ['Mitsuba2', 'coffee', 'cuda', 'WavePath', 'Independent', '(800, 1000)', 1024, 12, 'Spectral', '2.8138m'], ['Mitsuba2', 'coffee', 'cuda', 'WavePath', 'Independent', '(800, 1000)', 1024, 16, 'RGB', '3.1791m'], ['Mitsuba2', 'coffee', 'cuda', 'WavePath', 'Independent', '(800, 1000)', 1024, 16, 'Spectral', '3.6755m'], ['Mitsuba2', 'glass-of-water', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '4.3816m'], ['Mitsuba2', 'glass-of-water', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '4.6022m'], ['Mitsuba2', 'glass-of-water', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '5.3205m'], ['Mitsuba2', 'glass-of-water', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '5.6518m'], ['Mitsuba2', 'living-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '42.983m'], ['Mitsuba2', 'living-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', 'Error'], ['Mitsuba2', 'living-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '51.485m'], ['Mitsuba2', 'living-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', 'Error'], ['Mitsuba2', 'spaceship', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '6.7635m'], ['Mitsuba2', 'spaceship', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '7.4162m'], ['Mitsuba2', 'spaceship', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '9.0789m'], ['Mitsuba2', 'spaceship', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '9.5395m'], ['Mitsuba2', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 1024, 12, 'RGB', '7.2331m'], ['Mitsuba2', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 1024, 12, 'Spectral', '9.2907m'], ['Mitsuba2', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 1024, 16, 'RGB', '10.487m'], ['Mitsuba2', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 1024, 16, 'Spectral', '15.227m']]
+[2022-05-02 00:16:04] [INFO] #################### results ####################
+[2022-05-02 00:16:04] [INFO] ====================== end ======================
+[2022-05-02 00:16:04] [INFO] 
+[2022-05-02 01:53:30] [INFO] 
+[2022-05-02 01:53:30] [INFO] ===================== start =====================
+[2022-05-02 01:53:30] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/pbrt-v4/build-vs/Release/pbrt.exe  --wavefront   --gpu --gpu-device 0 D:\OldNew\LuisaRender\record\RenderPerformance\PBRT-v4\classroom\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.pbrt
+[2022-05-02 01:55:47] [INFO] ['PBRT-v4', 'classroom', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '133.2s']
+[2022-05-02 01:55:47] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/pbrt-v4/build-vs/Release/pbrt.exe  --wavefront   --gpu --gpu-device 0 D:\OldNew\LuisaRender\record\RenderPerformance\PBRT-v4\classroom\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-Spectral.pbrt
+[2022-05-02 01:58:13] [INFO] ['PBRT-v4', 'classroom', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '141.4s']
+[2022-05-02 01:58:13] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/pbrt-v4/build-vs/Release/pbrt.exe  --wavefront   --gpu --gpu-device 0 D:\OldNew\LuisaRender\record\RenderPerformance\PBRT-v4\dining-room\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.pbrt
+[2022-05-02 02:00:12] [INFO] ['PBRT-v4', 'dining-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '115.1s']
+[2022-05-02 02:00:12] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/pbrt-v4/build-vs/Release/pbrt.exe  --wavefront   --gpu --gpu-device 0 D:\OldNew\LuisaRender\record\RenderPerformance\PBRT-v4\dining-room\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-Spectral.pbrt
+[2022-05-02 02:02:18] [INFO] ['PBRT-v4', 'dining-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '122.0s']
+[2022-05-02 02:02:18] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/pbrt-v4/build-vs/Release/pbrt.exe  --wavefront   --gpu --gpu-device 0 D:\OldNew\LuisaRender\record\RenderPerformance\PBRT-v4\coffee\scene-WavePath-Independent-800_1000-1024spp-12max_depth-Spectral.pbrt
+[2022-05-02 02:02:52] [INFO] ['PBRT-v4', 'coffee', 'cuda', 'WavePath', 'Independent', '(800, 1000)', 1024, 12, 'Spectral', '31.4s']
+[2022-05-02 02:02:52] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/pbrt-v4/build-vs/Release/pbrt.exe  --wavefront   --gpu --gpu-device 0 D:\OldNew\LuisaRender\record\RenderPerformance\PBRT-v4\coffee\scene-WavePath-Independent-800_1000-1024spp-16max_depth-Spectral.pbrt
+[2022-05-02 02:03:28] [INFO] ['PBRT-v4', 'coffee', 'cuda', 'WavePath', 'Independent', '(800, 1000)', 1024, 16, 'Spectral', '34.1s']
+[2022-05-02 02:03:28] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/pbrt-v4/build-vs/Release/pbrt.exe  --wavefront   --gpu --gpu-device 0 D:\OldNew\LuisaRender\record\RenderPerformance\PBRT-v4\glass-of-water\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.pbrt
+[2022-05-02 02:04:42] [INFO] ['PBRT-v4', 'glass-of-water', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '71.6s']
+[2022-05-02 02:04:42] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/pbrt-v4/build-vs/Release/pbrt.exe  --wavefront   --gpu --gpu-device 0 D:\OldNew\LuisaRender\record\RenderPerformance\PBRT-v4\glass-of-water\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-Spectral.pbrt
+[2022-05-02 02:06:06] [INFO] ['PBRT-v4', 'glass-of-water', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '80.3s']
+[2022-05-02 02:06:06] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/pbrt-v4/build-vs/Release/pbrt.exe  --wavefront   --gpu --gpu-device 0 D:\OldNew\LuisaRender\record\RenderPerformance\PBRT-v4\living-room\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.pbrt
+[2022-05-02 02:08:14] [INFO] ['PBRT-v4', 'living-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '124.0s']
+[2022-05-02 02:08:14] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/pbrt-v4/build-vs/Release/pbrt.exe  --wavefront   --gpu --gpu-device 0 D:\OldNew\LuisaRender\record\RenderPerformance\PBRT-v4\living-room\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-Spectral.pbrt
+[2022-05-02 02:10:30] [INFO] ['PBRT-v4', 'living-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '130.0s']
+[2022-05-02 02:10:30] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/pbrt-v4/build-vs/Release/pbrt.exe  --wavefront   --gpu --gpu-device 0 D:\OldNew\LuisaRender\record\RenderPerformance\PBRT-v4\spaceship\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.pbrt
+[2022-05-02 02:12:03] [INFO] ['PBRT-v4', 'spaceship', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '90.0s']
+[2022-05-02 02:12:03] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/pbrt-v4/build-vs/Release/pbrt.exe  --wavefront   --gpu --gpu-device 0 D:\OldNew\LuisaRender\record\RenderPerformance\PBRT-v4\spaceship\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-Spectral.pbrt
+[2022-05-02 02:13:42] [INFO] ['PBRT-v4', 'spaceship', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '95.9s']
+[2022-05-02 02:13:42] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/pbrt-v4/build-vs/Release/pbrt.exe  --wavefront   --gpu --gpu-device 0 D:\OldNew\LuisaRender\record\RenderPerformance\PBRT-v4\staircase\scene-WavePath-Independent-720_1280-1024spp-12max_depth-Spectral.pbrt
+[2022-05-02 02:14:50] [INFO] ['PBRT-v4', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 1024, 12, 'Spectral', '61.3s']
+[2022-05-02 02:14:50] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/pbrt-v4/build-vs/Release/pbrt.exe  --wavefront   --gpu --gpu-device 0 D:\OldNew\LuisaRender\record\RenderPerformance\PBRT-v4\staircase\scene-WavePath-Independent-720_1280-1024spp-16max_depth-Spectral.pbrt
+[2022-05-02 02:15:58] [INFO] ['PBRT-v4', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 1024, 16, 'Spectral', '64.1s']
+[2022-05-02 02:15:58] [INFO] #################### results ####################
+[2022-05-02 02:15:58] [INFO] [['PBRT-v4', 'classroom', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '133.2s'], ['PBRT-v4', 'classroom', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '141.4s'], ['PBRT-v4', 'dining-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '115.1s'], ['PBRT-v4', 'dining-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '122.0s'], ['PBRT-v4', 'coffee', 'cuda', 'WavePath', 'Independent', '(800, 1000)', 1024, 12, 'Spectral', '31.4s'], ['PBRT-v4', 'coffee', 'cuda', 'WavePath', 'Independent', '(800, 1000)', 1024, 16, 'Spectral', '34.1s'], ['PBRT-v4', 'glass-of-water', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '71.6s'], ['PBRT-v4', 'glass-of-water', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '80.3s'], ['PBRT-v4', 'living-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '124.0s'], ['PBRT-v4', 'living-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '130.0s'], ['PBRT-v4', 'spaceship', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '90.0s'], ['PBRT-v4', 'spaceship', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '95.9s'], ['PBRT-v4', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 1024, 12, 'Spectral', '61.3s'], ['PBRT-v4', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 1024, 16, 'Spectral', '64.1s']]
+[2022-05-02 02:15:58] [INFO] #################### results ####################
+[2022-05-02 02:15:58] [INFO] ====================== end ======================
+[2022-05-02 02:15:58] [INFO] 
+[2022-05-02 12:08:24] [INFO] 
+[2022-05-02 12:08:24] [INFO] ===================== start =====================
+[2022-05-02 12:09:00] [INFO] 
+[2022-05-02 12:09:00] [INFO] ===================== start =====================
+[2022-05-02 12:31:32] [INFO] 
+[2022-05-02 12:31:32] [INFO] ===================== start =====================
+[2022-05-02 12:31:32] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/pbrt-v4/build-vs/Release/pbrt.exe  --wavefront --gpu  --gpu-device 0 D:\OldNew\LuisaRender\record\RenderPerformance\PBRT-v4\classroom\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.pbrt
+[2022-05-02 12:32:42] [INFO] 
+[2022-05-02 12:32:42] [INFO] ===================== start =====================
+[2022-05-02 12:32:42] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   gpu_rgb --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-classroom-cuda-WavePath-Independent-1920_1080-1024spp-12max_depth-RGB.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\classroom\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-RGB.xml
+[2022-05-02 12:32:42] [WARNING] Error 0: 
+2022-05-02 12:32:42 INFO  main  [optix_api.cpp:56] Dynamic loading of the Optix library ..
+2022-05-02 12:32:42 INFO  main  [mitsuba.cpp:218] Mitsuba version 2.2.1 (master[4e7628c6], Windows, 64bit, 16 threads, 8-wide SIMD)
+2022-05-02 12:32:42 INFO  main  [mitsuba.cpp:219] Copyright 2020, Realistic Graphics Lab, EPFL
+2022-05-02 12:32:42 INFO  main  [mitsuba.cpp:220] Enabled processor features: cuda avx2 avx fma f16c sse4.2 x86_64
+
+
+[2022-05-02 12:32:42] [INFO] ['Mitsuba2', 'classroom', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', 'Error']
+[2022-05-02 12:32:42] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   gpu_spectral --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-classroom-cuda-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\classroom\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.xml
+[2022-05-02 12:32:42] [WARNING] Error 1: 
+2022-05-02 12:32:42 INFO  main  [optix_api.cpp:56] Dynamic loading of the Optix library ..
+2022-05-02 12:32:42 INFO  main  [mitsuba.cpp:218] Mitsuba version 2.2.1 (master[4e7628c6], Windows, 64bit, 16 threads, 8-wide SIMD)
+2022-05-02 12:32:42 INFO  main  [mitsuba.cpp:219] Copyright 2020, Realistic Graphics Lab, EPFL
+2022-05-02 12:32:42 INFO  main  [mitsuba.cpp:220] Enabled processor features: cuda avx2 avx fma f16c sse4.2 x86_64
+
+
+[2022-05-02 12:32:42] [INFO] ['Mitsuba2', 'classroom', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', 'Error']
+[2022-05-02 12:32:42] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   gpu_rgb --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-classroom-cuda-WavePath-Independent-1920_1080-1024spp-16max_depth-RGB.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\classroom\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-RGB.xml
+[2022-05-02 12:32:42] [WARNING] Error 2: 
+2022-05-02 12:32:42 INFO  main  [optix_api.cpp:56] Dynamic loading of the Optix library ..
+2022-05-02 12:32:42 INFO  main  [mitsuba.cpp:218] Mitsuba version 2.2.1 (master[4e7628c6], Windows, 64bit, 16 threads, 8-wide SIMD)
+2022-05-02 12:32:42 INFO  main  [mitsuba.cpp:219] Copyright 2020, Realistic Graphics Lab, EPFL
+2022-05-02 12:32:42 INFO  main  [mitsuba.cpp:220] Enabled processor features: cuda avx2 avx fma f16c sse4.2 x86_64
+
+
+[2022-05-02 12:32:42] [INFO] ['Mitsuba2', 'classroom', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', 'Error']
+[2022-05-02 12:32:42] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   gpu_spectral --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-classroom-cuda-WavePath-Independent-1920_1080-1024spp-16max_depth-Spectral.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\classroom\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-Spectral.xml
+[2022-05-02 12:32:42] [WARNING] Error 3: 
+2022-05-02 12:32:42 INFO  main  [optix_api.cpp:56] Dynamic loading of the Optix library ..
+2022-05-02 12:32:42 INFO  main  [mitsuba.cpp:218] Mitsuba version 2.2.1 (master[4e7628c6], Windows, 64bit, 16 threads, 8-wide SIMD)
+2022-05-02 12:32:42 INFO  main  [mitsuba.cpp:219] Copyright 2020, Realistic Graphics Lab, EPFL
+2022-05-02 12:32:42 INFO  main  [mitsuba.cpp:220] Enabled processor features: cuda avx2 avx fma f16c sse4.2 x86_64
+
+
+[2022-05-02 12:32:42] [INFO] ['Mitsuba2', 'classroom', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', 'Error']
+[2022-05-02 12:32:42] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   gpu_rgb --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-dining-room-cuda-WavePath-Independent-1920_1080-1024spp-12max_depth-RGB.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\dining-room\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-RGB.xml
+[2022-05-02 12:32:43] [WARNING] Error 4: 
+2022-05-02 12:32:43 INFO  main  [optix_api.cpp:56] Dynamic loading of the Optix library ..
+2022-05-02 12:32:43 INFO  main  [mitsuba.cpp:218] Mitsuba version 2.2.1 (master[4e7628c6], Windows, 64bit, 16 threads, 8-wide SIMD)
+2022-05-02 12:32:43 INFO  main  [mitsuba.cpp:219] Copyright 2020, Realistic Graphics Lab, EPFL
+2022-05-02 12:32:43 INFO  main  [mitsuba.cpp:220] Enabled processor features: cuda avx2 avx fma f16c sse4.2 x86_64
+
+
+[2022-05-02 12:32:43] [INFO] ['Mitsuba2', 'dining-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', 'Error']
+[2022-05-02 12:32:43] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   gpu_spectral --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-dining-room-cuda-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\dining-room\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.xml
+[2022-05-02 12:32:43] [WARNING] Error 5: 
+2022-05-02 12:32:43 INFO  main  [optix_api.cpp:56] Dynamic loading of the Optix library ..
+2022-05-02 12:32:43 INFO  main  [mitsuba.cpp:218] Mitsuba version 2.2.1 (master[4e7628c6], Windows, 64bit, 16 threads, 8-wide SIMD)
+2022-05-02 12:32:43 INFO  main  [mitsuba.cpp:219] Copyright 2020, Realistic Graphics Lab, EPFL
+2022-05-02 12:32:43 INFO  main  [mitsuba.cpp:220] Enabled processor features: cuda avx2 avx fma f16c sse4.2 x86_64
+
+
+[2022-05-02 12:32:43] [INFO] ['Mitsuba2', 'dining-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', 'Error']
+[2022-05-02 12:32:43] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   gpu_rgb --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-dining-room-cuda-WavePath-Independent-1920_1080-1024spp-16max_depth-RGB.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\dining-room\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-RGB.xml
+[2022-05-02 12:32:43] [WARNING] Error 6: 
+2022-05-02 12:32:43 INFO  main  [optix_api.cpp:56] Dynamic loading of the Optix library ..
+2022-05-02 12:32:43 INFO  main  [mitsuba.cpp:218] Mitsuba version 2.2.1 (master[4e7628c6], Windows, 64bit, 16 threads, 8-wide SIMD)
+2022-05-02 12:32:43 INFO  main  [mitsuba.cpp:219] Copyright 2020, Realistic Graphics Lab, EPFL
+2022-05-02 12:32:43 INFO  main  [mitsuba.cpp:220] Enabled processor features: cuda avx2 avx fma f16c sse4.2 x86_64
+
+
+[2022-05-02 12:32:43] [INFO] ['Mitsuba2', 'dining-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', 'Error']
+[2022-05-02 12:32:43] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   gpu_spectral --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-dining-room-cuda-WavePath-Independent-1920_1080-1024spp-16max_depth-Spectral.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\dining-room\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-Spectral.xml
+[2022-05-02 12:32:43] [WARNING] Error 7: 
+2022-05-02 12:32:43 INFO  main  [optix_api.cpp:56] Dynamic loading of the Optix library ..
+2022-05-02 12:32:43 INFO  main  [mitsuba.cpp:218] Mitsuba version 2.2.1 (master[4e7628c6], Windows, 64bit, 16 threads, 8-wide SIMD)
+2022-05-02 12:32:43 INFO  main  [mitsuba.cpp:219] Copyright 2020, Realistic Graphics Lab, EPFL
+2022-05-02 12:32:43 INFO  main  [mitsuba.cpp:220] Enabled processor features: cuda avx2 avx fma f16c sse4.2 x86_64
+
+
+[2022-05-02 12:32:43] [INFO] ['Mitsuba2', 'dining-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', 'Error']
+[2022-05-02 12:32:43] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   gpu_rgb --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-coffee-cuda-WavePath-Independent-800_1000-1024spp-12max_depth-RGB.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\coffee\scene-WavePath-Independent-800_1000-1024spp-12max_depth-RGB.xml
+[2022-05-02 12:32:43] [WARNING] Error 8: 
+2022-05-02 12:32:43 INFO  main  [optix_api.cpp:56] Dynamic loading of the Optix library ..
+2022-05-02 12:32:43 INFO  main  [mitsuba.cpp:218] Mitsuba version 2.2.1 (master[4e7628c6], Windows, 64bit, 16 threads, 8-wide SIMD)
+2022-05-02 12:32:43 INFO  main  [mitsuba.cpp:219] Copyright 2020, Realistic Graphics Lab, EPFL
+2022-05-02 12:32:43 INFO  main  [mitsuba.cpp:220] Enabled processor features: cuda avx2 avx fma f16c sse4.2 x86_64
+
+
+[2022-05-02 12:32:43] [INFO] ['Mitsuba2', 'coffee', 'cuda', 'WavePath', 'Independent', '(800, 1000)', 1024, 12, 'RGB', 'Error']
+[2022-05-02 12:32:43] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   gpu_spectral --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-coffee-cuda-WavePath-Independent-800_1000-1024spp-12max_depth-Spectral.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\coffee\scene-WavePath-Independent-800_1000-1024spp-12max_depth-Spectral.xml
+[2022-05-02 12:32:43] [WARNING] Error 9: 
+2022-05-02 12:32:43 INFO  main  [optix_api.cpp:56] Dynamic loading of the Optix library ..
+2022-05-02 12:32:43 INFO  main  [mitsuba.cpp:218] Mitsuba version 2.2.1 (master[4e7628c6], Windows, 64bit, 16 threads, 8-wide SIMD)
+2022-05-02 12:32:43 INFO  main  [mitsuba.cpp:219] Copyright 2020, Realistic Graphics Lab, EPFL
+2022-05-02 12:32:43 INFO  main  [mitsuba.cpp:220] Enabled processor features: cuda avx2 avx fma f16c sse4.2 x86_64
+
+
+[2022-05-02 12:32:43] [INFO] ['Mitsuba2', 'coffee', 'cuda', 'WavePath', 'Independent', '(800, 1000)', 1024, 12, 'Spectral', 'Error']
+[2022-05-02 12:32:43] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   gpu_rgb --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-coffee-cuda-WavePath-Independent-800_1000-1024spp-16max_depth-RGB.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\coffee\scene-WavePath-Independent-800_1000-1024spp-16max_depth-RGB.xml
+[2022-05-02 12:32:44] [WARNING] Error 10: 
+2022-05-02 12:32:44 INFO  main  [optix_api.cpp:56] Dynamic loading of the Optix library ..
+2022-05-02 12:32:44 INFO  main  [mitsuba.cpp:218] Mitsuba version 2.2.1 (master[4e7628c6], Windows, 64bit, 16 threads, 8-wide SIMD)
+2022-05-02 12:32:44 INFO  main  [mitsuba.cpp:219] Copyright 2020, Realistic Graphics Lab, EPFL
+2022-05-02 12:32:44 INFO  main  [mitsuba.cpp:220] Enabled processor features: cuda avx2 avx fma f16c sse4.2 x86_64
+
+
+[2022-05-02 12:32:44] [INFO] ['Mitsuba2', 'coffee', 'cuda', 'WavePath', 'Independent', '(800, 1000)', 1024, 16, 'RGB', 'Error']
+[2022-05-02 12:32:44] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   gpu_spectral --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-coffee-cuda-WavePath-Independent-800_1000-1024spp-16max_depth-Spectral.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\coffee\scene-WavePath-Independent-800_1000-1024spp-16max_depth-Spectral.xml
+[2022-05-02 12:32:44] [WARNING] Error 11: 
+2022-05-02 12:32:44 INFO  main  [optix_api.cpp:56] Dynamic loading of the Optix library ..
+2022-05-02 12:32:44 INFO  main  [mitsuba.cpp:218] Mitsuba version 2.2.1 (master[4e7628c6], Windows, 64bit, 16 threads, 8-wide SIMD)
+2022-05-02 12:32:44 INFO  main  [mitsuba.cpp:219] Copyright 2020, Realistic Graphics Lab, EPFL
+2022-05-02 12:32:44 INFO  main  [mitsuba.cpp:220] Enabled processor features: cuda avx2 avx fma f16c sse4.2 x86_64
+
+
+[2022-05-02 12:32:44] [INFO] ['Mitsuba2', 'coffee', 'cuda', 'WavePath', 'Independent', '(800, 1000)', 1024, 16, 'Spectral', 'Error']
+[2022-05-02 12:32:44] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   gpu_rgb --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-glass-of-water-cuda-WavePath-Independent-1920_1080-1024spp-12max_depth-RGB.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\glass-of-water\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-RGB.xml
+[2022-05-02 12:32:44] [WARNING] Error 12: 
+2022-05-02 12:32:44 INFO  main  [optix_api.cpp:56] Dynamic loading of the Optix library ..
+2022-05-02 12:32:44 INFO  main  [mitsuba.cpp:218] Mitsuba version 2.2.1 (master[4e7628c6], Windows, 64bit, 16 threads, 8-wide SIMD)
+2022-05-02 12:32:44 INFO  main  [mitsuba.cpp:219] Copyright 2020, Realistic Graphics Lab, EPFL
+2022-05-02 12:32:44 INFO  main  [mitsuba.cpp:220] Enabled processor features: cuda avx2 avx fma f16c sse4.2 x86_64
+
+
+[2022-05-02 12:32:44] [INFO] ['Mitsuba2', 'glass-of-water', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', 'Error']
+[2022-05-02 12:32:44] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   gpu_spectral --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-glass-of-water-cuda-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\glass-of-water\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.xml
+[2022-05-02 12:32:44] [WARNING] Error 13: 
+2022-05-02 12:32:44 INFO  main  [optix_api.cpp:56] Dynamic loading of the Optix library ..
+2022-05-02 12:32:44 INFO  main  [mitsuba.cpp:218] Mitsuba version 2.2.1 (master[4e7628c6], Windows, 64bit, 16 threads, 8-wide SIMD)
+2022-05-02 12:32:44 INFO  main  [mitsuba.cpp:219] Copyright 2020, Realistic Graphics Lab, EPFL
+2022-05-02 12:32:44 INFO  main  [mitsuba.cpp:220] Enabled processor features: cuda avx2 avx fma f16c sse4.2 x86_64
+
+
+[2022-05-02 12:32:44] [INFO] ['Mitsuba2', 'glass-of-water', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', 'Error']
+[2022-05-02 12:32:44] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   gpu_rgb --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-glass-of-water-cuda-WavePath-Independent-1920_1080-1024spp-16max_depth-RGB.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\glass-of-water\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-RGB.xml
+[2022-05-02 12:32:44] [WARNING] Error 14: 
+2022-05-02 12:32:44 INFO  main  [optix_api.cpp:56] Dynamic loading of the Optix library ..
+2022-05-02 12:32:44 INFO  main  [mitsuba.cpp:218] Mitsuba version 2.2.1 (master[4e7628c6], Windows, 64bit, 16 threads, 8-wide SIMD)
+2022-05-02 12:32:44 INFO  main  [mitsuba.cpp:219] Copyright 2020, Realistic Graphics Lab, EPFL
+2022-05-02 12:32:44 INFO  main  [mitsuba.cpp:220] Enabled processor features: cuda avx2 avx fma f16c sse4.2 x86_64
+
+
+[2022-05-02 12:32:44] [INFO] ['Mitsuba2', 'glass-of-water', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', 'Error']
+[2022-05-02 12:32:44] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   gpu_spectral --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-glass-of-water-cuda-WavePath-Independent-1920_1080-1024spp-16max_depth-Spectral.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\glass-of-water\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-Spectral.xml
+[2022-05-02 12:32:44] [WARNING] Error 15: 
+2022-05-02 12:32:44 INFO  main  [optix_api.cpp:56] Dynamic loading of the Optix library ..
+2022-05-02 12:32:44 INFO  main  [mitsuba.cpp:218] Mitsuba version 2.2.1 (master[4e7628c6], Windows, 64bit, 16 threads, 8-wide SIMD)
+2022-05-02 12:32:44 INFO  main  [mitsuba.cpp:219] Copyright 2020, Realistic Graphics Lab, EPFL
+2022-05-02 12:32:44 INFO  main  [mitsuba.cpp:220] Enabled processor features: cuda avx2 avx fma f16c sse4.2 x86_64
+
+
+[2022-05-02 12:32:44] [INFO] ['Mitsuba2', 'glass-of-water', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', 'Error']
+[2022-05-02 12:32:44] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   gpu_rgb --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-living-room-cuda-WavePath-Independent-1920_1080-1024spp-12max_depth-RGB.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\living-room\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-RGB.xml
+[2022-05-02 12:32:45] [WARNING] Error 16: 
+2022-05-02 12:32:45 INFO  main  [optix_api.cpp:56] Dynamic loading of the Optix library ..
+2022-05-02 12:32:45 INFO  main  [mitsuba.cpp:218] Mitsuba version 2.2.1 (master[4e7628c6], Windows, 64bit, 16 threads, 8-wide SIMD)
+2022-05-02 12:32:45 INFO  main  [mitsuba.cpp:219] Copyright 2020, Realistic Graphics Lab, EPFL
+2022-05-02 12:32:45 INFO  main  [mitsuba.cpp:220] Enabled processor features: cuda avx2 avx fma f16c sse4.2 x86_64
+
+
+[2022-05-02 12:32:45] [INFO] ['Mitsuba2', 'living-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', 'Error']
+[2022-05-02 12:32:45] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   gpu_spectral --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-living-room-cuda-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\living-room\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.xml
+[2022-05-02 12:32:45] [WARNING] Error 17: 
+2022-05-02 12:32:45 INFO  main  [optix_api.cpp:56] Dynamic loading of the Optix library ..
+2022-05-02 12:32:45 INFO  main  [mitsuba.cpp:218] Mitsuba version 2.2.1 (master[4e7628c6], Windows, 64bit, 16 threads, 8-wide SIMD)
+2022-05-02 12:32:45 INFO  main  [mitsuba.cpp:219] Copyright 2020, Realistic Graphics Lab, EPFL
+2022-05-02 12:32:45 INFO  main  [mitsuba.cpp:220] Enabled processor features: cuda avx2 avx fma f16c sse4.2 x86_64
+
+
+[2022-05-02 12:32:45] [INFO] ['Mitsuba2', 'living-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', 'Error']
+[2022-05-02 12:32:45] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   gpu_rgb --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-living-room-cuda-WavePath-Independent-1920_1080-1024spp-16max_depth-RGB.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\living-room\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-RGB.xml
+[2022-05-02 12:32:45] [WARNING] Error 18: 
+2022-05-02 12:32:45 INFO  main  [optix_api.cpp:56] Dynamic loading of the Optix library ..
+2022-05-02 12:32:45 INFO  main  [mitsuba.cpp:218] Mitsuba version 2.2.1 (master[4e7628c6], Windows, 64bit, 16 threads, 8-wide SIMD)
+2022-05-02 12:32:45 INFO  main  [mitsuba.cpp:219] Copyright 2020, Realistic Graphics Lab, EPFL
+2022-05-02 12:32:45 INFO  main  [mitsuba.cpp:220] Enabled processor features: cuda avx2 avx fma f16c sse4.2 x86_64
+
+
+[2022-05-02 12:32:45] [INFO] ['Mitsuba2', 'living-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', 'Error']
+[2022-05-02 12:32:45] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   gpu_spectral --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-living-room-cuda-WavePath-Independent-1920_1080-1024spp-16max_depth-Spectral.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\living-room\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-Spectral.xml
+[2022-05-02 12:32:45] [WARNING] Error 19: 
+2022-05-02 12:32:45 INFO  main  [optix_api.cpp:56] Dynamic loading of the Optix library ..
+2022-05-02 12:32:45 INFO  main  [mitsuba.cpp:218] Mitsuba version 2.2.1 (master[4e7628c6], Windows, 64bit, 16 threads, 8-wide SIMD)
+2022-05-02 12:32:45 INFO  main  [mitsuba.cpp:219] Copyright 2020, Realistic Graphics Lab, EPFL
+2022-05-02 12:32:45 INFO  main  [mitsuba.cpp:220] Enabled processor features: cuda avx2 avx fma f16c sse4.2 x86_64
+
+
+[2022-05-02 12:32:45] [INFO] ['Mitsuba2', 'living-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', 'Error']
+[2022-05-02 12:32:45] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   gpu_rgb --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-spaceship-cuda-WavePath-Independent-1920_1080-1024spp-12max_depth-RGB.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\spaceship\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-RGB.xml
+[2022-05-02 12:32:45] [WARNING] Error 20: 
+2022-05-02 12:32:45 INFO  main  [optix_api.cpp:56] Dynamic loading of the Optix library ..
+2022-05-02 12:32:45 INFO  main  [mitsuba.cpp:218] Mitsuba version 2.2.1 (master[4e7628c6], Windows, 64bit, 16 threads, 8-wide SIMD)
+2022-05-02 12:32:45 INFO  main  [mitsuba.cpp:219] Copyright 2020, Realistic Graphics Lab, EPFL
+2022-05-02 12:32:45 INFO  main  [mitsuba.cpp:220] Enabled processor features: cuda avx2 avx fma f16c sse4.2 x86_64
+
+
+[2022-05-02 12:32:45] [INFO] ['Mitsuba2', 'spaceship', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', 'Error']
+[2022-05-02 12:32:45] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   gpu_spectral --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-spaceship-cuda-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\spaceship\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.xml
+[2022-05-02 12:32:45] [WARNING] Error 21: 
+2022-05-02 12:32:45 INFO  main  [optix_api.cpp:56] Dynamic loading of the Optix library ..
+2022-05-02 12:32:45 INFO  main  [mitsuba.cpp:218] Mitsuba version 2.2.1 (master[4e7628c6], Windows, 64bit, 16 threads, 8-wide SIMD)
+2022-05-02 12:32:45 INFO  main  [mitsuba.cpp:219] Copyright 2020, Realistic Graphics Lab, EPFL
+2022-05-02 12:32:45 INFO  main  [mitsuba.cpp:220] Enabled processor features: cuda avx2 avx fma f16c sse4.2 x86_64
+
+
+[2022-05-02 12:32:45] [INFO] ['Mitsuba2', 'spaceship', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', 'Error']
+[2022-05-02 12:32:45] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   gpu_rgb --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-spaceship-cuda-WavePath-Independent-1920_1080-1024spp-16max_depth-RGB.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\spaceship\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-RGB.xml
+[2022-05-02 12:32:45] [WARNING] Error 22: 
+2022-05-02 12:32:45 INFO  main  [optix_api.cpp:56] Dynamic loading of the Optix library ..
+2022-05-02 12:32:45 INFO  main  [mitsuba.cpp:218] Mitsuba version 2.2.1 (master[4e7628c6], Windows, 64bit, 16 threads, 8-wide SIMD)
+2022-05-02 12:32:45 INFO  main  [mitsuba.cpp:219] Copyright 2020, Realistic Graphics Lab, EPFL
+2022-05-02 12:32:45 INFO  main  [mitsuba.cpp:220] Enabled processor features: cuda avx2 avx fma f16c sse4.2 x86_64
+
+
+[2022-05-02 12:32:45] [INFO] ['Mitsuba2', 'spaceship', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', 'Error']
+[2022-05-02 12:32:45] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   gpu_spectral --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-spaceship-cuda-WavePath-Independent-1920_1080-1024spp-16max_depth-Spectral.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\spaceship\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-Spectral.xml
+[2022-05-02 12:32:46] [WARNING] Error 23: 
+2022-05-02 12:32:45 INFO  main  [optix_api.cpp:56] Dynamic loading of the Optix library ..
+2022-05-02 12:32:46 INFO  main  [mitsuba.cpp:218] Mitsuba version 2.2.1 (master[4e7628c6], Windows, 64bit, 16 threads, 8-wide SIMD)
+2022-05-02 12:32:46 INFO  main  [mitsuba.cpp:219] Copyright 2020, Realistic Graphics Lab, EPFL
+2022-05-02 12:32:46 INFO  main  [mitsuba.cpp:220] Enabled processor features: cuda avx2 avx fma f16c sse4.2 x86_64
+
+
+[2022-05-02 12:32:46] [INFO] ['Mitsuba2', 'spaceship', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', 'Error']
+[2022-05-02 12:32:46] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   gpu_rgb --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-staircase-cuda-WavePath-Independent-720_1280-1024spp-12max_depth-RGB.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\staircase\scene-WavePath-Independent-720_1280-1024spp-12max_depth-RGB.xml
+[2022-05-02 12:32:46] [WARNING] Error 24: 
+2022-05-02 12:32:46 INFO  main  [optix_api.cpp:56] Dynamic loading of the Optix library ..
+2022-05-02 12:32:46 INFO  main  [mitsuba.cpp:218] Mitsuba version 2.2.1 (master[4e7628c6], Windows, 64bit, 16 threads, 8-wide SIMD)
+2022-05-02 12:32:46 INFO  main  [mitsuba.cpp:219] Copyright 2020, Realistic Graphics Lab, EPFL
+2022-05-02 12:32:46 INFO  main  [mitsuba.cpp:220] Enabled processor features: cuda avx2 avx fma f16c sse4.2 x86_64
+
+
+[2022-05-02 12:32:46] [INFO] ['Mitsuba2', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 1024, 12, 'RGB', 'Error']
+[2022-05-02 12:32:46] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   gpu_spectral --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-staircase-cuda-WavePath-Independent-720_1280-1024spp-12max_depth-Spectral.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\staircase\scene-WavePath-Independent-720_1280-1024spp-12max_depth-Spectral.xml
+[2022-05-02 12:32:46] [WARNING] Error 25: 
+2022-05-02 12:32:46 INFO  main  [optix_api.cpp:56] Dynamic loading of the Optix library ..
+2022-05-02 12:32:46 INFO  main  [mitsuba.cpp:218] Mitsuba version 2.2.1 (master[4e7628c6], Windows, 64bit, 16 threads, 8-wide SIMD)
+2022-05-02 12:32:46 INFO  main  [mitsuba.cpp:219] Copyright 2020, Realistic Graphics Lab, EPFL
+2022-05-02 12:32:46 INFO  main  [mitsuba.cpp:220] Enabled processor features: cuda avx2 avx fma f16c sse4.2 x86_64
+
+
+[2022-05-02 12:32:46] [INFO] ['Mitsuba2', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 1024, 12, 'Spectral', 'Error']
+[2022-05-02 12:32:46] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   gpu_rgb --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-staircase-cuda-WavePath-Independent-720_1280-1024spp-16max_depth-RGB.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\staircase\scene-WavePath-Independent-720_1280-1024spp-16max_depth-RGB.xml
+[2022-05-02 12:32:46] [WARNING] Error 26: 
+2022-05-02 12:32:46 INFO  main  [optix_api.cpp:56] Dynamic loading of the Optix library ..
+2022-05-02 12:32:46 INFO  main  [mitsuba.cpp:218] Mitsuba version 2.2.1 (master[4e7628c6], Windows, 64bit, 16 threads, 8-wide SIMD)
+2022-05-02 12:32:46 INFO  main  [mitsuba.cpp:219] Copyright 2020, Realistic Graphics Lab, EPFL
+2022-05-02 12:32:46 INFO  main  [mitsuba.cpp:220] Enabled processor features: cuda avx2 avx fma f16c sse4.2 x86_64
+
+
+[2022-05-02 12:32:46] [INFO] ['Mitsuba2', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 1024, 16, 'RGB', 'Error']
+[2022-05-02 12:32:46] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   gpu_spectral --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-staircase-cuda-WavePath-Independent-720_1280-1024spp-16max_depth-Spectral.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\staircase\scene-WavePath-Independent-720_1280-1024spp-16max_depth-Spectral.xml
+[2022-05-02 12:32:46] [WARNING] Error 27: 
+2022-05-02 12:32:46 INFO  main  [optix_api.cpp:56] Dynamic loading of the Optix library ..
+2022-05-02 12:32:46 INFO  main  [mitsuba.cpp:218] Mitsuba version 2.2.1 (master[4e7628c6], Windows, 64bit, 16 threads, 8-wide SIMD)
+2022-05-02 12:32:46 INFO  main  [mitsuba.cpp:219] Copyright 2020, Realistic Graphics Lab, EPFL
+2022-05-02 12:32:46 INFO  main  [mitsuba.cpp:220] Enabled processor features: cuda avx2 avx fma f16c sse4.2 x86_64
+
+
+[2022-05-02 12:32:46] [INFO] ['Mitsuba2', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 1024, 16, 'Spectral', 'Error']
+[2022-05-02 12:32:46] [INFO] #################### results ####################
+[2022-05-02 12:32:46] [INFO] [['Mitsuba2', 'classroom', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', 'Error'], ['Mitsuba2', 'classroom', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', 'Error'], ['Mitsuba2', 'classroom', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', 'Error'], ['Mitsuba2', 'classroom', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', 'Error'], ['Mitsuba2', 'dining-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', 'Error'], ['Mitsuba2', 'dining-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', 'Error'], ['Mitsuba2', 'dining-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', 'Error'], ['Mitsuba2', 'dining-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', 'Error'], ['Mitsuba2', 'coffee', 'cuda', 'WavePath', 'Independent', '(800, 1000)', 1024, 12, 'RGB', 'Error'], ['Mitsuba2', 'coffee', 'cuda', 'WavePath', 'Independent', '(800, 1000)', 1024, 12, 'Spectral', 'Error'], ['Mitsuba2', 'coffee', 'cuda', 'WavePath', 'Independent', '(800, 1000)', 1024, 16, 'RGB', 'Error'], ['Mitsuba2', 'coffee', 'cuda', 'WavePath', 'Independent', '(800, 1000)', 1024, 16, 'Spectral', 'Error'], ['Mitsuba2', 'glass-of-water', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', 'Error'], ['Mitsuba2', 'glass-of-water', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', 'Error'], ['Mitsuba2', 'glass-of-water', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', 'Error'], ['Mitsuba2', 'glass-of-water', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', 'Error'], ['Mitsuba2', 'living-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', 'Error'], ['Mitsuba2', 'living-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', 'Error'], ['Mitsuba2', 'living-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', 'Error'], ['Mitsuba2', 'living-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', 'Error'], ['Mitsuba2', 'spaceship', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', 'Error'], ['Mitsuba2', 'spaceship', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', 'Error'], ['Mitsuba2', 'spaceship', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', 'Error'], ['Mitsuba2', 'spaceship', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', 'Error'], ['Mitsuba2', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 1024, 12, 'RGB', 'Error'], ['Mitsuba2', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 1024, 12, 'Spectral', 'Error'], ['Mitsuba2', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 1024, 16, 'RGB', 'Error'], ['Mitsuba2', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 1024, 16, 'Spectral', 'Error']]
+[2022-05-02 12:32:46] [INFO] #################### results ####################
+[2022-05-02 12:32:46] [INFO] ====================== end ======================
+[2022-05-02 12:32:46] [INFO] 
+[2022-05-02 12:33:36] [INFO] 
+[2022-05-02 12:33:36] [INFO] ===================== start =====================
+[2022-05-02 12:33:36] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   -m gpu_rgb --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-classroom-cuda-WavePath-Independent-1920_1080-1024spp-12max_depth-RGB.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\classroom\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-RGB.xml
+[2022-05-02 12:33:57] [INFO] 
+[2022-05-02 12:33:57] [INFO] ===================== start =====================
+[2022-05-02 12:33:57] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   -m scalar_rgb --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-classroom-cpu-WavePath-Independent-1920_1080-1024spp-12max_depth-RGB.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\classroom\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-RGB.xml
+[2022-05-02 12:34:08] [INFO] 
+[2022-05-02 12:34:08] [INFO] ===================== start =====================
+[2022-05-02 12:34:08] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b ispc -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-RGB.luisa
+[2022-05-02 12:34:10] [WARNING] Error 0: 
+[2022-05-02 12:34:08.325] [console] [info] Created context for program: luisa-render-cli.exe.
+[2022-05-02 12:34:08.325] [console] [info] Runtime directory: C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin.
+[2022-05-02 12:34:08.325] [console] [info] Cache directory: C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\.cache.
+[2022-05-02 12:34:08.556] [console] [error] Backend 'ispc' is not installed. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\compute\src\runtime\context.cpp:89]
+     0 [0x7ff9e510ccee]: ??? :: spdlog::logger::log_<std::basic_string<char,std::char_traits<char>,std::allocator<char> > & __ptr64,char const (& __ptr64)[84],int> + 1070
+     1 [0x7ff9e51281f1]: ??? :: luisa::compute::Context::create_device + 705
+     2 [0x7ffa45ff54e0]: ??? :: BaseThreadInitThunk + 16
+     3 [0x7ffa47e6485b]: ??? :: RtlUserThreadStart + 43
+
+
+[2022-05-02 12:34:10] [INFO] ['LuisaRender', 'classroom', 'cpu', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', 'Error']
+[2022-05-02 12:34:10] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b ispc -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.luisa
+[2022-05-02 12:34:12] [WARNING] Error 1: 
+[2022-05-02 12:34:10.283] [console] [info] Created context for program: luisa-render-cli.exe.
+[2022-05-02 12:34:10.283] [console] [info] Runtime directory: C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin.
+[2022-05-02 12:34:10.283] [console] [info] Cache directory: C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\.cache.
+[2022-05-02 12:34:10.514] [console] [error] Backend 'ispc' is not installed. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\compute\src\runtime\context.cpp:89]
+     0 [0x7ff9e510ccee]: ??? :: spdlog::logger::log_<std::basic_string<char,std::char_traits<char>,std::allocator<char> > & __ptr64,char const (& __ptr64)[84],int> + 1070
+     1 [0x7ff9e51281f1]: ??? :: luisa::compute::Context::create_device + 705
+     2 [0x7ffa45ff54e0]: ??? :: BaseThreadInitThunk + 16
+     3 [0x7ffa47e6485b]: ??? :: RtlUserThreadStart + 43
+
+
+[2022-05-02 12:34:12] [INFO] ['LuisaRender', 'classroom', 'cpu', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', 'Error']
+[2022-05-02 12:34:12] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b ispc -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-RGB.luisa
+[2022-05-02 12:38:37] [INFO] 
+[2022-05-02 12:38:37] [INFO] ===================== start =====================
+[2022-05-02 12:38:37] [INFO] #################### results ####################
+[2022-05-02 12:38:37] [INFO] []
+[2022-05-02 12:38:37] [INFO] #################### results ####################
+[2022-05-02 12:38:37] [INFO] ====================== end ======================
+[2022-05-02 12:38:37] [INFO] 
+[2022-05-02 12:38:55] [INFO] 
+[2022-05-02 12:38:55] [INFO] ===================== start =====================
+[2022-05-02 12:38:55] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/pbrt-v4/build-vs/Release/pbrt.exe  --wavefront   --gpu-device 0 D:\OldNew\LuisaRender\record\RenderPerformance\PBRT-v4\classroom\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.pbrt
+[2022-05-02 14:39:07] [INFO] ['PBRT-v4', 'classroom', 'cpu', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '7210.9s']
+[2022-05-02 14:39:07] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/pbrt-v4/build-vs/Release/pbrt.exe  --wavefront   --gpu-device 0 D:\OldNew\LuisaRender\record\RenderPerformance\PBRT-v4\classroom\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-Spectral.pbrt
+[2022-05-02 16:41:38] [INFO] ['PBRT-v4', 'classroom', 'cpu', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '7349.8s']
+[2022-05-02 16:41:38] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/pbrt-v4/build-vs/Release/pbrt.exe  --wavefront   --gpu-device 0 D:\OldNew\LuisaRender\record\RenderPerformance\PBRT-v4\dining-room\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.pbrt
+[2022-05-02 18:57:14] [INFO] ['PBRT-v4', 'dining-room', 'cpu', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '8130.2s']
+[2022-05-02 18:57:14] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/pbrt-v4/build-vs/Release/pbrt.exe  --wavefront   --gpu-device 0 D:\OldNew\LuisaRender\record\RenderPerformance\PBRT-v4\dining-room\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-Spectral.pbrt
+[2022-05-02 19:48:55] [INFO] 
+[2022-05-02 19:48:55] [INFO] ===================== start =====================
+[2022-05-02 19:48:55] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-RGB.luisa
+[2022-05-02 19:49:52] [INFO] ['LuisaRender', 'classroom', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '54.0s']
+[2022-05-02 19:49:52] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.luisa
+[2022-05-02 20:18:53] [INFO] 
+[2022-05-02 20:18:53] [INFO] ===================== start =====================
+[2022-05-02 20:18:53] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-RGB.luisa

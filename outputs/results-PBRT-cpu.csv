@@ -1,0 +1,4 @@
+render,scene,backend,integrator,sampler,resolution,spp,max depth,spectrum,time consumption
+PBRT-v4,classroom,cpu,WavePath,Independent,"(1920, 1080)",1024,12,Spectral,7210.9s
+PBRT-v4,classroom,cpu,WavePath,Independent,"(1920, 1080)",1024,16,Spectral,7349.8s
+PBRT-v4,dining-room,cpu,WavePath,Independent,"(1920, 1080)",1024,12,Spectral,8130.2s
