@@ -12,6 +12,7 @@ class Recorder:
                 # init file with headers
                 f_csv = csv.writer(f)
                 f_csv.writerow(headers)
+            return True
         except:
             return False
 
