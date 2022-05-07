@@ -7270,3 +7270,52 @@
 [2022-05-07 22:13:10] [INFO] #################### results ####################
 [2022-05-07 22:13:10] [INFO] ====================== end ======================
 [2022-05-07 22:13:10] [INFO] 
+[2022-05-07 22:20:44] [INFO] 
+[2022-05-07 22:20:44] [INFO] ===================== start =====================
+[2022-05-07 22:20:44] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-WavePath-Independent-720_1280-16spp-16max_depth-2rr_depth-RGB.luisa
+[2022-05-07 22:20:47] [INFO] ['LuisaRender', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 16, 16, 2, 'RGB', '0.1s']
+[2022-05-07 22:20:47] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-WavePath-Independent-720_1280-16spp-16max_depth-5rr_depth-RGB.luisa
+[2022-05-07 22:20:50] [INFO] ['LuisaRender', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 16, 16, 5, 'RGB', '0.2s']
+[2022-05-07 22:20:50] [INFO] #################### results ####################
+[2022-05-07 22:20:50] [INFO] [['LuisaRender', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 16, 16, 2, 'RGB', '0.1s'], ['LuisaRender', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 16, 16, 5, 'RGB', '0.2s']]
+[2022-05-07 22:20:50] [INFO] #################### results ####################
+[2022-05-07 22:20:50] [INFO] ====================== end ======================
+[2022-05-07 22:20:50] [INFO] 
+[2022-05-07 22:21:04] [INFO] 
+[2022-05-07 22:21:04] [INFO] ===================== start =====================
+[2022-05-07 22:21:04] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-WavePath-Independent-720_1280-16spp-16max_depth-2rr_depth-RGB.luisa
+[2022-05-07 22:21:07] [INFO] ['LuisaRender', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 16, 16, 2, 'RGB', '0.1s']
+[2022-05-07 22:21:07] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-WavePath-Independent-720_1280-16spp-16max_depth-5rr_depth-RGB.luisa
+[2022-05-07 22:21:09] [INFO] ['LuisaRender', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 16, 16, 5, 'RGB', '0.2s']
+[2022-05-07 22:21:09] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   -m gpu_rgb --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-staircase-cuda-WavePath-Independent-720_1280-16spp-16max_depth-2rr_depth-RGB.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\staircase\scene-WavePath-Independent-720_1280-16spp-16max_depth-2rr_depth-RGB.xml
+[2022-05-07 22:21:39] [INFO] ['Mitsuba2', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 16, 16, 2, 'RGB', '19.836s']
+[2022-05-07 22:21:39] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   -m gpu_rgb --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-staircase-cuda-WavePath-Independent-720_1280-16spp-16max_depth-5rr_depth-RGB.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\staircase\scene-WavePath-Independent-720_1280-16spp-16max_depth-5rr_depth-RGB.xml
+[2022-05-07 22:21:59] [INFO] ['Mitsuba2', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 16, 16, 5, 'RGB', '13.74s']
+[2022-05-07 22:21:59] [INFO] #################### results ####################
+[2022-05-07 22:21:59] [INFO] [['LuisaRender', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 16, 16, 2, 'RGB', '0.1s'], ['LuisaRender', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 16, 16, 5, 'RGB', '0.2s'], ['Mitsuba2', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 16, 16, 2, 'RGB', '19.836s'], ['Mitsuba2', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 16, 16, 5, 'RGB', '13.74s']]
+[2022-05-07 22:21:59] [INFO] #################### results ####################
+[2022-05-07 22:21:59] [INFO] ====================== end ======================
+[2022-05-07 22:21:59] [INFO] 
+[2022-05-07 22:24:01] [INFO] 
+[2022-05-07 22:24:01] [INFO] ===================== start =====================
+[2022-05-07 22:24:01] [INFO] #################### results ####################
+[2022-05-07 22:24:01] [INFO] []
+[2022-05-07 22:24:01] [INFO] #################### results ####################
+[2022-05-07 22:24:01] [INFO] ====================== end ======================
+[2022-05-07 22:24:01] [INFO] 
+[2022-05-07 22:24:25] [INFO] 
+[2022-05-07 22:24:25] [INFO] ===================== start =====================
+[2022-05-07 22:24:25] [INFO] #################### results ####################
+[2022-05-07 22:24:25] [INFO] []
+[2022-05-07 22:24:25] [INFO] #################### results ####################
+[2022-05-07 22:24:25] [INFO] ====================== end ======================
+[2022-05-07 22:24:25] [INFO] 
+[2022-05-07 22:24:44] [INFO] 
+[2022-05-07 22:24:44] [INFO] ===================== start =====================
+[2022-05-07 22:24:44] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/pbrt-v4/build-vs/Release/pbrt.exe  --wavefront --gpu  --gpu-device 0 D:\OldNew\LuisaRender\record\RenderPerformance\PBRT-v4\staircase\scene-WavePath-Independent-720_1280-16spp-16max_depth-unknownrr_depth-Spectral.pbrt
+[2022-05-07 22:24:55] [INFO] ['PBRT-v4', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 16, 16, 'unknown', 'Spectral', '1.3s']
+[2022-05-07 22:24:55] [INFO] #################### results ####################
+[2022-05-07 22:24:55] [INFO] [['PBRT-v4', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 16, 16, 'unknown', 'Spectral', '1.3s']]
+[2022-05-07 22:24:55] [INFO] #################### results ####################
+[2022-05-07 22:24:55] [INFO] ====================== end ======================
+[2022-05-07 22:24:55] [INFO] 
