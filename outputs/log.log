@@ -6477,3 +6477,633 @@
 [2022-05-07 18:46:46] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/Release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\spaceship\scene-MegaPath-Independent-1920_1080-1024spp-16max_depth-RGB.luisa
 [2022-05-07 18:47:19] [INFO] ['LuisaRender', 'spaceship', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '25.8s']
 [2022-05-07 18:47:19] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/Release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\spaceship\scene-MegaPath-Independent-1920_1080-1024spp-16max_depth-Spectral.luisa
+[2022-05-07 18:53:38] [INFO] 
+[2022-05-07 18:53:38] [INFO] ===================== start =====================
+[2022-05-07 18:53:38] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-RGB.luisa
+[2022-05-07 18:53:42] [WARNING] Error 0: 
+[2022-05-07 18:53:38.513] [console] [info] Created context for program 'luisa-render-cli.exe'.
+[2022-05-07 18:53:38.514] [console] [info] Runtime directory: C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin.
+[2022-05-07 18:53:38.514] [console] [info] Cache directory: C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\.cache.
+[2022-05-07 18:53:38.519] [console] [info] Loaded dynamic module 'C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\luisa-compute-backend-cuda.dll' in 4.5264999999999995 ms.
+[2022-05-07 18:53:38.551] [console] [info] Created CUDA device at index 0: NVIDIA GeForce RTX 2080 Ti (capability = 7.5).
+[2022-05-07 18:53:38.638] [console] [info] Logs from OptiX (KNOBS): All knobs on default.
+
+[2022-05-07 18:53:38.720] [console] [info] Logs from OptiX (DISK CACHE): Opened database: "C:\Users\12437\AppData\Local\NVIDIA\OptixCache\optix7cache.db"
+[2022-05-07 18:53:38.720] [console] [info] Logs from OptiX (DISK CACHE):     Cache data size: "135.6 MiB"
+[2022-05-07 18:53:38.724] [console] [info] Created thread pool with 16 threads.
+[2022-05-07 18:53:38.726] [console] [info] Parsed scene description file 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-RGB.luisa' in 3.0149999999999997 ms.
+[2022-05-07 18:53:38.727] [console] [info] Loaded dynamic module 'C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\luisa-render-spectrum-srgb.dll' in 0.6047 ms.
+[2022-05-07 18:53:38.727] [console] [info] Loaded dynamic module 'C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\luisa-render-integrator-wavepath.dll' in 0.6255 ms.
+[2022-05-07 18:53:38.728] [console] [info] Loaded dynamic module 'C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\luisa-render-sampler-independent.dll' in 0.5439999999999999 ms.
+[2022-05-07 18:53:38.729] [console] [info] Loaded dynamic module 'C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\luisa-render-lightsampler-uniform.dll' in 0.6367999999999999 ms.
+[2022-05-07 18:53:38.729] [console] [info] Loaded dynamic module 'C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\luisa-render-environment-combined.dll' in 0.6311 ms.
+[2022-05-07 18:53:38.730] [console] [info] Loaded dynamic module 'C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\luisa-render-environment-spherical.dll' in 0.6763 ms.
+[2022-05-07 18:53:38.731] [console] [info] Loaded dynamic module 'C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\luisa-render-transform-matrix.dll' in 0.5457 ms.
+[2022-05-07 18:53:38.731] [console] [info] Loaded dynamic module 'C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\luisa-render-texture-image.dll' in 0.5842999999999999 ms.
+[2022-05-07 18:53:39.108] [console] [error] Assertion '_emission == nullptr || _emission->semantic() == Texture::Semantic::ILLUMINANT' failed: Expected illuminant texture for Spherical::emission. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\environments\spherical.cpp:32]
+     0 [0x7ff840fb0198]: ??? :: `fmt::v8::detail::write_int<char,fmt::v8::appender,unsigned __int64>'::`9'::<lambda_2>::operator() + 632
+     1 [0x7ff840fb8b1a]: ??? :: luisa::render::Scene::load_node + 442
+     2 [0x7ff840fb87b1]: ??? :: luisa::render::Scene::load_environment + 17
+     3 [0x7ff868eb958c]: ??? :: create + 140
+     4 [0x7ff840fb8a9e]: ??? :: luisa::render::Scene::load_node + 318
+     5 [0x7ff840fb4b07]: ??? :: luisa::render::Scene::create + 471
+     6 [0x7ff8b1ff54e0]: ??? :: BaseThreadInitThunk + 16
+     7 [0x7ff8b370485b]: ??? :: RtlUserThreadStart + 43
+
+
+[2022-05-07 18:53:42] [INFO] ['LuisaRender', 'classroom', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', 'Error']
+[2022-05-07 18:53:42] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.luisa
+[2022-05-07 18:53:45] [WARNING] Error 1: 
+[2022-05-07 18:53:42.641] [console] [info] Created context for program 'luisa-render-cli.exe'.
+[2022-05-07 18:53:42.642] [console] [info] Runtime directory: C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin.
+[2022-05-07 18:53:42.642] [console] [info] Cache directory: C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\.cache.
+[2022-05-07 18:53:42.647] [console] [info] Loaded dynamic module 'C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\luisa-compute-backend-cuda.dll' in 4.5008 ms.
+[2022-05-07 18:53:42.690] [console] [info] Created CUDA device at index 0: NVIDIA GeForce RTX 2080 Ti (capability = 7.5).
+[2022-05-07 18:53:42.772] [console] [info] Logs from OptiX (KNOBS): All knobs on default.
+
+[2022-05-07 18:53:42.862] [console] [info] Logs from OptiX (DISK CACHE): Opened database: "C:\Users\12437\AppData\Local\NVIDIA\OptixCache\optix7cache.db"
+[2022-05-07 18:53:42.862] [console] [info] Logs from OptiX (DISK CACHE):     Cache data size: "135.6 MiB"
+[2022-05-07 18:53:42.870] [console] [info] Created thread pool with 16 threads.
+[2022-05-07 18:53:42.872] [console] [info] Parsed scene description file 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.luisa' in 7.1217 ms.
+[2022-05-07 18:53:42.873] [console] [info] Loaded dynamic module 'C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\luisa-render-spectrum-hero.dll' in 0.9571 ms.
+[2022-05-07 18:53:42.874] [console] [info] Loaded dynamic module 'C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\luisa-render-integrator-wavepath.dll' in 0.3124 ms.
+[2022-05-07 18:53:42.874] [console] [info] Loaded dynamic module 'C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\luisa-render-sampler-independent.dll' in 0.2467 ms.
+[2022-05-07 18:53:42.874] [console] [info] Loaded dynamic module 'C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\luisa-render-lightsampler-uniform.dll' in 0.25529999999999997 ms.
+[2022-05-07 18:53:42.875] [console] [info] Loaded dynamic module 'C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\luisa-render-environment-combined.dll' in 0.249 ms.
+[2022-05-07 18:53:42.875] [console] [info] Loaded dynamic module 'C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\luisa-render-environment-spherical.dll' in 0.2332 ms.
+[2022-05-07 18:53:42.875] [console] [info] Loaded dynamic module 'C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\luisa-render-transform-matrix.dll' in 0.21969999999999998 ms.
+[2022-05-07 18:53:42.875] [console] [info] Loaded dynamic module 'C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\luisa-render-texture-image.dll' in 0.23559999999999998 ms.
+[2022-05-07 18:53:43.166] [console] [error] Assertion '_emission == nullptr || _emission->semantic() == Texture::Semantic::ILLUMINANT' failed: Expected illuminant texture for Spherical::emission. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\environments\spherical.cpp:32]
+     0 [0x7ff840fb0198]: ??? :: `fmt::v8::detail::write_int<char,fmt::v8::appender,unsigned __int64>'::`9'::<lambda_2>::operator() + 632
+     1 [0x7ff840fb8b1a]: ??? :: luisa::render::Scene::load_node + 442
+     2 [0x7ff840fb87b1]: ??? :: luisa::render::Scene::load_environment + 17
+     3 [0x7ff868ee958c]: ??? :: create + 140
+     4 [0x7ff840fb8a9e]: ??? :: luisa::render::Scene::load_node + 318
+     5 [0x7ff840fb4b07]: ??? :: luisa::render::Scene::create + 471
+     6 [0x7ff8b1ff54e0]: ??? :: BaseThreadInitThunk + 16
+     7 [0x7ff8b370485b]: ??? :: RtlUserThreadStart + 43
+
+
+[2022-05-07 18:53:45] [INFO] ['LuisaRender', 'classroom', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', 'Error']
+[2022-05-07 18:53:45] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-RGB.luisa
+[2022-05-07 18:59:01] [INFO] 
+[2022-05-07 18:59:01] [INFO] ===================== start =====================
+[2022-05-07 18:59:01] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-RGB.luisa
+[2022-05-07 19:00:06] [INFO] ['LuisaRender', 'classroom', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '51.7s']
+[2022-05-07 19:00:06] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.luisa
+[2022-05-07 19:01:37] [INFO] ['LuisaRender', 'classroom', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '74.8s']
+[2022-05-07 19:01:37] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-RGB.luisa
+[2022-05-07 19:02:22] [INFO] ['LuisaRender', 'classroom', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '41.6s']
+[2022-05-07 19:02:22] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.luisa
+[2022-05-07 19:03:17] [INFO] ['LuisaRender', 'classroom', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '50.4s']
+[2022-05-07 19:03:17] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-RGB.luisa
+[2022-05-07 19:04:40] [INFO] ['LuisaRender', 'classroom', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '70.9s']
+[2022-05-07 19:04:40] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-Spectral.luisa
+[2022-05-07 19:06:36] [INFO] ['LuisaRender', 'classroom', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '101.1s']
+[2022-05-07 19:06:36] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-RGB.luisa
+[2022-05-07 19:07:33] [INFO] ['LuisaRender', 'classroom', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '53.6s']
+[2022-05-07 19:07:33] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-Spectral.luisa
+[2022-05-07 19:08:39] [INFO] ['LuisaRender', 'classroom', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '62.2s']
+[2022-05-07 19:08:39] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-MegaPath-Independent-1920_1080-1024spp-12max_depth-RGB.luisa
+[2022-05-07 19:09:50] [INFO] ['LuisaRender', 'classroom', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '59.9s']
+[2022-05-07 19:09:50] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-MegaPath-Independent-1920_1080-1024spp-12max_depth-Spectral.luisa
+[2022-05-07 19:11:59] [INFO] ['LuisaRender', 'classroom', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '117.6s']
+[2022-05-07 19:11:59] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-MegaPath-Independent-1920_1080-1024spp-12max_depth-RGB.luisa
+[2022-05-07 19:12:33] [INFO] ['LuisaRender', 'classroom', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '30.8s']
+[2022-05-07 19:12:33] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-MegaPath-Independent-1920_1080-1024spp-12max_depth-Spectral.luisa
+[2022-05-07 19:13:26] [INFO] ['LuisaRender', 'classroom', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '48.7s']
+[2022-05-07 19:13:26] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-MegaPath-Independent-1920_1080-1024spp-16max_depth-RGB.luisa
+[2022-05-07 19:14:58] [INFO] ['LuisaRender', 'classroom', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '81.9s']
+[2022-05-07 19:14:58] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-MegaPath-Independent-1920_1080-1024spp-16max_depth-Spectral.luisa
+[2022-05-07 19:17:43] [INFO] ['LuisaRender', 'classroom', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '151.8s']
+[2022-05-07 19:17:43] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-MegaPath-Independent-1920_1080-1024spp-16max_depth-RGB.luisa
+[2022-05-07 19:18:27] [INFO] ['LuisaRender', 'classroom', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '40.6s']
+[2022-05-07 19:18:27] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-MegaPath-Independent-1920_1080-1024spp-16max_depth-Spectral.luisa
+[2022-05-07 19:19:32] [INFO] ['LuisaRender', 'classroom', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '61.3s']
+[2022-05-07 19:19:32] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\dining-room\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-RGB.luisa
+[2022-05-07 19:20:15] [INFO] ['LuisaRender', 'dining-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '36.2s']
+[2022-05-07 19:20:15] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\dining-room\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.luisa
+[2022-05-07 19:21:12] [INFO] ['LuisaRender', 'dining-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '49.5s']
+[2022-05-07 19:21:12] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\dining-room\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-RGB.luisa
+[2022-05-07 19:21:48] [INFO] ['LuisaRender', 'dining-room', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '33.3s']
+[2022-05-07 19:21:48] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\dining-room\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.luisa
+[2022-05-07 19:22:34] [INFO] ['LuisaRender', 'dining-room', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '42.4s']
+[2022-05-07 19:22:34] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\dining-room\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-RGB.luisa
+[2022-05-07 19:23:29] [INFO] ['LuisaRender', 'dining-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '49.7s']
+[2022-05-07 19:23:29] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\dining-room\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-Spectral.luisa
+[2022-05-07 19:24:42] [INFO] ['LuisaRender', 'dining-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '64.9s']
+[2022-05-07 19:24:42] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\dining-room\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-RGB.luisa
+[2022-05-07 19:25:30] [INFO] ['LuisaRender', 'dining-room', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '45.4s']
+[2022-05-07 19:25:30] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\dining-room\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-Spectral.luisa
+[2022-05-07 19:26:31] [INFO] ['LuisaRender', 'dining-room', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '57.8s']
+[2022-05-07 19:26:31] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\dining-room\scene-MegaPath-Independent-1920_1080-1024spp-12max_depth-RGB.luisa
+[2022-05-07 19:27:13] [INFO] ['LuisaRender', 'dining-room', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '36.6s']
+[2022-05-07 19:27:13] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\dining-room\scene-MegaPath-Independent-1920_1080-1024spp-12max_depth-Spectral.luisa
+[2022-05-07 19:28:35] [INFO] ['LuisaRender', 'dining-room', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '74.7s']
+[2022-05-07 19:28:35] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\dining-room\scene-MegaPath-Independent-1920_1080-1024spp-12max_depth-RGB.luisa
+[2022-05-07 19:28:58] [INFO] ['LuisaRender', 'dining-room', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '20.2s']
+[2022-05-07 19:28:58] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\dining-room\scene-MegaPath-Independent-1920_1080-1024spp-12max_depth-Spectral.luisa
+[2022-05-07 19:29:32] [INFO] ['LuisaRender', 'dining-room', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '30.8s']
+[2022-05-07 19:29:32] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\dining-room\scene-MegaPath-Independent-1920_1080-1024spp-16max_depth-RGB.luisa
+[2022-05-07 19:30:28] [INFO] ['LuisaRender', 'dining-room', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '50.2s']
+[2022-05-07 19:30:28] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\dining-room\scene-MegaPath-Independent-1920_1080-1024spp-16max_depth-Spectral.luisa
+[2022-05-07 19:32:10] [INFO] ['LuisaRender', 'dining-room', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '95.1s']
+[2022-05-07 19:32:10] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\dining-room\scene-MegaPath-Independent-1920_1080-1024spp-16max_depth-RGB.luisa
+[2022-05-07 19:32:39] [INFO] ['LuisaRender', 'dining-room', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '26.1s']
+[2022-05-07 19:32:39] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\dining-room\scene-MegaPath-Independent-1920_1080-1024spp-16max_depth-Spectral.luisa
+[2022-05-07 19:33:21] [INFO] ['LuisaRender', 'dining-room', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '38.4s']
+[2022-05-07 19:33:21] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-WavePath-Independent-800_1000-1024spp-12max_depth-RGB.luisa
+[2022-05-07 19:33:28] [INFO] ['LuisaRender', 'coffee', 'cuda', 'WavePath', 'Independent', '(800, 1000)', 1024, 12, 'RGB', '3.7s']
+[2022-05-07 19:33:28] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-WavePath-Independent-800_1000-1024spp-12max_depth-Spectral.luisa
+[2022-05-07 19:33:37] [INFO] ['LuisaRender', 'coffee', 'cuda', 'WavePath', 'Independent', '(800, 1000)', 1024, 12, 'Spectral', '5.3s']
+[2022-05-07 19:33:37] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-WavePath-Independent-800_1000-1024spp-12max_depth-RGB.luisa
+[2022-05-07 19:33:42] [INFO] ['LuisaRender', 'coffee', 'directX', 'WavePath', 'Independent', '(800, 1000)', 1024, 12, 'RGB', '3.1s']
+[2022-05-07 19:33:42] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-WavePath-Independent-800_1000-1024spp-12max_depth-Spectral.luisa
+[2022-05-07 19:33:47] [INFO] ['LuisaRender', 'coffee', 'directX', 'WavePath', 'Independent', '(800, 1000)', 1024, 12, 'Spectral', '3.1s']
+[2022-05-07 19:33:47] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-WavePath-Independent-800_1000-1024spp-16max_depth-RGB.luisa
+[2022-05-07 19:33:54] [INFO] ['LuisaRender', 'coffee', 'cuda', 'WavePath', 'Independent', '(800, 1000)', 1024, 16, 'RGB', '4.1s']
+[2022-05-07 19:33:54] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-WavePath-Independent-800_1000-1024spp-16max_depth-Spectral.luisa
+[2022-05-07 19:34:03] [INFO] ['LuisaRender', 'coffee', 'cuda', 'WavePath', 'Independent', '(800, 1000)', 1024, 16, 'Spectral', '5.9s']
+[2022-05-07 19:34:03] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-WavePath-Independent-800_1000-1024spp-16max_depth-RGB.luisa
+[2022-05-07 19:34:08] [INFO] ['LuisaRender', 'coffee', 'directX', 'WavePath', 'Independent', '(800, 1000)', 1024, 16, 'RGB', '3.4s']
+[2022-05-07 19:34:08] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-WavePath-Independent-800_1000-1024spp-16max_depth-Spectral.luisa
+[2022-05-07 19:34:13] [INFO] ['LuisaRender', 'coffee', 'directX', 'WavePath', 'Independent', '(800, 1000)', 1024, 16, 'Spectral', '3.2s']
+[2022-05-07 19:34:13] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-MegaPath-Independent-800_1000-1024spp-12max_depth-RGB.luisa
+[2022-05-07 19:34:22] [INFO] ['LuisaRender', 'coffee', 'cuda', 'MegaPath', 'Independent', '(800, 1000)', 1024, 12, 'RGB', '5.1s']
+[2022-05-07 19:34:22] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-MegaPath-Independent-800_1000-1024spp-12max_depth-Spectral.luisa
+[2022-05-07 19:34:36] [INFO] ['LuisaRender', 'coffee', 'cuda', 'MegaPath', 'Independent', '(800, 1000)', 1024, 12, 'Spectral', '9.2s']
+[2022-05-07 19:34:36] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-MegaPath-Independent-800_1000-1024spp-12max_depth-RGB.luisa
+[2022-05-07 19:34:43] [INFO] ['LuisaRender', 'coffee', 'directX', 'MegaPath', 'Independent', '(800, 1000)', 1024, 12, 'RGB', '5.1s']
+[2022-05-07 19:34:43] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-MegaPath-Independent-800_1000-1024spp-12max_depth-Spectral.luisa
+[2022-05-07 19:34:49] [INFO] ['LuisaRender', 'coffee', 'directX', 'MegaPath', 'Independent', '(800, 1000)', 1024, 12, 'Spectral', '4.7s']
+[2022-05-07 19:34:49] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-MegaPath-Independent-800_1000-1024spp-16max_depth-RGB.luisa
+[2022-05-07 19:34:59] [INFO] ['LuisaRender', 'coffee', 'cuda', 'MegaPath', 'Independent', '(800, 1000)', 1024, 16, 'RGB', '5.8s']
+[2022-05-07 19:34:59] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-MegaPath-Independent-800_1000-1024spp-16max_depth-Spectral.luisa
+[2022-05-07 19:35:14] [INFO] ['LuisaRender', 'coffee', 'cuda', 'MegaPath', 'Independent', '(800, 1000)', 1024, 16, 'Spectral', '10.4s']
+[2022-05-07 19:35:14] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-MegaPath-Independent-800_1000-1024spp-16max_depth-RGB.luisa
+[2022-05-07 19:35:21] [INFO] ['LuisaRender', 'coffee', 'directX', 'MegaPath', 'Independent', '(800, 1000)', 1024, 16, 'RGB', '5.8s']
+[2022-05-07 19:35:21] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-MegaPath-Independent-800_1000-1024spp-16max_depth-Spectral.luisa
+[2022-05-07 19:35:28] [INFO] ['LuisaRender', 'coffee', 'directX', 'MegaPath', 'Independent', '(800, 1000)', 1024, 16, 'Spectral', '4.9s']
+[2022-05-07 19:35:28] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\glass-of-water\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-RGB.luisa
+[2022-05-07 19:35:54] [INFO] ['LuisaRender', 'glass-of-water', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '18.9s']
+[2022-05-07 19:35:54] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\glass-of-water\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.luisa
+[2022-05-07 19:36:28] [INFO] ['LuisaRender', 'glass-of-water', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '25.6s']
+[2022-05-07 19:36:28] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\glass-of-water\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-RGB.luisa
+[2022-05-07 19:36:42] [INFO] ['LuisaRender', 'glass-of-water', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '10.8s']
+[2022-05-07 19:36:42] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\glass-of-water\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.luisa
+[2022-05-07 19:36:52] [INFO] ['LuisaRender', 'glass-of-water', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '6.4s']
+[2022-05-07 19:36:52] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\glass-of-water\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-RGB.luisa
+[2022-05-07 19:37:20] [INFO] ['LuisaRender', 'glass-of-water', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '21.8s']
+[2022-05-07 19:37:20] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\glass-of-water\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-Spectral.luisa
+[2022-05-07 19:37:57] [INFO] ['LuisaRender', 'glass-of-water', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '29.2s']
+[2022-05-07 19:37:57] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\glass-of-water\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-RGB.luisa
+[2022-05-07 19:38:12] [INFO] ['LuisaRender', 'glass-of-water', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '11.8s']
+[2022-05-07 19:38:12] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\glass-of-water\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-Spectral.luisa
+[2022-05-07 19:38:22] [INFO] ['LuisaRender', 'glass-of-water', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '6.5s']
+[2022-05-07 19:38:22] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\glass-of-water\scene-MegaPath-Independent-1920_1080-1024spp-12max_depth-RGB.luisa
+[2022-05-07 19:38:47] [INFO] ['LuisaRender', 'glass-of-water', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '18.6s']
+[2022-05-07 19:38:47] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\glass-of-water\scene-MegaPath-Independent-1920_1080-1024spp-12max_depth-Spectral.luisa
+[2022-05-07 19:39:31] [INFO] ['LuisaRender', 'glass-of-water', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '36.9s']
+[2022-05-07 19:39:31] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\glass-of-water\scene-MegaPath-Independent-1920_1080-1024spp-12max_depth-RGB.luisa
+[2022-05-07 19:39:46] [INFO] ['LuisaRender', 'glass-of-water', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '11.2s']
+[2022-05-07 19:39:46] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\glass-of-water\scene-MegaPath-Independent-1920_1080-1024spp-12max_depth-Spectral.luisa
+[2022-05-07 19:40:00] [INFO] ['LuisaRender', 'glass-of-water', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '10.6s']
+[2022-05-07 19:40:00] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\glass-of-water\scene-MegaPath-Independent-1920_1080-1024spp-16max_depth-RGB.luisa
+[2022-05-07 19:40:27] [INFO] ['LuisaRender', 'glass-of-water', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '21.0s']
+[2022-05-07 19:40:27] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\glass-of-water\scene-MegaPath-Independent-1920_1080-1024spp-16max_depth-Spectral.luisa
+[2022-05-07 19:41:15] [INFO] ['LuisaRender', 'glass-of-water', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '40.1s']
+[2022-05-07 19:41:15] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\glass-of-water\scene-MegaPath-Independent-1920_1080-1024spp-16max_depth-RGB.luisa
+[2022-05-07 19:41:31] [INFO] ['LuisaRender', 'glass-of-water', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '12.6s']
+[2022-05-07 19:41:31] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\glass-of-water\scene-MegaPath-Independent-1920_1080-1024spp-16max_depth-Spectral.luisa
+[2022-05-07 19:41:45] [INFO] ['LuisaRender', 'glass-of-water', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '10.6s']
+[2022-05-07 19:41:45] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-RGB.luisa
+[2022-05-07 19:42:44] [INFO] ['LuisaRender', 'living-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '52.3s']
+[2022-05-07 19:42:44] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.luisa
+[2022-05-07 19:42:48] [WARNING] Error 0: 
+[2022-05-07 19:42:44.438] [console] [info] Created context for program 'luisa-render-cli.exe'.
+[2022-05-07 19:42:44.439] [console] [info] Runtime directory: C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin.
+[2022-05-07 19:42:44.439] [console] [info] Cache directory: C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\.cache.
+[2022-05-07 19:42:44.443] [console] [info] Loaded dynamic module 'C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\luisa-compute-backend-cuda.dll' in 4.2969 ms.
+[2022-05-07 19:42:44.463] [console] [info] Created CUDA device at index 0: NVIDIA GeForce RTX 2080 Ti (capability = 7.5).
+[2022-05-07 19:42:44.524] [console] [info] Logs from OptiX (KNOBS): All knobs on default.
+
+[2022-05-07 19:42:44.602] [console] [info] Logs from OptiX (DISK CACHE): Opened database: "C:\Users\12437\AppData\Local\NVIDIA\OptixCache\optix7cache.db"
+[2022-05-07 19:42:44.602] [console] [info] Logs from OptiX (DISK CACHE):     Cache data size: "141.5 MiB"
+[2022-05-07 19:42:44.609] [console] [info] Created thread pool with 16 threads.
+[2022-05-07 19:42:44.611] [console] [info] Parsed scene description file 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.luisa' in 6.0844 ms.
+[2022-05-07 19:42:44.613] [console] [info] Loaded dynamic module 'C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\luisa-render-spectrum-hero.dll' in 1.8457 ms.
+[2022-05-07 19:42:44.613] [console] [info] Loaded dynamic module 'C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\luisa-render-integrator-wavepath.dll' in 0.3131 ms.
+[2022-05-07 19:42:44.614] [console] [info] Loaded dynamic module 'C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\luisa-render-sampler-independent.dll' in 0.26489999999999997 ms.
+[2022-05-07 19:42:44.614] [console] [info] Loaded dynamic module 'C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\luisa-render-lightsampler-uniform.dll' in 0.2455 ms.
+[2022-05-07 19:42:44.614] [console] [info] Loaded dynamic module 'C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\luisa-render-environment-spherical.dll' in 0.2754 ms.
+[2022-05-07 19:42:44.614] [console] [info] Loaded dynamic module 'C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\luisa-render-transform-srt.dll' in 0.2248 ms.
+[2022-05-07 19:42:44.615] [console] [info] Loaded dynamic module 'C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\luisa-render-texture-image.dll' in 0.2507 ms.
+[2022-05-07 19:42:44.615] [console] [info] Loaded dynamic module 'C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\luisa-render-camera-pinhole.dll' in 0.2412 ms.
+[2022-05-07 19:42:44.615] [console] [info] Loaded dynamic module 'C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\luisa-render-film-color.dll' in 0.2895 ms.
+[2022-05-07 19:42:44.616] [console] [info] Loaded dynamic module 'C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\luisa-render-filter-gaussian.dll' in 0.26589999999999997 ms.
+[2022-05-07 19:42:44.616] [console] [warning] Required 2 values but found 1 for property 'radius' in scene description node 'camera.$internal0'. [D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.luisa:1042:11]
+[2022-05-07 19:42:44.616] [console] [info] Loaded dynamic module 'C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\luisa-render-shape-mesh.dll' in 0.5209 ms.
+[2022-05-07 19:42:44.617] [console] [info] Loaded dynamic module 'C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\luisa-render-surface-substrate.dll' in 0.2696 ms.
+[2022-05-07 19:42:44.617] [console] [info] Loaded dynamic module 'C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\luisa-render-texture-constant.dll' in 0.2621 ms.
+[2022-05-07 19:42:44.617] [console] [info] Encoded: (0, 0, 0.75, 0.8)
+[2022-05-07 19:42:44.617] [console] [info] Encoded: (0, 0, -2.3474276, 0.040000003)
+[2022-05-07 19:42:44.617] [console] [info] Loaded dynamic module 'C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\luisa-render-transform-matrix.dll' in 0.23679999999999998 ms.
+[2022-05-07 19:42:44.617] [console] [info] Loaded dynamic module 'C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\luisa-render-surface-matte.dll' in 0.2681 ms.
+[2022-05-07 19:42:44.617] [console] [info] Encoded: (0, 0, 1.333333, 0.8999999)
+[2022-05-07 19:42:44.618] [console] [info] Encoded: (0, 0, 0.15917079, 0.578596)
+[2022-05-07 19:42:44.618] [console] [info] Loaded dynamic module 'C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\luisa-render-surface-metal.dll' in 0.28409999999999996 ms.
+[2022-05-07 19:42:44.618] [console] [info] Encoded: (0, 0, -1.3333335, 0.1)
+[2022-05-07 19:42:44.618] [console] [info] Encoded: (3.0493928e-05, -0.027030991, 3.5519981, 0.05641335)
+[2022-05-07 19:42:44.618] [console] [info] Encoded: (-5.432361e-05, 0.06971004, -23.355959, 0.09449848)
+[2022-05-07 19:42:44.621] [console] [info] Encoded: (0, 0, -1.3333335, 0.1)
+[2022-05-07 19:42:44.623] [console] [info] Loaded dynamic module 'C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\luisa-render-surface-mirror.dll' in 1.5352999999999999 ms.
+[2022-05-07 19:42:44.623] [console] [info] Encoded: (0, 0, -1.3333335, 0.1)
+[2022-05-07 19:42:44.624] [console] [info] Encoded: (0, 0, 0.15917079, 0.578596)
+[2022-05-07 19:42:44.625] [console] [info] Encoded: (0, 0, -2.3474276, 0.040000003)
+[2022-05-07 19:42:44.626] [console] [info] Encoded: (0, 0, inf, 1)
+[2022-05-07 19:42:44.628] [console] [info] Encoded: (0, 0, -1.3333335, 0.1)
+[2022-05-07 19:42:44.629] [console] [info] Encoded: (-2.5529633e-05, 0.029838987, -9.2562, 0.24418812)
+[2022-05-07 19:42:44.630] [console] [info] Encoded: (0, 0, -2.3474276, 0.040000003)
+[2022-05-07 19:42:44.631] [console] [info] Loaded dynamic module 'C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\cmake-build-release\bin\luisa-render-surface-glass.dll' in 1.3582999999999998 ms.
+[2022-05-07 19:42:44.631] [console] [info] Encoded: (0, 0, inf, 1)
+[2022-05-07 19:42:44.631] [console] [info] Encoded: (0, 0, inf, 1)
+[2022-05-07 19:42:44.631] [console] [warning] Property 'eta' is defined but is not a string list in scene description node 'mat_Glass'. [D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.luisa:116:0]
+[2022-05-07 19:42:44.631] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh036.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.632] [console] [info] Encoded: (8.2923216e-05, -0.0559882, 2.6747942, 0.097034)
+[2022-05-07 19:42:44.632] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh028.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.632] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh028.obj' in 14.253499999999999 ms.
+[2022-05-07 19:42:44.632] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh036.obj' in 14.827599999999999 ms.
+[2022-05-07 19:42:44.633] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh040.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.633] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh040.obj' in 14.741 ms.
+[2022-05-07 19:42:44.633] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh035.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.633] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh035.obj' in 15.873999999999999 ms.
+[2022-05-07 19:42:44.634] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh026.obj' in 16.104499999999998 ms.
+[2022-05-07 19:42:44.635] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh020.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.636] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh020.obj' in 17.3489 ms.
+[2022-05-07 19:42:44.636] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh018.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.636] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh018.obj' in 17.4634 ms.
+[2022-05-07 19:42:44.637] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh041.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.637] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh041.obj' in 19.103099999999998 ms.
+[2022-05-07 19:42:44.640] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh022.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.640] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh022.obj' in 21.7501 ms.
+[2022-05-07 19:42:44.643] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh025.obj' in 23.700599999999998 ms.
+[2022-05-07 19:42:44.648] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh060.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.648] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh060.obj' in 28.3205 ms.
+[2022-05-07 19:42:44.651] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh046.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.651] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh046.obj' in 16.7955 ms.
+[2022-05-07 19:42:44.654] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh032.obj' in 33.6398 ms.
+[2022-05-07 19:42:44.654] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh033.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.654] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh033.obj' in 20.5829 ms.
+[2022-05-07 19:42:44.654] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh049.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.654] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh049.obj' in 18.4924 ms.
+[2022-05-07 19:42:44.655] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh029.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.656] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh029.obj' in 23.107899999999997 ms.
+[2022-05-07 19:42:44.656] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh043.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.656] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh043.obj' in 22.9236 ms.
+[2022-05-07 19:42:44.658] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh039.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.658] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh039.obj' in 21.9285 ms.
+[2022-05-07 19:42:44.658] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh050.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.659] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh050.obj' in 15.5902 ms.
+[2022-05-07 19:42:44.662] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh027.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.662] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh027.obj' in 19.7379 ms.
+[2022-05-07 19:42:44.662] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh052.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.662] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh052.obj' in 18.828 ms.
+[2022-05-07 19:42:44.663] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh048.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.664] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh048.obj' in 15.447 ms.
+[2022-05-07 19:42:44.665] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh054.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.665] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh054.obj' in 13.3721 ms.
+[2022-05-07 19:42:44.669] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh056.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.669] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh056.obj' in 14.9245 ms.
+[2022-05-07 19:42:44.670] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh016.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.670] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh045.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.670] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh045.obj' in 15.7219 ms.
+[2022-05-07 19:42:44.670] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh016.obj' in 50.0676 ms.
+[2022-05-07 19:42:44.671] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh063.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.671] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh063.obj' in 13.8182 ms.
+[2022-05-07 19:42:44.673] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh024.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.673] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh057.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.673] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh057.obj' in 15.877199999999998 ms.
+[2022-05-07 19:42:44.673] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh024.obj' in 24.7134 ms.
+[2022-05-07 19:42:44.674] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh015.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.674] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh015.obj' in 42.0094 ms.
+[2022-05-07 19:42:44.675] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh019.obj' in 16.084799999999998 ms.
+[2022-05-07 19:42:44.677] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh042.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.677] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh042.obj' in 14.847299999999999 ms.
+[2022-05-07 19:42:44.679] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh059.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.679] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh059.obj' in 17.2473 ms.
+[2022-05-07 19:42:44.680] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh051.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.680] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh051.obj' in 15.5694 ms.
+[2022-05-07 19:42:44.690] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh038.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.691] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh038.obj' in 73.4224 ms.
+[2022-05-07 19:42:44.692] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh021.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.692] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh021.obj' in 16.9684 ms.
+[2022-05-07 19:42:44.696] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh011.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.696] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh011.obj' in 18.4405 ms.
+[2022-05-07 19:42:44.696] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh010.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.696] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh010.obj' in 15.783199999999999 ms.
+[2022-05-07 19:42:44.697] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh053.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.697] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh053.obj' in 17.1505 ms.
+[2022-05-07 19:42:44.699] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh061.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.700] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh061.obj' in 35.0274 ms.
+[2022-05-07 19:42:44.702] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh009.obj' in 10.533299999999999 ms.
+[2022-05-07 19:42:44.703] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh017.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.703] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh017.obj' in 11.446399999999999 ms.
+[2022-05-07 19:42:44.710] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh008.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.710] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh008.obj' in 13.7926 ms.
+[2022-05-07 19:42:44.711] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh007.obj' in 14.527899999999999 ms.
+[2022-05-07 19:42:44.711] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh058.obj' in 15.461799999999998 ms.
+[2022-05-07 19:42:44.712] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh023.obj' in 10.099 ms.
+[2022-05-07 19:42:44.712] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh006.obj' in 8.7774 ms.
+[2022-05-07 19:42:44.716] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh034.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.717] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh034.obj' in 43.537 ms.
+[2022-05-07 19:42:44.718] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh005.obj' in 7.847799999999999 ms.
+[2022-05-07 19:42:44.719] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh004.obj' in 7.2101999999999995 ms.
+[2022-05-07 19:42:44.720] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh055.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.721] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh055.obj' in 66.6088 ms.
+[2022-05-07 19:42:44.728] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh003.obj' in 16.176 ms.
+[2022-05-07 19:42:44.730] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh062.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.731] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh062.obj' in 60.823 ms.
+[2022-05-07 19:42:44.734] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh047.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.735] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh047.obj' in 65.68679999999999 ms.
+[2022-05-07 19:42:44.737] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh002.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.737] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh002.obj' in 25.2864 ms.
+[2022-05-07 19:42:44.741] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh000.obj' in 19.7856 ms.
+[2022-05-07 19:42:44.747] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh001.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.748] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh001.obj' in 30.8095 ms.
+[2022-05-07 19:42:44.750] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh030.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.750] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh030.obj' in 31.9351 ms.
+[2022-05-07 19:42:44.752] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh037.obj' in 23.8921 ms.
+[2022-05-07 19:42:44.753] [console] [warning] Invalid texture coordinates in mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh044.obj': address = 0x0, components = 0. [C:\OldNew\Graphics-Lab\LuisaCompute\LuisaRender\src\shapes\mesh.cpp:72]
+[2022-05-07 19:42:44.753] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh044.obj' in 34.3818 ms.
+[2022-05-07 19:42:44.767] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh012.obj' in 91.9198 ms.
+[2022-05-07 19:42:44.770] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh031.obj' in 38.281 ms.
+[2022-05-07 19:42:44.781] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh064.obj' in 110.7046 ms.
+[2022-05-07 19:42:44.783] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh014.obj' in 112.4614 ms.
+[2022-05-07 19:42:44.788] [console] [info] Loaded triangle mesh 'D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\models/Mesh013.obj' in 114.94189999999999 ms.
+[2022-05-07 19:42:45.068] [console] [info] Computed mesh memory usage in 0.0498 ms: temp = 107392, temp_update = 0, output = 361472.
+[2022-05-07 19:42:45.068] [console] [info] Found compilation cache: 'func_3ad0d240729a891d.lib_9c23b1fff6f81b6a.opt_c200c883a69a23f8.ptx'.
+[2022-05-07 19:42:45.068] [console] [info] Found compilation cache: 'func_a0e69659ca2b2987.lib_9c23b1fff6f81b6a.opt_c200c883a69a23f8.ptx'.
+[2022-05-07 19:42:45.068] [console] [info] Generated PTX for kernel_3AD0D240729A891D in 0.312 ms.
+[2022-05-07 19:42:45.068] [console] [info] Generated PTX for kernel_A0E69659CA2B2987 in 0.313 ms.
+[2022-05-07 19:42:45.071] [console] [info] CUDAMesh compaction sizes: before = 361472B, after = 163968B, ratio = 0.4536118980169972.
+[2022-05-07 19:42:45.071] [console] [info] Computed mesh memory usage in 0.01 ms: temp = 1664, temp_update = 0, output = 6784.
+[2022-05-07 19:42:45.072] [console] [info] CUDAMesh compaction sizes: before = 6784B, after = 2176B, ratio = 0.32075471698113206.
+[2022-05-07 19:42:45.072] [console] [info] Computed mesh memory usage in 0.0065 ms: temp = 2176, temp_update = 0, output = 11008.
+[2022-05-07 19:42:45.073] [console] [info] CUDAMesh compaction sizes: before = 11008B, after = 3584B, ratio = 0.32558139534883723.
+[2022-05-07 19:42:45.073] [console] [info] Computed mesh memory usage in 0.0062 ms: temp = 21376, temp_update = 0, output = 76928.
+[2022-05-07 19:42:45.073] [console] [info] CUDAMesh compaction sizes: before = 76928B, after = 30464B, ratio = 0.39600665557404324.
+[2022-05-07 19:42:45.073] [console] [info] Computed mesh memory usage in 0.0089 ms: temp = 1664, temp_update = 0, output = 6784.
+[2022-05-07 19:42:45.074] [console] [info] CUDAMesh compaction sizes: before = 6784B, after = 2048B, ratio = 0.3018867924528302.
+[2022-05-07 19:42:45.074] [console] [info] Computed mesh memory usage in 0.0058 ms: temp = 2176, temp_update = 0, output = 11008.
+[2022-05-07 19:42:45.074] [console] [info] CUDAMesh compaction sizes: before = 11008B, after = 3840B, ratio = 0.3488372093023256.
+[2022-05-07 19:42:45.074] [console] [info] Computed mesh memory usage in 0.0059 ms: temp = 21376, temp_update = 0, output = 76928.
+[2022-05-07 19:42:45.075] [console] [info] CUDAMesh compaction sizes: before = 76928B, after = 31104B, ratio = 0.4043261231281198.
+[2022-05-07 19:42:45.075] [console] [info] Computed mesh memory usage in 0.0063999999999999994 ms: temp = 7424, temp_update = 0, output = 49792.
+[2022-05-07 19:42:45.076] [console] [info] CUDAMesh compaction sizes: before = 49792B, after = 18944B, ratio = 0.38046272493573263.
+[2022-05-07 19:42:45.076] [console] [info] Computed mesh memory usage in 0.0056 ms: temp = 2176, temp_update = 0, output = 11008.
+[2022-05-07 19:42:45.076] [console] [info] CUDAMesh compaction sizes: before = 11008B, after = 4096B, ratio = 0.37209302325581395.
+[2022-05-07 19:42:45.076] [console] [info] Computed mesh memory usage in 0.0059 ms: temp = 4992, temp_update = 0, output = 32256.
+[2022-05-07 19:42:45.076] [console] [info] CUDAMesh compaction sizes: before = 32256B, after = 12032B, ratio = 0.373015873015873.
+[2022-05-07 19:42:45.077] [console] [info] Computed mesh memory usage in 0.0060999999999999995 ms: temp = 12160, temp_update = 0, output = 61568.
+[2022-05-07 19:42:45.077] [console] [info] CUDAMesh compaction sizes: before = 61568B, after = 29056B, ratio = 0.47193347193347196.
+[2022-05-07 19:42:45.077] [console] [info] Computed mesh memory usage in 0.0073999999999999995 ms: temp = 4992, temp_update = 0, output = 32256.
+[2022-05-07 19:42:45.078] [console] [info] CUDAMesh compaction sizes: before = 32256B, after = 11904B, ratio = 0.36904761904761907.
+[2022-05-07 19:42:45.078] [console] [info] Computed mesh memory usage in 0.0062 ms: temp = 12160, temp_update = 0, output = 61568.
+[2022-05-07 19:42:45.078] [console] [info] CUDAMesh compaction sizes: before = 61568B, after = 28288B, ratio = 0.4594594594594595.
+[2022-05-07 19:42:45.079] [console] [info] Computed mesh memory usage in 0.0072 ms: temp = 61056, temp_update = 0, output = 205952.
+[2022-05-07 19:42:45.079] [console] [info] CUDAMesh compaction sizes: before = 205952B, after = 83968B, ratio = 0.4077066500932256.
+[2022-05-07 19:42:45.079] [console] [info] Computed mesh memory usage in 0.006699999999999999 ms: temp = 61056, temp_update = 0, output = 205952.
+[2022-05-07 19:42:45.080] [console] [info] CUDAMesh compaction sizes: before = 205952B, after = 83072B, ratio = 0.4033561218147918.
+[2022-05-07 19:42:45.080] [console] [info] Computed mesh memory usage in 0.0062 ms: temp = 6912, temp_update = 0, output = 46080.
+[2022-05-07 19:42:45.080] [console] [info] CUDAMesh compaction sizes: before = 46080B, after = 18688B, ratio = 0.40555555555555556.
+[2022-05-07 19:42:45.080] [console] [info] Computed mesh memory usage in 0.0065 ms: temp = 9856, temp_update = 0, output = 55808.
+[2022-05-07 19:42:45.081] [console] [info] CUDAMesh compaction sizes: before = 55808B, after = 26496B, ratio = 0.47477064220183485.
+[2022-05-07 19:42:45.081] [console] [info] Computed mesh memory usage in 0.006 ms: temp = 4992, temp_update = 0, output = 32256.
+[2022-05-07 19:42:45.081] [console] [info] CUDAMesh compaction sizes: before = 32256B, after = 13696B, ratio = 0.4246031746031746.
+[2022-05-07 19:42:45.081] [console] [info] Computed mesh memory usage in 0.0058 ms: temp = 4992, temp_update = 0, output = 32256.
+[2022-05-07 19:42:45.082] [console] [info] CUDAMesh compaction sizes: before = 32256B, after = 13568B, ratio = 0.42063492063492064.
+[2022-05-07 19:42:45.082] [console] [info] Computed mesh memory usage in 0.0063 ms: temp = 6912, temp_update = 0, output = 45952.
+[2022-05-07 19:42:45.082] [console] [info] CUDAMesh compaction sizes: before = 45952B, after = 17408B, ratio = 0.3788300835654596.
+[2022-05-07 19:42:45.082] [console] [info] Computed mesh memory usage in 0.005699999999999999 ms: temp = 6912, temp_update = 0, output = 46080.
+[2022-05-07 19:42:45.083] [console] [info] CUDAMesh compaction sizes: before = 46080B, after = 19584B, ratio = 0.425.
+[2022-05-07 19:42:45.083] [console] [info] Computed mesh memory usage in 0.0063 ms: temp = 9088, temp_update = 0, output = 54016.
+[2022-05-07 19:42:45.083] [console] [info] CUDAMesh compaction sizes: before = 54016B, after = 24320B, ratio = 0.45023696682464454.
+[2022-05-07 19:42:45.083] [console] [info] Computed mesh memory usage in 0.005699999999999999 ms: temp = 4992, temp_update = 0, output = 32256.
+[2022-05-07 19:42:45.084] [console] [info] CUDAMesh compaction sizes: before = 32256B, after = 13952B, ratio = 0.43253968253968256.
+[2022-05-07 19:42:45.084] [console] [info] Computed mesh memory usage in 0.0060999999999999995 ms: temp = 6912, temp_update = 0, output = 45952.
+[2022-05-07 19:42:45.084] [console] [info] CUDAMesh compaction sizes: before = 45952B, after = 17024B, ratio = 0.37047353760445684.
+[2022-05-07 19:42:45.084] [console] [info] Computed mesh memory usage in 0.0063 ms: temp = 4992, temp_update = 0, output = 32256.
+[2022-05-07 19:42:45.085] [console] [info] CUDAMesh compaction sizes: before = 32256B, after = 13696B, ratio = 0.4246031746031746.
+[2022-05-07 19:42:45.085] [console] [info] Computed mesh memory usage in 0.0060999999999999995 ms: temp = 37504, temp_update = 0, output = 130048.
+[2022-05-07 19:42:45.085] [console] [info] CUDAMesh compaction sizes: before = 130048B, after = 63488B, ratio = 0.4881889763779528.
+[2022-05-07 19:42:45.085] [console] [info] Computed mesh memory usage in 0.0065 ms: temp = 1408, temp_update = 0, output = 4352.
+[2022-05-07 19:42:45.085] [console] [info] CUDAMesh compaction sizes: before = 4352B, after = 1408B, ratio = 0.3235294117647059.
+[2022-05-07 19:42:45.086] [console] [info] Computed mesh memory usage in 0.0059 ms: temp = 107392, temp_update = 0, output = 361472.
+[2022-05-07 19:42:45.086] [console] [info] CUDAMesh compaction sizes: before = 361472B, after = 168960B, ratio = 0.46742209631728043.
+[2022-05-07 19:42:45.086] [console] [info] Computed mesh memory usage in 0.006 ms: temp = 1408, temp_update = 0, output = 2944.
+[2022-05-07 19:42:45.087] [console] [info] CUDAMesh compaction sizes: before = 2944B, after = 1280B, ratio = 0.43478260869565216.
+[2022-05-07 19:42:45.087] [console] [info] Computed mesh memory usage in 0.0059 ms: temp = 1408, temp_update = 0, output = 4096.
+[2022-05-07 19:42:45.087] [console] [info] CUDAMesh compaction sizes: before = 4096B, after = 1280B, ratio = 0.3125.
+[2022-05-07 19:42:45.087] [console] [info] Computed mesh memory usage in 0.0182 ms: temp = 1920, temp_update = 0, output = 9088.
+[2022-05-07 19:42:45.087] [console] [info] CUDAMesh compaction sizes: before = 9088B, after = 3968B, ratio = 0.43661971830985913.
+[2022-05-07 19:42:45.087] [console] [info] Computed mesh memory usage in 0.0058 ms: temp = 2176, temp_update = 0, output = 10752.
+[2022-05-07 19:42:45.088] [console] [info] CUDAMesh compaction sizes: before = 10752B, after = 3200B, ratio = 0.2976190476190476.
+[2022-05-07 19:42:45.088] [console] [info] Computed mesh memory usage in 0.0060999999999999995 ms: temp = 2176, temp_update = 0, output = 10880.
+[2022-05-07 19:42:45.088] [console] [info] CUDAMesh compaction sizes: before = 10880B, after = 3584B, ratio = 0.32941176470588235.
+[2022-05-07 19:42:45.089] [console] [info] Computed mesh memory usage in 0.0073 ms: temp = 2944, temp_update = 0, output = 16896.
+[2022-05-07 19:42:45.092] [console] [info] CUDAMesh compaction sizes: before = 16896B, after = 7040B, ratio = 0.4166666666666667.
+[2022-05-07 19:42:45.092] [console] [info] Computed mesh memory usage in 0.0060999999999999995 ms: temp = 1408, temp_update = 0, output = 5376.
+[2022-05-07 19:42:45.092] [console] [info] CUDAMesh compaction sizes: before = 5376B, after = 2048B, ratio = 0.38095238095238093.
+[2022-05-07 19:42:45.092] [console] [info] Computed mesh memory usage in 0.005699999999999999 ms: temp = 3968, temp_update = 0, output = 24448.
+[2022-05-07 19:42:45.093] [console] [info] CUDAMesh compaction sizes: before = 24448B, after = 11520B, ratio = 0.4712041884816754.
+[2022-05-07 19:42:45.093] [console] [info] Computed mesh memory usage in 0.0065 ms: temp = 55168, temp_update = 0, output = 189184.
+[2022-05-07 19:42:45.094] [console] [info] CUDAMesh compaction sizes: before = 189184B, after = 83712B, ratio = 0.44248985115020295.
+[2022-05-07 19:42:45.094] [console] [info] Computed mesh memory usage in 0.0063 ms: temp = 140032, temp_update = 0, output = 469248.
+[2022-05-07 19:42:45.094] [console] [info] CUDAMesh compaction sizes: before = 469248B, after = 197248B, ratio = 0.42034915439170756.
+[2022-05-07 19:42:45.095] [console] [info] Computed mesh memory usage in 0.0065 ms: temp = 144000, temp_update = 0, output = 483456.
+[2022-05-07 19:42:45.095] [console] [info] CUDAMesh compaction sizes: before = 483456B, after = 206336B, ratio = 0.4267937516547525.
+[2022-05-07 19:42:45.096] [console] [info] Computed mesh memory usage in 0.0075 ms: temp = 346752, temp_update = 0, output = 1163904.
+[2022-05-07 19:42:45.097] [console] [info] CUDAMesh compaction sizes: before = 1163904B, after = 484096B, ratio = 0.4159243374023974.
+[2022-05-07 19:42:45.097] [console] [info] Computed mesh memory usage in 0.0070999999999999995 ms: temp = 346752, temp_update = 0, output = 1163904.
+[2022-05-07 19:42:45.098] [console] [info] CUDAMesh compaction sizes: before = 1163904B, after = 484864B, ratio = 0.41658418563730343.
+[2022-05-07 19:42:45.098] [console] [info] Computed mesh memory usage in 0.0075 ms: temp = 346752, temp_update = 0, output = 1163904.
+[2022-05-07 19:42:45.099] [console] [info] CUDAMesh compaction sizes: before = 1163904B, after = 465920B, ratio = 0.40030792917628943.
+[2022-05-07 19:42:45.100] [console] [info] Computed mesh memory usage in 0.0068 ms: temp = 95232, temp_update = 0, output = 324480.
+[2022-05-07 19:42:45.100] [console] [info] CUDAMesh compaction sizes: before = 324480B, after = 139264B, ratio = 0.4291913214990138.
+[2022-05-07 19:42:45.100] [console] [info] Computed mesh memory usage in 0.006 ms: temp = 2048, temp_update = 0, output = 9088.
+[2022-05-07 19:42:45.100] [console] [info] CUDAMesh compaction sizes: before = 9088B, after = 4096B, ratio = 0.4507042253521127.
+[2022-05-07 19:42:45.101] [console] [info] Computed mesh memory usage in 0.0062 ms: temp = 269440, temp_update = 0, output = 905728.
+[2022-05-07 19:42:45.101] [console] [info] CUDAMesh compaction sizes: before = 905728B, after = 372480B, ratio = 0.41124929338609384.
+[2022-05-07 19:42:45.102] [console] [info] Computed mesh memory usage in 0.0062 ms: temp = 3200, temp_update = 0, output = 18688.
+[2022-05-07 19:42:45.102] [console] [info] CUDAMesh compaction sizes: before = 18688B, after = 5888B, ratio = 0.3150684931506849.
+[2022-05-07 19:42:45.102] [console] [info] Computed mesh memory usage in 0.006 ms: temp = 3200, temp_update = 0, output = 18688.
+[2022-05-07 19:42:45.102] [console] [info] CUDAMesh compaction sizes: before = 18688B, after = 5888B, ratio = 0.3150684931506849.
+[2022-05-07 19:42:45.102] [console] [info] Computed mesh memory usage in 0.0058 ms: temp = 7424, temp_update = 0, output = 49792.
+[2022-05-07 19:42:45.103] [console] [info] CUDAMesh compaction sizes: before = 49792B, after = 18816B, ratio = 0.37789203084832906.
+[2022-05-07 19:42:45.103] [console] [info] Computed mesh memory usage in 0.0059 ms: temp = 2176, temp_update = 0, output = 11008.
+[2022-05-07 19:42:45.103] [console] [info] CUDAMesh compaction sizes: before = 11008B, after = 4096B, ratio = 0.37209302325581395.
+[2022-05-07 19:42:45.103] [console] [info] Computed mesh memory usage in 0.005399999999999999 ms: temp = 4992, temp_update = 0, output = 32256.
+[2022-05-07 19:42:45.104] [console] [info] CUDAMesh compaction sizes: before = 32256B, after = 11520B, ratio = 0.35714285714285715.
+[2022-05-07 19:42:45.104] [console] [info] Computed mesh memory usage in 0.0058 ms: temp = 12160, temp_update = 0, output = 61568.
+[2022-05-07 19:42:45.104] [console] [info] CUDAMesh compaction sizes: before = 61568B, after = 26240B, ratio = 0.4261954261954262.
+[2022-05-07 19:42:45.104] [console] [info] Computed mesh memory usage in 0.0056 ms: temp = 4992, temp_update = 0, output = 32256.
+[2022-05-07 19:42:45.105] [console] [info] CUDAMesh compaction sizes: before = 32256B, after = 11648B, ratio = 0.3611111111111111.
+[2022-05-07 19:42:45.105] [console] [info] Computed mesh memory usage in 0.011 ms: temp = 12160, temp_update = 0, output = 61568.
+[2022-05-07 19:42:45.105] [console] [info] CUDAMesh compaction sizes: before = 61568B, after = 25216B, ratio = 0.4095634095634096.
+[2022-05-07 19:42:45.105] [console] [info] Computed mesh memory usage in 0.0058 ms: temp = 1408, temp_update = 0, output = 2944.
+[2022-05-07 19:42:45.106] [console] [info] CUDAMesh compaction sizes: before = 2944B, after = 1280B, ratio = 0.43478260869565216.
+[2022-05-07 19:42:45.106] [console] [info] Computed mesh memory usage in 0.0072 ms: temp = 1408, temp_update = 0, output = 5120.
+[2022-05-07 19:42:45.108] [console] [info] CUDAMesh compaction sizes: before = 5120B, after = 1536B, ratio = 0.3.
+[2022-05-07 19:42:45.108] [console] [info] Computed mesh memory usage in 0.006 ms: temp = 1408, temp_update = 0, output = 5120.
+[2022-05-07 19:42:45.108] [console] [info] CUDAMesh compaction sizes: before = 5120B, after = 1536B, ratio = 0.3.
+[2022-05-07 19:42:45.108] [console] [info] Computed mesh memory usage in 0.0059 ms: temp = 1408, temp_update = 0, output = 2944.
+[2022-05-07 19:42:45.109] [console] [info] CUDAMesh compaction sizes: before = 2944B, after = 1280B, ratio = 0.43478260869565216.
+[2022-05-07 19:42:45.110] [console] [info] Computed mesh memory usage in 0.0073 ms: temp = 2176, temp_update = 0, output = 10880.
+[2022-05-07 19:42:45.113] [console] [info] CUDAMesh compaction sizes: before = 10880B, after = 4096B, ratio = 0.3764705882352941.
+[2022-05-07 19:42:45.113] [console] [info] Computed mesh memory usage in 0.0065 ms: temp = 58112, temp_update = 0, output = 199552.
+[2022-05-07 19:42:45.113] [console] [info] CUDAMesh compaction sizes: before = 199552B, after = 86528B, ratio = 0.43361128928800513.
+[2022-05-07 19:42:45.114] [console] [info] Computed mesh memory usage in 0.0060999999999999995 ms: temp = 78976, temp_update = 0, output = 267904.
+[2022-05-07 19:42:45.114] [console] [info] CUDAMesh compaction sizes: before = 267904B, after = 103552B, ratio = 0.3865265169612996.
+[2022-05-07 19:42:45.114] [console] [info] Computed mesh memory usage in 0.0062 ms: temp = 89856, temp_update = 0, output = 303744.
+[2022-05-07 19:42:45.115] [console] [info] CUDAMesh compaction sizes: before = 303744B, after = 133248B, ratio = 0.438685208596713.
+[2022-05-07 19:42:45.115] [console] [info] Computed mesh memory usage in 0.0063 ms: temp = 89856, temp_update = 0, output = 303744.
+[2022-05-07 19:42:45.116] [console] [info] CUDAMesh compaction sizes: before = 303744B, after = 128384B, ratio = 0.4226717235566793.
+[2022-05-07 19:42:45.116] [console] [info] Computed mesh memory usage in 0.0060999999999999995 ms: temp = 35712, temp_update = 0, output = 124672.
+[2022-05-07 19:42:45.117] [console] [info] CUDAMesh compaction sizes: before = 124672B, after = 55040B, ratio = 0.4414784394250513.
+[2022-05-07 19:42:45.117] [console] [info] Computed mesh memory usage in 0.0062 ms: temp = 50560, temp_update = 0, output = 173184.
+[2022-05-07 19:42:45.117] [console] [info] CUDAMesh compaction sizes: before = 173184B, after = 76800B, ratio = 0.4434589800443459.
+[2022-05-07 19:42:45.117] [console] [info] Computed mesh memory usage in 0.005 ms: temp = 164352, temp_update = 0, output = 554368.
+[2022-05-07 19:42:45.118] [console] [info] CUDAMesh compaction sizes: before = 554368B, after = 237696B, ratio = 0.42876933733548833.
+[2022-05-07 19:42:45.118] [console] [info] Computed accel memory usage in 0.008 ms: temp = 6144, temp_update = 2304, output = 19200.
+[2022-05-07 19:42:45.135] [console] [info] CUDAAccel compaction: before = 19200B, after = 15744B, ratio = 0.82.
+[2022-05-07 19:42:45.137] [console] [info] Failed to load compilation cache for kernel 688BACD89C65E25C, falling back to re-compiling.
+[2022-05-07 19:42:45.348] [console] [info] Generated PTX for kernel_688BACD89C65E25C in 211.5152 ms.
+[2022-05-07 19:42:45.385] [console] [info] Rendering to 'D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/LuisaRender-living-room-cuda-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.exr' of resolution 1920x1080 at 1024spp.
+[2022-05-07 19:42:45.386] [console] [info] Wavefront path tracing configurations: resolution = 1920x1080, spp = 1024, state_count = 18662400, spp_per_launch = 9.
+[2022-05-07 19:42:45.394] [console] [info] Compiling ray generation kernel.
+[2022-05-07 19:42:45.394] [console] [info] Compiling intersection kernel.
+[2022-05-07 19:42:45.394] [console] [info] Failed to load compilation cache for kernel F9E7F48DE944D504, falling back to re-compiling.
+[2022-05-07 19:42:45.394] [console] [info] Compiling environment evaluation kernel.
+[2022-05-07 19:42:45.394] [console] [info] Found compilation cache: 'func_77ed65c5df9c69d3.lib_9c23b1fff6f81b6a.opt_542091abfc1e5da4.ptx'.
+[2022-05-07 19:42:45.394] [console] [info] Generated PTX for __raygen__rg_77ED65C5DF9C69D3 in 0.13399999999999998 ms.
+[2022-05-07 19:42:45.394] [console] [info] Compiling light evaluation kernel.
+[2022-05-07 19:42:45.394] [console] [info] Compiling light sampling kernel.
+[2022-05-07 19:42:45.394] [console] [info] Failed to load compilation cache for kernel E8E8B0C014261483, falling back to re-compiling.
+[2022-05-07 19:42:45.394] [console] [info] Found compilation cache: 'func_e952e355723060fc.lib_9c23b1fff6f81b6a.opt_c200c883a69a23f8.ptx'.
+[2022-05-07 19:42:45.394] [console] [info] Generated PTX for kernel_E952E355723060FC in 0.12409999999999999 ms.
+[2022-05-07 19:42:45.395] [console] [info] Logs from OptiX (DISKCACHE): Cache hit for key: ptx-4263-key0cb7c3520f249fc346441d6aa476e2d2-sm_75-rtc1-drv511.65
+[2022-05-07 19:42:45.395] [console] [info] Logs from OptiX (COMPILE FEEDBACK): 
+[2022-05-07 19:42:45.395] [console] [info] Compiling surface evaluation kernel.
+[2022-05-07 19:42:45.395] [console] [info] Failed to load compilation cache for kernel 3511F77AC78DFB72, falling back to re-compiling.
+[2022-05-07 19:42:45.415] [console] [info] Compiling accumulation kernel.
+[2022-05-07 19:42:45.416] [console] [info] Failed to load compilation cache for kernel DAC11ABF24AABADA, falling back to re-compiling.
+[2022-05-07 19:42:45.416] [console] [info] Found compilation cache: 'func_3d57fdc8aefab911.lib_9c23b1fff6f81b6a.opt_c200c883a69a23f8.ptx'.
+[2022-05-07 19:42:45.416] [console] [info] Generated PTX for kernel_3D57FDC8AEFAB911 in 0.4335 ms.
+[2022-05-07 19:42:45.445] [console] [info] Found compilation cache: 'func_b15fd4575b3ea124.lib_9c23b1fff6f81b6a.opt_c200c883a69a23f8.ptx'.
+[2022-05-07 19:42:45.445] [console] [info] Generated PTX for kernel_B15FD4575B3EA124 in 0.0978 ms.
+[2022-05-07 19:42:45.448] [console] [info] Generated PTX for kernel_B15FD4575B3EA124 in 0.0031999999999999997 ms.
+[2022-05-07 19:42:45.451] [console] [info] Generated PTX for kernel_B15FD4575B3EA124 in 0.0040999999999999995 ms.
+[2022-05-07 19:42:45.454] [console] [info] Generated PTX for kernel_B15FD4575B3EA124 in 0.004 ms.
+[2022-05-07 19:42:45.457] [console] [info] Generated PTX for kernel_B15FD4575B3EA124 in 0.0025 ms.
+[2022-05-07 19:42:45.459] [console] [info] Logs from OptiX (COMPILE FEEDBACK): Info: Pipeline has 1 module(s), 2 entry function(s), 1 trace call(s), 0 continuation callable call(s), 0 direct callable call(s), 11 basic block(s) in entry functions, 124 instruction(s) in entry functions, 7 non-entry function(s), 53 basic block(s) in non-entry functions, 627 instruction(s) in non-entry functions
+
+
+
+[2022-05-07 19:42:48] [INFO] ['LuisaRender', 'living-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', 'Error']
+[2022-05-07 19:42:48] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-RGB.luisa
+[2022-05-07 19:43:31] [INFO] ['LuisaRender', 'living-room', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '40.5s']
+[2022-05-07 19:43:31] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.luisa
+[2022-05-07 19:44:15] [INFO] ['LuisaRender', 'living-room', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '40.2s']
+[2022-05-07 19:44:15] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-RGB.luisa
+[2022-05-07 19:45:29] [INFO] ['LuisaRender', 'living-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '67.8s']
+[2022-05-07 19:45:29] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-Spectral.luisa
+[2022-05-07 19:47:05] [INFO] ['LuisaRender', 'living-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '88.6s']
+[2022-05-07 19:47:05] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-RGB.luisa
+[2022-05-07 19:48:01] [INFO] ['LuisaRender', 'living-room', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '53.6s']
+[2022-05-07 19:48:01] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-Spectral.luisa
+[2022-05-07 19:48:56] [INFO] ['LuisaRender', 'living-room', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '51.6s']
+[2022-05-07 19:48:56] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\scene-MegaPath-Independent-1920_1080-1024spp-12max_depth-RGB.luisa
+[2022-05-07 19:49:51] [INFO] ['LuisaRender', 'living-room', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '48.8s']
+[2022-05-07 19:49:51] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\scene-MegaPath-Independent-1920_1080-1024spp-12max_depth-Spectral.luisa
+[2022-05-07 19:51:27] [INFO] ['LuisaRender', 'living-room', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '89.2s']
+[2022-05-07 19:51:27] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\scene-MegaPath-Independent-1920_1080-1024spp-12max_depth-RGB.luisa
+[2022-05-07 19:51:57] [INFO] ['LuisaRender', 'living-room', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '27.3s']
+[2022-05-07 19:51:57] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\scene-MegaPath-Independent-1920_1080-1024spp-12max_depth-Spectral.luisa
+[2022-05-07 19:52:34] [INFO] ['LuisaRender', 'living-room', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '33.7s']
+[2022-05-07 19:52:34] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\scene-MegaPath-Independent-1920_1080-1024spp-16max_depth-RGB.luisa
+[2022-05-07 19:53:47] [INFO] ['LuisaRender', 'living-room', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '67.6s']
+[2022-05-07 19:53:47] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\scene-MegaPath-Independent-1920_1080-1024spp-16max_depth-Spectral.luisa
+[2022-05-07 19:55:50] [INFO] ['LuisaRender', 'living-room', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '115.8s']
+[2022-05-07 19:55:50] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\scene-MegaPath-Independent-1920_1080-1024spp-16max_depth-RGB.luisa
+[2022-05-07 19:56:29] [INFO] ['LuisaRender', 'living-room', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '36.2s']
+[2022-05-07 19:56:29] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\scene-MegaPath-Independent-1920_1080-1024spp-16max_depth-Spectral.luisa
+[2022-05-07 19:57:14] [INFO] ['LuisaRender', 'living-room', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '41.9s']
+[2022-05-07 19:57:14] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\spaceship\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-RGB.luisa
+[2022-05-07 19:57:34] [INFO] ['LuisaRender', 'spaceship', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '13.4s']
+[2022-05-07 19:57:34] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\spaceship\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.luisa
+[2022-05-07 19:58:00] [INFO] ['LuisaRender', 'spaceship', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '19.0s']
+[2022-05-07 19:58:00] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\spaceship\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-RGB.luisa
+[2022-05-07 19:58:15] [INFO] ['LuisaRender', 'spaceship', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '11.5s']
+[2022-05-07 19:58:15] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\spaceship\scene-WavePath-Independent-1920_1080-1024spp-12max_depth-Spectral.luisa
+[2022-05-07 19:58:33] [INFO] ['LuisaRender', 'spaceship', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '14.8s']
+[2022-05-07 19:58:33] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\spaceship\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-RGB.luisa
+[2022-05-07 19:58:54] [INFO] ['LuisaRender', 'spaceship', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '15.6s']
+[2022-05-07 19:58:54] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\spaceship\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-Spectral.luisa
+[2022-05-07 19:59:24] [INFO] ['LuisaRender', 'spaceship', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '22.2s']
+[2022-05-07 19:59:24] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\spaceship\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-RGB.luisa
+[2022-05-07 19:59:40] [INFO] ['LuisaRender', 'spaceship', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '13.1s']
+[2022-05-07 19:59:40] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\spaceship\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-Spectral.luisa
+[2022-05-07 20:00:00] [INFO] ['LuisaRender', 'spaceship', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '16.6s']
+[2022-05-07 20:00:00] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\spaceship\scene-MegaPath-Independent-1920_1080-1024spp-12max_depth-RGB.luisa
+[2022-05-07 20:00:30] [INFO] ['LuisaRender', 'spaceship', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '22.8s']
+[2022-05-07 20:00:30] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\spaceship\scene-MegaPath-Independent-1920_1080-1024spp-12max_depth-Spectral.luisa
+[2022-05-07 20:01:28] [INFO] ['LuisaRender', 'spaceship', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '50.0s']
+[2022-05-07 20:01:28] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\spaceship\scene-MegaPath-Independent-1920_1080-1024spp-12max_depth-RGB.luisa
+[2022-05-07 20:01:49] [INFO] ['LuisaRender', 'spaceship', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '17.5s']
+[2022-05-07 20:01:49] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\spaceship\scene-MegaPath-Independent-1920_1080-1024spp-12max_depth-Spectral.luisa
+[2022-05-07 20:02:18] [INFO] ['LuisaRender', 'spaceship', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '25.6s']
+[2022-05-07 20:02:18] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\spaceship\scene-MegaPath-Independent-1920_1080-1024spp-16max_depth-RGB.luisa
+[2022-05-07 20:02:51] [INFO] ['LuisaRender', 'spaceship', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '26.1s']
+[2022-05-07 20:02:51] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\spaceship\scene-MegaPath-Independent-1920_1080-1024spp-16max_depth-Spectral.luisa
+[2022-05-07 20:03:56] [INFO] ['LuisaRender', 'spaceship', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '56.3s']
+[2022-05-07 20:03:56] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\spaceship\scene-MegaPath-Independent-1920_1080-1024spp-16max_depth-RGB.luisa
+[2022-05-07 20:04:19] [INFO] ['LuisaRender', 'spaceship', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '20.2s']
+[2022-05-07 20:04:20] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\spaceship\scene-MegaPath-Independent-1920_1080-1024spp-16max_depth-Spectral.luisa
+[2022-05-07 20:04:52] [INFO] ['LuisaRender', 'spaceship', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '28.8s']
+[2022-05-07 20:04:52] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-WavePath-Independent-720_1280-1024spp-12max_depth-RGB.luisa
+[2022-05-07 20:05:08] [INFO] ['LuisaRender', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 1024, 12, 'RGB', '4.6s']
+[2022-05-07 20:05:08] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-WavePath-Independent-720_1280-1024spp-12max_depth-Spectral.luisa
+[2022-05-07 20:05:29] [INFO] ['LuisaRender', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 1024, 12, 'Spectral', '6.6s']
+[2022-05-07 20:05:29] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-WavePath-Independent-720_1280-1024spp-12max_depth-RGB.luisa
+[2022-05-07 20:05:37] [INFO] ['LuisaRender', 'staircase', 'directX', 'WavePath', 'Independent', '(720, 1280)', 1024, 12, 'RGB', '3.7s']
+[2022-05-07 20:05:37] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-WavePath-Independent-720_1280-1024spp-12max_depth-Spectral.luisa
+[2022-05-07 20:05:48] [INFO] ['LuisaRender', 'staircase', 'directX', 'WavePath', 'Independent', '(720, 1280)', 1024, 12, 'Spectral', '5.7s']
+[2022-05-07 20:05:48] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-WavePath-Independent-720_1280-1024spp-16max_depth-RGB.luisa
+[2022-05-07 20:05:55] [INFO] ['LuisaRender', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 1024, 16, 'RGB', '4.4s']
+[2022-05-07 20:05:55] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-WavePath-Independent-720_1280-1024spp-16max_depth-Spectral.luisa
+[2022-05-07 20:06:04] [INFO] ['LuisaRender', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 1024, 16, 'Spectral', '6.3s']
+[2022-05-07 20:06:04] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-WavePath-Independent-720_1280-1024spp-16max_depth-RGB.luisa
+[2022-05-07 20:06:12] [INFO] ['LuisaRender', 'staircase', 'directX', 'WavePath', 'Independent', '(720, 1280)', 1024, 16, 'RGB', '3.7s']
+[2022-05-07 20:06:12] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-WavePath-Independent-720_1280-1024spp-16max_depth-Spectral.luisa
+[2022-05-07 20:06:23] [INFO] ['LuisaRender', 'staircase', 'directX', 'WavePath', 'Independent', '(720, 1280)', 1024, 16, 'Spectral', '5.6s']
+[2022-05-07 20:06:23] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-MegaPath-Independent-720_1280-1024spp-12max_depth-RGB.luisa
+[2022-05-07 20:06:39] [INFO] ['LuisaRender', 'staircase', 'cuda', 'MegaPath', 'Independent', '(720, 1280)', 1024, 12, 'RGB', '6.9s']
+[2022-05-07 20:06:39] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-MegaPath-Independent-720_1280-1024spp-12max_depth-Spectral.luisa
+[2022-05-07 20:07:04] [INFO] ['LuisaRender', 'staircase', 'cuda', 'MegaPath', 'Independent', '(720, 1280)', 1024, 12, 'Spectral', '13.1s']
+[2022-05-07 20:07:04] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-MegaPath-Independent-720_1280-1024spp-12max_depth-RGB.luisa
+[2022-05-07 20:07:12] [INFO] ['LuisaRender', 'staircase', 'directX', 'MegaPath', 'Independent', '(720, 1280)', 1024, 12, 'RGB', '4.3s']
+[2022-05-07 20:07:12] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-MegaPath-Independent-720_1280-1024spp-12max_depth-Spectral.luisa
+[2022-05-07 20:07:25] [INFO] ['LuisaRender', 'staircase', 'directX', 'MegaPath', 'Independent', '(720, 1280)', 1024, 12, 'Spectral', '7.6s']
+[2022-05-07 20:07:25] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-MegaPath-Independent-720_1280-1024spp-16max_depth-RGB.luisa
+[2022-05-07 20:07:34] [INFO] ['LuisaRender', 'staircase', 'cuda', 'MegaPath', 'Independent', '(720, 1280)', 1024, 16, 'RGB', '6.8s']
+[2022-05-07 20:07:34] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-MegaPath-Independent-720_1280-1024spp-16max_depth-Spectral.luisa
+[2022-05-07 20:07:51] [INFO] ['LuisaRender', 'staircase', 'cuda', 'MegaPath', 'Independent', '(720, 1280)', 1024, 16, 'Spectral', '13.6s']
+[2022-05-07 20:07:51] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-MegaPath-Independent-720_1280-1024spp-16max_depth-RGB.luisa
+[2022-05-07 20:07:59] [INFO] ['LuisaRender', 'staircase', 'directX', 'MegaPath', 'Independent', '(720, 1280)', 1024, 16, 'RGB', '4.2s']
+[2022-05-07 20:07:59] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-MegaPath-Independent-720_1280-1024spp-16max_depth-Spectral.luisa
+[2022-05-07 20:08:11] [INFO] ['LuisaRender', 'staircase', 'directX', 'MegaPath', 'Independent', '(720, 1280)', 1024, 16, 'Spectral', '7.4s']
+[2022-05-07 20:08:11] [INFO] #################### results ####################
+[2022-05-07 20:08:11] [INFO] [['LuisaRender', 'classroom', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '51.7s'], ['LuisaRender', 'classroom', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '74.8s'], ['LuisaRender', 'classroom', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '41.6s'], ['LuisaRender', 'classroom', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '50.4s'], ['LuisaRender', 'classroom', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '70.9s'], ['LuisaRender', 'classroom', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '101.1s'], ['LuisaRender', 'classroom', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '53.6s'], ['LuisaRender', 'classroom', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '62.2s'], ['LuisaRender', 'classroom', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '59.9s'], ['LuisaRender', 'classroom', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '117.6s'], ['LuisaRender', 'classroom', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '30.8s'], ['LuisaRender', 'classroom', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '48.7s'], ['LuisaRender', 'classroom', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '81.9s'], ['LuisaRender', 'classroom', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '151.8s'], ['LuisaRender', 'classroom', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '40.6s'], ['LuisaRender', 'classroom', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '61.3s'], ['LuisaRender', 'dining-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '36.2s'], ['LuisaRender', 'dining-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '49.5s'], ['LuisaRender', 'dining-room', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '33.3s'], ['LuisaRender', 'dining-room', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '42.4s'], ['LuisaRender', 'dining-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '49.7s'], ['LuisaRender', 'dining-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '64.9s'], ['LuisaRender', 'dining-room', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '45.4s'], ['LuisaRender', 'dining-room', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '57.8s'], ['LuisaRender', 'dining-room', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '36.6s'], ['LuisaRender', 'dining-room', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '74.7s'], ['LuisaRender', 'dining-room', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '20.2s'], ['LuisaRender', 'dining-room', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '30.8s'], ['LuisaRender', 'dining-room', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '50.2s'], ['LuisaRender', 'dining-room', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '95.1s'], ['LuisaRender', 'dining-room', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '26.1s'], ['LuisaRender', 'dining-room', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '38.4s'], ['LuisaRender', 'coffee', 'cuda', 'WavePath', 'Independent', '(800, 1000)', 1024, 12, 'RGB', '3.7s'], ['LuisaRender', 'coffee', 'cuda', 'WavePath', 'Independent', '(800, 1000)', 1024, 12, 'Spectral', '5.3s'], ['LuisaRender', 'coffee', 'directX', 'WavePath', 'Independent', '(800, 1000)', 1024, 12, 'RGB', '3.1s'], ['LuisaRender', 'coffee', 'directX', 'WavePath', 'Independent', '(800, 1000)', 1024, 12, 'Spectral', '3.1s'], ['LuisaRender', 'coffee', 'cuda', 'WavePath', 'Independent', '(800, 1000)', 1024, 16, 'RGB', '4.1s'], ['LuisaRender', 'coffee', 'cuda', 'WavePath', 'Independent', '(800, 1000)', 1024, 16, 'Spectral', '5.9s'], ['LuisaRender', 'coffee', 'directX', 'WavePath', 'Independent', '(800, 1000)', 1024, 16, 'RGB', '3.4s'], ['LuisaRender', 'coffee', 'directX', 'WavePath', 'Independent', '(800, 1000)', 1024, 16, 'Spectral', '3.2s'], ['LuisaRender', 'coffee', 'cuda', 'MegaPath', 'Independent', '(800, 1000)', 1024, 12, 'RGB', '5.1s'], ['LuisaRender', 'coffee', 'cuda', 'MegaPath', 'Independent', '(800, 1000)', 1024, 12, 'Spectral', '9.2s'], ['LuisaRender', 'coffee', 'directX', 'MegaPath', 'Independent', '(800, 1000)', 1024, 12, 'RGB', '5.1s'], ['LuisaRender', 'coffee', 'directX', 'MegaPath', 'Independent', '(800, 1000)', 1024, 12, 'Spectral', '4.7s'], ['LuisaRender', 'coffee', 'cuda', 'MegaPath', 'Independent', '(800, 1000)', 1024, 16, 'RGB', '5.8s'], ['LuisaRender', 'coffee', 'cuda', 'MegaPath', 'Independent', '(800, 1000)', 1024, 16, 'Spectral', '10.4s'], ['LuisaRender', 'coffee', 'directX', 'MegaPath', 'Independent', '(800, 1000)', 1024, 16, 'RGB', '5.8s'], ['LuisaRender', 'coffee', 'directX', 'MegaPath', 'Independent', '(800, 1000)', 1024, 16, 'Spectral', '4.9s'], ['LuisaRender', 'glass-of-water', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '18.9s'], ['LuisaRender', 'glass-of-water', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '25.6s'], ['LuisaRender', 'glass-of-water', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '10.8s'], ['LuisaRender', 'glass-of-water', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '6.4s'], ['LuisaRender', 'glass-of-water', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '21.8s'], ['LuisaRender', 'glass-of-water', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '29.2s'], ['LuisaRender', 'glass-of-water', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '11.8s'], ['LuisaRender', 'glass-of-water', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '6.5s'], ['LuisaRender', 'glass-of-water', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '18.6s'], ['LuisaRender', 'glass-of-water', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '36.9s'], ['LuisaRender', 'glass-of-water', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '11.2s'], ['LuisaRender', 'glass-of-water', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '10.6s'], ['LuisaRender', 'glass-of-water', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '21.0s'], ['LuisaRender', 'glass-of-water', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '40.1s'], ['LuisaRender', 'glass-of-water', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '12.6s'], ['LuisaRender', 'glass-of-water', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '10.6s'], ['LuisaRender', 'living-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '52.3s'], ['LuisaRender', 'living-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', 'Error'], ['LuisaRender', 'living-room', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '40.5s'], ['LuisaRender', 'living-room', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '40.2s'], ['LuisaRender', 'living-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '67.8s'], ['LuisaRender', 'living-room', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '88.6s'], ['LuisaRender', 'living-room', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '53.6s'], ['LuisaRender', 'living-room', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '51.6s'], ['LuisaRender', 'living-room', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '48.8s'], ['LuisaRender', 'living-room', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '89.2s'], ['LuisaRender', 'living-room', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '27.3s'], ['LuisaRender', 'living-room', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '33.7s'], ['LuisaRender', 'living-room', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '67.6s'], ['LuisaRender', 'living-room', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '115.8s'], ['LuisaRender', 'living-room', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '36.2s'], ['LuisaRender', 'living-room', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '41.9s'], ['LuisaRender', 'spaceship', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '13.4s'], ['LuisaRender', 'spaceship', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '19.0s'], ['LuisaRender', 'spaceship', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '11.5s'], ['LuisaRender', 'spaceship', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '14.8s'], ['LuisaRender', 'spaceship', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '15.6s'], ['LuisaRender', 'spaceship', 'cuda', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '22.2s'], ['LuisaRender', 'spaceship', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '13.1s'], ['LuisaRender', 'spaceship', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '16.6s'], ['LuisaRender', 'spaceship', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '22.8s'], ['LuisaRender', 'spaceship', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '50.0s'], ['LuisaRender', 'spaceship', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 12, 'RGB', '17.5s'], ['LuisaRender', 'spaceship', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 12, 'Spectral', '25.6s'], ['LuisaRender', 'spaceship', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '26.1s'], ['LuisaRender', 'spaceship', 'cuda', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '56.3s'], ['LuisaRender', 'spaceship', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'RGB', '20.2s'], ['LuisaRender', 'spaceship', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 'Spectral', '28.8s'], ['LuisaRender', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 1024, 12, 'RGB', '4.6s'], ['LuisaRender', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 1024, 12, 'Spectral', '6.6s'], ['LuisaRender', 'staircase', 'directX', 'WavePath', 'Independent', '(720, 1280)', 1024, 12, 'RGB', '3.7s'], ['LuisaRender', 'staircase', 'directX', 'WavePath', 'Independent', '(720, 1280)', 1024, 12, 'Spectral', '5.7s'], ['LuisaRender', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 1024, 16, 'RGB', '4.4s'], ['LuisaRender', 'staircase', 'cuda', 'WavePath', 'Independent', '(720, 1280)', 1024, 16, 'Spectral', '6.3s'], ['LuisaRender', 'staircase', 'directX', 'WavePath', 'Independent', '(720, 1280)', 1024, 16, 'RGB', '3.7s'], ['LuisaRender', 'staircase', 'directX', 'WavePath', 'Independent', '(720, 1280)', 1024, 16, 'Spectral', '5.6s'], ['LuisaRender', 'staircase', 'cuda', 'MegaPath', 'Independent', '(720, 1280)', 1024, 12, 'RGB', '6.9s'], ['LuisaRender', 'staircase', 'cuda', 'MegaPath', 'Independent', '(720, 1280)', 1024, 12, 'Spectral', '13.1s'], ['LuisaRender', 'staircase', 'directX', 'MegaPath', 'Independent', '(720, 1280)', 1024, 12, 'RGB', '4.3s'], ['LuisaRender', 'staircase', 'directX', 'MegaPath', 'Independent', '(720, 1280)', 1024, 12, 'Spectral', '7.6s'], ['LuisaRender', 'staircase', 'cuda', 'MegaPath', 'Independent', '(720, 1280)', 1024, 16, 'RGB', '6.8s'], ['LuisaRender', 'staircase', 'cuda', 'MegaPath', 'Independent', '(720, 1280)', 1024, 16, 'Spectral', '13.6s'], ['LuisaRender', 'staircase', 'directX', 'MegaPath', 'Independent', '(720, 1280)', 1024, 16, 'RGB', '4.2s'], ['LuisaRender', 'staircase', 'directX', 'MegaPath', 'Independent', '(720, 1280)', 1024, 16, 'Spectral', '7.4s']]
+[2022-05-07 20:08:11] [INFO] #################### results ####################
+[2022-05-07 20:08:11] [INFO] ====================== end ======================
+[2022-05-07 20:08:11] [INFO] 
