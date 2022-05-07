@@ -4,9 +4,12 @@ import os
 log_file = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'outputs', 'log.log')
 
 
-def clear_log_file():
-    with open(log_file, 'w') as f:
-        pass
+def clear_log_file() -> bool:
+    try:
+        with open(log_file, 'w') as f:
+            return True
+    except:
+        return False
 
 
 log_format = '[%(asctime)s] [%(levelname)s] %(message)s'
