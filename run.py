@@ -414,13 +414,23 @@ def test_targets():
                                                   format(max_depth), scene[k - 1])
                                 order[k] = order[k - 1]
 
+                                if scene_file_settings['rr_depth'] == 'undefined':
+                                    rr_depth_unknown = True
+                                else:
+                                    rr_depth_unknown = False
+
                                 for rr_depth in target_settings['rr_depth']:
                                     k = 7
 
-                                    scene[k] = re.sub(scene_file_settings['rr_depth']['regex'],
-                                                      scene_file_settings['rr_depth']['replace'].
-                                                      format(rr_depth), scene[k - 1])
+                                    scene[k] = scene[k - 1]
                                     order[k] = order[k - 1]
+
+                                    if rr_depth_unknown:
+                                        rr_depth = 'unknown'
+                                    else:
+                                        scene[k] = re.sub(scene_file_settings['rr_depth']['regex'],
+                                                          scene_file_settings['rr_depth']['replace'].
+                                                          format(rr_depth), scene[k])
 
                                     for backend in target_settings['backend']:
                                         k = 8
@@ -501,6 +511,9 @@ def test_targets():
                                             results.append(result)
                                             logger.info(result)
                                             recorder.write_row(result)
+
+                                    if rr_depth_unknown:
+                                        break
 
     while not recorder.flush():
         pass

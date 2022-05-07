@@ -1,4 +1,0 @@
-render,scene,backend,integrator,sampler,resolution,spp,max depth,spectrum,time consumption
-LuisaRender,staircase,cpu,WavePath,Independent,"(720, 1280)",1024,12,RGB,1385.8s
-LuisaRender,staircase,cpu,WavePath,Independent,"(720, 1280)",1024,12,Spectral,2720.4s
-LuisaRender,staircase,cpu,WavePath,Independent,"(720, 1280)",1024,16,RGB,1810.8s

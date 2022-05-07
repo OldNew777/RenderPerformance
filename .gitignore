@@ -3,6 +3,9 @@
 */*/models/*
 */*/textures/*
 
+outputs/results.csv
+outputs/pictures/*
+
 set_accel_kernel
 
 *.luisa
