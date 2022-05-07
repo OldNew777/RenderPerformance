@@ -45,6 +45,10 @@ renderer_settings = {
                 'regex': ' depth { [0-9]* }',
                 'replace': ' depth {{ {} }}',
             },
+            'rr_depth': {
+                'regex': 'rr_depth { [0-9]* }',
+                'replace': 'rr_depth {{ {} }}',
+            },
             'spp': {
                 'regex': 'spp { [0-9]* }',
                 'replace': 'spp {{ {} }}',
@@ -127,6 +131,10 @@ renderer_settings = {
                 'regex': '<integer name="max_depth" value="[0-9]*" />',
                 'replace': '<integer name="max_depth" value="{}" />',
             },
+            'rr_depth': {
+                'regex': '<integer name="rr_depth" value="[0-9]*" />',
+                'replace': '<integer name="rr_depth" value="{}" />',
+            },
             'spp': {
                 'regex': '<integer name="sample_count" value="[0-9]*" />',
                 'replace': '<integer name="sample_count" value="{}" />',
@@ -202,6 +210,7 @@ renderer_settings = {
                 'regex': '"integer maxdepth" \[ [0-9]* \]',
                 'replace': '"integer maxdepth" [ {} ]',
             },
+            'rr_depth': 'undefined',
             'spp': {
                 'regex': '"integer pixelsamples" \[ [0-9]* \]',
                 'replace': '"integer pixelsamples" [ {} ]',
@@ -242,39 +251,39 @@ target_settings = {
         # 'metal',
     ],
     'scene': {
-        # wrong cases with mitsuba2
-        'classroom': {
-            'resolution': [
-                (1920, 1080),
-            ],
-        },
-        'dining-room': {
-            'resolution': [
-                (1920, 1080),
-            ],
-        },
-
-        # right cases
-        'coffee': {
-            'resolution': [
-                (800, 1000),
-            ],
-        },
-        'glass-of-water': {
-            'resolution': [
-                (1920, 1080),
-            ],
-        },
-        'living-room': {
-            'resolution': [
-                (1920, 1080),
-            ],
-        },
-        'spaceship': {
-            'resolution': [
-                (1920, 1080),
-            ],
-        },
+        # # wrong cases with mitsuba2
+        # 'classroom': {
+        #     'resolution': [
+        #         (1920, 1080),
+        #     ],
+        # },
+        # 'dining-room': {
+        #     'resolution': [
+        #         (1920, 1080),
+        #     ],
+        # },
+        #
+        # # right cases
+        # 'coffee': {
+        #     'resolution': [
+        #         (800, 1000),
+        #     ],
+        # },
+        # 'glass-of-water': {
+        #     'resolution': [
+        #         (1920, 1080),
+        #     ],
+        # },
+        # 'living-room': {
+        #     'resolution': [
+        #         (1920, 1080),
+        #     ],
+        # },
+        # 'spaceship': {
+        #     'resolution': [
+        #         (1920, 1080),
+        #     ],
+        # },
         'staircase': {
             'resolution': [
                 (720, 1280),
@@ -303,6 +312,10 @@ target_settings = {
         # 8,
         16,
     ],
+    'rr_depth': [
+        # 2,
+        5,
+    ],
 }
 
 
@@ -320,7 +333,7 @@ def test_targets():
 
     recorder = Recorder(results_save_file_path)
     headers = ['render', 'scene', 'backend', 'integrator', 'sampler', 'resolution',
-               'spp', 'max depth', 'spectrum', 'time consumption']
+               'spp', 'max depth', 'rr depth', 'spectrum', 'time consumption']
     while not recorder.init(headers):
         pass
 
@@ -401,85 +414,93 @@ def test_targets():
                                                   format(max_depth), scene[k - 1])
                                 order[k] = order[k - 1]
 
-                                for backend in target_settings['backend']:
+                                for rr_depth in target_settings['rr_depth']:
                                     k = 7
 
-                                    scene[k] = scene[k - 1]
+                                    scene[k] = re.sub(scene_file_settings['rr_depth']['regex'],
+                                                      scene_file_settings['rr_depth']['replace'].
+                                                      format(rr_depth), scene[k - 1])
                                     order[k] = order[k - 1]
 
-                                    backend_name = settings['exe']['backend']['name'][backend]
-                                    if backend_name == 'undefined':
-                                        continue
-                                    order[k] += settings['exe']['backend']['order'].format(backend_name)
-
-                                    for spectrum in target_settings['spectrum']:
+                                    for backend in target_settings['backend']:
                                         k = 8
 
-                                        # deal with different spectrum format: scene/cmd
                                         scene[k] = scene[k - 1]
                                         order[k] = order[k - 1]
-                                        if scene_file_settings['spectrum'] != 'undefined':
-                                            scene[k] = re.sub(scene_file_settings['spectrum']['regex'],
-                                                              scene_file_settings['spectrum']['replace'].
-                                                              format(scene_file_settings['spectrum']['name'][spectrum]),
-                                                              scene[k])
-                                        else:
-                                            spectrum_name = settings['exe']['spectrum']['name'][spectrum]
-                                            if spectrum_name == 'undefined':
-                                                continue
-                                            order[k] += settings['exe']['spectrum']['order'].format(spectrum_name)
 
-                                        # output file
-                                        output_file_name = f'{renderer}-{scene_name}-{backend}-{integrator}-' \
-                                                           f'{sampler}-{resolution[0]}_{resolution[1]}-{spp}spp-' \
-                                                           f'{max_depth}max_depth-{spectrum}'
+                                        backend_name = settings['exe']['backend']['name'][backend]
+                                        if backend_name == 'undefined':
+                                            continue
+                                        order[k] += settings['exe']['backend']['order'].format(backend_name)
 
-                                        output_file_name = output_picture_dir + '/' + output_file_name
-                                        scene[k] = re.sub(scene_file_settings['output_file']['regex'],
-                                                          scene_file_settings['output_file']['replace'].format(
-                                                              output_file_name), scene[k])
-                                        order[k] += settings['exe']['output'].format(output_file_name + '.exr')
+                                        for spectrum in target_settings['spectrum']:
+                                            k = 9
 
-                                        # new scene file confirmed
-                                        scene_file_path_new = f'scene-{integrator}-{sampler}-' \
-                                                              f'{resolution[0]}_{resolution[1]}-{spp}spp-' \
-                                                              f'{max_depth}max_depth-{spectrum}'
-                                        scene_file_path_new = os.path.join(os.path.dirname(scene_file_path),
-                                                                           scene_file_path_new) + \
-                                                              os.path.splitext(scene_file_settings['scene_file_name'])[
-                                                                  -1]
-                                        with open(scene_file_path_new, 'w') as f:
-                                            f.write(scene[k])
+                                            # deal with different spectrum format: scene/cmd
+                                            scene[k] = scene[k - 1]
+                                            order[k] = order[k - 1]
+                                            if scene_file_settings['spectrum'] != 'undefined':
+                                                scene[k] = re.sub(scene_file_settings['spectrum']['regex'],
+                                                                  scene_file_settings['spectrum']['replace'].
+                                                                  format(scene_file_settings['spectrum']['name'][spectrum]),
+                                                                  scene[k])
+                                            else:
+                                                spectrum_name = settings['exe']['spectrum']['name'][spectrum]
+                                                if spectrum_name == 'undefined':
+                                                    continue
+                                                order[k] += settings['exe']['spectrum']['order'].format(spectrum_name)
 
-                                        # device
-                                        if settings['exe']['device'] != 'undefined':
-                                            order[k] += settings['exe']['device'].format(0)
+                                            # output file
+                                            output_file_name = f'{renderer}-{scene_name}-{backend}-{integrator}-' \
+                                                               f'{sampler}-{resolution[0]}_{resolution[1]}-{spp}spp-' \
+                                                               f'{max_depth}max_depth-{rr_depth}rr_depth-{spectrum}'
 
-                                        # target scene file
-                                        order[k] += ' ' + scene_file_path_new
+                                            output_file_name = output_picture_dir + '/' + output_file_name
+                                            scene[k] = re.sub(scene_file_settings['output_file']['regex'],
+                                                              scene_file_settings['output_file']['replace'].format(
+                                                                  output_file_name), scene[k])
+                                            order[k] += settings['exe']['output'].format(output_file_name + '.exr')
 
-                                        # order confirmed
-                                        logger.info(order[k])
+                                            # new scene file confirmed
+                                            scene_file_path_new = f'scene-{integrator}-{sampler}-' \
+                                                                  f'{resolution[0]}_{resolution[1]}-{spp}spp-' \
+                                                                  f'{max_depth}max_depth-{rr_depth}rr_depth-{spectrum}'
+                                            scene_file_path_new = os.path.join(os.path.dirname(scene_file_path),
+                                                                               scene_file_path_new) + \
+                                                                  os.path.splitext(scene_file_settings['scene_file_name'])[
+                                                                      -1]
+                                            with open(scene_file_path_new, 'w') as f:
+                                                f.write(scene[k])
 
-                                        # render
-                                        with os.popen(order[k]) as f:
-                                            output_info = f.read()
-                                        try:
-                                            time = re.search(settings['results_regex']['time'], output_info).group(1)
-                                        except:
-                                            time = 'Error'
-                                            error_text = f'Error {error_index}: \n{output_info}\n'
-                                            error_index += 1
-                                            logger.warning(error_text)
+                                            # device
+                                            if settings['exe']['device'] != 'undefined':
+                                                order[k] += settings['exe']['device'].format(0)
 
-                                        result = [
-                                            renderer, scene_name, backend, integrator,
-                                            sampler, f'({resolution[0]}, {resolution[1]})',
-                                            spp, max_depth, spectrum, time]
+                                            # target scene file
+                                            order[k] += ' ' + scene_file_path_new
 
-                                        results.append(result)
-                                        logger.info(result)
-                                        recorder.write_row(result)
+                                            # order confirmed
+                                            logger.info(order[k])
+
+                                            # render
+                                            with os.popen(order[k]) as f:
+                                                output_info = f.read()
+                                            try:
+                                                time = re.search(settings['results_regex']['time'], output_info).group(1)
+                                            except:
+                                                time = 'Error'
+                                                error_text = f'Error {error_index}: \n{output_info}\n'
+                                                error_index += 1
+                                                logger.warning(error_text)
+
+                                            result = [
+                                                renderer, scene_name, backend, integrator,
+                                                sampler, f'({resolution[0]}, {resolution[1]})',
+                                                spp, max_depth, rr_depth, spectrum, time]
+
+                                            results.append(result)
+                                            logger.info(result)
+                                            recorder.write_row(result)
 
     while not recorder.flush():
         pass
