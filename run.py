@@ -42,8 +42,8 @@ renderer_settings = {
                 },
             ],
             'max_depth': {
-                'regex': 'depth { [0-9]* }',
-                'replace': 'depth {{ {} }}',
+                'regex': ' depth { [0-9]* }',
+                'replace': ' depth {{ {} }}',
             },
             'spp': {
                 'regex': 'spp { [0-9]* }',
@@ -300,7 +300,7 @@ target_settings = {
         # 4096,
     ],
     'max_depth': [
-        12,
+        # 8,
         16,
     ],
 }
