@@ -240,8 +240,8 @@ renderer_settings = {
 
 target_settings = {
     'renderer': [
-        'LuisaRender',
-        # 'Mitsuba2',
+        # 'LuisaRender',
+        'Mitsuba2',
         # 'PBRT-v4',
     ],
     'backend': [
@@ -251,17 +251,17 @@ target_settings = {
         # 'metal',
     ],
     'scene': {
-        # wrong cases with mitsuba2
-        'classroom': {
-            'resolution': [
-                (1920, 1080),
-            ],
-        },
-        'dining-room': {
-            'resolution': [
-                (1920, 1080),
-            ],
-        },
+        # # wrong cases with mitsuba2
+        # 'classroom': {
+        #     'resolution': [
+        #         (1920, 1080),
+        #     ],
+        # },
+        # 'dining-room': {
+        #     'resolution': [
+        #         (1920, 1080),
+        #     ],
+        # },
 
         # right cases
         'coffee': {
