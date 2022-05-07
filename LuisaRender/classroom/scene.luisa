@@ -1384,12 +1384,12 @@ Camera camera : Pinhole {
 
 render {
   cameras { @camera }
+  spectrum : sRGB {}
   integrator : WavePath {
     sampler : Independent {}
     depth { 12 }
     rr_depth { 5 }
     rr_threshold { 0.95 }
-    spectrum : sRGB {}
   }
   shapes {
     @shape_0,

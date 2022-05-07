@@ -1,0 +1,24 @@
+render,scene,backend,integrator,sampler,resolution,spp,max depth,spectrum,time consumption
+LuisaRender,classroom,directX,WavePath,Independent,"(1920, 1080)",1024,12,RGB,43.6s
+LuisaRender,classroom,directX,WavePath,Independent,"(1920, 1080)",1024,12,Spectral,61.1s
+LuisaRender,classroom,cuda,WavePath,Independent,"(1920, 1080)",1024,12,RGB,54.7s
+LuisaRender,classroom,cuda,WavePath,Independent,"(1920, 1080)",1024,12,Spectral,88.7s
+LuisaRender,classroom,directX,WavePath,Independent,"(1920, 1080)",1024,16,RGB,55.4s
+LuisaRender,classroom,directX,WavePath,Independent,"(1920, 1080)",1024,16,Spectral,77.6s
+LuisaRender,classroom,cuda,WavePath,Independent,"(1920, 1080)",1024,16,RGB,75.1s
+LuisaRender,classroom,cuda,WavePath,Independent,"(1920, 1080)",1024,16,Spectral,114.0s
+LuisaRender,classroom,directX,MegaPath,Independent,"(1920, 1080)",1024,12,RGB,33.3s
+LuisaRender,classroom,directX,MegaPath,Independent,"(1920, 1080)",1024,12,Spectral,61.9s
+LuisaRender,classroom,cuda,MegaPath,Independent,"(1920, 1080)",1024,12,RGB,65.8s
+LuisaRender,classroom,cuda,MegaPath,Independent,"(1920, 1080)",1024,12,Spectral,97.0s
+LuisaRender,classroom,directX,MegaPath,Independent,"(1920, 1080)",1024,16,RGB,43.7s
+LuisaRender,classroom,directX,MegaPath,Independent,"(1920, 1080)",1024,16,Spectral,Error
+LuisaRender,classroom,cuda,MegaPath,Independent,"(1920, 1080)",1024,16,RGB,88.5s
+LuisaRender,classroom,cuda,MegaPath,Independent,"(1920, 1080)",1024,16,Spectral,127.0s
+LuisaRender,dining-room,directX,WavePath,Independent,"(1920, 1080)",1024,12,RGB,34.2s
+LuisaRender,dining-room,directX,WavePath,Independent,"(1920, 1080)",1024,12,Spectral,44.0s
+LuisaRender,dining-room,cuda,WavePath,Independent,"(1920, 1080)",1024,12,RGB,37.7s
+LuisaRender,dining-room,cuda,WavePath,Independent,"(1920, 1080)",1024,12,Spectral,54.4s
+LuisaRender,dining-room,directX,WavePath,Independent,"(1920, 1080)",1024,16,RGB,46.7s
+LuisaRender,dining-room,directX,WavePath,Independent,"(1920, 1080)",1024,16,Spectral,58.5s
+LuisaRender,dining-room,cuda,WavePath,Independent,"(1920, 1080)",1024,16,RGB,51.0s
