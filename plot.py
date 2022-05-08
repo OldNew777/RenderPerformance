@@ -32,6 +32,8 @@ hue_order = [
     'LuisaRender-directX-MegaPath',
     'LuisaRender-cuda-WavePath',
     'LuisaRender-cuda-MegaPath',
+    'LuisaRender-metal-WavePath',
+    'LuisaRender-metal-MegaPath',
     'PBRT-v4-cuda-WavePath',
     'PBRT-v4-cuda-MegaPath',
     'Mitsuba2-cuda-WavePath',
@@ -47,15 +49,31 @@ hue_order = [
 ]
 
 
-def load_data() -> list:
-    csv_path = 'outputs/results-all.csv'
+def load_data(csv_path) -> list:
     raw = pd.read_csv(csv_path)
+    # wash data
+    print(raw)
+    raw = raw[raw['time consumption'] != 'Error']
+    print(raw)
+    exit(0)
 
     def get_hue(df):
         return f"{df['render']}-{df['backend']}-{df['integrator']}"
 
+    def get_seconds(df):
+        time_consumption = df['time consumption']
+        unit = time_consumption[-1]
+        value = float(time_consumption[:-1])
+        if unit == 's':
+            return value
+        elif unit == 'm':
+            return value * 60.
+        else:
+            raise Exception(f'results parse error in "{time_consumption}"')
+
+    raw.loc[:, 'seconds'] = raw.apply(get_seconds, axis=1)
     raw.loc[:, 'hue'] = raw.apply(get_hue, axis=1)
-    raw = raw[raw['scene'].map(lambda x: x in settings['scene'])]
+    raw = raw[raw['scene'].isin(settings['scene'])]
 
     ans = []
     data_filtered = [pd.DataFrame({}) for i in range(100)]
@@ -150,5 +168,5 @@ def plot(data_list: list):
 
 
 if __name__ == '__main__':
-    data_all = load_data()
+    data_all = load_data('outputs/results-all.csv')
     plot(data_all)
