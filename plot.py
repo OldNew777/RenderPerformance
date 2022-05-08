@@ -32,8 +32,8 @@ hue_order = [
     'LuisaRender-directX-MegaPath',
     'LuisaRender-cuda-WavePath',
     'LuisaRender-cuda-MegaPath',
-    'LuisaRender-metal-WavePath',
-    'LuisaRender-metal-MegaPath',
+    # 'LuisaRender-metal-WavePath',
+    # 'LuisaRender-metal-MegaPath',
     'PBRT-v4-cuda-WavePath',
     'PBRT-v4-cuda-MegaPath',
     'Mitsuba2-cuda-WavePath',
@@ -52,10 +52,7 @@ hue_order = [
 def load_data(csv_path) -> list:
     raw = pd.read_csv(csv_path)
     # wash data
-    print(raw)
     raw = raw[raw['time consumption'] != 'Error']
-    print(raw)
-    exit(0)
 
     def get_hue(df):
         return f"{df['render']}-{df['backend']}-{df['integrator']}"
@@ -158,7 +155,7 @@ def plot(data_list: list):
         ax.legend_.set_title(None)
         plt.setp(ax.get_legend().get_texts(), fontsize=18)
         plt.xlabel('scene', fontsize=18)
-        plt.ylabel('seconds', fontsize=18)
+        plt.ylabel('time(seconds)', fontsize=18)
         plt.show()
 
         # save
