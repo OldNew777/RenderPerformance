@@ -1,5 +1,8 @@
+import os
+
 import seaborn as sns
 import matplotlib.pyplot as plt
+import matplotlib.font_manager as fm
 import pandas as pd
 import numpy as np
 
@@ -58,6 +61,7 @@ def load_data() -> list:
     data_filtered = [pd.DataFrame({}) for i in range(100)]
     description = {}
 
+    # separate data into several parts
     for spectrum in set(raw['spectrum']):
         k = 0
         description['spectrum'] = spectrum
@@ -81,38 +85,46 @@ def load_data() -> list:
 def plot(data_list: list):
     sns.set_theme(style='whitegrid')
     sns.set_color_codes("bright")
+    myfont = fm.FontProperties(fname='Linux-Biolinum.ttf')
+    sns.set(font=myfont.get_family())
 
     for data, description in data_list:
         plt.figure(figsize=(10, 8))
 
+        # get existing hue
         hue_order_temp = []
         for hue in hue_order:
             if hue in set(data['hue']):
                 hue_order_temp.append(hue)
 
-        g = sns.barplot(data=data, x='scene', y='seconds', hue='hue', hue_order=hue_order_temp, orient='v')
+        ax = sns.barplot(data=data, x='scene', y='seconds', hue='hue', hue_order=hue_order_temp, orient='v')
 
+        # get ylim/time_min
         time_arr = np.zeros(0, dtype=np.float64)
-        time_min = g.containers[0].datavalues
-        ylim = g.containers[0].datavalues
-        for container in g.containers:
+        time_min = ax.containers[0].datavalues
+        ylim = ax.containers[0].datavalues
+        for container in ax.containers:
             time_min = np.minimum(time_min, container.datavalues)
             ylim = np.maximum(ylim, container.datavalues)
             time_arr = np.append(time_arr, container.datavalues)
         ylim = max(set(time_arr) - set(ylim)) * 2
 
         magnifications_all = []
-        for container in g.containers:
+        for container in ax.containers:
             magnifications_all.append(container.datavalues / time_min)
 
+        # clear figure drew during the first pass
         plt.clf()
         plt.cla()
+        # trim figure to certain height
         plt.ylim([0, ylim])
+        # trim data to that height so that we can see labels
         data['seconds'] = np.minimum(data['seconds'], np.ones(shape=len(data['seconds']), dtype=np.float64) * ylim)
-        g = sns.barplot(data=data, x='scene', y='seconds', hue='hue', hue_order=hue_order_temp, orient='v')
+        ax = sns.barplot(data=data, x='scene', y='seconds', hue='hue', hue_order=hue_order_temp, orient='v')
 
+        # add labels
         index = 0
-        for container in g.containers:
+        for container in ax.containers:
             magnifications = magnifications_all[index]
             exceeds = magnifications * time_min > container.datavalues + 5
             labels = []
@@ -121,12 +133,21 @@ def plot(data_list: list):
                     labels.append('%.1fx\n/\\\n|' % magnification)
                 else:
                     labels.append('%.1fx' % magnification)
-            g.bar_label(container, labels=labels)
+            ax.bar_label(container, labels=labels)
             index += 1
+
+        # format
+        ax.legend_.set_title(None)
+        plt.setp(ax.get_legend().get_texts(), fontsize=18)
+        plt.xlabel('scene', fontsize=18)
+        plt.ylabel('seconds', fontsize=18)
         plt.show()
 
-        g.get_figure().savefig(
-            f"outputs/figures/{description['spectrum']}-{description['rr depth']}rr_depth-{description['max depth']}max_depth.png",
+        exit(0)
+
+        # save
+        ax.get_figure().savefig(
+            f"outputs/figures/{description['spectrum']}-{description['rr depth']}rr_depth-{description['max depth']}max_depth.pdf",
             dpi=1000)
 
 
