@@ -143,8 +143,6 @@ def plot(data_list: list):
         plt.ylabel('seconds', fontsize=18)
         plt.show()
 
-        exit(0)
-
         # save
         ax.get_figure().savefig(
             f"outputs/figures/{description['spectrum']}-{description['rr depth']}rr_depth-{description['max depth']}max_depth.pdf",
