@@ -263,32 +263,32 @@ target_settings = {
         #     ],
         # },
 
-        # right cases
-        'coffee': {
-            'resolution': [
-                (800, 1000),
-            ],
-        },
-        'glass-of-water': {
-            'resolution': [
-                (1920, 1080),
-            ],
-        },
+        # # right cases
+        # 'coffee': {
+        #     'resolution': [
+        #         (800, 1000),
+        #     ],
+        # },
+        # 'glass-of-water': {
+        #     'resolution': [
+        #         (1920, 1080),
+        #     ],
+        # },
         'living-room': {
             'resolution': [
                 (1920, 1080),
             ],
         },
-        'spaceship': {
-            'resolution': [
-                (1920, 1080),
-            ],
-        },
-        'staircase': {
-            'resolution': [
-                (720, 1280),
-            ],
-        },
+        # 'spaceship': {
+        #     'resolution': [
+        #         (1920, 1080),
+        #     ],
+        # },
+        # 'staircase': {
+        #     'resolution': [
+        #         (720, 1280),
+        #     ],
+        # },
     },
     'integrator': [
         'WavePath',
