@@ -100,13 +100,10 @@ def plot(data_list: list):
             ylim = np.maximum(ylim, container.datavalues)
             time_arr = np.append(time_arr, container.datavalues)
         ylim = max(set(time_arr) - set(ylim)) * 2
-        labels = []
+
+        magnifications_all = []
         for container in g.containers:
-            labels_t = []
-            values = container.datavalues / time_min
-            for value in values:
-                labels_t.append('%.1fx' % value)
-            labels.append(labels_t)
+            magnifications_all.append(container.datavalues / time_min)
 
         plt.clf()
         plt.cla()
@@ -116,7 +113,15 @@ def plot(data_list: list):
 
         index = 0
         for container in g.containers:
-            g.bar_label(container, labels=labels[index])
+            magnifications = magnifications_all[index]
+            exceeds = magnifications * time_min > container.datavalues + 5
+            labels = []
+            for magnification, exceed in zip(magnifications, exceeds):
+                if exceed:
+                    labels.append('%.1fx\n/\\\n|' % magnification)
+                else:
+                    labels.append('%.1fx' % magnification)
+            g.bar_label(container, labels=labels)
             index += 1
         plt.show()
 
