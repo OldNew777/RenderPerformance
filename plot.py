@@ -1,6 +1,7 @@
 import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
+import numpy as np
 
 settings = {
     'rr_max_depth': [
@@ -19,8 +20,28 @@ settings = {
         'glass-of-water',
         'spaceship',
         'staircase',
-    ]
+    ],
 }
+
+hue_order = [
+    # GPU
+    'LuisaRender-directX-WavePath',
+    'LuisaRender-directX-MegaPath',
+    'LuisaRender-cuda-WavePath',
+    'LuisaRender-cuda-MegaPath',
+    'PBRT-v4-cuda-WavePath',
+    'PBRT-v4-cuda-MegaPath',
+    'Mitsuba2-cuda-WavePath',
+    'Mitsuba2-cuda-MegaPath',
+
+    # CPU
+    'LuisaRender-cpu-WavePath',
+    'LuisaRender-cpu-MegaPath',
+    'PBRT-v4-cpu-WavePath',
+    'PBRT-v4-cpu-MegaPath',
+    'Mitsuba2-cpu-WavePath',
+    'Mitsuba2-cpu-MegaPath',
+]
 
 
 def load_data() -> list:
@@ -58,15 +79,52 @@ def load_data() -> list:
 
 
 def plot(data_list: list):
+    sns.set_theme(style='whitegrid')
+    sns.set_color_codes("bright")
+
     for data, description in data_list:
-        fig = sns.barplot(data=data, x='scene', y='seconds', hue='hue')
+        plt.figure(figsize=(10, 8))
+
+        hue_order_temp = []
+        for hue in hue_order:
+            if hue in set(data['hue']):
+                hue_order_temp.append(hue)
+
+        g = sns.barplot(data=data, x='scene', y='seconds', hue='hue', hue_order=hue_order_temp, orient='v')
+
+        time_arr = np.zeros(0, dtype=np.float64)
+        time_min = g.containers[0].datavalues
+        ylim = g.containers[0].datavalues
+        for container in g.containers:
+            time_min = np.minimum(time_min, container.datavalues)
+            ylim = np.maximum(ylim, container.datavalues)
+            time_arr = np.append(time_arr, container.datavalues)
+        ylim = max(set(time_arr) - set(ylim)) * 2
+        labels = []
+        for container in g.containers:
+            labels_t = []
+            values = container.datavalues / time_min
+            for value in values:
+                labels_t.append('%.1fx' % value)
+            labels.append(labels_t)
+
+        plt.clf()
+        plt.cla()
+        plt.ylim([0, ylim])
+        data['seconds'] = np.minimum(data['seconds'], np.ones(shape=len(data['seconds']), dtype=np.float64) * ylim)
+        g = sns.barplot(data=data, x='scene', y='seconds', hue='hue', hue_order=hue_order_temp, orient='v')
+
+        index = 0
+        for container in g.containers:
+            g.bar_label(container, labels=labels[index])
+            index += 1
         plt.show()
-        fig.get_figure().savefig(
-            f"outputs/pictures/{description['spectrum']}-{description['rr depth']}rr_depth-{description['max depth']}max_depth.png",
+
+        g.get_figure().savefig(
+            f"outputs/figures/{description['spectrum']}-{description['rr depth']}rr_depth-{description['max depth']}max_depth.png",
             dpi=1000)
 
 
 if __name__ == '__main__':
     data_all = load_data()
-    print(data_all)
     plot(data_all)

@@ -15,5 +15,6 @@ set_accel_kernel
 !*/*/scene.luisa
 !*/*/scene.xml
 !*/*/scene-v4.pbrt
+!outputs/figures/*
 
 */__pycache__
