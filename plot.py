@@ -28,24 +28,24 @@ settings = {
 
 hue_order = [
     # GPU
-    'LuisaRender-directX-WavePath',
-    'LuisaRender-directX-MegaPath',
-    'LuisaRender-cuda-WavePath',
-    'LuisaRender-cuda-MegaPath',
-    # 'LuisaRender-metal-WavePath',
-    # 'LuisaRender-metal-MegaPath',
-    'PBRT-v4-cuda-WavePath',
-    'PBRT-v4-cuda-MegaPath',
-    'Mitsuba2-cuda-WavePath',
-    'Mitsuba2-cuda-MegaPath',
+    'Ours (directX-WavePath)',
+    'Ours (directX-MegaPath)',
+    'Ours (cuda-WavePath)',
+    'Ours (cuda-MegaPath)',
+    # 'Ours (metal-WavePath)',
+    # 'Ours (metal-MegaPath)',
+    'PBRT-v4 (cuda-WavePath)',
+    'PBRT-v4 (cuda-MegaPath)',
+    'Mitsuba2 (cuda-WavePath)',
+    'Mitsuba2 (cuda-MegaPath)',
 
     # CPU
-    'LuisaRender-cpu-WavePath',
-    'LuisaRender-cpu-MegaPath',
-    'PBRT-v4-cpu-WavePath',
-    'PBRT-v4-cpu-MegaPath',
-    'Mitsuba2-cpu-WavePath',
-    'Mitsuba2-cpu-MegaPath',
+    'Ours (cpu-WavePath)',
+    'Ours (cpu-MegaPath)',
+    'PBRT-v4 (cpu-WavePath)',
+    'PBRT-v4 (cpu-MegaPath)',
+    'Mitsuba2 (cpu-WavePath)',
+    'Mitsuba2 (cpu-MegaPath)',
 ]
 
 
@@ -53,9 +53,10 @@ def load_data(csv_path) -> list:
     raw = pd.read_csv(csv_path)
     # wash data
     raw = raw[raw['time consumption'] != 'Error']
+    raw.loc[raw['render'] == 'LuisaRender', 'render'] = 'Ours'
 
     def get_hue(df):
-        return f"{df['render']}-{df['backend']}-{df['integrator']}"
+        return f"{df['render']} ({df['backend']}-{df['integrator']})"
 
     def get_seconds(df):
         time_consumption = df['time consumption']
@@ -154,8 +155,8 @@ def plot(data_list: list):
         # format
         ax.legend_.set_title(None)
         plt.setp(ax.get_legend().get_texts(), fontsize=18)
-        plt.xlabel('scene', fontsize=18)
-        plt.ylabel('time(seconds)', fontsize=18)
+        plt.xlabel('Scene', fontsize=18)
+        plt.ylabel('Time (seconds)', fontsize=18)
         plt.show()
 
         # save
