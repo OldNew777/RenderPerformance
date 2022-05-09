@@ -20,7 +20,7 @@ def gather():
                 else:
                     data.append(row)
                 line += 1
-    with open(output_path, 'w') as f:
+    with open(output_path, 'w', newline='') as f:
         f_csv = csv.writer(f)
         f_csv.writerow(headers)
         f_csv.writerows(data)

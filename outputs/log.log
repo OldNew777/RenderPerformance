@@ -7689,3 +7689,390 @@
 [2022-05-08 22:37:49] [INFO] 
 [2022-05-08 22:37:49] [INFO] ===================== start =====================
 [2022-05-08 22:37:49] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   -m gpu_rgb --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-living-room-cuda-WavePath-Independent-1920_1080-1024spp-8max_depth-2rr_depth-RGB.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\living-room\scene-WavePath-Independent-1920_1080-1024spp-8max_depth-2rr_depth-RGB.xml
+[2022-05-09 20:35:45] [INFO] 
+[2022-05-09 20:35:45] [INFO] ===================== start =====================
+[2022-05-09 20:35:45] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-WavePath-Independent-1920_1080-1024spp-8max_depth-2rr_depth-RGB.luisa
+[2022-05-09 20:36:03] [INFO] ['LuisaRender', 'classroom', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 8, 2, 'RGB', '14.0s']
+[2022-05-09 20:36:03] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-WavePath-Independent-1920_1080-1024spp-8max_depth-2rr_depth-Spectral.luisa
+[2022-05-09 20:36:27] [INFO] ['LuisaRender', 'classroom', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 8, 2, 'Spectral', '19.7s']
+[2022-05-09 20:36:27] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-MegaPath-Independent-1920_1080-1024spp-8max_depth-2rr_depth-RGB.luisa
+[2022-05-09 20:36:43] [INFO] ['LuisaRender', 'classroom', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 8, 2, 'RGB', '12.4s']
+[2022-05-09 20:36:43] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-MegaPath-Independent-1920_1080-1024spp-8max_depth-2rr_depth-Spectral.luisa
+[2022-05-09 20:37:14] [INFO] ['LuisaRender', 'classroom', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 8, 2, 'Spectral', '26.7s']
+[2022-05-09 20:37:14] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\dining-room\scene-WavePath-Independent-1920_1080-1024spp-8max_depth-2rr_depth-RGB.luisa
+[2022-05-09 20:37:25] [INFO] ['LuisaRender', 'dining-room', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 8, 2, 'RGB', '8.4s']
+[2022-05-09 20:37:25] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\dining-room\scene-WavePath-Independent-1920_1080-1024spp-8max_depth-2rr_depth-Spectral.luisa
+[2022-05-09 20:37:41] [INFO] ['LuisaRender', 'dining-room', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 8, 2, 'Spectral', '12.2s']
+[2022-05-09 20:37:41] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\dining-room\scene-MegaPath-Independent-1920_1080-1024spp-8max_depth-2rr_depth-RGB.luisa
+[2022-05-09 20:37:50] [INFO] ['LuisaRender', 'dining-room', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 8, 2, 'RGB', '5.9s']
+[2022-05-09 20:37:50] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\dining-room\scene-MegaPath-Independent-1920_1080-1024spp-8max_depth-2rr_depth-Spectral.luisa
+[2022-05-09 20:38:10] [INFO] ['LuisaRender', 'dining-room', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 8, 2, 'Spectral', '16.2s']
+[2022-05-09 20:38:10] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\scene-WavePath-Independent-1920_1080-1024spp-8max_depth-2rr_depth-RGB.luisa
+[2022-05-09 20:38:23] [INFO] ['LuisaRender', 'living-room', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 8, 2, 'RGB', '10.8s']
+[2022-05-09 20:38:23] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\scene-WavePath-Independent-1920_1080-1024spp-8max_depth-2rr_depth-Spectral.luisa
+[2022-05-09 20:38:42] [INFO] ['LuisaRender', 'living-room', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 8, 2, 'Spectral', '15.0s']
+[2022-05-09 20:38:42] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\scene-MegaPath-Independent-1920_1080-1024spp-8max_depth-2rr_depth-RGB.luisa
+[2022-05-09 20:38:52] [INFO] ['LuisaRender', 'living-room', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 8, 2, 'RGB', '7.8s']
+[2022-05-09 20:38:52] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\scene-MegaPath-Independent-1920_1080-1024spp-8max_depth-2rr_depth-Spectral.luisa
+[2022-05-09 20:39:13] [INFO] ['LuisaRender', 'living-room', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 8, 2, 'Spectral', '17.8s']
+[2022-05-09 20:39:13] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-WavePath-Independent-800_1000-1024spp-8max_depth-2rr_depth-RGB.luisa
+[2022-05-09 20:39:17] [INFO] ['LuisaRender', 'coffee', 'directX', 'WavePath', 'Independent', '(800, 1000)', 1024, 8, 2, 'RGB', '2.2s']
+[2022-05-09 20:39:17] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-WavePath-Independent-800_1000-1024spp-8max_depth-2rr_depth-Spectral.luisa
+[2022-05-09 20:39:23] [INFO] ['LuisaRender', 'coffee', 'directX', 'WavePath', 'Independent', '(800, 1000)', 1024, 8, 2, 'Spectral', '3.4s']
+[2022-05-09 20:39:23] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-MegaPath-Independent-800_1000-1024spp-8max_depth-2rr_depth-RGB.luisa
+[2022-05-09 20:39:27] [INFO] ['LuisaRender', 'coffee', 'directX', 'MegaPath', 'Independent', '(800, 1000)', 1024, 8, 2, 'RGB', '2.8s']
+[2022-05-09 20:39:27] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-MegaPath-Independent-800_1000-1024spp-8max_depth-2rr_depth-Spectral.luisa
+[2022-05-09 20:39:35] [INFO] ['LuisaRender', 'coffee', 'directX', 'MegaPath', 'Independent', '(800, 1000)', 1024, 8, 2, 'Spectral', '5.9s']
+[2022-05-09 20:39:35] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\glass-of-water\scene-WavePath-Independent-1920_1080-1024spp-8max_depth-2rr_depth-RGB.luisa
+[2022-05-09 20:39:46] [INFO] ['LuisaRender', 'glass-of-water', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 8, 2, 'RGB', '7.5s']
+[2022-05-09 20:39:46] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\glass-of-water\scene-WavePath-Independent-1920_1080-1024spp-8max_depth-2rr_depth-Spectral.luisa
+[2022-05-09 20:40:01] [INFO] ['LuisaRender', 'glass-of-water', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 8, 2, 'Spectral', '11.2s']
+[2022-05-09 20:40:01] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\glass-of-water\scene-MegaPath-Independent-1920_1080-1024spp-8max_depth-2rr_depth-RGB.luisa
+[2022-05-09 20:40:13] [INFO] ['LuisaRender', 'glass-of-water', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 8, 2, 'RGB', '6.8s']
+[2022-05-09 20:40:13] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\glass-of-water\scene-MegaPath-Independent-1920_1080-1024spp-8max_depth-2rr_depth-Spectral.luisa
+[2022-05-09 20:40:38] [INFO] ['LuisaRender', 'glass-of-water', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 8, 2, 'Spectral', '18.9s']
+[2022-05-09 20:40:38] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\spaceship\scene-WavePath-Independent-1920_1080-1024spp-8max_depth-2rr_depth-RGB.luisa
+[2022-05-09 20:40:49] [INFO] ['LuisaRender', 'spaceship', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 8, 2, 'RGB', '6.5s']
+[2022-05-09 20:40:49] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\spaceship\scene-WavePath-Independent-1920_1080-1024spp-8max_depth-2rr_depth-Spectral.luisa
+[2022-05-09 20:41:04] [INFO] ['LuisaRender', 'spaceship', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 8, 2, 'Spectral', '10.3s']
+[2022-05-09 20:41:04] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\spaceship\scene-MegaPath-Independent-1920_1080-1024spp-8max_depth-2rr_depth-RGB.luisa
+[2022-05-09 20:41:15] [INFO] ['LuisaRender', 'spaceship', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 8, 2, 'RGB', '7.6s']
+[2022-05-09 20:41:15] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\spaceship\scene-MegaPath-Independent-1920_1080-1024spp-8max_depth-2rr_depth-Spectral.luisa
+[2022-05-09 20:41:40] [INFO] ['LuisaRender', 'spaceship', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 8, 2, 'Spectral', '20.2s']
+[2022-05-09 20:41:40] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-WavePath-Independent-720_1280-1024spp-8max_depth-2rr_depth-RGB.luisa
+[2022-05-09 21:36:29] [INFO] 
+[2022-05-09 21:36:29] [INFO] ===================== start =====================
+[2022-05-09 21:36:29] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-WavePath-Independent-720_1280-1024spp-8max_depth-2rr_depth-RGB.luisa
+[2022-05-09 21:36:39] [INFO] ['LuisaRender', 'staircase', 'directX', 'WavePath', 'Independent', '(720, 1280)', 1024, 8, 2, 'RGB', '5.8s']
+[2022-05-09 21:36:39] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-WavePath-Independent-720_1280-1024spp-8max_depth-2rr_depth-Spectral.luisa
+[2022-05-09 21:36:53] [INFO] ['LuisaRender', 'staircase', 'directX', 'WavePath', 'Independent', '(720, 1280)', 1024, 8, 2, 'Spectral', '8.0s']
+[2022-05-09 21:36:53] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-MegaPath-Independent-720_1280-1024spp-8max_depth-2rr_depth-RGB.luisa
+[2022-05-09 21:37:02] [INFO] ['LuisaRender', 'staircase', 'directX', 'MegaPath', 'Independent', '(720, 1280)', 1024, 8, 2, 'RGB', '5.1s']
+[2022-05-09 21:37:02] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-MegaPath-Independent-720_1280-1024spp-8max_depth-2rr_depth-Spectral.luisa
+[2022-05-09 21:37:16] [INFO] ['LuisaRender', 'staircase', 'directX', 'MegaPath', 'Independent', '(720, 1280)', 1024, 8, 2, 'Spectral', '8.8s']
+[2022-05-09 21:37:16] [INFO] #################### results ####################
+[2022-05-09 21:37:16] [INFO] [['LuisaRender', 'staircase', 'directX', 'WavePath', 'Independent', '(720, 1280)', 1024, 8, 2, 'RGB', '5.8s'], ['LuisaRender', 'staircase', 'directX', 'WavePath', 'Independent', '(720, 1280)', 1024, 8, 2, 'Spectral', '8.0s'], ['LuisaRender', 'staircase', 'directX', 'MegaPath', 'Independent', '(720, 1280)', 1024, 8, 2, 'RGB', '5.1s'], ['LuisaRender', 'staircase', 'directX', 'MegaPath', 'Independent', '(720, 1280)', 1024, 8, 2, 'Spectral', '8.8s']]
+[2022-05-09 21:37:16] [INFO] #################### results ####################
+[2022-05-09 21:37:16] [INFO] ====================== end ======================
+[2022-05-09 21:37:16] [INFO] 
+[2022-05-09 21:40:47] [INFO] 
+[2022-05-09 21:40:47] [INFO] ===================== start =====================
+[2022-05-09 21:40:47] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-5rr_depth-RGB.luisa
+[2022-05-09 21:41:14] [INFO] ['LuisaRender', 'classroom', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 5, 'RGB', '23.2s']
+[2022-05-09 21:41:14] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-5rr_depth-Spectral.luisa
+[2022-05-09 21:41:51] [INFO] ['LuisaRender', 'classroom', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 5, 'Spectral', '32.4s']
+[2022-05-09 21:41:51] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-MegaPath-Independent-1920_1080-1024spp-16max_depth-5rr_depth-RGB.luisa
+[2022-05-09 21:42:16] [INFO] ['LuisaRender', 'classroom', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 5, 'RGB', '21.3s']
+[2022-05-09 21:42:16] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\classroom\scene-MegaPath-Independent-1920_1080-1024spp-16max_depth-5rr_depth-Spectral.luisa
+[2022-05-09 21:43:00] [INFO] ['LuisaRender', 'classroom', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 5, 'Spectral', '39.9s']
+[2022-05-09 21:43:00] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\dining-room\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-5rr_depth-RGB.luisa
+[2022-05-09 21:43:20] [INFO] ['LuisaRender', 'dining-room', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 5, 'RGB', '16.8s']
+[2022-05-09 21:43:20] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\dining-room\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-5rr_depth-Spectral.luisa
+[2022-05-09 21:43:45] [INFO] ['LuisaRender', 'dining-room', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 5, 'Spectral', '22.1s']
+[2022-05-09 21:43:45] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\dining-room\scene-MegaPath-Independent-1920_1080-1024spp-16max_depth-5rr_depth-RGB.luisa
+[2022-05-09 21:43:59] [INFO] ['LuisaRender', 'dining-room', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 5, 'RGB', '11.2s']
+[2022-05-09 21:43:59] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\dining-room\scene-MegaPath-Independent-1920_1080-1024spp-16max_depth-5rr_depth-Spectral.luisa
+[2022-05-09 21:44:27] [INFO] ['LuisaRender', 'dining-room', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 5, 'Spectral', '23.7s']
+[2022-05-09 21:44:27] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-5rr_depth-RGB.luisa
+[2022-05-09 21:44:51] [INFO] ['LuisaRender', 'living-room', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 5, 'RGB', '22.0s']
+[2022-05-09 21:44:51] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-5rr_depth-Spectral.luisa
+[2022-05-09 21:45:22] [INFO] ['LuisaRender', 'living-room', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 5, 'Spectral', '27.8s']
+[2022-05-09 21:45:22] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\scene-MegaPath-Independent-1920_1080-1024spp-16max_depth-5rr_depth-RGB.luisa
+[2022-05-09 21:45:40] [INFO] ['LuisaRender', 'living-room', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 5, 'RGB', '14.8s']
+[2022-05-09 21:45:40] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\living-room\scene-MegaPath-Independent-1920_1080-1024spp-16max_depth-5rr_depth-Spectral.luisa
+[2022-05-09 21:46:11] [INFO] ['LuisaRender', 'living-room', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 5, 'Spectral', '27.9s']
+[2022-05-09 21:46:11] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-WavePath-Independent-800_1000-1024spp-16max_depth-5rr_depth-RGB.luisa
+[2022-05-09 21:46:16] [INFO] ['LuisaRender', 'coffee', 'directX', 'WavePath', 'Independent', '(800, 1000)', 1024, 16, 5, 'RGB', '2.8s']
+[2022-05-09 21:46:16] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-WavePath-Independent-800_1000-1024spp-16max_depth-5rr_depth-Spectral.luisa
+[2022-05-09 21:46:22] [INFO] ['LuisaRender', 'coffee', 'directX', 'WavePath', 'Independent', '(800, 1000)', 1024, 16, 5, 'Spectral', '4.2s']
+[2022-05-09 21:46:22] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-MegaPath-Independent-800_1000-1024spp-16max_depth-5rr_depth-RGB.luisa
+[2022-05-09 21:46:27] [INFO] ['LuisaRender', 'coffee', 'directX', 'MegaPath', 'Independent', '(800, 1000)', 1024, 16, 5, 'RGB', '4.0s']
+[2022-05-09 21:46:27] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-MegaPath-Independent-800_1000-1024spp-16max_depth-5rr_depth-Spectral.luisa
+[2022-05-09 21:46:37] [INFO] ['LuisaRender', 'coffee', 'directX', 'MegaPath', 'Independent', '(800, 1000)', 1024, 16, 5, 'Spectral', '7.2s']
+[2022-05-09 21:46:37] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\glass-of-water\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-5rr_depth-RGB.luisa
+[2022-05-09 21:46:51] [INFO] ['LuisaRender', 'glass-of-water', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 5, 'RGB', '10.1s']
+[2022-05-09 21:46:51] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\glass-of-water\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-5rr_depth-Spectral.luisa
+[2022-05-09 21:47:09] [INFO] ['LuisaRender', 'glass-of-water', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 5, 'Spectral', '14.5s']
+[2022-05-09 21:47:09] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\glass-of-water\scene-MegaPath-Independent-1920_1080-1024spp-16max_depth-5rr_depth-RGB.luisa
+[2022-05-09 21:47:23] [INFO] ['LuisaRender', 'glass-of-water', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 5, 'RGB', '10.2s']
+[2022-05-09 21:47:23] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\glass-of-water\scene-MegaPath-Independent-1920_1080-1024spp-16max_depth-5rr_depth-Spectral.luisa
+[2022-05-09 21:47:48] [INFO] ['LuisaRender', 'glass-of-water', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 5, 'Spectral', '21.3s']
+[2022-05-09 21:47:48] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\spaceship\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-5rr_depth-RGB.luisa
+[2022-05-09 21:48:00] [INFO] ['LuisaRender', 'spaceship', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 5, 'RGB', '9.1s']
+[2022-05-09 21:48:00] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\spaceship\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-5rr_depth-Spectral.luisa
+[2022-05-09 21:48:17] [INFO] ['LuisaRender', 'spaceship', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 5, 'Spectral', '13.2s']
+[2022-05-09 21:48:17] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\spaceship\scene-MegaPath-Independent-1920_1080-1024spp-16max_depth-5rr_depth-RGB.luisa
+[2022-05-09 21:48:32] [INFO] ['LuisaRender', 'spaceship', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 5, 'RGB', '12.0s']
+[2022-05-09 21:48:32] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\spaceship\scene-MegaPath-Independent-1920_1080-1024spp-16max_depth-5rr_depth-Spectral.luisa
+[2022-05-09 21:55:13] [INFO] 
+[2022-05-09 21:55:13] [INFO] ===================== start =====================
+[2022-05-09 21:55:13] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\spaceship\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-5rr_depth-RGB.luisa
+[2022-05-09 21:55:24] [INFO] ['LuisaRender', 'spaceship', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 5, 'RGB', '8.8s']
+[2022-05-09 21:55:24] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\spaceship\scene-WavePath-Independent-1920_1080-1024spp-16max_depth-5rr_depth-Spectral.luisa
+[2022-05-09 21:55:40] [INFO] ['LuisaRender', 'spaceship', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 5, 'Spectral', '12.9s']
+[2022-05-09 21:55:40] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\spaceship\scene-MegaPath-Independent-1920_1080-1024spp-16max_depth-5rr_depth-RGB.luisa
+[2022-05-09 21:55:55] [INFO] ['LuisaRender', 'spaceship', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 5, 'RGB', '12.0s']
+[2022-05-09 21:55:55] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\spaceship\scene-MegaPath-Independent-1920_1080-1024spp-16max_depth-5rr_depth-Spectral.luisa
+[2022-05-09 21:56:25] [INFO] ['LuisaRender', 'spaceship', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 5, 'Spectral', '25.6s']
+[2022-05-09 21:56:25] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-WavePath-Independent-720_1280-1024spp-16max_depth-5rr_depth-RGB.luisa
+[2022-05-09 21:56:40] [INFO] ['LuisaRender', 'staircase', 'directX', 'WavePath', 'Independent', '(720, 1280)', 1024, 16, 5, 'RGB', '11.0s']
+[2022-05-09 21:56:40] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-WavePath-Independent-720_1280-1024spp-16max_depth-5rr_depth-Spectral.luisa
+[2022-05-09 21:56:59] [INFO] ['LuisaRender', 'staircase', 'directX', 'WavePath', 'Independent', '(720, 1280)', 1024, 16, 5, 'Spectral', '14.0s']
+[2022-05-09 21:56:59] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-MegaPath-Independent-720_1280-1024spp-16max_depth-5rr_depth-RGB.luisa
+[2022-05-09 21:57:12] [INFO] ['LuisaRender', 'staircase', 'directX', 'MegaPath', 'Independent', '(720, 1280)', 1024, 16, 5, 'RGB', '8.7s']
+[2022-05-09 21:57:12] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-MegaPath-Independent-720_1280-1024spp-16max_depth-5rr_depth-Spectral.luisa
+[2022-05-09 21:57:32] [INFO] ['LuisaRender', 'staircase', 'directX', 'MegaPath', 'Independent', '(720, 1280)', 1024, 16, 5, 'Spectral', '14.3s']
+[2022-05-09 21:57:32] [INFO] #################### results ####################
+[2022-05-09 21:57:32] [INFO] [['LuisaRender', 'spaceship', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 5, 'RGB', '8.8s'], ['LuisaRender', 'spaceship', 'directX', 'WavePath', 'Independent', '(1920, 1080)', 1024, 16, 5, 'Spectral', '12.9s'], ['LuisaRender', 'spaceship', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 5, 'RGB', '12.0s'], ['LuisaRender', 'spaceship', 'directX', 'MegaPath', 'Independent', '(1920, 1080)', 1024, 16, 5, 'Spectral', '25.6s'], ['LuisaRender', 'staircase', 'directX', 'WavePath', 'Independent', '(720, 1280)', 1024, 16, 5, 'RGB', '11.0s'], ['LuisaRender', 'staircase', 'directX', 'WavePath', 'Independent', '(720, 1280)', 1024, 16, 5, 'Spectral', '14.0s'], ['LuisaRender', 'staircase', 'directX', 'MegaPath', 'Independent', '(720, 1280)', 1024, 16, 5, 'RGB', '8.7s'], ['LuisaRender', 'staircase', 'directX', 'MegaPath', 'Independent', '(720, 1280)', 1024, 16, 5, 'Spectral', '14.3s']]
+[2022-05-09 21:57:32] [INFO] #################### results ####################
+[2022-05-09 21:57:32] [INFO] ====================== end ======================
+[2022-05-09 21:57:32] [INFO] 
+[2022-05-09 23:16:52] [INFO] 
+[2022-05-09 23:16:52] [INFO] ===================== start =====================
+[2022-05-09 23:16:52] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-WavePath-Independent-1080_1920-1024spp-16max_depth-5rr_depth-RGB.luisa
+[2022-05-09 23:17:31] [INFO] ['LuisaRender', 'staircase', 'cuda', 'WavePath', 'Independent', '(1080, 1920)', 1024, 16, 5, 'RGB', '26.2s']
+[2022-05-09 23:17:31] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-WavePath-Independent-1080_1920-1024spp-16max_depth-5rr_depth-Spectral.luisa
+[2022-05-09 23:18:21] [INFO] ['LuisaRender', 'staircase', 'cuda', 'WavePath', 'Independent', '(1080, 1920)', 1024, 16, 5, 'Spectral', '34.8s']
+[2022-05-09 23:18:21] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-WavePath-Independent-1080_1920-1024spp-16max_depth-5rr_depth-RGB.luisa
+[2022-05-09 23:18:49] [INFO] ['LuisaRender', 'staircase', 'directX', 'WavePath', 'Independent', '(1080, 1920)', 1024, 16, 5, 'RGB', '23.8s']
+[2022-05-09 23:18:49] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-WavePath-Independent-1080_1920-1024spp-16max_depth-5rr_depth-Spectral.luisa
+[2022-05-09 23:19:26] [INFO] ['LuisaRender', 'staircase', 'directX', 'WavePath', 'Independent', '(1080, 1920)', 1024, 16, 5, 'Spectral', '30.8s']
+[2022-05-09 23:19:26] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-MegaPath-Independent-1080_1920-1024spp-16max_depth-5rr_depth-RGB.luisa
+[2022-05-09 23:20:04] [INFO] ['LuisaRender', 'staircase', 'cuda', 'MegaPath', 'Independent', '(1080, 1920)', 1024, 16, 5, 'RGB', '26.9s']
+[2022-05-09 23:20:04] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-MegaPath-Independent-1080_1920-1024spp-16max_depth-5rr_depth-Spectral.luisa
+[2022-05-09 23:21:08] [INFO] ['LuisaRender', 'staircase', 'cuda', 'MegaPath', 'Independent', '(1080, 1920)', 1024, 16, 5, 'Spectral', '51.6s']
+[2022-05-09 23:21:08] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-MegaPath-Independent-1080_1920-1024spp-16max_depth-5rr_depth-RGB.luisa
+[2022-05-09 23:21:32] [INFO] ['LuisaRender', 'staircase', 'directX', 'MegaPath', 'Independent', '(1080, 1920)', 1024, 16, 5, 'RGB', '19.1s']
+[2022-05-09 23:21:32] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-MegaPath-Independent-1080_1920-1024spp-16max_depth-5rr_depth-Spectral.luisa
+[2022-05-09 23:22:09] [INFO] ['LuisaRender', 'staircase', 'directX', 'MegaPath', 'Independent', '(1080, 1920)', 1024, 16, 5, 'Spectral', '31.3s']
+[2022-05-09 23:22:09] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   -m gpu_rgb --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-staircase-cuda-WavePath-Independent-1080_1920-1024spp-16max_depth-5rr_depth-RGB.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\staircase\scene-WavePath-Independent-1080_1920-1024spp-16max_depth-5rr_depth-RGB.xml
+[2022-05-09 23:34:37] [INFO] ['Mitsuba2', 'staircase', 'cuda', 'WavePath', 'Independent', '(1080, 1920)', 1024, 16, 5, 'RGB', '12.302m']
+[2022-05-09 23:34:37] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   -m gpu_spectral --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-staircase-cuda-WavePath-Independent-1080_1920-1024spp-16max_depth-5rr_depth-Spectral.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\staircase\scene-WavePath-Independent-1080_1920-1024spp-16max_depth-5rr_depth-Spectral.xml
+[2022-05-09 23:50:25] [INFO] ['Mitsuba2', 'staircase', 'cuda', 'WavePath', 'Independent', '(1080, 1920)', 1024, 16, 5, 'Spectral', '15.663m']
+[2022-05-09 23:50:25] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/pbrt-v4/build-vs/Release/pbrt.exe  --wavefront --gpu  --gpu-device 0 D:\OldNew\LuisaRender\record\RenderPerformance\PBRT-v4\staircase\scene-WavePath-Independent-1080_1920-1024spp-16max_depth-unknownrr_depth-Spectral.pbrt
+[2022-05-09 23:52:22] [INFO] ['PBRT-v4', 'staircase', 'cuda', 'WavePath', 'Independent', '(1080, 1920)', 1024, 16, 'unknown', 'Spectral', '105.8s']
+[2022-05-09 23:52:22] [INFO] #################### results ####################
+[2022-05-09 23:52:22] [INFO] [['LuisaRender', 'staircase', 'cuda', 'WavePath', 'Independent', '(1080, 1920)', 1024, 16, 5, 'RGB', '26.2s'], ['LuisaRender', 'staircase', 'cuda', 'WavePath', 'Independent', '(1080, 1920)', 1024, 16, 5, 'Spectral', '34.8s'], ['LuisaRender', 'staircase', 'directX', 'WavePath', 'Independent', '(1080, 1920)', 1024, 16, 5, 'RGB', '23.8s'], ['LuisaRender', 'staircase', 'directX', 'WavePath', 'Independent', '(1080, 1920)', 1024, 16, 5, 'Spectral', '30.8s'], ['LuisaRender', 'staircase', 'cuda', 'MegaPath', 'Independent', '(1080, 1920)', 1024, 16, 5, 'RGB', '26.9s'], ['LuisaRender', 'staircase', 'cuda', 'MegaPath', 'Independent', '(1080, 1920)', 1024, 16, 5, 'Spectral', '51.6s'], ['LuisaRender', 'staircase', 'directX', 'MegaPath', 'Independent', '(1080, 1920)', 1024, 16, 5, 'RGB', '19.1s'], ['LuisaRender', 'staircase', 'directX', 'MegaPath', 'Independent', '(1080, 1920)', 1024, 16, 5, 'Spectral', '31.3s'], ['Mitsuba2', 'staircase', 'cuda', 'WavePath', 'Independent', '(1080, 1920)', 1024, 16, 5, 'RGB', '12.302m'], ['Mitsuba2', 'staircase', 'cuda', 'WavePath', 'Independent', '(1080, 1920)', 1024, 16, 5, 'Spectral', '15.663m'], ['PBRT-v4', 'staircase', 'cuda', 'WavePath', 'Independent', '(1080, 1920)', 1024, 16, 'unknown', 'Spectral', '105.8s']]
+[2022-05-09 23:52:22] [INFO] #################### results ####################
+[2022-05-09 23:52:22] [INFO] ====================== end ======================
+[2022-05-09 23:52:22] [INFO] 
+[2022-05-10 00:01:52] [INFO] 
+[2022-05-10 00:01:52] [INFO] ===================== start =====================
+[2022-05-10 00:01:52] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-WavePath-Independent-1080_1920-1024spp-8max_depth-2rr_depth-RGB.luisa
+[2022-05-10 00:02:18] [INFO] ['LuisaRender', 'staircase', 'cuda', 'WavePath', 'Independent', '(1080, 1920)', 1024, 8, 2, 'RGB', '14.4s']
+[2022-05-10 00:02:18] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-WavePath-Independent-1080_1920-1024spp-8max_depth-2rr_depth-Spectral.luisa
+[2022-05-10 00:02:52] [INFO] ['LuisaRender', 'staircase', 'cuda', 'WavePath', 'Independent', '(1080, 1920)', 1024, 8, 2, 'Spectral', '19.8s']
+[2022-05-10 00:02:52] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-WavePath-Independent-1080_1920-1024spp-8max_depth-2rr_depth-RGB.luisa
+[2022-05-10 00:03:10] [INFO] ['LuisaRender', 'staircase', 'directX', 'WavePath', 'Independent', '(1080, 1920)', 1024, 8, 2, 'RGB', '13.1s']
+[2022-05-10 00:03:10] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-WavePath-Independent-1080_1920-1024spp-8max_depth-2rr_depth-Spectral.luisa
+[2022-05-10 00:03:34] [INFO] ['LuisaRender', 'staircase', 'directX', 'WavePath', 'Independent', '(1080, 1920)', 1024, 8, 2, 'Spectral', '17.8s']
+[2022-05-10 00:03:34] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-MegaPath-Independent-1080_1920-1024spp-8max_depth-2rr_depth-RGB.luisa
+[2022-05-10 00:04:01] [INFO] ['LuisaRender', 'staircase', 'cuda', 'MegaPath', 'Independent', '(1080, 1920)', 1024, 8, 2, 'RGB', '16.9s']
+[2022-05-10 00:04:01] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-MegaPath-Independent-1080_1920-1024spp-8max_depth-2rr_depth-Spectral.luisa
+[2022-05-10 00:04:47] [INFO] ['LuisaRender', 'staircase', 'cuda', 'MegaPath', 'Independent', '(1080, 1920)', 1024, 8, 2, 'Spectral', '33.7s']
+[2022-05-10 00:04:47] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-MegaPath-Independent-1080_1920-1024spp-8max_depth-2rr_depth-RGB.luisa
+[2022-05-10 00:05:04] [INFO] ['LuisaRender', 'staircase', 'directX', 'MegaPath', 'Independent', '(1080, 1920)', 1024, 8, 2, 'RGB', '11.7s']
+[2022-05-10 00:05:04] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\staircase\scene-MegaPath-Independent-1080_1920-1024spp-8max_depth-2rr_depth-Spectral.luisa
+[2022-05-10 00:05:30] [INFO] ['LuisaRender', 'staircase', 'directX', 'MegaPath', 'Independent', '(1080, 1920)', 1024, 8, 2, 'Spectral', '20.0s']
+[2022-05-10 00:05:30] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   -m gpu_rgb --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-staircase-cuda-WavePath-Independent-1080_1920-1024spp-8max_depth-2rr_depth-RGB.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\staircase\scene-WavePath-Independent-1080_1920-1024spp-8max_depth-2rr_depth-RGB.xml
+[2022-05-10 00:11:23] [INFO] ['Mitsuba2', 'staircase', 'cuda', 'WavePath', 'Independent', '(1080, 1920)', 1024, 8, 2, 'RGB', '5.7959m']
+[2022-05-10 00:11:23] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   -m gpu_spectral --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-staircase-cuda-WavePath-Independent-1080_1920-1024spp-8max_depth-2rr_depth-Spectral.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\staircase\scene-WavePath-Independent-1080_1920-1024spp-8max_depth-2rr_depth-Spectral.xml
+[2022-05-10 00:18:21] [INFO] ['Mitsuba2', 'staircase', 'cuda', 'WavePath', 'Independent', '(1080, 1920)', 1024, 8, 2, 'Spectral', '6.8388m']
+[2022-05-10 00:18:21] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/pbrt-v4/build-vs/Release/pbrt.exe  --wavefront --gpu  --gpu-device 0 D:\OldNew\LuisaRender\record\RenderPerformance\PBRT-v4\staircase\scene-WavePath-Independent-1080_1920-1024spp-8max_depth-unknownrr_depth-Spectral.pbrt
+[2022-05-10 00:20:01] [INFO] ['PBRT-v4', 'staircase', 'cuda', 'WavePath', 'Independent', '(1080, 1920)', 1024, 8, 'unknown', 'Spectral', '94.6s']
+[2022-05-10 00:20:01] [INFO] #################### results ####################
+[2022-05-10 00:20:01] [INFO] [['LuisaRender', 'staircase', 'cuda', 'WavePath', 'Independent', '(1080, 1920)', 1024, 8, 2, 'RGB', '14.4s'], ['LuisaRender', 'staircase', 'cuda', 'WavePath', 'Independent', '(1080, 1920)', 1024, 8, 2, 'Spectral', '19.8s'], ['LuisaRender', 'staircase', 'directX', 'WavePath', 'Independent', '(1080, 1920)', 1024, 8, 2, 'RGB', '13.1s'], ['LuisaRender', 'staircase', 'directX', 'WavePath', 'Independent', '(1080, 1920)', 1024, 8, 2, 'Spectral', '17.8s'], ['LuisaRender', 'staircase', 'cuda', 'MegaPath', 'Independent', '(1080, 1920)', 1024, 8, 2, 'RGB', '16.9s'], ['LuisaRender', 'staircase', 'cuda', 'MegaPath', 'Independent', '(1080, 1920)', 1024, 8, 2, 'Spectral', '33.7s'], ['LuisaRender', 'staircase', 'directX', 'MegaPath', 'Independent', '(1080, 1920)', 1024, 8, 2, 'RGB', '11.7s'], ['LuisaRender', 'staircase', 'directX', 'MegaPath', 'Independent', '(1080, 1920)', 1024, 8, 2, 'Spectral', '20.0s'], ['Mitsuba2', 'staircase', 'cuda', 'WavePath', 'Independent', '(1080, 1920)', 1024, 8, 2, 'RGB', '5.7959m'], ['Mitsuba2', 'staircase', 'cuda', 'WavePath', 'Independent', '(1080, 1920)', 1024, 8, 2, 'Spectral', '6.8388m'], ['PBRT-v4', 'staircase', 'cuda', 'WavePath', 'Independent', '(1080, 1920)', 1024, 8, 'unknown', 'Spectral', '94.6s']]
+[2022-05-10 00:20:01] [INFO] #################### results ####################
+[2022-05-10 00:20:01] [INFO] ====================== end ======================
+[2022-05-10 00:20:01] [INFO] 
+[2022-05-10 00:53:12] [INFO] 
+[2022-05-10 00:53:12] [INFO] ===================== start =====================
+[2022-05-10 00:53:12] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-WavePath-Independent-800_1000-1024spp-8max_depth-2rr_depth-RGB.luisa
+[2022-05-10 00:53:18] [INFO] ['LuisaRender', 'coffee', 'cuda', 'WavePath', 'Independent', '(800, 1000)', 1024, 8, 2, 'RGB', '2.4s']
+[2022-05-10 00:53:18] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-WavePath-Independent-800_1000-1024spp-8max_depth-2rr_depth-Spectral.luisa
+[2022-05-10 00:53:26] [INFO] ['LuisaRender', 'coffee', 'cuda', 'WavePath', 'Independent', '(800, 1000)', 1024, 8, 2, 'Spectral', '3.8s']
+[2022-05-10 00:53:26] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-WavePath-Independent-800_1000-1024spp-8max_depth-2rr_depth-RGB.luisa
+[2022-05-10 00:53:30] [INFO] ['LuisaRender', 'coffee', 'directX', 'WavePath', 'Independent', '(800, 1000)', 1024, 8, 2, 'RGB', '2.1s']
+[2022-05-10 00:53:30] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-WavePath-Independent-800_1000-1024spp-8max_depth-2rr_depth-Spectral.luisa
+[2022-05-10 00:53:35] [INFO] ['LuisaRender', 'coffee', 'directX', 'WavePath', 'Independent', '(800, 1000)', 1024, 8, 2, 'Spectral', '3.3s']
+[2022-05-10 00:53:35] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-MegaPath-Independent-800_1000-1024spp-8max_depth-2rr_depth-RGB.luisa
+[2022-05-10 00:53:42] [INFO] ['LuisaRender', 'coffee', 'cuda', 'MegaPath', 'Independent', '(800, 1000)', 1024, 8, 2, 'RGB', '2.8s']
+[2022-05-10 00:53:42] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-MegaPath-Independent-800_1000-1024spp-8max_depth-2rr_depth-Spectral.luisa
+[2022-05-10 00:53:53] [INFO] ['LuisaRender', 'coffee', 'cuda', 'MegaPath', 'Independent', '(800, 1000)', 1024, 8, 2, 'Spectral', '7.4s']
+[2022-05-10 00:53:53] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-MegaPath-Independent-800_1000-1024spp-8max_depth-2rr_depth-RGB.luisa
+[2022-05-10 00:53:58] [INFO] ['LuisaRender', 'coffee', 'directX', 'MegaPath', 'Independent', '(800, 1000)', 1024, 8, 2, 'RGB', '2.7s']
+[2022-05-10 00:53:58] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-MegaPath-Independent-800_1000-1024spp-8max_depth-2rr_depth-Spectral.luisa
+[2022-05-10 00:54:05] [INFO] ['LuisaRender', 'coffee', 'directX', 'MegaPath', 'Independent', '(800, 1000)', 1024, 8, 2, 'Spectral', '5.7s']
+[2022-05-10 00:54:05] [INFO] #################### results ####################
+[2022-05-10 00:54:05] [INFO] [['LuisaRender', 'coffee', 'cuda', 'WavePath', 'Independent', '(800, 1000)', 1024, 8, 2, 'RGB', '2.4s'], ['LuisaRender', 'coffee', 'cuda', 'WavePath', 'Independent', '(800, 1000)', 1024, 8, 2, 'Spectral', '3.8s'], ['LuisaRender', 'coffee', 'directX', 'WavePath', 'Independent', '(800, 1000)', 1024, 8, 2, 'RGB', '2.1s'], ['LuisaRender', 'coffee', 'directX', 'WavePath', 'Independent', '(800, 1000)', 1024, 8, 2, 'Spectral', '3.3s'], ['LuisaRender', 'coffee', 'cuda', 'MegaPath', 'Independent', '(800, 1000)', 1024, 8, 2, 'RGB', '2.8s'], ['LuisaRender', 'coffee', 'cuda', 'MegaPath', 'Independent', '(800, 1000)', 1024, 8, 2, 'Spectral', '7.4s'], ['LuisaRender', 'coffee', 'directX', 'MegaPath', 'Independent', '(800, 1000)', 1024, 8, 2, 'RGB', '2.7s'], ['LuisaRender', 'coffee', 'directX', 'MegaPath', 'Independent', '(800, 1000)', 1024, 8, 2, 'Spectral', '5.7s']]
+[2022-05-10 00:54:05] [INFO] #################### results ####################
+[2022-05-10 00:54:05] [INFO] ====================== end ======================
+[2022-05-10 00:54:05] [INFO] 
+[2022-05-10 00:55:42] [INFO] 
+[2022-05-10 00:55:42] [INFO] ===================== start =====================
+[2022-05-10 00:55:42] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-WavePath-Independent-1288_1610-1024spp-8max_depth-2rr_depth-RGB.luisa
+[2022-05-10 00:55:46] [INFO] ['LuisaRender', 'coffee', 'cuda', 'WavePath', 'Independent', '(1288, 1610)', 1024, 8, 2, 'RGB', '2.4s']
+[2022-05-10 00:55:46] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-WavePath-Independent-1288_1610-1024spp-8max_depth-2rr_depth-Spectral.luisa
+[2022-05-10 00:55:51] [INFO] ['LuisaRender', 'coffee', 'cuda', 'WavePath', 'Independent', '(1288, 1610)', 1024, 8, 2, 'Spectral', '3.8s']
+[2022-05-10 00:55:51] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-WavePath-Independent-1288_1610-1024spp-8max_depth-2rr_depth-RGB.luisa
+[2022-05-10 00:55:54] [INFO] ['LuisaRender', 'coffee', 'directX', 'WavePath', 'Independent', '(1288, 1610)', 1024, 8, 2, 'RGB', '2.1s']
+[2022-05-10 00:55:54] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-WavePath-Independent-1288_1610-1024spp-8max_depth-2rr_depth-Spectral.luisa
+[2022-05-10 00:55:59] [INFO] ['LuisaRender', 'coffee', 'directX', 'WavePath', 'Independent', '(1288, 1610)', 1024, 8, 2, 'Spectral', '3.3s']
+[2022-05-10 00:55:59] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-MegaPath-Independent-1288_1610-1024spp-8max_depth-2rr_depth-RGB.luisa
+[2022-05-10 00:56:03] [INFO] ['LuisaRender', 'coffee', 'cuda', 'MegaPath', 'Independent', '(1288, 1610)', 1024, 8, 2, 'RGB', '2.9s']
+[2022-05-10 00:56:03] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-MegaPath-Independent-1288_1610-1024spp-8max_depth-2rr_depth-Spectral.luisa
+[2022-05-10 00:56:15] [INFO] ['LuisaRender', 'coffee', 'cuda', 'MegaPath', 'Independent', '(1288, 1610)', 1024, 8, 2, 'Spectral', '7.4s']
+[2022-05-10 00:56:15] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-MegaPath-Independent-1288_1610-1024spp-8max_depth-2rr_depth-RGB.luisa
+[2022-05-10 00:56:19] [INFO] ['LuisaRender', 'coffee', 'directX', 'MegaPath', 'Independent', '(1288, 1610)', 1024, 8, 2, 'RGB', '2.8s']
+[2022-05-10 00:56:19] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-MegaPath-Independent-1288_1610-1024spp-8max_depth-2rr_depth-Spectral.luisa
+[2022-05-10 00:56:27] [INFO] ['LuisaRender', 'coffee', 'directX', 'MegaPath', 'Independent', '(1288, 1610)', 1024, 8, 2, 'Spectral', '5.9s']
+[2022-05-10 00:56:27] [INFO] #################### results ####################
+[2022-05-10 00:56:27] [INFO] [['LuisaRender', 'coffee', 'cuda', 'WavePath', 'Independent', '(1288, 1610)', 1024, 8, 2, 'RGB', '2.4s'], ['LuisaRender', 'coffee', 'cuda', 'WavePath', 'Independent', '(1288, 1610)', 1024, 8, 2, 'Spectral', '3.8s'], ['LuisaRender', 'coffee', 'directX', 'WavePath', 'Independent', '(1288, 1610)', 1024, 8, 2, 'RGB', '2.1s'], ['LuisaRender', 'coffee', 'directX', 'WavePath', 'Independent', '(1288, 1610)', 1024, 8, 2, 'Spectral', '3.3s'], ['LuisaRender', 'coffee', 'cuda', 'MegaPath', 'Independent', '(1288, 1610)', 1024, 8, 2, 'RGB', '2.9s'], ['LuisaRender', 'coffee', 'cuda', 'MegaPath', 'Independent', '(1288, 1610)', 1024, 8, 2, 'Spectral', '7.4s'], ['LuisaRender', 'coffee', 'directX', 'MegaPath', 'Independent', '(1288, 1610)', 1024, 8, 2, 'RGB', '2.8s'], ['LuisaRender', 'coffee', 'directX', 'MegaPath', 'Independent', '(1288, 1610)', 1024, 8, 2, 'Spectral', '5.9s']]
+[2022-05-10 00:56:27] [INFO] #################### results ####################
+[2022-05-10 00:56:27] [INFO] ====================== end ======================
+[2022-05-10 00:56:27] [INFO] 
+[2022-05-10 00:57:09] [INFO] 
+[2022-05-10 00:57:09] [INFO] ===================== start =====================
+[2022-05-10 00:57:09] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-WavePath-Independent-1200_1700-1024spp-8max_depth-2rr_depth-RGB.luisa
+[2022-05-10 00:57:12] [INFO] ['LuisaRender', 'coffee', 'cuda', 'WavePath', 'Independent', '(1200, 1700)', 1024, 8, 2, 'RGB', '2.5s']
+[2022-05-10 00:57:12] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-WavePath-Independent-1200_1700-1024spp-8max_depth-2rr_depth-Spectral.luisa
+[2022-05-10 00:58:33] [INFO] 
+[2022-05-10 00:58:33] [INFO] ===================== start =====================
+[2022-05-10 00:58:33] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-WavePath-Independent-1200_1800-1024spp-8max_depth-2rr_depth-RGB.luisa
+[2022-05-10 00:58:37] [INFO] ['LuisaRender', 'coffee', 'cuda', 'WavePath', 'Independent', '(1200, 1800)', 1024, 8, 2, 'RGB', '2.5s']
+[2022-05-10 00:58:37] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-WavePath-Independent-1200_1800-1024spp-8max_depth-2rr_depth-Spectral.luisa
+[2022-05-10 01:00:58] [INFO] 
+[2022-05-10 01:00:58] [INFO] ===================== start =====================
+[2022-05-10 01:00:58] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-WavePath-Independent-1200_1800-1024spp-8max_depth-2rr_depth-RGB.luisa
+[2022-05-10 01:01:02] [INFO] ['LuisaRender', 'coffee', 'cuda', 'WavePath', 'Independent', '(1200, 1800)', 1024, 8, 2, 'RGB', '2.4s']
+[2022-05-10 01:01:02] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-WavePath-Independent-1200_1800-1024spp-8max_depth-2rr_depth-Spectral.luisa
+[2022-05-10 01:01:07] [INFO] ['LuisaRender', 'coffee', 'cuda', 'WavePath', 'Independent', '(1200, 1800)', 1024, 8, 2, 'Spectral', '3.8s']
+[2022-05-10 01:01:07] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-WavePath-Independent-1200_1800-1024spp-8max_depth-2rr_depth-RGB.luisa
+[2022-05-10 01:01:11] [INFO] ['LuisaRender', 'coffee', 'directX', 'WavePath', 'Independent', '(1200, 1800)', 1024, 8, 2, 'RGB', '2.1s']
+[2022-05-10 01:01:11] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-WavePath-Independent-1200_1800-1024spp-8max_depth-2rr_depth-Spectral.luisa
+[2022-05-10 01:01:16] [INFO] ['LuisaRender', 'coffee', 'directX', 'WavePath', 'Independent', '(1200, 1800)', 1024, 8, 2, 'Spectral', '3.3s']
+[2022-05-10 01:01:16] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-MegaPath-Independent-1200_1800-1024spp-8max_depth-2rr_depth-RGB.luisa
+[2022-05-10 01:01:20] [INFO] ['LuisaRender', 'coffee', 'cuda', 'MegaPath', 'Independent', '(1200, 1800)', 1024, 8, 2, 'RGB', '3.0s']
+[2022-05-10 01:01:20] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-MegaPath-Independent-1200_1800-1024spp-8max_depth-2rr_depth-Spectral.luisa
+[2022-05-10 01:01:28] [INFO] ['LuisaRender', 'coffee', 'cuda', 'MegaPath', 'Independent', '(1200, 1800)', 1024, 8, 2, 'Spectral', '7.3s']
+[2022-05-10 01:01:28] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-MegaPath-Independent-1200_1800-1024spp-8max_depth-2rr_depth-RGB.luisa
+[2022-05-10 01:01:33] [INFO] ['LuisaRender', 'coffee', 'directX', 'MegaPath', 'Independent', '(1200, 1800)', 1024, 8, 2, 'RGB', '2.8s']
+[2022-05-10 01:01:33] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-MegaPath-Independent-1200_1800-1024spp-8max_depth-2rr_depth-Spectral.luisa
+[2022-05-10 01:01:40] [INFO] ['LuisaRender', 'coffee', 'directX', 'MegaPath', 'Independent', '(1200, 1800)', 1024, 8, 2, 'Spectral', '5.8s']
+[2022-05-10 01:01:40] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   -m gpu_rgb --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-coffee-cuda-WavePath-Independent-1200_1800-1024spp-8max_depth-2rr_depth-RGB.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\coffee\scene-WavePath-Independent-1200_1800-1024spp-8max_depth-2rr_depth-RGB.xml
+[2022-05-10 01:06:36] [INFO] ['Mitsuba2', 'coffee', 'cuda', 'WavePath', 'Independent', '(1200, 1800)', 1024, 8, 2, 'RGB', '4.9061m']
+[2022-05-10 01:06:36] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   -m gpu_spectral --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-coffee-cuda-WavePath-Independent-1200_1800-1024spp-8max_depth-2rr_depth-Spectral.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\coffee\scene-WavePath-Independent-1200_1800-1024spp-8max_depth-2rr_depth-Spectral.xml
+[2022-05-10 01:06:38] [WARNING] Error 0: 
+2022-05-10 01:06:36 INFO  main  [optix_api.cpp:56] Dynamic loading of the Optix library ..
+2022-05-10 01:06:36 INFO  main  [mitsuba.cpp:218] Mitsuba version 2.2.1 (master[4e7628c6], Windows, 64bit, 16 threads, 8-wide SIMD)
+2022-05-10 01:06:36 INFO  main  [mitsuba.cpp:219] Copyright 2020, Realistic Graphics Lab, EPFL
+2022-05-10 01:06:36 INFO  main  [mitsuba.cpp:220] Enabled processor features: cuda avx2 avx fma f16c sse4.2 x86_64
+2022-05-10 01:06:36 INFO  main  [xml.cpp:1221] Loading XML file "D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\coffee\scene-WavePath-Independent-1200_1800-1024spp-8max_depth-2rr_depth-Spectral.xml" ..
+2022-05-10 01:06:36 INFO  main  [xml.cpp:1222] Using variant "gpu_spectral"
+2022-05-10 01:06:36 INFO  main  [PluginManager] Loading plugin "plugins\srgb.dll" ..
+2022-05-10 01:06:36 INFO  main  [srgb.cpp:22] Loading spectral upsampling model "data/srgb.coeff" .. 
+2022-05-10 01:06:36 INFO  main  [PluginManager] Loading plugin "plugins\srgb_d65.dll" ..
+2022-05-10 01:06:36 INFO  main  [PluginManager] Loading plugin "plugins\d65.dll" ..
+2022-05-10 01:06:36 INFO  main  [PluginManager] Loading plugin "plugins\regular.dll" ..
+2022-05-10 01:06:36 INFO  main  [PluginManager] Loading plugin "plugins\path.dll" ..
+2022-05-10 01:06:36 INFO  main  [PluginManager] Loading plugin "plugins\independent.dll" ..
+2022-05-10 01:06:36 INFO  main  [PluginManager] Loading plugin "plugins\gaussian.dll" ..
+2022-05-10 01:06:36 INFO  main  [PluginManager] Loading plugin "plugins\hdrfilm.dll" ..
+2022-05-10 01:06:36 INFO  main  [PluginManager] Loading plugin "plugins\perspective.dll" ..
+2022-05-10 01:06:36 INFO  main  [PluginManager] Loading plugin "plugins\plastic.dll" ..
+2022-05-10 01:06:36 INFO  main  [PluginManager] Loading plugin "plugins\twosided.dll" ..
+2022-05-10 01:06:36 INFO  main  [PluginManager] Loading plugin "plugins\roughplastic.dll" ..
+2022-05-10 01:06:36 INFO  main  [PluginManager] Loading plugin "plugins\dielectric.dll" ..
+2022-05-10 01:06:36 INFO  main  [PluginManager] Loading plugin "plugins\conductor.dll" ..
+2022-05-10 01:06:36 INFO  main  [PluginManager] Loading plugin "plugins\uniform.dll" ..
+2022-05-10 01:06:36 INFO  main  [PluginManager] Loading plugin "plugins\obj.dll" ..
+2022-05-10 01:06:36 INFO  main  [PluginManager] Loading plugin "plugins\diffuse.dll" ..
+2022-05-10 01:06:36 INFO  main  [PluginManager] Loading plugin "plugins\area.dll" ..
+2022-05-10 01:06:36 INFO  main  [PluginManager] Loading plugin "plugins\rectangle.dll" ..
+2022-05-10 01:06:36 INFO  main  [Scene] Building scene in OptiX ..
+2022-05-10 01:06:36 INFO  main  [SamplingIntegrator] Start rendering...
+
+
+[2022-05-10 01:06:38] [INFO] ['Mitsuba2', 'coffee', 'cuda', 'WavePath', 'Independent', '(1200, 1800)', 1024, 8, 2, 'Spectral', 'Error']
+[2022-05-10 01:06:38] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/pbrt-v4/build-vs/Release/pbrt.exe  --wavefront --gpu  --gpu-device 0 D:\OldNew\LuisaRender\record\RenderPerformance\PBRT-v4\coffee\scene-WavePath-Independent-1200_1800-1024spp-8max_depth-unknownrr_depth-Spectral.pbrt
+[2022-05-10 01:07:56] [INFO] ['PBRT-v4', 'coffee', 'cuda', 'WavePath', 'Independent', '(1200, 1800)', 1024, 8, 'unknown', 'Spectral', '75.1s']
+[2022-05-10 01:07:56] [INFO] #################### results ####################
+[2022-05-10 01:07:56] [INFO] [['LuisaRender', 'coffee', 'cuda', 'WavePath', 'Independent', '(1200, 1800)', 1024, 8, 2, 'RGB', '2.4s'], ['LuisaRender', 'coffee', 'cuda', 'WavePath', 'Independent', '(1200, 1800)', 1024, 8, 2, 'Spectral', '3.8s'], ['LuisaRender', 'coffee', 'directX', 'WavePath', 'Independent', '(1200, 1800)', 1024, 8, 2, 'RGB', '2.1s'], ['LuisaRender', 'coffee', 'directX', 'WavePath', 'Independent', '(1200, 1800)', 1024, 8, 2, 'Spectral', '3.3s'], ['LuisaRender', 'coffee', 'cuda', 'MegaPath', 'Independent', '(1200, 1800)', 1024, 8, 2, 'RGB', '3.0s'], ['LuisaRender', 'coffee', 'cuda', 'MegaPath', 'Independent', '(1200, 1800)', 1024, 8, 2, 'Spectral', '7.3s'], ['LuisaRender', 'coffee', 'directX', 'MegaPath', 'Independent', '(1200, 1800)', 1024, 8, 2, 'RGB', '2.8s'], ['LuisaRender', 'coffee', 'directX', 'MegaPath', 'Independent', '(1200, 1800)', 1024, 8, 2, 'Spectral', '5.8s'], ['Mitsuba2', 'coffee', 'cuda', 'WavePath', 'Independent', '(1200, 1800)', 1024, 8, 2, 'RGB', '4.9061m'], ['Mitsuba2', 'coffee', 'cuda', 'WavePath', 'Independent', '(1200, 1800)', 1024, 8, 2, 'Spectral', 'Error'], ['PBRT-v4', 'coffee', 'cuda', 'WavePath', 'Independent', '(1200, 1800)', 1024, 8, 'unknown', 'Spectral', '75.1s']]
+[2022-05-10 01:07:56] [INFO] #################### results ####################
+[2022-05-10 01:07:56] [INFO] ====================== end ======================
+[2022-05-10 01:07:56] [INFO] 
+[2022-05-10 02:36:13] [INFO] 
+[2022-05-10 02:36:13] [INFO] ===================== start =====================
+[2022-05-10 02:36:13] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-WavePath-Independent-1200_1800-1024spp-16max_depth-5rr_depth-RGB.luisa
+[2022-05-10 02:36:19] [INFO] ['LuisaRender', 'coffee', 'cuda', 'WavePath', 'Independent', '(1200, 1800)', 1024, 16, 5, 'RGB', '3.3s']
+[2022-05-10 02:36:19] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-WavePath-Independent-1200_1800-1024spp-16max_depth-5rr_depth-Spectral.luisa
+[2022-05-10 02:36:27] [INFO] ['LuisaRender', 'coffee', 'cuda', 'WavePath', 'Independent', '(1200, 1800)', 1024, 16, 5, 'Spectral', '4.8s']
+[2022-05-10 02:36:27] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-WavePath-Independent-1200_1800-1024spp-16max_depth-5rr_depth-RGB.luisa
+[2022-05-10 02:36:32] [INFO] ['LuisaRender', 'coffee', 'directX', 'WavePath', 'Independent', '(1200, 1800)', 1024, 16, 5, 'RGB', '2.7s']
+[2022-05-10 02:36:32] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-WavePath-Independent-1200_1800-1024spp-16max_depth-5rr_depth-Spectral.luisa
+[2022-05-10 02:36:37] [INFO] ['LuisaRender', 'coffee', 'directX', 'WavePath', 'Independent', '(1200, 1800)', 1024, 16, 5, 'Spectral', '3.9s']
+[2022-05-10 02:36:37] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-MegaPath-Independent-1200_1800-1024spp-16max_depth-5rr_depth-RGB.luisa
+[2022-05-10 02:36:45] [INFO] ['LuisaRender', 'coffee', 'cuda', 'MegaPath', 'Independent', '(1200, 1800)', 1024, 16, 5, 'RGB', '4.1s']
+[2022-05-10 02:36:45] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b cuda -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-MegaPath-Independent-1200_1800-1024spp-16max_depth-5rr_depth-Spectral.luisa
+[2022-05-10 02:36:58] [INFO] ['LuisaRender', 'coffee', 'cuda', 'MegaPath', 'Independent', '(1200, 1800)', 1024, 16, 5, 'Spectral', '8.8s']
+[2022-05-10 02:36:58] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-MegaPath-Independent-1200_1800-1024spp-16max_depth-5rr_depth-RGB.luisa
+[2022-05-10 02:37:03] [INFO] ['LuisaRender', 'coffee', 'directX', 'MegaPath', 'Independent', '(1200, 1800)', 1024, 16, 5, 'RGB', '3.9s']
+[2022-05-10 02:37:03] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-MegaPath-Independent-1200_1800-1024spp-16max_depth-5rr_depth-Spectral.luisa
+[2022-05-10 02:37:12] [INFO] ['LuisaRender', 'coffee', 'directX', 'MegaPath', 'Independent', '(1200, 1800)', 1024, 16, 5, 'Spectral', '6.9s']
+[2022-05-10 02:37:12] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   -m gpu_rgb --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-coffee-cuda-WavePath-Independent-1200_1800-1024spp-16max_depth-5rr_depth-RGB.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\coffee\scene-WavePath-Independent-1200_1800-1024spp-16max_depth-5rr_depth-RGB.xml
+[2022-05-10 02:47:04] [INFO] ['Mitsuba2', 'coffee', 'cuda', 'WavePath', 'Independent', '(1200, 1800)', 1024, 16, 5, 'RGB', '9.856m']
+[2022-05-10 02:47:04] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe   -m gpu_spectral --output D:/OldNew/LuisaRender/record/RenderPerformance/outputs/pictures/Mitsuba2-coffee-cuda-WavePath-Independent-1200_1800-1024spp-16max_depth-5rr_depth-Spectral.exr D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\coffee\scene-WavePath-Independent-1200_1800-1024spp-16max_depth-5rr_depth-Spectral.xml
+[2022-05-10 02:47:07] [WARNING] Error 0: 
+2022-05-10 02:47:05 INFO  main  [optix_api.cpp:56] Dynamic loading of the Optix library ..
+2022-05-10 02:47:05 INFO  main  [mitsuba.cpp:218] Mitsuba version 2.2.1 (master[4e7628c6], Windows, 64bit, 16 threads, 8-wide SIMD)
+2022-05-10 02:47:05 INFO  main  [mitsuba.cpp:219] Copyright 2020, Realistic Graphics Lab, EPFL
+2022-05-10 02:47:05 INFO  main  [mitsuba.cpp:220] Enabled processor features: cuda avx2 avx fma f16c sse4.2 x86_64
+2022-05-10 02:47:05 INFO  main  [xml.cpp:1221] Loading XML file "D:\OldNew\LuisaRender\record\RenderPerformance\Mitsuba2\coffee\scene-WavePath-Independent-1200_1800-1024spp-16max_depth-5rr_depth-Spectral.xml" ..
+2022-05-10 02:47:05 INFO  main  [xml.cpp:1222] Using variant "gpu_spectral"
+2022-05-10 02:47:05 INFO  main  [PluginManager] Loading plugin "plugins\srgb.dll" ..
+2022-05-10 02:47:05 INFO  main  [srgb.cpp:22] Loading spectral upsampling model "data/srgb.coeff" .. 
+2022-05-10 02:47:05 INFO  main  [PluginManager] Loading plugin "plugins\srgb_d65.dll" ..
+2022-05-10 02:47:05 INFO  main  [PluginManager] Loading plugin "plugins\d65.dll" ..
+2022-05-10 02:47:05 INFO  main  [PluginManager] Loading plugin "plugins\regular.dll" ..
+2022-05-10 02:47:05 INFO  main  [PluginManager] Loading plugin "plugins\path.dll" ..
+2022-05-10 02:47:05 INFO  main  [PluginManager] Loading plugin "plugins\independent.dll" ..
+2022-05-10 02:47:05 INFO  main  [PluginManager] Loading plugin "plugins\gaussian.dll" ..
+2022-05-10 02:47:05 INFO  main  [PluginManager] Loading plugin "plugins\hdrfilm.dll" ..
+2022-05-10 02:47:05 INFO  main  [PluginManager] Loading plugin "plugins\perspective.dll" ..
+2022-05-10 02:47:05 INFO  main  [PluginManager] Loading plugin "plugins\plastic.dll" ..
+2022-05-10 02:47:05 INFO  main  [PluginManager] Loading plugin "plugins\twosided.dll" ..
+2022-05-10 02:47:05 INFO  main  [PluginManager] Loading plugin "plugins\roughplastic.dll" ..
+2022-05-10 02:47:05 INFO  main  [PluginManager] Loading plugin "plugins\dielectric.dll" ..
+2022-05-10 02:47:05 INFO  main  [PluginManager] Loading plugin "plugins\conductor.dll" ..
+2022-05-10 02:47:05 INFO  main  [PluginManager] Loading plugin "plugins\uniform.dll" ..
+2022-05-10 02:47:05 INFO  main  [PluginManager] Loading plugin "plugins\obj.dll" ..
+2022-05-10 02:47:05 INFO  main  [PluginManager] Loading plugin "plugins\diffuse.dll" ..
+2022-05-10 02:47:05 INFO  main  [PluginManager] Loading plugin "plugins\area.dll" ..
+2022-05-10 02:47:05 INFO  main  [PluginManager] Loading plugin "plugins\rectangle.dll" ..
+2022-05-10 02:47:05 INFO  main  [Scene] Building scene in OptiX ..
+2022-05-10 02:47:05 INFO  main  [SamplingIntegrator] Start rendering...
+
+
+[2022-05-10 02:47:07] [INFO] ['Mitsuba2', 'coffee', 'cuda', 'WavePath', 'Independent', '(1200, 1800)', 1024, 16, 5, 'Spectral', 'Error']
+[2022-05-10 02:47:07] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/pbrt-v4/build-vs/Release/pbrt.exe  --wavefront --gpu  --gpu-device 0 D:\OldNew\LuisaRender\record\RenderPerformance\PBRT-v4\coffee\scene-WavePath-Independent-1200_1800-1024spp-16max_depth-unknownrr_depth-Spectral.pbrt
+[2022-05-10 02:48:44] [INFO] ['PBRT-v4', 'coffee', 'cuda', 'WavePath', 'Independent', '(1200, 1800)', 1024, 16, 'unknown', 'Spectral', '93.8s']
+[2022-05-10 02:48:44] [INFO] #################### results ####################
+[2022-05-10 02:48:44] [INFO] [['LuisaRender', 'coffee', 'cuda', 'WavePath', 'Independent', '(1200, 1800)', 1024, 16, 5, 'RGB', '3.3s'], ['LuisaRender', 'coffee', 'cuda', 'WavePath', 'Independent', '(1200, 1800)', 1024, 16, 5, 'Spectral', '4.8s'], ['LuisaRender', 'coffee', 'directX', 'WavePath', 'Independent', '(1200, 1800)', 1024, 16, 5, 'RGB', '2.7s'], ['LuisaRender', 'coffee', 'directX', 'WavePath', 'Independent', '(1200, 1800)', 1024, 16, 5, 'Spectral', '3.9s'], ['LuisaRender', 'coffee', 'cuda', 'MegaPath', 'Independent', '(1200, 1800)', 1024, 16, 5, 'RGB', '4.1s'], ['LuisaRender', 'coffee', 'cuda', 'MegaPath', 'Independent', '(1200, 1800)', 1024, 16, 5, 'Spectral', '8.8s'], ['LuisaRender', 'coffee', 'directX', 'MegaPath', 'Independent', '(1200, 1800)', 1024, 16, 5, 'RGB', '3.9s'], ['LuisaRender', 'coffee', 'directX', 'MegaPath', 'Independent', '(1200, 1800)', 1024, 16, 5, 'Spectral', '6.9s'], ['Mitsuba2', 'coffee', 'cuda', 'WavePath', 'Independent', '(1200, 1800)', 1024, 16, 5, 'RGB', '9.856m'], ['Mitsuba2', 'coffee', 'cuda', 'WavePath', 'Independent', '(1200, 1800)', 1024, 16, 5, 'Spectral', 'Error'], ['PBRT-v4', 'coffee', 'cuda', 'WavePath', 'Independent', '(1200, 1800)', 1024, 16, 'unknown', 'Spectral', '93.8s']]
+[2022-05-10 02:48:44] [INFO] #################### results ####################
+[2022-05-10 02:48:44] [INFO] ====================== end ======================
+[2022-05-10 02:48:44] [INFO] 
+[2022-05-10 02:59:53] [INFO] 
+[2022-05-10 02:59:53] [INFO] ===================== start =====================
+[2022-05-10 02:59:53] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-WavePath-Independent-1200_1800-1024spp-16max_depth-5rr_depth-RGB.luisa
+[2022-05-10 02:59:58] [INFO] ['LuisaRender', 'coffee', 'directX', 'WavePath', 'Independent', '(1200, 1800)', 1024, 16, 5, 'RGB', '2.7s']
+[2022-05-10 02:59:58] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-WavePath-Independent-1200_1800-1024spp-16max_depth-5rr_depth-Spectral.luisa
+[2022-05-10 03:00:04] [INFO] ['LuisaRender', 'coffee', 'directX', 'WavePath', 'Independent', '(1200, 1800)', 1024, 16, 5, 'Spectral', '4.0s']
+[2022-05-10 03:00:04] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-MegaPath-Independent-1200_1800-1024spp-16max_depth-5rr_depth-RGB.luisa
+[2022-05-10 03:00:10] [INFO] ['LuisaRender', 'coffee', 'directX', 'MegaPath', 'Independent', '(1200, 1800)', 1024, 16, 5, 'RGB', '4.0s']
+[2022-05-10 03:00:10] [INFO] C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe   -b dx -d 0 D:\OldNew\LuisaRender\record\RenderPerformance\LuisaRender\coffee\scene-MegaPath-Independent-1200_1800-1024spp-16max_depth-5rr_depth-Spectral.luisa
+[2022-05-10 03:00:19] [INFO] ['LuisaRender', 'coffee', 'directX', 'MegaPath', 'Independent', '(1200, 1800)', 1024, 16, 5, 'Spectral', '7.0s']
+[2022-05-10 03:00:19] [INFO] #################### results ####################
+[2022-05-10 03:00:19] [INFO] [['LuisaRender', 'coffee', 'directX', 'WavePath', 'Independent', '(1200, 1800)', 1024, 16, 5, 'RGB', '2.7s'], ['LuisaRender', 'coffee', 'directX', 'WavePath', 'Independent', '(1200, 1800)', 1024, 16, 5, 'Spectral', '4.0s'], ['LuisaRender', 'coffee', 'directX', 'MegaPath', 'Independent', '(1200, 1800)', 1024, 16, 5, 'RGB', '4.0s'], ['LuisaRender', 'coffee', 'directX', 'MegaPath', 'Independent', '(1200, 1800)', 1024, 16, 5, 'Spectral', '7.0s']]
+[2022-05-10 03:00:19] [INFO] #################### results ####################
+[2022-05-10 03:00:19] [INFO] ====================== end ======================
+[2022-05-10 03:00:19] [INFO] 

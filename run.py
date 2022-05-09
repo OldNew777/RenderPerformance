@@ -240,8 +240,8 @@ renderer_settings = {
 
 target_settings = {
     'renderer': [
-        'LuisaRender',
-        'Mitsuba2',
+        # 'LuisaRender',
+        # 'Mitsuba2',
         'PBRT-v4',
     ],
     'backend': [
@@ -311,12 +311,12 @@ target_settings = {
         # 4096,
     ],
     'max_depth': [
-        8,
-        # 16,
+        # 8,
+        16,
     ],
     'rr_depth': [
-        2,
-        # 5,
+        # 2,
+        5,
     ],
 }
 
