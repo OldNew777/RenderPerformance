@@ -240,9 +240,9 @@ renderer_settings = {
 
 target_settings = {
     'renderer': [
-        # 'LuisaRender',
+        'LuisaRender',
         'Mitsuba2',
-        # 'PBRT-v4',
+        'PBRT-v4',
     ],
     'backend': [
         'cuda',
@@ -264,21 +264,22 @@ target_settings = {
         # },
 
         # # right cases
-        # 'coffee': {
+        # 'living-room': {
         #     'resolution': [
-        #         (800, 1000),
+        #         (1920, 1080),
         #     ],
         # },
+
+        'coffee': {
+            'resolution': [
+                (1200, 1800),
+            ],
+        },
         # 'glass-of-water': {
         #     'resolution': [
         #         (1920, 1080),
         #     ],
         # },
-        'living-room': {
-            'resolution': [
-                (1920, 1080),
-            ],
-        },
         # 'spaceship': {
         #     'resolution': [
         #         (1920, 1080),
@@ -286,7 +287,7 @@ target_settings = {
         # },
         # 'staircase': {
         #     'resolution': [
-        #         (720, 1280),
+        #         (1080, 1920),
         #     ],
         # },
     },

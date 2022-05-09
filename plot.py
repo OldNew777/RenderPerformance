@@ -123,7 +123,7 @@ def plot(data_list: list):
             time_min = np.minimum(time_min, container.datavalues)
             ylim = np.maximum(ylim, container.datavalues)
             time_arr = np.append(time_arr, container.datavalues)
-        ylim = max(set(time_arr) - set(ylim)) * 2
+        ylim = max(set(time_arr) - set(ylim)) * 1.8
 
         magnifications_all = []
         for container in ax.containers:
