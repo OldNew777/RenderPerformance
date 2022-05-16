@@ -1,5 +1,6 @@
 *.png
 *.exr
+*.pdf
 */*/models/*
 */*/textures/*
 
