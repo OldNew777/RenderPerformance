@@ -85,8 +85,7 @@ def plot_diff():
                         ha='center', va='center')
 
     plt.show()
-    fig.savefig(f"{folder}/cbox-diff.pdf", dpi=1000, bbox_inches='tight', pad_inches=1)
-    fig.savefig(f"cbox-diff.pdf", dpi=1000, bbox_inches='tight', pad_inches=1)
+    fig.savefig(f"{folder}/cbox-diff.pdf", dpi=1000, bbox_inches='tight', pad_inches=0.2)
 
 
 if __name__ == '__main__':
