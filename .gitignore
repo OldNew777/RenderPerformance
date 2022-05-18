@@ -1,6 +1,12 @@
 *.png
 *.exr
 *.pdf
+*.log
+
+*.luisa
+*.pbrt
+*.xml
+
 */*/models/*
 */*/textures/*
 
@@ -9,12 +15,12 @@ outputs/pictures/*
 
 set_accel_kernel
 
-*.luisa
-*.pbrt
-*.xml
+
 
 !*/*/scene.luisa
 !*/*/scene.xml
 !*/*/scene-v4.pbrt
 
+__pycache__
 */__pycache__
+.idea
