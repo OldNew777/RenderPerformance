@@ -3,6 +3,7 @@ import re
 
 from mylogger import *
 from result_recorder import Recorder
+from wash_breakdown import wash_breakdown
 
 renderer_settings = {
     'LuisaRender': {
@@ -162,7 +163,8 @@ renderer_settings = {
     },
     'PBRT-v4': {
         'exe': {
-            'path': 'C:/OldNew/Graphics-Lab/LuisaCompute/pbrt-v4/build-vs/Release/pbrt.exe',
+            # 'path': 'C:/OldNew/Graphics-Lab/LuisaCompute/pbrt-v4/build-vs/Release_2rr_depth/pbrt.exe',
+            'path': 'C:/OldNew/Graphics-Lab/LuisaCompute/pbrt-v4/build-vs/Release_5rr_depth/pbrt.exe',
             'spectrum': {
                 'name': {
                     'RGB': 'undefined',
@@ -173,7 +175,7 @@ renderer_settings = {
             'integrator': {
                 'name': {
                     'WavePath': '--wavefront',
-                    'MegaPath': '',
+                    'MegaPath': ' ',
                 },
                 'order': ' {}',
             },
@@ -226,7 +228,7 @@ renderer_settings = {
             'integrator': {
                 'name': {
                     'WavePath': 'path',
-                    'MegaPath': 'undefined',
+                    'MegaPath': 'path',
                 },
                 'regex': 'Integrator "[a-zA-Z]*"',
                 'replace': 'Integrator "{}"',
@@ -240,14 +242,14 @@ renderer_settings = {
 
 target_settings = {
     'renderer': [
-        # 'LuisaRender',
+        'LuisaRender',
         # 'Mitsuba2',
-        'PBRT-v4',
+        # 'PBRT-v4',
     ],
     'backend': [
-        'cuda',
-        'directX',
-        # 'cpu',
+        # 'cuda',
+        # 'directX',
+        'cpu',
         # 'metal',
     ],
     'scene': {
@@ -262,7 +264,7 @@ target_settings = {
         #         (1920, 1080),
         #     ],
         # },
-
+        #
         # # right cases
         # 'living-room': {
         #     'resolution': [
@@ -275,21 +277,21 @@ target_settings = {
                 (1200, 1800),
             ],
         },
-        # 'glass-of-water': {
-        #     'resolution': [
-        #         (1920, 1080),
-        #     ],
-        # },
-        # 'spaceship': {
-        #     'resolution': [
-        #         (1920, 1080),
-        #     ],
-        # },
-        # 'staircase': {
-        #     'resolution': [
-        #         (1080, 1920),
-        #     ],
-        # },
+        'glass-of-water': {
+            'resolution': [
+                (1920, 1080),
+            ],
+        },
+        'spaceship': {
+            'resolution': [
+                (1920, 1080),
+            ],
+        },
+        'staircase': {
+            'resolution': [
+                (1080, 1920),
+            ],
+        },
     },
     'integrator': [
         'WavePath',
@@ -320,6 +322,8 @@ target_settings = {
     ],
 }
 
+LuisaRender_breakdown = True
+
 
 def test_targets():
     results = []
@@ -334,6 +338,8 @@ def test_targets():
         os.makedirs(output_picture_dir)
 
     recorder = Recorder(results_save_file_path)
+    with open('results.txt', 'w') as _:
+        pass
     headers = ['render', 'scene', 'backend', 'integrator', 'sampler', 'resolution',
                'spp', 'max depth', 'rr depth', 'spectrum', 'time consumption']
     while not recorder.init(headers):
@@ -494,25 +500,36 @@ def test_targets():
                                             # order confirmed
                                             logger.info(order[k])
 
-                                            # render
-                                            with os.popen(order[k]) as f:
-                                                output_info = f.read()
-                                            try:
-                                                time = re.search(settings['results_regex']['time'], output_info).group(1)
-                                            except:
-                                                time = 'Error'
-                                                error_text = f'Error {error_index}: \n{output_info}\n'
-                                                error_index += 1
-                                                logger.warning(error_text)
+                                            render_times = 1
+                                            if renderer == 'LuisaRender' and LuisaRender_breakdown:
+                                                render_times = 2
+                                            for _ in range(render_times):
+                                                # LuisaRender breakdown
+                                                if renderer == 'LuisaRender' and LuisaRender_breakdown:
+                                                    cache_dir = os.path.join(os.path.dirname(settings['exe']['path']), '.cache')
+                                                    cache_files = os.listdir(cache_dir)
+                                                    for file in  cache_files:
+                                                        os.remove(os.path.join(cache_dir, file))
 
-                                            result = [
-                                                renderer, scene_name, backend, integrator,
-                                                sampler, f'({resolution[0]}, {resolution[1]})',
-                                                spp, max_depth, rr_depth, spectrum, time]
+                                                # render
+                                                with os.popen(order[k]) as f:
+                                                    output_info = f.read()
+                                                try:
+                                                    time = re.search(settings['results_regex']['time'], output_info).group(1)
+                                                except:
+                                                    time = 'Error'
+                                                    error_text = f'Error {error_index}: \n{output_info}\n'
+                                                    error_index += 1
+                                                    logger.warning(error_text)
 
-                                            results.append(result)
-                                            logger.info(result)
-                                            recorder.write_row(result)
+                                                result = [
+                                                    renderer, scene_name, backend, integrator,
+                                                    sampler, f'({resolution[0]}, {resolution[1]})',
+                                                    spp, max_depth, rr_depth, spectrum, time]
+
+                                                results.append(result)
+                                                logger.info(result)
+                                                recorder.write_row(result)
 
                                     if rr_depth_unknown:
                                         break
@@ -523,6 +540,8 @@ def test_targets():
     logger.info('#################### results ####################')
     logger.info(results)
     logger.info('#################### results ####################')
+
+    wash_breakdown()
 
     logger.info('====================== end ======================')
     logger.info('')
