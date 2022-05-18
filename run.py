@@ -3,7 +3,7 @@ import re
 
 from mylogger import *
 from result_recorder import Recorder
-from wash_breakdown import wash_breakdown
+from wash_breakdown import *
 
 renderer_settings = {
     'LuisaRender': {
@@ -305,11 +305,12 @@ target_settings = {
         'Independent',
     ],
     'spp': [
+        1,
         # 16,
         # 64,
         # 128,
         # 256,
-        1024,
+        # 1024,
         # 4096,
     ],
     'max_depth': [
@@ -541,7 +542,7 @@ def test_targets():
     logger.info(results)
     logger.info('#################### results ####################')
 
-    wash_breakdown()
+    gather_breakdown()
 
     logger.info('====================== end ======================')
     logger.info('')
