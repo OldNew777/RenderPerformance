@@ -24,7 +24,7 @@ def read_hdr2ldr(filename: str) -> np.ndarray:
 
 
 def plot_diff():
-    fig = plt.figure(figsize=(20, 6), constrained_layout=True)
+    fig = plt.figure(figsize=(20, 5), constrained_layout=True)
 
     LuisaRender_time = [121.8529209, 0.489846352, 0.7286828565]
     Mitsuba2_time = [1050.295172, 4.489018485, 6.013933237]
@@ -34,7 +34,7 @@ def plot_diff():
     final_image = read_hdr2ldr(f"{folder}/final-1024-64spp.exr")
     images = [target_image, initial_image, final_image]
 
-    gs = fig.add_gridspec(nrows=1, ncols=2, width_ratios=[6, 1], wspace=0)
+    gs = fig.add_gridspec(nrows=1, ncols=2, width_ratios=[3, 1], wspace=0)
     picture_gs = gs[0, 0].subgridspec(nrows=1, ncols=3, width_ratios=[x.shape[1] / x.shape[0] for x in images], wspace=0)
     target_picture_ax = fig.add_subplot(picture_gs[0, 0])
     initial_picture_ax = fig.add_subplot(picture_gs[0, 1])
@@ -64,6 +64,7 @@ def plot_diff():
     LuisaRender_diff_time = LuisaRender_time[1:]
     Mitsuba2_diff_time = Mitsuba2_time[1:]
     handle_labels = ['Ours', 'Mitsuba 2']
+    x_labels = ["forward time", 'backward time']
     data = [LuisaRender_diff_time, Mitsuba2_diff_time]
     group_num = len(data)
     group_len = len(data[0])
@@ -82,7 +83,6 @@ def plot_diff():
             compare_ax.text(x, y, f"{y:.1f}", ha="center", va="bottom", fontsize="smaller")
 
     compare_ax.legend(loc="upper left", fontsize="smaller")
-    x_labels = ["forward time", 'backward time']
     compare_ax.set_xticks(x_ticks, x_labels, va="top")
     compare_ax.set_ylabel('Average time (s) / iteration')
     compare_ax.yaxis.tick_right()
