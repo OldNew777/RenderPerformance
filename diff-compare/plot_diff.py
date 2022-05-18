@@ -24,7 +24,6 @@ def read_hdr2ldr(filename: str) -> np.ndarray:
         12.92 * image,
         1.055 * np.power(image, 1.0 / 2.4) - 0.055
     ) * 255, 0, 255)))
-    cv.imwrite(f"{filename[:-4]}.png", image_srgb)
     image_srgb = cv.cvtColor(image_srgb, cv.COLOR_BGR2RGB)
     return image_srgb
 
@@ -35,10 +34,10 @@ def plot_diff():
     LuisaRender_time = [121.8529209, 0.489846352, 0.7286828565]
     Mitsuba2_time = [1050.295172, 4.489018485, 6.013933237]
     folder = 'diff-compare'
-    target_image = read_hdr2ldr(f"{folder}/target-1024-1024spp.exr")
-    initial_image = read_hdr2ldr(f"{folder}/initial-1024-64spp.exr")
-    optimizing_image = read_hdr2ldr(f"{folder}/optimizing-1024-64spp-iter2.exr")
-    final_image = read_hdr2ldr(f"{folder}/final-1024-64spp.exr")
+    target_image = read_hdr2ldr(f"target-1024-1024spp.exr")
+    initial_image = read_hdr2ldr(f"initial-1024-64spp.exr")
+    optimizing_image = read_hdr2ldr(f"optimizing-1024-64spp-iter2.exr")
+    final_image = read_hdr2ldr(f"final-1024-64spp.exr")
     images = [target_image, initial_image, final_image]
 
     gs = fig.add_gridspec(nrows=1, ncols=5, width_ratios=[1, 1, 1, 1, 1], wspace=0.03)
@@ -121,7 +120,7 @@ Ours: {LuisaRender_time[0]:.0f}s / Mitsuba 2: {Mitsuba2_time[0]:.0f}s''', fontsi
     compare_ax.set_xlim(-0.65, 1.65)
 
     plt.show()
-    fig.savefig(f"{folder}/cbox-diff.pdf", dpi=600, bbox_inches='tight')
+    fig.savefig(f"cbox-diff.pdf", dpi=600, bbox_inches='tight')
 
 
 if __name__ == '__main__':

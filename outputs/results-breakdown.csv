@@ -1,97 +1,97 @@
-scene,backend,integrator,sampler,resolution,spectrum,time consumption,Scene parse time (ms),Scene load time (ms),Pipeline create time (ms),Shader compile time (ms)
-coffee,cuda,WavePath,Independent,"(1200, 1800)",RGB,3.2s,6.0278,466.674,59.8484,10963.4797
-coffee,cuda,WavePath,Independent,"(1200, 1800)",Spectral,4.7s,5.817,229.076,60.1333,10022.5333
-coffee,directX,WavePath,Independent,"(1200, 1800)",RGB,2.7s,4.9917,243.185,181.808,1255.5013
-coffee,directX,WavePath,Independent,"(1200, 1800)",Spectral,3.9s,5.4765,262.899,173.929,1549.0281
-coffee,cuda,MegaPath,Independent,"(1200, 1800)",RGB,4.0s,6.0959,239.997,59.2184,2892.582
-coffee,cuda,MegaPath,Independent,"(1200, 1800)",Spectral,8.9s,6.2957,234.054,57.6884,3390.462
-coffee,directX,MegaPath,Independent,"(1200, 1800)",RGB,3.8s,5.447,252.26,184.641,575.688
-coffee,directX,MegaPath,Independent,"(1200, 1800)",Spectral,6.9s,5.54,237.511,156.155,730.4991
-glass-of-water,cuda,WavePath,Independent,"(1920, 1080)",RGB,18.9s,5.6755,1095.76,66.0552,11994.7186
-glass-of-water,cuda,WavePath,Independent,"(1920, 1080)",Spectral,24.9s,6.0186,881.502,70.1853,13216.3111
-glass-of-water,directX,WavePath,Independent,"(1920, 1080)",RGB,9.9s,5.3948,899.472,179.508,1498.9186
-glass-of-water,directX,WavePath,Independent,"(1920, 1080)",Spectral,14.3s,5.3483,851.364,168.553,1850.4507
-glass-of-water,cuda,MegaPath,Independent,"(1920, 1080)",RGB,16.3s,5.1559,885.312,64.9843,4782.355
-glass-of-water,cuda,MegaPath,Independent,"(1920, 1080)",Spectral,35.5s,6.0102,876.224,71.9942,5792.348
-glass-of-water,directX,MegaPath,Independent,"(1920, 1080)",RGB,9.9s,5.4224,887.534,184.414,903.0905
-glass-of-water,directX,MegaPath,Independent,"(1920, 1080)",Spectral,21.3s,6.6127,871.115,176.705,1402.7591
-spaceship,cuda,WavePath,Independent,"(1920, 1080)",RGB,10.8s,6.3314,1303.6,107.537,14159.7749
-spaceship,cuda,WavePath,Independent,"(1920, 1080)",Spectral,15.9s,5.6423,576.922,101.024,14564.6628
-spaceship,directX,WavePath,Independent,"(1920, 1080)",RGB,8.9s,6.1819,626.215,247.775,1554.9534
-spaceship,directX,WavePath,Independent,"(1920, 1080)",Spectral,13.3s,5.9341,560.634,225.938,1999.8615
-spaceship,cuda,MegaPath,Independent,"(1920, 1080)",RGB,14.5s,6.2991,581.032,106.497,5803.772
-spaceship,cuda,MegaPath,Independent,"(1920, 1080)",Spectral,37.3s,6.2235,575.655,98.3971,7280.047
-spaceship,directX,MegaPath,Independent,"(1920, 1080)",RGB,11.7s,6.2294,558.86,240.44,986.6332
-spaceship,directX,MegaPath,Independent,"(1920, 1080)",Spectral,25.4s,5.6355,571.358,220.962,1592.7214
-staircase,cuda,WavePath,Independent,"(1080, 1920)",RGB,26.5s,9.1916,1251.47,401.876,15470.3808
-staircase,cuda,WavePath,Independent,"(1080, 1920)",Spectral,35.7s,9.5575,2092.77,390.848,16871.9431
-staircase,directX,WavePath,Independent,"(1080, 1920)",RGB,24.2s,8.6588,1230.01,601.797,1714.4683
-staircase,directX,WavePath,Independent,"(1080, 1920)",Spectral,31.0s,8.5656,1785.98,737.462,2294.494
-staircase,cuda,MegaPath,Independent,"(1080, 1920)",RGB,27.4s,9.277,1222.96,395.593,7013.846
-staircase,cuda,MegaPath,Independent,"(1080, 1920)",Spectral,56.9s,9.1598,1750,415.231,8076.89
-staircase,directX,MegaPath,Independent,"(1080, 1920)",RGB,18.5s,8.9593,1218.75,653.143,1300.2582
-staircase,directX,MegaPath,Independent,"(1080, 1920)",Spectral,31.4s,10.7464,1824.94,751.263,1525.5913
-coffee,cuda,WavePath,Independent,"(1200, 1800)",RGB,2.4s,5.8926,237.383,59.4116,9990.622
-coffee,cuda,WavePath,Independent,"(1200, 1800)",Spectral,3.9s,6.3792,250.951,55.0272,10410.2044
-coffee,directX,WavePath,Independent,"(1200, 1800)",RGB,2.1s,5.3235,229.488,170.686,996.2888
-coffee,directX,WavePath,Independent,"(1200, 1800)",Spectral,3.3s,6.5338,239.671,170.428,1151.2901
-coffee,cuda,MegaPath,Independent,"(1200, 1800)",RGB,3.1s,6.1434,224.368,61.0641,2894.636
-coffee,cuda,MegaPath,Independent,"(1200, 1800)",Spectral,7.6s,6.6925,232.899,55.462,3391.805
-coffee,directX,MegaPath,Independent,"(1200, 1800)",RGB,2.8s,5.2186,233.537,182.478,550.7149
-coffee,directX,MegaPath,Independent,"(1200, 1800)",Spectral,5.9s,5.5213,240.051,191.279,676.5723
-glass-of-water,cuda,WavePath,Independent,"(1920, 1080)",RGB,12.3s,5.8442,841.556,66.76,11135.4715
-glass-of-water,cuda,WavePath,Independent,"(1920, 1080)",Spectral,17.0s,6.523,830.598,71.2954,12947.4929
-glass-of-water,directX,WavePath,Independent,"(1920, 1080)",RGB,7.1s,6.6648,849.12,196.81,1432.2981
-glass-of-water,directX,WavePath,Independent,"(1920, 1080)",Spectral,11.0s,5.3683,861.063,176.309,1693.2971
-glass-of-water,cuda,MegaPath,Independent,"(1920, 1080)",RGB,11.1s,6.0839,834.103,68.2901,4620.627
-glass-of-water,cuda,MegaPath,Independent,"(1920, 1080)",Spectral,27.7s,5.8693,871.046,81.7536,5907.677
-glass-of-water,directX,MegaPath,Independent,"(1920, 1080)",RGB,6.3s,5.6018,857.849,181.188,893.7201
-glass-of-water,directX,MegaPath,Independent,"(1920, 1080)",Spectral,18.3s,5.3132,860.654,165.325,1364.9236
-spaceship,cuda,WavePath,Independent,"(1920, 1080)",RGB,7.3s,6.1347,586.729,108.563,12417.465
-spaceship,cuda,WavePath,Independent,"(1920, 1080)",Spectral,11.7s,6.4814,565.705,115.83,14517.2685
-spaceship,directX,WavePath,Independent,"(1920, 1080)",RGB,6.2s,5.9127,555.567,252.323,1484.5276
-spaceship,directX,WavePath,Independent,"(1920, 1080)",Spectral,10.0s,6.3787,564.242,221.116,1725.2064
-spaceship,cuda,MegaPath,Independent,"(1920, 1080)",RGB,9.1s,6.4609,547.328,109.609,5798.712
-spaceship,cuda,MegaPath,Independent,"(1920, 1080)",Spectral,26.8s,5.8116,555.785,107.412,7328.339
-spaceship,directX,MegaPath,Independent,"(1920, 1080)",RGB,7.3s,5.6014,556.54,247.544,936.5019
-spaceship,directX,MegaPath,Independent,"(1920, 1080)",Spectral,19.6s,7.2465,552.608,228.762,1588.3565
-staircase,cuda,WavePath,Independent,"(1080, 1920)",RGB,14.6s,8.846,1348.35,387.123,14312.97
-staircase,cuda,WavePath,Independent,"(1080, 1920)",Spectral,20.1s,9.339,1815.1,397.503,16772.7752
-staircase,directX,WavePath,Independent,"(1080, 1920)",RGB,13.1s,8.9868,1266.9,612.074,1584.0012
-staircase,directX,WavePath,Independent,"(1080, 1920)",Spectral,17.9s,10.8885,1789.74,745.526,2275.174
-staircase,cuda,MegaPath,Independent,"(1080, 1920)",RGB,17.0s,9.3609,1259.76,380.08,6969.379
-staircase,cuda,MegaPath,Independent,"(1080, 1920)",Spectral,34.7s,9.5088,1817.23,392.026,7970.82
-staircase,directX,MegaPath,Independent,"(1080, 1920)",RGB,11.2s,10.9036,1247.96,584.624,1292.8155
-staircase,directX,MegaPath,Independent,"(1080, 1920)",Spectral,19.7s,8.9385,1824.71,755.444,1531.9899
-coffee,cpu,WavePath,Independent,"(1200, 1800)",RGB,0.2s,4.2998,248.925,75.1661,150532.5355
-coffee,cpu,WavePath,Independent,"(1200, 1800)",Spectral,0.5s,5.236,232.334,74.391,186500.8878
-coffee,cpu,MegaPath,Independent,"(1200, 1800)",RGB,0.1s,5.1519,230.483,63.5707,59968.84
-coffee,cpu,MegaPath,Independent,"(1200, 1800)",Spectral,0.6s,5.1873,244.793,79.9644,91935.97
-glass-of-water,cpu,WavePath,Independent,"(1920, 1080)",RGB,0.5s,4.8004,847.689,64.7635,201048.0156
-glass-of-water,cpu,WavePath,Independent,"(1920, 1080)",Spectral,1.1s,4.3417,871.146,72.3724,271443.8975
-glass-of-water,cpu,MegaPath,Independent,"(1920, 1080)",RGB,0.3s,5.0577,861.557,54.0869,110313.44
-glass-of-water,cpu,MegaPath,Independent,"(1920, 1080)",Spectral,1.3s,5.1568,853.469,114.355,168638.99
-spaceship,cpu,WavePath,Independent,"(1920, 1080)",RGB,0.4s,5.5148,600.351,543.904,191903.7254
-spaceship,cpu,WavePath,Independent,"(1920, 1080)",Spectral,Error,5.3541,573.812,441.2,19936.52
-spaceship,cpu,MegaPath,Independent,"(1920, 1080)",RGB,0.3s,5.4743,582.18,445.096,100860.8
-spaceship,cpu,MegaPath,Independent,"(1920, 1080)",Spectral,2.0s,5.7198,594.448,311.668,160312.32
-staircase,cpu,WavePath,Independent,"(1080, 1920)",RGB,1.4s,7.7849,1381.22,1210.86,238676.7924
-staircase,cpu,WavePath,Independent,"(1080, 1920)",Spectral,3.4s,8.4866,1952.93,1296.68,322922.2795
-staircase,cpu,MegaPath,Independent,"(1080, 1920)",RGB,1.3s,8.5473,1318.01,1407.03,140701.59
-staircase,cpu,MegaPath,Independent,"(1080, 1920)",Spectral,2.8s,8.1432,1799.54,1268.64,212778.88
-coffee,cpu,WavePath,Independent,"(1200, 1800)",RGB,0.1s,4.3742,254.123,81.8329,159917.5624
-coffee,cpu,WavePath,Independent,"(1200, 1800)",Spectral,0.4s,4.6311,256.006,90.6153,179472.381
-coffee,cpu,MegaPath,Independent,"(1200, 1800)",RGB,0.1s,5.103,232.499,164.751,58855.18
-coffee,cpu,MegaPath,Independent,"(1200, 1800)",Spectral,0.5s,5.3086,236.693,78.3095,91524.1
-glass-of-water,cpu,WavePath,Independent,"(1920, 1080)",RGB,0.4s,5.0991,851.998,53.2983,192432.4594
-glass-of-water,cpu,WavePath,Independent,"(1920, 1080)",Spectral,1.0s,5.1649,874.695,90.6247,268855.0804
-glass-of-water,cpu,MegaPath,Independent,"(1920, 1080)",RGB,0.3s,4.86,882.581,106.525,112304.69
-glass-of-water,cpu,MegaPath,Independent,"(1920, 1080)",Spectral,1.1s,5.5528,881.322,83.5571,173311.36
-spaceship,cpu,WavePath,Independent,"(1920, 1080)",RGB,0.4s,4.9183,671.671,356.409,195857.0571
-spaceship,cpu,WavePath,Independent,"(1920, 1080)",Spectral,1.3s,5.5497,568.872,350.754,267623.0021
-spaceship,cpu,MegaPath,Independent,"(1920, 1080)",RGB,0.2s,5.9686,560.31,447.444,98092.16
-spaceship,cpu,MegaPath,Independent,"(1920, 1080)",Spectral,1.7s,5.4148,607.859,430.865,160254.19
-staircase,cpu,WavePath,Independent,"(1080, 1920)",RGB,0.8s,8.7001,1372.51,1361.47,239533.2513
-staircase,cpu,WavePath,Independent,"(1080, 1920)",Spectral,1.5s,8.4009,1972.27,1164.8,310715.7573
-staircase,cpu,MegaPath,Independent,"(1080, 1920)",RGB,0.7s,8.4734,1391.8,1249.55,143165.85
-staircase,cpu,MegaPath,Independent,"(1080, 1920)",Spectral,1.9s,8.5398,1878.2,1147.96,215667.8
+scene,backend,integrator,spectrum,Scene parse time (ms),Scene load time (ms),Pipeline create time (ms),Shader compile time (ms)
+coffee,cuda,WavePath,RGB,6.0278,466.674,59.8484,10963.4797
+coffee,cuda,WavePath,Spectral,5.817,229.076,60.1333,10022.5333
+coffee,directX,WavePath,RGB,4.9917,243.185,181.808,1255.5013
+coffee,directX,WavePath,Spectral,5.4765,262.899,173.929,1549.0281
+coffee,cuda,MegaPath,RGB,6.0959,239.997,59.2184,2892.582
+coffee,cuda,MegaPath,Spectral,6.2957,234.054,57.6884,3390.462
+coffee,directX,MegaPath,RGB,5.447,252.26,184.641,575.688
+coffee,directX,MegaPath,Spectral,5.54,237.511,156.155,730.4991
+glass-of-water,cuda,WavePath,RGB,5.6755,1095.76,66.0552,11994.7186
+glass-of-water,cuda,WavePath,Spectral,6.0186,881.502,70.1853,13216.3111
+glass-of-water,directX,WavePath,RGB,5.3948,899.472,179.508,1498.9186
+glass-of-water,directX,WavePath,Spectral,5.3483,851.364,168.553,1850.4507
+glass-of-water,cuda,MegaPath,RGB,5.1559,885.312,64.9843,4782.355
+glass-of-water,cuda,MegaPath,Spectral,6.0102,876.224,71.9942,5792.348
+glass-of-water,directX,MegaPath,RGB,5.4224,887.534,184.414,903.0905
+glass-of-water,directX,MegaPath,Spectral,6.6127,871.115,176.705,1402.7591
+spaceship,cuda,WavePath,RGB,6.3314,1303.6,107.537,14159.7749
+spaceship,cuda,WavePath,Spectral,5.6423,576.922,101.024,14564.6628
+spaceship,directX,WavePath,RGB,6.1819,626.215,247.775,1554.9534
+spaceship,directX,WavePath,Spectral,5.9341,560.634,225.938,1999.8615
+spaceship,cuda,MegaPath,RGB,6.2991,581.032,106.497,5803.772
+spaceship,cuda,MegaPath,Spectral,6.2235,575.655,98.3971,7280.047
+spaceship,directX,MegaPath,RGB,6.2294,558.86,240.44,986.6332
+spaceship,directX,MegaPath,Spectral,5.6355,571.358,220.962,1592.7214
+staircase,cuda,WavePath,RGB,9.1916,1251.47,401.876,15470.3808
+staircase,cuda,WavePath,Spectral,9.5575,2092.77,390.848,16871.9431
+staircase,directX,WavePath,RGB,8.6588,1230.01,601.797,1714.4683
+staircase,directX,WavePath,Spectral,8.5656,1785.98,737.462,2294.494
+staircase,cuda,MegaPath,RGB,9.277,1222.96,395.593,7013.846
+staircase,cuda,MegaPath,Spectral,9.1598,1750,415.231,8076.89
+staircase,directX,MegaPath,RGB,8.9593,1218.75,653.143,1300.2582
+staircase,directX,MegaPath,Spectral,10.7464,1824.94,751.263,1525.5913
+coffee,cuda,WavePath,RGB,5.8926,237.383,59.4116,9990.622
+coffee,cuda,WavePath,Spectral,6.3792,250.951,55.0272,10410.2044
+coffee,directX,WavePath,RGB,5.3235,229.488,170.686,996.2888
+coffee,directX,WavePath,Spectral,6.5338,239.671,170.428,1151.2901
+coffee,cuda,MegaPath,RGB,6.1434,224.368,61.0641,2894.636
+coffee,cuda,MegaPath,Spectral,6.6925,232.899,55.462,3391.805
+coffee,directX,MegaPath,RGB,5.2186,233.537,182.478,550.7149
+coffee,directX,MegaPath,Spectral,5.5213,240.051,191.279,676.5723
+glass-of-water,cuda,WavePath,RGB,5.8442,841.556,66.76,11135.4715
+glass-of-water,cuda,WavePath,Spectral,6.523,830.598,71.2954,12947.4929
+glass-of-water,directX,WavePath,RGB,6.6648,849.12,196.81,1432.2981
+glass-of-water,directX,WavePath,Spectral,5.3683,861.063,176.309,1693.2971
+glass-of-water,cuda,MegaPath,RGB,6.0839,834.103,68.2901,4620.627
+glass-of-water,cuda,MegaPath,Spectral,5.8693,871.046,81.7536,5907.677
+glass-of-water,directX,MegaPath,RGB,5.6018,857.849,181.188,893.7201
+glass-of-water,directX,MegaPath,Spectral,5.3132,860.654,165.325,1364.9236
+spaceship,cuda,WavePath,RGB,6.1347,586.729,108.563,12417.465
+spaceship,cuda,WavePath,Spectral,6.4814,565.705,115.83,14517.2685
+spaceship,directX,WavePath,RGB,5.9127,555.567,252.323,1484.5276
+spaceship,directX,WavePath,Spectral,6.3787,564.242,221.116,1725.2064
+spaceship,cuda,MegaPath,RGB,6.4609,547.328,109.609,5798.712
+spaceship,cuda,MegaPath,Spectral,5.8116,555.785,107.412,7328.339
+spaceship,directX,MegaPath,RGB,5.6014,556.54,247.544,936.5019
+spaceship,directX,MegaPath,Spectral,7.2465,552.608,228.762,1588.3565
+staircase,cuda,WavePath,RGB,8.846,1348.35,387.123,14312.97
+staircase,cuda,WavePath,Spectral,9.339,1815.1,397.503,16772.7752
+staircase,directX,WavePath,RGB,8.9868,1266.9,612.074,1584.0012
+staircase,directX,WavePath,Spectral,10.8885,1789.74,745.526,2275.174
+staircase,cuda,MegaPath,RGB,9.3609,1259.76,380.08,6969.379
+staircase,cuda,MegaPath,Spectral,9.5088,1817.23,392.026,7970.82
+staircase,directX,MegaPath,RGB,10.9036,1247.96,584.624,1292.8155
+staircase,directX,MegaPath,Spectral,8.9385,1824.71,755.444,1531.9899
+coffee,cpu,WavePath,RGB,4.2998,248.925,75.1661,150532.5355
+coffee,cpu,WavePath,Spectral,5.236,232.334,74.391,186500.8878
+coffee,cpu,MegaPath,RGB,5.1519,230.483,63.5707,59968.84
+coffee,cpu,MegaPath,Spectral,5.1873,244.793,79.9644,91935.97
+glass-of-water,cpu,WavePath,RGB,4.8004,847.689,64.7635,201048.0156
+glass-of-water,cpu,WavePath,Spectral,4.3417,871.146,72.3724,271443.8975
+glass-of-water,cpu,MegaPath,RGB,5.0577,861.557,54.0869,110313.44
+glass-of-water,cpu,MegaPath,Spectral,5.1568,853.469,114.355,168638.99
+spaceship,cpu,WavePath,RGB,5.5148,600.351,543.904,191903.7254
+spaceship,cpu,WavePath,Spectral,5.3541,573.812,441.2,19936.52
+spaceship,cpu,MegaPath,RGB,5.4743,582.18,445.096,100860.8
+spaceship,cpu,MegaPath,Spectral,5.7198,594.448,311.668,160312.32
+staircase,cpu,WavePath,RGB,7.7849,1381.22,1210.86,238676.7924
+staircase,cpu,WavePath,Spectral,8.4866,1952.93,1296.68,322922.2795
+staircase,cpu,MegaPath,RGB,8.5473,1318.01,1407.03,140701.59
+staircase,cpu,MegaPath,Spectral,8.1432,1799.54,1268.64,212778.88
+coffee,cpu,WavePath,RGB,4.3742,254.123,81.8329,159917.5624
+coffee,cpu,WavePath,Spectral,4.6311,256.006,90.6153,179472.381
+coffee,cpu,MegaPath,RGB,5.103,232.499,164.751,58855.18
+coffee,cpu,MegaPath,Spectral,5.3086,236.693,78.3095,91524.1
+glass-of-water,cpu,WavePath,RGB,5.0991,851.998,53.2983,192432.4594
+glass-of-water,cpu,WavePath,Spectral,5.1649,874.695,90.6247,268855.0804
+glass-of-water,cpu,MegaPath,RGB,4.86,882.581,106.525,112304.69
+glass-of-water,cpu,MegaPath,Spectral,5.5528,881.322,83.5571,173311.36
+spaceship,cpu,WavePath,RGB,4.9183,671.671,356.409,195857.0571
+spaceship,cpu,WavePath,Spectral,5.5497,568.872,350.754,267623.0021
+spaceship,cpu,MegaPath,RGB,5.9686,560.31,447.444,98092.16
+spaceship,cpu,MegaPath,Spectral,5.4148,607.859,430.865,160254.19
+staircase,cpu,WavePath,RGB,8.7001,1372.51,1361.47,239533.2513
+staircase,cpu,WavePath,Spectral,8.4009,1972.27,1164.8,310715.7573
+staircase,cpu,MegaPath,RGB,8.4734,1391.8,1249.55,143165.85
+staircase,cpu,MegaPath,Spectral,8.5398,1878.2,1147.96,215667.8
