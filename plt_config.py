@@ -5,7 +5,10 @@ fonts = font_manager.findSystemFonts()
 print(f"{len(fonts)} fonts found: {[f for f in fonts if 'Lin' in f]}")
 
 if not any(f.name == "Linux Biolinum" for f in font_manager.fontManager.ttflist):
-    font_manager.fontManager.addfont("Linux-Biolinum.ttf")
+    try:
+        font_manager.fontManager.addfont("Linux-Biolinum.ttf")
+    except:
+        font_manager.fontManager.addfont("../Linux-Biolinum.ttf")
 font_family = "Linux Biolinum"
 rcParams["font.family"] = "sans-serif"
 rcParams["font.sans-serif"] = font_family

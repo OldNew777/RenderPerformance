@@ -277,21 +277,21 @@ target_settings = {
                 (1200, 1800),
             ],
         },
-        'glass-of-water': {
-            'resolution': [
-                (1920, 1080),
-            ],
-        },
-        'spaceship': {
-            'resolution': [
-                (1920, 1080),
-            ],
-        },
-        'staircase': {
-            'resolution': [
-                (1080, 1920),
-            ],
-        },
+        # 'glass-of-water': {
+        #     'resolution': [
+        #         (1920, 1080),
+        #     ],
+        # },
+        # 'spaceship': {
+        #     'resolution': [
+        #         (1920, 1080),
+        #     ],
+        # },
+        # 'staircase': {
+        #     'resolution': [
+        #         (1080, 1920),
+        #     ],
+        # },
     },
     'integrator': [
         'WavePath',
@@ -314,12 +314,12 @@ target_settings = {
         # 4096,
     ],
     'max_depth': [
-        8,
-        # 16,
+        # 8,
+        16,
     ],
     'rr_depth': [
-        2,
-        # 5,
+        # 2,
+        5,
     ],
 }
 
@@ -502,15 +502,16 @@ def test_targets():
                                             logger.info(order[k])
 
                                             render_times = 1
+                                            # LuisaRender breakdown
                                             if renderer == 'LuisaRender' and LuisaRender_breakdown:
                                                 render_times = 2
+
+                                                cache_dir = os.path.join(os.path.dirname(settings['exe']['path']), '.cache')
+                                                cache_files = os.listdir(cache_dir)
+                                                for file in  cache_files:
+                                                    os.remove(os.path.join(cache_dir, file))
+
                                             for _ in range(render_times):
-                                                # LuisaRender breakdown
-                                                if renderer == 'LuisaRender' and LuisaRender_breakdown:
-                                                    cache_dir = os.path.join(os.path.dirname(settings['exe']['path']), '.cache')
-                                                    cache_files = os.listdir(cache_dir)
-                                                    for file in  cache_files:
-                                                        os.remove(os.path.join(cache_dir, file))
 
                                                 # render
                                                 with os.popen(order[k]) as f:

@@ -54,7 +54,7 @@ def gather_breakdown():
         f_csv = csv.writer(f)
         f_csv.writerows(results)
 
-    wash_breakdown()
+    # wash_breakdown()
 
 
 def wash_breakdown():
