@@ -38,7 +38,7 @@ renderer_settings = {
             },
             'resolution': [
                 {
-                    'regex': 'resolution { [, 0-9]* }',
+                    'regex': 'resolution { [, \.0-9]* }',
                     'replace': 'resolution {{ {} }}'
                 },
             ],
@@ -161,6 +161,85 @@ renderer_settings = {
             'time': 'Rendering finished\. \(took ([0-9a-zA-Z\.]*)\)',
         },
     },
+    'Mitsuba3': {
+        'exe': {
+            'path': 'C:/OldNew/Graphics-Lab/LuisaCompute/mitsuba3/cmake-build-release/Release/mitsuba.exe',
+            'spectrum': {
+                'name': {
+                    'RGB': 'rgb',
+                    'Spectral': 'spectral',
+                },
+                'order': '{}',
+            },
+            'integrator': {
+                'name': {
+                    'WavePath': '',
+                    'MegaPath': '',
+                },
+                'order': ' {}',
+            },
+            'backend': {
+                'name': {
+                    'cuda': 'cuda',
+                    'directX': 'undefined',
+                    'metal': 'undefined',
+                    'cpu': 'scalar',
+                },
+                'order': ' -m {}_',
+            },
+            'device': 'undefined',
+            'output': ' --output {}',
+            'appendix': '',
+        },
+        'scene_file': {
+            'scene_file_name': 'scene_v3.xml',
+            'output_file': {
+                'regex': '<string name="filename" value="output\.exr" />',
+                'replace': '<string name="filename" value="{}.exr" />',
+            },
+            'resolution': [
+                {
+                    'regex': '<default name="resx" value="[0-9]*" />',
+                    'replace': '<default name="resx" value="{}" />',
+                },
+                {
+                    'regex': '<default name="resy" value="[0-9]*" />',
+                    'replace': '<default name="resy" value="{}" />',
+                },
+            ],
+            'max_depth': {
+                'regex': '<default name="max_depth" value="[0-9]*" />',
+                'replace': '<default name="max_depth" value="{}" />',
+            },
+            'rr_depth': {
+                'regex': '<default name="rr_depth" value="[0-9]*" />',
+                'replace': '<default name="rr_depth" value="{}" />',
+            },
+            'spp': {
+                'regex': '<default name="spp" value="[0-9]*" />',
+                'replace': '<default name="spp" value="{}" />',
+            },
+            'sampler': {
+                'name': {
+                    'Independent': 'independent',
+                },
+                'regex': '<sampler type="[a-zA-Z]*" >',
+                'replace': '<sampler type="{}" >',
+            },
+            'spectrum': 'undefined',
+            'integrator': {
+                'name': {
+                    'WavePath': 'path',
+                    'MegaPath': 'undefined',
+                },
+                'regex': '<default name="integrator" value="[a-zA-Z]*" />',
+                'replace': '<default name="integrator" value="{}" />',
+            },
+        },
+        'results_regex': {
+            'time': 'Rendering finished\. \(took ([0-9a-zA-Z\.]*)\)',
+        },
+    },
     'PBRT-v4': {
         'exe': {
             # 'path': 'C:/OldNew/Graphics-Lab/LuisaCompute/pbrt-v4/build-vs/Release_2rr_depth/pbrt.exe',
@@ -243,55 +322,60 @@ renderer_settings = {
 target_settings = {
     'renderer': [
         'LuisaRender',
-        # 'Mitsuba2',
         # 'PBRT-v4',
+        # 'Mitsuba2',
+        'Mitsuba3',
     ],
     'backend': [
-        # 'cuda',
-        # 'directX',
-        'cpu',
+        'cuda',
+        'directX',
+        # 'cpu',
         # 'metal',
     ],
     'scene': {
-        # # wrong cases with mitsuba2
-        # 'classroom': {
-        #     'resolution': [
-        #         (1920, 1080),
-        #     ],
-        # },
-        # 'dining-room': {
-        #     'resolution': [
-        #         (1920, 1080),
-        #     ],
-        # },
-        #
-        # # right cases
-        # 'living-room': {
-        #     'resolution': [
-        #         (1920, 1080),
-        #     ],
-        # },
+        # wrong cases with mitsuba2
+        'classroom': {
+            'resolution': [
+                (1920, 1080),
+            ],
+        },
+        'dining-room': {
+            'resolution': [
+                (1920, 1080),
+            ],
+        },
 
+
+        # right cases
+        'living-room': {
+            'resolution': [
+                (1920, 1080),
+                # (1280, 720),
+            ],
+        },
         'coffee': {
             'resolution': [
                 (1200, 1800),
             ],
         },
-        # 'glass-of-water': {
-        #     'resolution': [
-        #         (1920, 1080),
-        #     ],
-        # },
-        # 'spaceship': {
-        #     'resolution': [
-        #         (1920, 1080),
-        #     ],
-        # },
-        # 'staircase': {
-        #     'resolution': [
-        #         (1080, 1920),
-        #     ],
-        # },
+        'glass-of-water': {
+            'resolution': [
+                (1920, 1080),
+                # (1280, 720),
+            ],
+        },
+        'spaceship': {
+            'resolution': [
+                (1920, 1080),
+                # (1280, 720),
+            ],
+        },
+        'staircase': {
+            'resolution': [
+                (1080, 1920),
+                # (720, 1280),
+            ],
+        },
     },
     'integrator': [
         'WavePath',
@@ -305,17 +389,21 @@ target_settings = {
         'Independent',
     ],
     'spp': [
-        1,
+        # 1,
         # 16,
         # 64,
         # 128,
         # 256,
-        # 1024,
+        1024,
         # 4096,
+        # 8192,
+        # 16384,
     ],
     'max_depth': [
+        # 3,
         # 8,
         16,
+        # 32,
     ],
     'rr_depth': [
         # 2,
@@ -323,7 +411,7 @@ target_settings = {
     ],
 }
 
-LuisaRender_breakdown = True
+LuisaRender_breakdown = False
 
 
 def test_targets():
@@ -543,7 +631,7 @@ def test_targets():
     logger.info(results)
     logger.info('#################### results ####################')
 
-    gather_breakdown()
+    # gather_breakdown()
 
     logger.info('====================== end ======================')
     logger.info('')

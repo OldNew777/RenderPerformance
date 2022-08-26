@@ -1,0 +1,16 @@
+render,scene,backend,integrator,sampler,resolution,spp,max depth,rr depth,spectrum,time consumption,Scene parse time (ms),Scene load time (ms),Pipeline create time (ms),Shader compile time (ms)
+PBRT-v4,living-room,cuda,WavePath,Independent,"(1280, 720)",64,3,unknown,Spectral,2.6s
+PBRT-v4,coffee,cuda,WavePath,Independent,"(1200, 1800)",64,3,unknown,Spectral,4.3s
+PBRT-v4,glass-of-water,cuda,WavePath,Independent,"(1280, 720)",64,3,unknown,Spectral,1.3s
+PBRT-v4,spaceship,cuda,WavePath,Independent,"(1280, 720)",64,3,unknown,Spectral,1.9s
+PBRT-v4,staircase,cuda,WavePath,Independent,"(1280, 720)",64,3,unknown,Spectral,2.8s
+Mitsuba2,living-room,cuda,WavePath,Independent,"(1280, 720)",64,3,5,RGB,2.93s
+Mitsuba2,living-room,cuda,WavePath,Independent,"(1280, 720)",64,3,5,Spectral,Error
+Mitsuba2,coffee,cuda,WavePath,Independent,"(1200, 1800)",64,3,5,RGB,5.66s
+Mitsuba2,coffee,cuda,WavePath,Independent,"(1200, 1800)",64,3,5,Spectral,6.153s
+Mitsuba2,glass-of-water,cuda,WavePath,Independent,"(1280, 720)",64,3,5,RGB,2.106s
+Mitsuba2,glass-of-water,cuda,WavePath,Independent,"(1280, 720)",64,3,5,Spectral,2.504s
+Mitsuba2,spaceship,cuda,WavePath,Independent,"(1280, 720)",64,3,5,RGB,5.001s
+Mitsuba2,spaceship,cuda,WavePath,Independent,"(1280, 720)",64,3,5,Spectral,5.441s
+Mitsuba2,staircase,cuda,WavePath,Independent,"(1280, 720)",64,3,5,RGB,5.377s
+Mitsuba2,staircase,cuda,WavePath,Independent,"(1280, 720)",64,3,5,Spectral,7.623s

@@ -10301,23 +10301,24 @@ Shape shape_773 : Mesh {
   }
 }
 
-Shape shape_774 : Mesh {
+Shape shape_774 : InlineMesh {
   file { "models/square.obj" }
   surface { @mat_Null }
   light : Diffuse {
     emission : Constant {
-      v { 30.0, 30.0, 30.0 }
+      v { 41.7, 41.7, 41.7 }
       semantic { "illuminant" }
     }
   }
-  transform : Matrix {
-    m {
-      -1.0322462320327759, -1.7570734567296485e-14, 4.0197156181420723e-07, -0.48117467761039734,
-      -4.019715333924978e-07, 4.512092033337467e-08, -1.0322463512420654, 7.140594959259033,
-      0.0, -1.0803741216659546, -4.722465263284903e-08, -1.6527451276779175,
-      0.0, 0.0, 0.0, 1.0
-    }
-  }
+  indices { 0, 1, 2, 0, 2, 3 }
+  positions { 0.551072, 7.14059, -0.572371,
+              -1.51342, 7.14059, -0.572371,
+              -1.51342, 7.14059, -2.73312,
+              0.551072, 7.1406, -2.73312 }
+  normals { 0, -1, 0,
+            0, -1, 0,
+            0, -1, 0,
+            0, -1, 0 }
 }
 
 Camera camera : Pinhole {
@@ -10332,7 +10333,7 @@ Camera camera : Pinhole {
   film : Color {
     resolution { 720, 1280 }
   }
-  file { "render.exr" }
+  file { "output.exr" }
 }
 
 render {

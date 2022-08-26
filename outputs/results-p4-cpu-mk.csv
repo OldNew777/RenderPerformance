@@ -1,0 +1,5 @@
+render,scene,backend,integrator,sampler,resolution,spp,max depth,rr depth,spectrum,time consumption
+PBRT-v4,coffee,cpu,MegaPath,Independent,"(1200, 1800)",128,8,2,Spectral,414.7s
+PBRT-v4,glass-of-water,cpu,MegaPath,Independent,"(1920, 1080)",128,8,2,Spectral,312.4s
+PBRT-v4,spaceship,cpu,MegaPath,Independent,"(1920, 1080)",128,8,2,Spectral,213.7s
+PBRT-v4,staircase,cpu,MegaPath,Independent,"(1080, 1920)",128,8,2,Spectral,633.2s

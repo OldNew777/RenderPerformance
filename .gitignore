@@ -20,7 +20,10 @@ set_accel_kernel
 !*/*/scene.luisa
 !*/*/scene.xml
 !*/*/scene-v4.pbrt
+!*/*/scene_v3.xml
 
 __pycache__
 */__pycache__
 .idea
+
+*.zip

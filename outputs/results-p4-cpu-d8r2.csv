@@ -1,0 +1,17 @@
+render,scene,backend,integrator,sampler,resolution,spp,max depth,rr depth,spectrum,time consumption
+PBRT-v4,coffee,cpu,WavePath,Independent,"(1200, 1800)",1024,8,2,Spectral,3638.4s
+PBRT-v4,glass-of-water,cpu,WavePath,Independent,"(1920, 1080)",1024,8,2,Spectral,3136s
+PBRT-v4,spaceship,cpu,WavePath,Independent,"(1920, 1080)",1024,8,2,Spectral,2256.8s
+PBRT-v4,staircase,cpu,WavePath,Independent,"(1080, 1920)",1024,8,2,Spectral,6080.8s
+PBRT-v4,coffee,cpu,MegaPath,Independent,"(1200, 1800)",1024,8,2,Spectral,3317.6s
+PBRT-v4,glass-of-water,cpu,MegaPath,Independent,"(1920, 1080)",1024,8,2,Spectral,2499.2s
+PBRT-v4,spaceship,cpu,MegaPath,Independent,"(1920, 1080)",1024,8,2,Spectral,1709.6s
+PBRT-v4,staircase,cpu,MegaPath,Independent,"(1080, 1920)",1024,8,2,Spectral,5065.6s
+PBRT-v4,coffee,cpu,WavePath,Independent,"(1200, 1800)",1024,16,5,Spectral,3809.6s
+PBRT-v4,coffee,cpu,MegaPath,Independent,"(1200, 1800)",1024,16,5,Spectral,3520.8s
+PBRT-v4,glass-of-water,cpu,WavePath,Independent,"(1920, 1080)",1024,16,5,Spectral,3886.4s
+PBRT-v4,glass-of-water,cpu,MegaPath,Independent,"(1920, 1080)",1024,16,5,Spectral,3224s
+PBRT-v4,spaceship,cpu,WavePath,Independent,"(1920, 1080)",1024,16,5,Spectral,2633.6s
+PBRT-v4,spaceship,cpu,MegaPath,Independent,"(1920, 1080)",1024,16,5,Spectral,2126.4s
+PBRT-v4,staircase,cpu,WavePath,Independent,"(1080, 1920)",1024,16,5,Spectral,8355.2s
+PBRT-v4,staircase,cpu,MegaPath,Independent,"(1080, 1920)",1024,16,5,Spectral,7428s

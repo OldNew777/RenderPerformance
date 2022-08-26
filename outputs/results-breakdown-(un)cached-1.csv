@@ -1,0 +1,13 @@
+scene,backend,integrator,spectrum,Scene load time (ms),Pipeline create time (ms),Shader compile time (ms),Shader cache hit time (ms)
+coffee,CUDA,MegaPath,RGB,244.56875,59.73855,2360.4,1.627
+coffee,ISPC,MegaPath,Spectral,242.3332,117.9865,73373.2,17116.2
+coffee,ISPC,WavePath,RGB,237.68195,104.3403,40486.9,7619.01
+coffee,ISPC,WavePath,Spectral,232.74035,104.69525,59332.7,19182.8
+coffee,DirectX,MegaPath,RGB,250.75855,200.9705,532.15,529.597
+coffee,CUDA,MegaPath,Spectral,241.48765,63.18685,2890.15,2.2447
+coffee,CUDA,WavePath,RGB,411.9266,63.93855,3794.48,29.6814
+coffee,CUDA,WavePath,Spectral,288.05205,70.2406,3289.99,45.6449
+coffee,ISPC,MegaPath,RGB,237.65605,118.028,41019.5,13520.9
+coffee,DirectX,MegaPath,Spectral,242.244,174.908,690.692,711.772
+coffee,DirectX,WavePath,RGB,268.2052,169.2115,451.747,491.017
+coffee,DirectX,WavePath,Spectral,246.13825,191.0285,549.966,499.158

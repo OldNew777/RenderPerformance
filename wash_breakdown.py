@@ -11,8 +11,6 @@ def gather_breakdown():
         f_csv = csv.reader(f)
         for line in f_csv:
             results.append(line)
-    results[0] += ['Scene parse time (ms)', 'Scene load time (ms)',
-                   'Pipeline create time (ms)', 'Shader compile time (ms)']
 
     state = -1
     line_index = 0
@@ -23,7 +21,7 @@ def gather_breakdown():
     for line in text:
         if line.startswith('Argv'):
             if state != -1:
-                while results[line_index][0] != 'LuisaRender':
+                while line_index < len(results) and results[line_index][0] != 'LuisaRender':
                     line_index += 1
                 results[line_index] += [
                     scene_parse_time, scene_load_time,
@@ -49,6 +47,8 @@ def gather_breakdown():
             scene_parse_time, scene_load_time,
             shader_compile_time, pipeline_create_time,
         ]
+    results[0] += ['Scene parse time (ms)', 'Scene load time (ms)',
+                   'Pipeline create time (ms)', 'Shader compile time (ms)']
 
     with open('outputs/results.csv', 'w', newline='') as f:
         f_csv = csv.writer(f)
