@@ -229,8 +229,8 @@ renderer_settings = {
             'spectrum': 'undefined',
             'integrator': {
                 'name': {
-                    'WavePath': 'path',
-                    'MegaPath': 'undefined',
+                    'WavePath': 'undefined',
+                    'MegaPath': 'path',
                 },
                 'regex': '<default name="integrator" value="[a-zA-Z]*" />',
                 'replace': '<default name="integrator" value="{}" />',
@@ -324,7 +324,7 @@ target_settings = {
         'LuisaRender',
         # 'PBRT-v4',
         # 'Mitsuba2',
-        'Mitsuba3',
+        # 'Mitsuba3',
     ],
     'backend': [
         'cuda',

@@ -202,15 +202,17 @@
 			<float name="alpha" value="0.1" />
 			<string name="distribution" value="ggx" />
 			<rgb name="specular_reflectance" value="0.751534, 0.751534, 0.751534" />
-			<rgb name="eta" value="1.65746, 0.880369, 0.521229" />
-			<rgb name="k" value="9.22387, 6.26952, 4.837" />
+			<string name="material" value="Al" />
+			<!-- <rgb name="eta" value="1.65746, 0.880369, 0.521229" />
+			<rgb name="k" value="9.22387, 6.26952, 4.837" /> -->
 		</bsdf>
 	</bsdf>
 	<bsdf type="twosided" id="ChairStainlessBSDF">
 		<bsdf type="conductor">
 			<rgb name="specular_reflectance" value="1, 1, 1" />
-			<rgb name="eta" value="1.65746, 0.880369, 0.521229" />
-			<rgb name="k" value="9.22387, 6.26952, 4.837" />
+			<string name="material" value="Al" />
+			<!-- <rgb name="eta" value="1.65746, 0.880369, 0.521229" />
+			<rgb name="k" value="9.22387, 6.26952, 4.837" /> -->
 		</bsdf>
 	</bsdf>
 	<bsdf type="twosided" id="FloorBSDF">

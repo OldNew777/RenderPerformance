@@ -92,8 +92,9 @@
 			<float name="alpha" value="0.02" />
 			<string name="distribution" value="ggx" />
 			<rgb name="specular_reflectance" value="0.578596, 0.578596, 0.578596" />
-			<rgb name="eta" value="1.65746, 0.880369, 0.521229" />
-			<rgb name="k" value="9.22387, 6.26952, 4.837" />
+			<string name="material" value="Al" />
+			<!-- <rgb name="eta" value="1.65746, 0.880369, 0.521229" />
+			<rgb name="k" value="9.22387, 6.26952, 4.837" /> -->
 		</bsdf>
 	</bsdf>
 	<bsdf type="twosided" id="MattePaintBSDF">

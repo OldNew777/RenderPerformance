@@ -11,12 +11,20 @@ Surface mat_RoughAluminium : Metal {
   roughness : Constant {
     v { 0.31622776601683794 }
   }
+  Kd : Constant {
+    v { 0.5785959959030151, 0.5785959959030151, 0.5785959959030151 }
+    semantic { "albedo" }
+  }
 }
 
 Surface mat_RoughSteel : Metal {
-  eta { 360, 2.0, 0.0, 830, 2.0, 0.0 }
+  eta { "V" }
   roughness : Constant {
     v { 0.31622776601683794 }
+  }
+  Kd : Constant {
+    v { 0.2, 0.2, 0.2 }
+    semantic { "albedo" }
   }
 }
 

@@ -91,8 +91,9 @@
 			<float name="alpha" value="0.1" />
 			<string name="distribution" value="ggx" />
 			<rgb name="specular_reflectance" value="1, 1, 1" />
-			<rgb name="eta" value="2.8656, 2.11918, 1.94008" />
-			<rgb name="k" value="3.03233, 2.05611, 1.61629" />
+			<string name="material" value="VN" />
+			<!-- <rgb name="eta" value="2.8656, 2.11918, 1.94008" />
+			<rgb name="k" value="3.03233, 2.05611, 1.61629" /> -->
 		</bsdf>
 	</bsdf>
 	<bsdf type="bumpmap">
@@ -106,8 +107,9 @@
 				<float name="alpha" value="0.1" />
 				<string name="distribution" value="ggx" />
 				<rgb name="specular_reflectance" value="0.578596, 0.578596, 0.578596" />
-				<rgb name="eta" value="1.65746, 0.880369, 0.521229" />
-				<rgb name="k" value="9.22387, 6.26952, 4.837" />
+			    <string name="material" value="Al" />
+				<!-- <rgb name="eta" value="1.65746, 0.880369, 0.521229" />
+				<rgb name="k" value="9.22387, 6.26952, 4.837" /> -->
 			</bsdf>
 		</bsdf>
 	</bsdf>
@@ -172,8 +174,9 @@
 	<bsdf type="twosided" id="StainlessSteelBSDF">
 		<bsdf type="conductor">
 			<rgb name="specular_reflectance" value="0.578596, 0.578596, 0.578596" />
-			<rgb name="eta" value="1.65746, 0.880369, 0.521229" />
-			<rgb name="k" value="9.22387, 6.26952, 4.837" />
+			<string name="material" value="Al" />
+			<!-- <rgb name="eta" value="1.65746, 0.880369, 0.521229" />
+			<rgb name="k" value="9.22387, 6.26952, 4.837" /> -->
 		</bsdf>
 	</bsdf>
 	<bsdf type="twosided" id="EmissionBSDF">
@@ -189,8 +192,9 @@
 	<bsdf type="twosided" id="GoldBSDF">
 		<bsdf type="conductor">
 			<rgb name="specular_reflectance" value="1, 1, 1" />
-			<rgb name="eta" value="0.143119, 0.374957, 1.44248" />
-			<rgb name="k" value="3.98316, 2.38572, 1.60322" />
+			<string name="material" value="Au" />
+			<!-- <rgb name="eta" value="0.143119, 0.374957, 1.44248" />
+			<rgb name="k" value="3.98316, 2.38572, 1.60322" /> -->
 		</bsdf>
 	</bsdf>
 	<bsdf type="twosided" id="WhitePaint2BSDF">
@@ -211,8 +215,9 @@
 	<bsdf type="twosided" id="CopperBSDF">
 		<bsdf type="conductor">
 			<rgb name="specular_reflectance" value="1, 1, 1" />
-			<rgb name="eta" value="0.265787, 0.19561, 0.22092" />
-			<rgb name="k" value="3.54017, 2.31113, 1.66859" />
+			<string name="material" value="Li" />
+			<!-- <rgb name="eta" value="0.265787, 0.19561, 0.22092" />
+			<rgb name="k" value="3.54017, 2.31113, 1.66859" /> -->
 		</bsdf>
 	</bsdf>
 	<bsdf type="twosided" id="WallpaperBSDF">

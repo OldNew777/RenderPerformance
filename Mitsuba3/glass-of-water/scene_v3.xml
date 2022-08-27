@@ -31,8 +31,9 @@
 			<float name="alpha" value="0.1" />
 			<string name="distribution" value="ggx" />
 			<rgb name="specular_reflectance" value="0.578596, 0.578596, 0.578596" />
-			<rgb name="eta" value="4.27751, 3.51315, 2.76113" />
-			<rgb name="k" value="3.49118, 2.88936, 3.1117" />
+			<string name="material" value="V_palik" />
+			<!-- <rgb name="eta" value="4.27751, 3.51315, 2.76113" />
+			<rgb name="k" value="3.49118, 2.88936, 3.1117" /> -->
 		</bsdf>
 	</bsdf>
 	<bsdf type="twosided" id="FloorBSDF">
@@ -40,8 +41,9 @@
 			<float name="alpha" value="0.1" />
 			<string name="distribution" value="ggx" />
 			<rgb name="specular_reflectance" value="0.578596, 0.578596, 0.578596" />
-			<rgb name="eta" value="1.65746, 0.880369, 0.521229" />
-			<rgb name="k" value="9.22387, 6.26952, 4.837" />
+			<string name="material" value="Al" />
+			<!-- <rgb name="eta" value="1.65746, 0.880369, 0.521229" />
+			<rgb name="k" value="9.22387, 6.26952, 4.837" /> -->
 		</bsdf>
 	</bsdf>
 	<bsdf type="dielectric" id="WaterAirBSDF">

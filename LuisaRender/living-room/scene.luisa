@@ -80,7 +80,7 @@ Surface mat_Paneling : Substrate {
 
 Surface mat_Mirror : Mirror {
   color : Constant {
-    v { 0.5785959959030151, 0.5785959959030151, 0.5785959959030151 }
+    v { 1, 1, 1 }
     semantic { "albedo" }
   }
 }
@@ -89,6 +89,10 @@ Surface mat_BrushedStainlessSteel : Metal {
   eta { "Al" }
   roughness : Constant {
     v { 0.1414213562373095 }
+  }
+  Kd : Constant {
+    v { 0.578596, 0.578596, 0.578596 }
+    semantic { "albedo" }
   }
 }
 
@@ -137,10 +141,20 @@ Surface mat_PlantPot : Matte {
   }
 }
 
-Surface mat_FireplaceGlass : Mirror {
-  color : Constant {
-    v { 0.10000000149011612, 0.10000000149011612, 0.10000000149011612 }
+Surface mat_FireplaceGlass : Substrate {
+  Kd : Constant {
+    v { 0, 0, 0 }
     semantic { "albedo" }
+  }
+  Ks : Constant {
+    v { 0.04, 0.04, 0.04 }
+    semantic { "albedo" }
+  }
+  eta : Constant {
+    v { 1.5 }
+  }
+  roughness : Constant {
+    v { 0.1 }
   }
 }
 

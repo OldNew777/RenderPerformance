@@ -4,12 +4,20 @@ Surface mat_Backdrop : Metal {
   roughness : Constant {
     v { 0.31622776601683794 }
   }
+  Kd : Constant {
+    v { 0.578596, 0.578596, 0.578596 }
+    semantic { "albedo" }
+  }
 }
 
 Surface mat_Floor : Metal {
   eta { "Al" }
   roughness : Constant {
     v { 0.31622776601683794 }
+  }
+  Kd : Constant {
+    v { 0.578596, 0.578596, 0.578596 }
+    semantic { "albedo" }
   }
 }
 
