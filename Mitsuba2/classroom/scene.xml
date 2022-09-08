@@ -3,7 +3,7 @@
     <integrator type="path">
         <integer name="max_depth" value="12" />
         <integer name="rr_depth" value="5" />
-        <integer name="samples_per_pass" value="2" />
+        <integer name="samples_per_pass" value="16" />
     </integrator>
     <sensor type="perspective">
         <float name="fov" value="60" />

@@ -324,7 +324,7 @@ target_settings = {
         'LuisaRender',
         # 'PBRT-v4',
         # 'Mitsuba2',
-        # 'Mitsuba3',
+        'Mitsuba3',
     ],
     'backend': [
         'cuda',

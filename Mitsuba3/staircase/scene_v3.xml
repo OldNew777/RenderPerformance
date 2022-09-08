@@ -8,7 +8,7 @@
 	<integrator type="$integrator">
 		<integer name="max_depth" value="$max_depth" />
 		<integer name="rr_depth" value="$rr_depth" />
-		<integer name="samples_per_pass" value="4" />
+		<integer name="samples_per_pass" value="16" />
 	</integrator>
 	<sensor type="perspective">
 		<float name="fov" value="35" />
