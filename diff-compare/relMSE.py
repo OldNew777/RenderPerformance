@@ -26,9 +26,10 @@ def relMSE(ref_image, rendered_image):
 def add_colorbar(image, ax, fig):
     im = ax.imshow(image)
     divider = make_axes_locatable(ax)
-    cax = divider.append_axes("bottom", size="3%", pad=0.05)
-    fig.colorbar(im, cax=cax, orientation="horizontal")
-    cax.set_xticks([0.0005, 0.0015])
+    cax = divider.append_axes("bottom", size="100%", pad=0.05)
+    fig.colorbar(im, ax=cax, orientation="horizontal", shrink=0.6)
+    cax.set_xticks([0, 1e-3], labels=['0', '1e-3'])
+    cax.set_xlim([0, 1e-3])
 
 
 if __name__ == '__main__':
@@ -41,7 +42,9 @@ if __name__ == '__main__':
     # add_colorbar(tm.tonemapping(diff_image))
     fig = plt.figure(figsize=(3, 6), constrained_layout=True)
     ax = fig.add_subplot()
-    turn_off_spines(ax)
     add_colorbar(np.clip(diff_image, 0, 0.002), ax, fig)
+    turn_off_spines(ax)
     plt.show()
-    fig.savefig('./staircase/diff-falsecolor.pdf')
+    cv2.imwrite('diff-falsecolor.exr', diff_image)
+    fig.savefig('diff-falsecolor.png')
+    fig.savefig('diff-falsecolor.pdf')

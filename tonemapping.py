@@ -16,3 +16,14 @@ def tonemapping(x):
     d = 0.59
     e = 0.14
     return rgb2srgb(x * (a * x + b) / (x * (c * x + d) + e))
+
+def tonemapping_uncharted2(x):
+    def F(x):
+        A = 0.22
+        B = 0.30
+        C = 0.10
+        D = 0.20
+        E = 0.01
+        F = 0.30
+        return ((x * (A * x + C * B) + D * E) / (x * (A * x + B) + D * F)) - E / F
+    return rgb2srgb(F(x))
