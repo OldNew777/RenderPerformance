@@ -15,10 +15,12 @@ if __name__ == '__main__':
     image = cv2.imread(image_path, cv2.IMREAD_UNCHANGED)
     image_cut = image[area[2]:area[3], area[0]:area[1]]
     image_area = image.copy()
-    fill_color = np.array([0.5, 0.5, 0.0, 1.0])
+    fill_color = np.array([0.7, 0.7, 0.0, 1.0])     # BGRA
     line_width = 5
     half_line_width = line_width // 2
-    for i in range(max(0, area[2] - half_line_width), min(image.shape[0], area[3] + half_line_width)):
+    for i in range(
+            max(0, area[2] - half_line_width),
+            min(image.shape[0], area[3] + half_line_width) + 1):
         for j in range(line_width):
             k = area[0] - half_line_width + j
             if 0 <= k < image.shape[1]:
@@ -26,7 +28,9 @@ if __name__ == '__main__':
             k = area[1] - half_line_width + j
             if 0 <= k < image.shape[1]:
                 image_area[i, k] = fill_color
-    for j in range(max(0, area[0] - half_line_width), min(image.shape[1], area[1] + half_line_width)):
+    for j in range(
+            max(0, area[0] - half_line_width),
+            min(image.shape[1], area[1] + half_line_width) + 1):
         for i in range(line_width):
             k = area[2] - half_line_width + i
             if 0 <= k < image.shape[0]:

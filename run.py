@@ -4,414 +4,7 @@ import re
 from mylogger import *
 from result_recorder import Recorder
 from wash_breakdown import *
-
-renderer_settings = {
-    'LuisaRender': {
-        'exe': {
-            'path': 'C:/OldNew/Graphics-Lab/LuisaCompute/LuisaRender/cmake-build-release/bin/luisa-render-cli.exe',
-            'spectrum': 'undefined',
-            'integrator': {
-                'name': {
-                    'WavePath': '',
-                    'MegaPath': '',
-                },
-                'order': ' {}',
-            },
-            'backend': {
-                'name': {
-                    'cuda': 'cuda',
-                    'directX': 'dx',
-                    'metal': 'metal',
-                    'cpu': 'ispc',
-                },
-                'order': ' -b {}',
-            },
-            'device': ' -d {}',
-            'output': '',
-            'appendix': '',
-        },
-        'scene_file': {
-            'scene_file_name': 'scene.luisa',
-            'output_file': {
-                'regex': 'file { "output\.exr" }',
-                'replace': 'file {{ "{}.exr" }}',
-            },
-            'resolution': [
-                {
-                    'regex': 'resolution { [, \.0-9]* }',
-                    'replace': 'resolution {{ {} }}'
-                },
-            ],
-            'max_depth': {
-                'regex': ' depth { [0-9]* }',
-                'replace': ' depth {{ {} }}',
-            },
-            'rr_depth': {
-                'regex': 'rr_depth { [0-9]* }',
-                'replace': 'rr_depth {{ {} }}',
-            },
-            'spp': {
-                'regex': 'spp { [0-9]* }',
-                'replace': 'spp {{ {} }}',
-            },
-            'sampler': {
-                'name': {
-                    'Independent': 'Independent',
-                },
-                'regex': 'sampler : [a-zA-Z]* \{\}',
-                'replace': 'sampler : {} {{}}',
-            },
-            'spectrum': {
-                'name': {
-                    'RGB': 'sRGB',
-                    'Spectral': 'Hero',
-                },
-                'regex': 'spectrum : [a-zA-Z]* \{\}',
-                'replace': 'spectrum : {} {{}}',
-            },
-            'integrator': {
-                'name': {
-                    'WavePath': 'WavePath',
-                    'MegaPath': 'MegaPath',
-                },
-                'regex': 'integrator : [a-zA-Z]* {',
-                'replace': 'integrator : {} {{',
-            },
-        },
-        'results_regex': {
-            'time': '\(([0-9a-zA-Z\.]*) \| 100\.0%\)',
-        },
-    },
-    'Mitsuba2': {
-        'exe': {
-            'path': 'C:/OldNew/Graphics-Lab/LuisaCompute/Mitsuba2/build/dist/mitsuba.exe',
-            'spectrum': {
-                'name': {
-                    'RGB': 'rgb',
-                    'Spectral': 'spectral',
-                },
-                'order': '{}',
-            },
-            'integrator': {
-                'name': {
-                    'WavePath': '',
-                    'MegaPath': '',
-                },
-                'order': ' {}',
-            },
-            'backend': {
-                'name': {
-                    'cuda': 'gpu',
-                    'directX': 'undefined',
-                    'metal': 'undefined',
-                    'cpu': 'scalar',
-                },
-                'order': ' -m {}_',
-            },
-            'device': 'undefined',
-            'output': ' --output {}',
-            'appendix': '',
-        },
-        'scene_file': {
-            'scene_file_name': 'scene.xml',
-            'output_file': {
-                'regex': '<string name="filename" value="output\.exr" />',
-                'replace': '<string name="filename" value="{}.exr" />',
-            },
-            'resolution': [
-                {
-                    'regex': '<integer name="width" value="[0-9]*" />',
-                    'replace': '<integer name="width" value="{}" />',
-                },
-                {
-                    'regex': '<integer name="height" value="[0-9]*" />',
-                    'replace': '<integer name="height" value="{}" />',
-                },
-            ],
-            'max_depth': {
-                'regex': '<integer name="max_depth" value="[0-9]*" />',
-                'replace': '<integer name="max_depth" value="{}" />',
-            },
-            'rr_depth': {
-                'regex': '<integer name="rr_depth" value="[0-9]*" />',
-                'replace': '<integer name="rr_depth" value="{}" />',
-            },
-            'spp': {
-                'regex': '<integer name="sample_count" value="[0-9]*" />',
-                'replace': '<integer name="sample_count" value="{}" />',
-            },
-            'sampler': {
-                'name': {
-                    'Independent': 'independent',
-                },
-                'regex': '<sampler type="[a-zA-Z]*" >',
-                'replace': '<sampler type="{}" >',
-            },
-            'spectrum': 'undefined',
-            'integrator': {
-                'name': {
-                    'WavePath': 'path',
-                    'MegaPath': 'undefined',
-                },
-                'regex': '<integrator type="[a-zA-Z]*" >',
-                'replace': '<integrator type="{}" >',
-            },
-        },
-        'results_regex': {
-            'time': 'Rendering finished\. \(took ([0-9a-zA-Z\.]*)\)',
-        },
-    },
-    'Mitsuba3': {
-        'exe': {
-            'path': 'C:/OldNew/Graphics-Lab/LuisaCompute/mitsuba3/cmake-build-release/Release/mitsuba.exe',
-            'spectrum': {
-                'name': {
-                    'RGB': 'rgb',
-                    'Spectral': 'spectral',
-                },
-                'order': '{}',
-            },
-            'integrator': {
-                'name': {
-                    'WavePath': '',
-                    'MegaPath': '',
-                },
-                'order': ' {}',
-            },
-            'backend': {
-                'name': {
-                    'cuda': 'cuda',
-                    'directX': 'undefined',
-                    'metal': 'undefined',
-                    'cpu': 'scalar',
-                },
-                'order': ' -m {}_',
-            },
-            'device': 'undefined',
-            'output': ' --output {}',
-            'appendix': '',
-        },
-        'scene_file': {
-            'scene_file_name': 'scene_v3.xml',
-            'output_file': {
-                'regex': '<string name="filename" value="output\.exr" />',
-                'replace': '<string name="filename" value="{}.exr" />',
-            },
-            'resolution': [
-                {
-                    'regex': '<default name="resx" value="[0-9]*" />',
-                    'replace': '<default name="resx" value="{}" />',
-                },
-                {
-                    'regex': '<default name="resy" value="[0-9]*" />',
-                    'replace': '<default name="resy" value="{}" />',
-                },
-            ],
-            'max_depth': {
-                'regex': '<default name="max_depth" value="[0-9]*" />',
-                'replace': '<default name="max_depth" value="{}" />',
-            },
-            'rr_depth': {
-                'regex': '<default name="rr_depth" value="[0-9]*" />',
-                'replace': '<default name="rr_depth" value="{}" />',
-            },
-            'spp': {
-                'regex': '<default name="spp" value="[0-9]*" />',
-                'replace': '<default name="spp" value="{}" />',
-            },
-            'sampler': {
-                'name': {
-                    'Independent': 'independent',
-                },
-                'regex': '<sampler type="[a-zA-Z]*" >',
-                'replace': '<sampler type="{}" >',
-            },
-            'spectrum': 'undefined',
-            'integrator': {
-                'name': {
-                    'WavePath': 'undefined',
-                    'MegaPath': 'path',
-                },
-                'regex': '<default name="integrator" value="[a-zA-Z]*" />',
-                'replace': '<default name="integrator" value="{}" />',
-            },
-        },
-        'results_regex': {
-            'time': 'Rendering finished\. \(took ([0-9a-zA-Z\.]*)\)',
-        },
-    },
-    'PBRT-v4': {
-        'exe': {
-            # 'path': 'C:/OldNew/Graphics-Lab/LuisaCompute/pbrt-v4/build-vs/Release_2rr_depth/pbrt.exe',
-            'path': 'C:/OldNew/Graphics-Lab/LuisaCompute/pbrt-v4/build-vs/Release_5rr_depth/pbrt.exe',
-            'spectrum': {
-                'name': {
-                    'RGB': 'undefined',
-                    'Spectral': '',
-                },
-                'order': ' {}',
-            },
-            'integrator': {
-                'name': {
-                    'WavePath': '--wavefront',
-                    'MegaPath': ' ',
-                },
-                'order': ' {}',
-            },
-            'backend': {
-                'name': {
-                    'cuda': '--gpu',
-                    'directX': 'undefined',
-                    'metal': 'undefined',
-                    'cpu': '',
-                },
-                'order': ' {}',
-            },
-            'device': ' --gpu-device {}',
-            'output': '',
-            'appendix': '',
-        },
-        'scene_file': {
-            'scene_file_name': 'scene-v4.pbrt',
-            'output_file': {
-                'regex': '"string filename" \[ "output\.exr" \]',
-                'replace': '"string filename" [ "{}.exr" ]',
-            },
-            'resolution': [
-                {
-                    'regex': '"integer xresolution" \[ [0-9]* \]',
-                    'replace': '"integer xresolution" [ {} ]',
-                },
-                {
-                    'regex': '"integer yresolution" \[ [0-9]* \]',
-                    'replace': '"integer yresolution" [ {} ]',
-                },
-            ],
-            'max_depth': {
-                'regex': '"integer maxdepth" \[ [0-9]* \]',
-                'replace': '"integer maxdepth" [ {} ]',
-            },
-            'rr_depth': 'undefined',
-            'spp': {
-                'regex': '"integer pixelsamples" \[ [0-9]* \]',
-                'replace': '"integer pixelsamples" [ {} ]',
-            },
-            'sampler': {
-                'name': {
-                    'Independent': 'independent',
-                },
-                'regex': 'Sampler "[a-zA-Z]*"',
-                'replace': 'Sampler "{}"',
-            },
-            'spectrum': 'undefined',
-            'integrator': {
-                'name': {
-                    'WavePath': 'path',
-                    'MegaPath': 'path',
-                },
-                'regex': 'Integrator "[a-zA-Z]*"',
-                'replace': 'Integrator "{}"',
-            },
-        },
-        'results_regex': {
-            'time': 'Rendering: \[[\+]*\]  \(([0-9a-zA-Z\.]*)\)',
-        },
-    },
-}
-
-target_settings = {
-    'renderer': [
-        'LuisaRender',
-        # 'PBRT-v4',
-        # 'Mitsuba2',
-        'Mitsuba3',
-    ],
-    'backend': [
-        'cuda',
-        'directX',
-        # 'cpu',
-        # 'metal',
-    ],
-    'scene': {
-        # wrong cases with mitsuba2
-        'classroom': {
-            'resolution': [
-                (1920, 1080),
-            ],
-        },
-        'dining-room': {
-            'resolution': [
-                (1920, 1080),
-            ],
-        },
-
-
-        # right cases
-        'living-room': {
-            'resolution': [
-                (1920, 1080),
-                # (1280, 720),
-            ],
-        },
-        'coffee': {
-            'resolution': [
-                (1200, 1800),
-            ],
-        },
-        'glass-of-water': {
-            'resolution': [
-                (1920, 1080),
-                # (1280, 720),
-            ],
-        },
-        'spaceship': {
-            'resolution': [
-                (1920, 1080),
-                # (1280, 720),
-            ],
-        },
-        'staircase': {
-            'resolution': [
-                (1080, 1920),
-                # (720, 1280),
-            ],
-        },
-    },
-    'integrator': [
-        'WavePath',
-        'MegaPath',
-    ],
-    'spectrum': [
-        'RGB',
-        'Spectral',
-    ],
-    'sampler': [
-        'Independent',
-    ],
-    'spp': [
-        # 1,
-        # 16,
-        # 64,
-        # 128,
-        # 256,
-        1024,
-        # 4096,
-        # 8192,
-        # 16384,
-    ],
-    'max_depth': [
-        # 3,
-        # 8,
-        16,
-        # 32,
-    ],
-    'rr_depth': [
-        # 2,
-        5,
-    ],
-}
-
-LuisaRender_breakdown = False
+from run_config import *
 
 
 def test_targets():
@@ -461,7 +54,7 @@ def test_targets():
                 k = 2
 
                 integrator_name = scene_file_settings['integrator']['name'][integrator]
-                if integrator_name == 'undefined':
+                if integrator_name is None:
                     continue
                 scene[k] = re.sub(scene_file_settings['integrator']['regex'],
                                   scene_file_settings['integrator']['replace'].
@@ -511,7 +104,7 @@ def test_targets():
                                                   format(max_depth), scene[k - 1])
                                 order[k] = order[k - 1]
 
-                                if scene_file_settings['rr_depth'] == 'undefined':
+                                if scene_file_settings['rr_depth'] is None:
                                     rr_depth_unknown = True
                                 else:
                                     rr_depth_unknown = False
@@ -536,7 +129,7 @@ def test_targets():
                                         order[k] = order[k - 1]
 
                                         backend_name = settings['exe']['backend']['name'][backend]
-                                        if backend_name == 'undefined':
+                                        if backend_name is None:
                                             continue
                                         order[k] += settings['exe']['backend']['order'].format(backend_name)
 
@@ -546,14 +139,14 @@ def test_targets():
                                             # deal with different spectrum format: scene/cmd
                                             scene[k] = scene[k - 1]
                                             order[k] = order[k - 1]
-                                            if scene_file_settings['spectrum'] != 'undefined':
+                                            if scene_file_settings['spectrum'] is not None:
                                                 scene[k] = re.sub(scene_file_settings['spectrum']['regex'],
                                                                   scene_file_settings['spectrum']['replace'].
                                                                   format(scene_file_settings['spectrum']['name'][spectrum]),
                                                                   scene[k])
                                             else:
                                                 spectrum_name = settings['exe']['spectrum']['name'][spectrum]
-                                                if spectrum_name == 'undefined':
+                                                if spectrum_name is None:
                                                     continue
                                                 order[k] += settings['exe']['spectrum']['order'].format(spectrum_name)
 
@@ -580,7 +173,7 @@ def test_targets():
                                                 f.write(scene[k])
 
                                             # device
-                                            if settings['exe']['device'] != 'undefined':
+                                            if settings['exe']['device'] is not None:
                                                 order[k] += settings['exe']['device'].format(0)
 
                                             # target scene file
@@ -596,7 +189,7 @@ def test_targets():
 
                                                 cache_dir = os.path.join(os.path.dirname(settings['exe']['path']), '.cache')
                                                 cache_files = os.listdir(cache_dir)
-                                                for file in  cache_files:
+                                                for file in cache_files:
                                                     os.remove(os.path.join(cache_dir, file))
 
                                             for _ in range(render_times):
