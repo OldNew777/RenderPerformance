@@ -2,6 +2,8 @@ import logging
 import os
 
 log_file = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'outputs', 'log.log')
+if not os.path.exists(os.path.dirname(log_file)):
+    os.makedirs(os.path.dirname(log_file))
 
 
 def clear_log_file() -> bool:
