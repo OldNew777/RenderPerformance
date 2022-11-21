@@ -4,7 +4,7 @@ import matplotlib.image as imread
 from matplotlib import rcParams
 import os
 
-import image_process
+import tonemapping as tm
 import plt_config
 
 font_size = 15
@@ -18,7 +18,7 @@ import numpy as np
 def read_hdr2ldr(filename: str) -> np.ndarray:
     image = np.maximum(
         np.nan_to_num(cv.imread(filename, cv.IMREAD_UNCHANGED)[:, :, :3], nan=0.0, posinf=1e3, neginf=0), 0.0)
-    image = image_process.tonemapping_uncharted2(image * 1.5)
+    image = tm.tonemapping_uncharted2(image * 1.5)
     image_srgb = np.uint8(np.round(np.clip(np.where(
         image <= 0.00304,
         12.92 * image,
